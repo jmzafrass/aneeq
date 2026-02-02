@@ -16,7 +16,7 @@ import os
 import re
 import sys
 import time
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from datetime import datetime
 
 import requests
@@ -1142,9 +1142,70 @@ def main():
             print(f"   {s}")
 
     # ------------------------------------------------------------------
+    # 9d. Deduplicate rows (same customer + date + price)
+    # ------------------------------------------------------------------
+    print("\n9d. Deduplicating rows (same uid + date + price) ...")
+
+    def normalize_price_for_dedup(price_str):
+        """Normalize price string for comparison."""
+        if not price_str:
+            return "0"
+        cleaned = str(price_str).replace(",", "").strip()
+        m = re.search(r"[-+]?\d*\.?\d+", cleaned)
+        if not m:
+            return "0"
+        try:
+            return f"{float(m.group(0)):.2f}"
+        except ValueError:
+            return "0"
+
+    def order_id_priority(oid):
+        """Lower = better. Prefer numeric WC IDs, then hex, then PAY-."""
+        oid = str(oid).strip()
+        if oid.isdigit():
+            return 0  # WC order — most authoritative
+        if len(oid) == 10 and all(c in "0123456789ABCDEFabcdef" for c in oid):
+            return 1  # hex Mamo
+        if oid.startswith("PAY-"):
+            return 2  # PAY- prefixed
+        return 3  # other
+
+    dedup_groups = OrderedDict()
+    for row in all_rows_combined:
+        uid = row.get("name_uid", "").strip()
+        dt = row.get("Order Date", "").strip()
+        price = normalize_price_for_dedup(row.get("Price", ""))
+        key = (uid, dt, price)
+        if key not in dedup_groups:
+            dedup_groups[key] = []
+        dedup_groups[key].append(row)
+
+    deduped_rows = []
+    dedup_removed = 0
+    for key, group in dedup_groups.items():
+        if len(group) == 1:
+            deduped_rows.append(group[0])
+            continue
+        # Keep the best row (lowest order_id_priority)
+        group.sort(key=lambda r: order_id_priority(r.get("Order_id", "")))
+        best = group[0]
+        # Merge Notes from other rows if best has empty Notes
+        if not best.get("Notes", "").strip():
+            for other in group[1:]:
+                if other.get("Notes", "").strip():
+                    best["Notes"] = other["Notes"]
+                    break
+        deduped_rows.append(best)
+        dedup_removed += len(group) - 1
+
+    print(f"   Duplicate groups found: {len(all_rows_combined) - len(deduped_rows)}")
+    print(f"   Rows removed:          {dedup_removed}")
+    print(f"   Rows after dedup:      {len(deduped_rows)}")
+
+    # ------------------------------------------------------------------
     # 10. Sort and write
     # ------------------------------------------------------------------
-    all_rows = all_rows_combined
+    all_rows = deduped_rows
 
     # Sort by Order Date
     def sort_key(row):
@@ -1181,6 +1242,7 @@ def main():
     print(f"  Total rows:        {len(all_rows)}")
     print(f"  Existing (fixed):  {len(existing_rows)}")
     print(f"  New appended:      {len(new_rows)}")
+    print(f"  Dedup removed:     {dedup_removed}")
     print(f"  Date range:        {format_date_dd_mm_yyyy(min_date) if min_date else '?'} → {format_date_dd_mm_yyyy(max_date) if max_date else '?'}")
     print()
     print("  name_uid breakdown:")

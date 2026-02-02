@@ -23,8 +23,8 @@ purchase,2024-11-01,overall,ALL,7,any,gross_margin,5,896.0
 purchase,2024-11-01,overall,ALL,8,any,gross_margin,5,957.8
 purchase,2024-11-01,overall,ALL,9,any,gross_margin,5,1019.6
 purchase,2024-11-01,overall,ALL,10,any,gross_margin,5,1081.4
-purchase,2024-11-01,overall,ALL,11,any,gross_margin,5,1205.0
-purchase,2024-11-01,overall,ALL,12,any,gross_margin,5,1266.8
+purchase,2024-11-01,overall,ALL,11,any,gross_margin,5,1143.2
+purchase,2024-11-01,overall,ALL,12,any,gross_margin,5,1205.0
 purchase,2024-12-01,overall,ALL,0,any,gross_margin,19,568.68
 purchase,2024-12-01,overall,ALL,1,any,gross_margin,19,906.05
 purchase,2024-12-01,overall,ALL,2,any,gross_margin,19,1295.89
@@ -36,8 +36,8 @@ purchase,2024-12-01,overall,ALL,7,any,gross_margin,19,2426.89
 purchase,2024-12-01,overall,ALL,8,any,gross_margin,19,2644.89
 purchase,2024-12-01,overall,ALL,9,any,gross_margin,19,2810.32
 purchase,2024-12-01,overall,ALL,10,any,gross_margin,19,2971.26
-purchase,2024-12-01,overall,ALL,11,any,gross_margin,19,3174.53
-purchase,2024-12-01,overall,ALL,12,any,gross_margin,19,3348.89
+purchase,2024-12-01,overall,ALL,11,any,gross_margin,19,3156.16
+purchase,2024-12-01,overall,ALL,12,any,gross_margin,19,3312.16
 purchase,2025-01-01,overall,ALL,0,any,gross_margin,21,542.43
 purchase,2025-01-01,overall,ALL,1,any,gross_margin,21,685.57
 purchase,2025-01-01,overall,ALL,2,any,gross_margin,21,831.52
@@ -70,10 +70,10 @@ purchase,2025-03-01,overall,ALL,3,any,gross_margin,60,1048.19
 purchase,2025-03-01,overall,ALL,4,any,gross_margin,60,1204.29
 purchase,2025-03-01,overall,ALL,5,any,gross_margin,60,1375.55
 purchase,2025-03-01,overall,ALL,6,any,gross_margin,60,1518.42
-purchase,2025-03-01,overall,ALL,7,any,gross_margin,60,1654.04
-purchase,2025-03-01,overall,ALL,8,any,gross_margin,60,1777.14
-purchase,2025-03-01,overall,ALL,9,any,gross_margin,60,1898.11
-purchase,2025-03-01,overall,ALL,10,any,gross_margin,60,1970.08
+purchase,2025-03-01,overall,ALL,7,any,gross_margin,60,1648.89
+purchase,2025-03-01,overall,ALL,8,any,gross_margin,60,1771.99
+purchase,2025-03-01,overall,ALL,9,any,gross_margin,60,1892.96
+purchase,2025-03-01,overall,ALL,10,any,gross_margin,60,1964.93
 purchase,2025-04-01,overall,ALL,0,any,gross_margin,78,617.41
 purchase,2025-04-01,overall,ALL,1,any,gross_margin,78,837.63
 purchase,2025-04-01,overall,ALL,2,any,gross_margin,78,1087.03
@@ -81,53 +81,53 @@ purchase,2025-04-01,overall,ALL,3,any,gross_margin,78,1410.75
 purchase,2025-04-01,overall,ALL,4,any,gross_margin,78,1641.81
 purchase,2025-04-01,overall,ALL,5,any,gross_margin,78,1795.9
 purchase,2025-04-01,overall,ALL,6,any,gross_margin,78,1987.71
-purchase,2025-04-01,overall,ALL,7,any,gross_margin,78,2150.29
-purchase,2025-04-01,overall,ALL,8,any,gross_margin,78,2311.06
-purchase,2025-04-01,overall,ALL,9,any,gross_margin,78,2467.0
+purchase,2025-04-01,overall,ALL,7,any,gross_margin,78,2142.22
+purchase,2025-04-01,overall,ALL,8,any,gross_margin,78,2302.99
+purchase,2025-04-01,overall,ALL,9,any,gross_margin,78,2458.94
 purchase,2025-05-01,overall,ALL,0,any,gross_margin,73,602.07
 purchase,2025-05-01,overall,ALL,1,any,gross_margin,73,903.54
 purchase,2025-05-01,overall,ALL,2,any,gross_margin,73,1175.97
 purchase,2025-05-01,overall,ALL,3,any,gross_margin,73,1425.25
 purchase,2025-05-01,overall,ALL,4,any,gross_margin,73,1617.52
-purchase,2025-05-01,overall,ALL,5,any,gross_margin,73,1820.6
-purchase,2025-05-01,overall,ALL,6,any,gross_margin,73,2038.41
-purchase,2025-05-01,overall,ALL,7,any,gross_margin,73,2175.85
-purchase,2025-05-01,overall,ALL,8,any,gross_margin,73,2329.93
-purchase,2025-06-01,overall,ALL,0,any,gross_margin,75,580.74
-purchase,2025-06-01,overall,ALL,1,any,gross_margin,75,793.65
-purchase,2025-06-01,overall,ALL,2,any,gross_margin,75,1045.2
-purchase,2025-06-01,overall,ALL,3,any,gross_margin,75,1288.11
-purchase,2025-06-01,overall,ALL,4,any,gross_margin,75,1446.86
-purchase,2025-06-01,overall,ALL,5,any,gross_margin,75,1667.11
-purchase,2025-06-01,overall,ALL,6,any,gross_margin,75,1903.42
-purchase,2025-06-01,overall,ALL,7,any,gross_margin,75,2028.16
+purchase,2025-05-01,overall,ALL,5,any,gross_margin,73,1788.43
+purchase,2025-05-01,overall,ALL,6,any,gross_margin,73,1976.15
+purchase,2025-05-01,overall,ALL,7,any,gross_margin,73,2113.59
+purchase,2025-05-01,overall,ALL,8,any,gross_margin,73,2267.67
+purchase,2025-06-01,overall,ALL,0,any,gross_margin,75,572.36
+purchase,2025-06-01,overall,ALL,1,any,gross_margin,75,785.27
+purchase,2025-06-01,overall,ALL,2,any,gross_margin,75,1036.81
+purchase,2025-06-01,overall,ALL,3,any,gross_margin,75,1279.72
+purchase,2025-06-01,overall,ALL,4,any,gross_margin,75,1431.02
+purchase,2025-06-01,overall,ALL,5,any,gross_margin,75,1595.53
+purchase,2025-06-01,overall,ALL,6,any,gross_margin,75,1831.83
+purchase,2025-06-01,overall,ALL,7,any,gross_margin,75,1956.58
 purchase,2025-07-01,overall,ALL,0,any,gross_margin,76,650.37
 purchase,2025-07-01,overall,ALL,1,any,gross_margin,76,781.81
 purchase,2025-07-01,overall,ALL,2,any,gross_margin,76,971.7
 purchase,2025-07-01,overall,ALL,3,any,gross_margin,76,1323.4
-purchase,2025-07-01,overall,ALL,4,any,gross_margin,76,1530.92
-purchase,2025-07-01,overall,ALL,5,any,gross_margin,76,1683.6
-purchase,2025-07-01,overall,ALL,6,any,gross_margin,76,1936.52
+purchase,2025-07-01,overall,ALL,4,any,gross_margin,76,1505.45
+purchase,2025-07-01,overall,ALL,5,any,gross_margin,76,1658.13
+purchase,2025-07-01,overall,ALL,6,any,gross_margin,76,1911.05
 purchase,2025-08-01,overall,ALL,0,any,gross_margin,76,662.53
 purchase,2025-08-01,overall,ALL,1,any,gross_margin,76,798.61
-purchase,2025-08-01,overall,ALL,2,any,gross_margin,76,963.84
-purchase,2025-08-01,overall,ALL,3,any,gross_margin,76,1471.37
-purchase,2025-08-01,overall,ALL,4,any,gross_margin,76,1639.06
-purchase,2025-08-01,overall,ALL,5,any,gross_margin,76,1729.45
+purchase,2025-08-01,overall,ALL,2,any,gross_margin,76,950.71
+purchase,2025-08-01,overall,ALL,3,any,gross_margin,76,1331.89
+purchase,2025-08-01,overall,ALL,4,any,gross_margin,76,1499.58
+purchase,2025-08-01,overall,ALL,5,any,gross_margin,76,1589.97
 purchase,2025-09-01,overall,ALL,0,any,gross_margin,88,565.8
-purchase,2025-09-01,overall,ALL,1,any,gross_margin,88,682.41
-purchase,2025-09-01,overall,ALL,2,any,gross_margin,88,823.42
-purchase,2025-09-01,overall,ALL,3,any,gross_margin,88,1088.31
-purchase,2025-09-01,overall,ALL,4,any,gross_margin,88,1182.51
-purchase,2025-10-01,overall,ALL,0,any,gross_margin,101,604.75
-purchase,2025-10-01,overall,ALL,1,any,gross_margin,101,694.21
-purchase,2025-10-01,overall,ALL,2,any,gross_margin,101,849.15
-purchase,2025-10-01,overall,ALL,3,any,gross_margin,101,1112.8
-purchase,2025-11-01,overall,ALL,0,any,gross_margin,162,429.09
-purchase,2025-11-01,overall,ALL,1,any,gross_margin,162,513.92
-purchase,2025-11-01,overall,ALL,2,any,gross_margin,162,621.41
-purchase,2025-12-01,overall,ALL,0,any,gross_margin,146,457.25
-purchase,2025-12-01,overall,ALL,1,any,gross_margin,146,564.85
+purchase,2025-09-01,overall,ALL,1,any,gross_margin,88,677.98
+purchase,2025-09-01,overall,ALL,2,any,gross_margin,88,803.45
+purchase,2025-09-01,overall,ALL,3,any,gross_margin,88,1068.33
+purchase,2025-09-01,overall,ALL,4,any,gross_margin,88,1162.53
+purchase,2025-10-01,overall,ALL,0,any,gross_margin,101,578.04
+purchase,2025-10-01,overall,ALL,1,any,gross_margin,101,653.65
+purchase,2025-10-01,overall,ALL,2,any,gross_margin,101,796.61
+purchase,2025-10-01,overall,ALL,3,any,gross_margin,101,1038.0
+purchase,2025-11-01,overall,ALL,0,any,gross_margin,162,427.44
+purchase,2025-11-01,overall,ALL,1,any,gross_margin,162,512.27
+purchase,2025-11-01,overall,ALL,2,any,gross_margin,162,619.76
+purchase,2025-12-01,overall,ALL,0,any,gross_margin,146,456.64
+purchase,2025-12-01,overall,ALL,1,any,gross_margin,146,564.24
 purchase,2026-01-01,overall,ALL,0,any,gross_margin,165,514.41
 purchase,2024-10-01,category,pom hl,0,any,gross_margin,3,549.33
 purchase,2024-10-01,category,pom hl,0,same,gross_margin,3,549.33
@@ -203,10 +203,10 @@ purchase,2024-11-01,category,pom hl,9,any,gross_margin,3,1486.0
 purchase,2024-11-01,category,pom hl,9,same,gross_margin,3,1434.5
 purchase,2024-11-01,category,pom hl,10,any,gross_margin,3,1589.0
 purchase,2024-11-01,category,pom hl,10,same,gross_margin,3,1537.5
-purchase,2024-11-01,category,pom hl,11,any,gross_margin,3,1795.0
-purchase,2024-11-01,category,pom hl,11,same,gross_margin,3,1743.5
-purchase,2024-11-01,category,pom hl,12,any,gross_margin,3,1898.0
-purchase,2024-11-01,category,pom hl,12,same,gross_margin,3,1846.5
+purchase,2024-11-01,category,pom hl,11,any,gross_margin,3,1692.0
+purchase,2024-11-01,category,pom hl,11,same,gross_margin,3,1640.5
+purchase,2024-11-01,category,pom hl,12,any,gross_margin,3,1795.0
+purchase,2024-11-01,category,pom hl,12,same,gross_margin,3,1743.5
 purchase,2024-11-01,category,pom sh,0,any,gross_margin,1,480.0
 purchase,2024-11-01,category,pom sh,0,same,gross_margin,1,480.0
 purchase,2024-11-01,category,pom sh,1,any,gross_margin,1,480.0
@@ -255,10 +255,10 @@ purchase,2024-12-01,category,pom hl,9,any,gross_margin,14,3340.43
 purchase,2024-12-01,category,pom hl,9,same,gross_margin,14,3271.61
 purchase,2024-12-01,category,pom hl,10,any,gross_margin,14,3558.86
 purchase,2024-12-01,category,pom hl,10,same,gross_margin,14,3456.18
-purchase,2024-12-01,category,pom hl,11,any,gross_margin,14,3834.71
-purchase,2024-12-01,category,pom hl,11,same,gross_margin,14,3732.04
-purchase,2024-12-01,category,pom hl,12,any,gross_margin,14,4071.36
-purchase,2024-12-01,category,pom hl,12,same,gross_margin,14,3968.68
+purchase,2024-12-01,category,pom hl,11,any,gross_margin,14,3809.79
+purchase,2024-12-01,category,pom hl,11,same,gross_margin,14,3707.11
+purchase,2024-12-01,category,pom hl,12,any,gross_margin,14,4021.5
+purchase,2024-12-01,category,pom hl,12,same,gross_margin,14,3918.82
 purchase,2024-12-01,category,pom sh,0,any,gross_margin,5,462.0
 purchase,2024-12-01,category,pom sh,0,same,gross_margin,5,462.0
 purchase,2024-12-01,category,pom sh,1,any,gross_margin,5,696.0
@@ -499,14 +499,14 @@ purchase,2025-03-01,category,pom hl,5,any,gross_margin,46,1618.23
 purchase,2025-03-01,category,pom hl,5,same,gross_margin,46,1493.55
 purchase,2025-03-01,category,pom hl,6,any,gross_margin,46,1792.22
 purchase,2025-03-01,category,pom hl,6,same,gross_margin,46,1667.53
-purchase,2025-03-01,category,pom hl,7,any,gross_margin,46,1959.33
-purchase,2025-03-01,category,pom hl,7,same,gross_margin,46,1811.08
-purchase,2025-03-01,category,pom hl,8,any,gross_margin,46,2110.12
-purchase,2025-03-01,category,pom hl,8,same,gross_margin,46,1957.63
-purchase,2025-03-01,category,pom hl,9,any,gross_margin,46,2243.37
-purchase,2025-03-01,category,pom hl,9,same,gross_margin,46,2085.49
-purchase,2025-03-01,category,pom hl,10,any,gross_margin,46,2327.46
-purchase,2025-03-01,category,pom hl,10,same,gross_margin,46,2169.58
+purchase,2025-03-01,category,pom hl,7,any,gross_margin,46,1952.61
+purchase,2025-03-01,category,pom hl,7,same,gross_margin,46,1804.36
+purchase,2025-03-01,category,pom hl,8,any,gross_margin,46,2103.4
+purchase,2025-03-01,category,pom hl,8,same,gross_margin,46,1950.91
+purchase,2025-03-01,category,pom hl,9,any,gross_margin,46,2236.65
+purchase,2025-03-01,category,pom hl,9,same,gross_margin,46,2078.77
+purchase,2025-03-01,category,pom hl,10,any,gross_margin,46,2320.74
+purchase,2025-03-01,category,pom hl,10,same,gross_margin,46,2162.86
 purchase,2025-03-01,category,pom sh,0,any,gross_margin,6,433.85
 purchase,2025-03-01,category,pom sh,0,same,gross_margin,6,398.1
 purchase,2025-03-01,category,pom sh,1,any,gross_margin,6,626.35
@@ -583,12 +583,12 @@ purchase,2025-04-01,category,pom hl,5,any,gross_margin,71,1939.91
 purchase,2025-04-01,category,pom hl,5,same,gross_margin,71,1839.57
 purchase,2025-04-01,category,pom hl,6,any,gross_margin,71,2145.13
 purchase,2025-04-01,category,pom hl,6,same,gross_margin,71,2036.43
-purchase,2025-04-01,category,pom hl,7,any,gross_margin,71,2323.74
-purchase,2025-04-01,category,pom hl,7,same,gross_margin,71,2215.03
-purchase,2025-04-01,category,pom hl,8,any,gross_margin,71,2500.36
-purchase,2025-04-01,category,pom hl,8,same,gross_margin,71,2391.65
-purchase,2025-04-01,category,pom hl,9,any,gross_margin,71,2671.68
-purchase,2025-04-01,category,pom hl,9,same,gross_margin,71,2556.25
+purchase,2025-04-01,category,pom hl,7,any,gross_margin,71,2314.88
+purchase,2025-04-01,category,pom hl,7,same,gross_margin,71,2206.18
+purchase,2025-04-01,category,pom hl,8,any,gross_margin,71,2491.5
+purchase,2025-04-01,category,pom hl,8,same,gross_margin,71,2382.79
+purchase,2025-04-01,category,pom hl,9,any,gross_margin,71,2662.82
+purchase,2025-04-01,category,pom hl,9,same,gross_margin,71,2547.39
 purchase,2025-04-01,category,pom sh,0,any,gross_margin,4,410.0
 purchase,2025-04-01,category,pom sh,0,same,gross_margin,4,410.0
 purchase,2025-04-01,category,pom sh,1,any,gross_margin,4,410.0
@@ -655,14 +655,14 @@ purchase,2025-05-01,category,pom hl,3,any,gross_margin,68,1492.51
 purchase,2025-05-01,category,pom hl,3,same,gross_margin,68,1403.07
 purchase,2025-05-01,category,pom hl,4,any,gross_margin,68,1693.92
 purchase,2025-05-01,category,pom hl,4,same,gross_margin,68,1599.06
-purchase,2025-05-01,category,pom hl,5,any,gross_margin,68,1911.94
-purchase,2025-05-01,category,pom hl,5,same,gross_margin,68,1807.09
-purchase,2025-05-01,category,pom hl,6,any,gross_margin,68,2145.76
-purchase,2025-05-01,category,pom hl,6,same,gross_margin,68,2036.46
-purchase,2025-05-01,category,pom hl,7,any,gross_margin,68,2289.33
-purchase,2025-05-01,category,pom hl,7,same,gross_margin,68,2162.15
-purchase,2025-05-01,category,pom hl,8,any,gross_margin,68,2454.74
-purchase,2025-05-01,category,pom hl,8,same,gross_margin,68,2327.56
+purchase,2025-05-01,category,pom hl,5,any,gross_margin,68,1877.41
+purchase,2025-05-01,category,pom hl,5,same,gross_margin,68,1772.56
+purchase,2025-05-01,category,pom hl,6,any,gross_margin,68,2078.92
+purchase,2025-05-01,category,pom hl,6,same,gross_margin,68,1969.62
+purchase,2025-05-01,category,pom hl,7,any,gross_margin,68,2222.49
+purchase,2025-05-01,category,pom hl,7,same,gross_margin,68,2095.31
+purchase,2025-05-01,category,pom hl,8,any,gross_margin,68,2387.9
+purchase,2025-05-01,category,pom hl,8,same,gross_margin,68,2260.72
 purchase,2025-05-01,category,pom sh,0,any,gross_margin,2,420.0
 purchase,2025-05-01,category,pom sh,0,same,gross_margin,2,420.0
 purchase,2025-05-01,category,pom sh,1,any,gross_margin,2,420.0
@@ -729,22 +729,22 @@ purchase,2025-06-01,category,pom bg,6,any,gross_margin,1,957.0
 purchase,2025-06-01,category,pom bg,6,same,gross_margin,1,957.0
 purchase,2025-06-01,category,pom bg,7,any,gross_margin,1,957.0
 purchase,2025-06-01,category,pom bg,7,same,gross_margin,1,957.0
-purchase,2025-06-01,category,pom hl,0,any,gross_margin,65,628.56
-purchase,2025-06-01,category,pom hl,0,same,gross_margin,65,542.19
-purchase,2025-06-01,category,pom hl,1,any,gross_margin,65,869.32
-purchase,2025-06-01,category,pom hl,1,same,gross_margin,65,779.66
-purchase,2025-06-01,category,pom hl,2,any,gross_margin,65,1154.66
-purchase,2025-06-01,category,pom hl,2,same,gross_margin,65,1062.24
-purchase,2025-06-01,category,pom hl,3,any,gross_margin,65,1434.94
-purchase,2025-06-01,category,pom hl,3,same,gross_margin,65,1342.52
-purchase,2025-06-01,category,pom hl,4,any,gross_margin,65,1618.11
-purchase,2025-06-01,category,pom hl,4,same,gross_margin,65,1523.71
-purchase,2025-06-01,category,pom hl,5,any,gross_margin,65,1872.25
-purchase,2025-06-01,category,pom hl,5,same,gross_margin,65,1772.95
-purchase,2025-06-01,category,pom hl,6,any,gross_margin,65,2144.91
-purchase,2025-06-01,category,pom hl,6,same,gross_margin,65,2038.7
-purchase,2025-06-01,category,pom hl,7,any,gross_margin,65,2288.85
-purchase,2025-06-01,category,pom hl,7,same,gross_margin,65,2174.58
+purchase,2025-06-01,category,pom hl,0,any,gross_margin,65,618.89
+purchase,2025-06-01,category,pom hl,0,same,gross_margin,65,532.52
+purchase,2025-06-01,category,pom hl,1,any,gross_margin,65,859.65
+purchase,2025-06-01,category,pom hl,1,same,gross_margin,65,769.99
+purchase,2025-06-01,category,pom hl,2,any,gross_margin,65,1144.98
+purchase,2025-06-01,category,pom hl,2,same,gross_margin,65,1052.57
+purchase,2025-06-01,category,pom hl,3,any,gross_margin,65,1425.26
+purchase,2025-06-01,category,pom hl,3,same,gross_margin,65,1332.85
+purchase,2025-06-01,category,pom hl,4,any,gross_margin,65,1599.83
+purchase,2025-06-01,category,pom hl,4,same,gross_margin,65,1505.43
+purchase,2025-06-01,category,pom hl,5,any,gross_margin,65,1789.66
+purchase,2025-06-01,category,pom hl,5,same,gross_margin,65,1690.35
+purchase,2025-06-01,category,pom hl,6,any,gross_margin,65,2062.32
+purchase,2025-06-01,category,pom hl,6,same,gross_margin,65,1956.11
+purchase,2025-06-01,category,pom hl,7,any,gross_margin,65,2206.25
+purchase,2025-06-01,category,pom hl,7,same,gross_margin,65,2091.99
 purchase,2025-06-01,category,pom sh,0,any,gross_margin,2,498.5
 purchase,2025-06-01,category,pom sh,0,same,gross_margin,2,296.17
 purchase,2025-06-01,category,pom sh,1,any,gross_margin,2,498.5
@@ -811,12 +811,12 @@ purchase,2025-07-01,category,pom hl,2,any,gross_margin,65,1070.06
 purchase,2025-07-01,category,pom hl,2,same,gross_margin,65,969.93
 purchase,2025-07-01,category,pom hl,3,any,gross_margin,65,1481.27
 purchase,2025-07-01,category,pom hl,3,same,gross_margin,65,1368.64
-purchase,2025-07-01,category,pom hl,4,any,gross_margin,65,1723.92
-purchase,2025-07-01,category,pom hl,4,same,gross_margin,65,1603.84
-purchase,2025-07-01,category,pom hl,5,any,gross_margin,65,1900.51
-purchase,2025-07-01,category,pom hl,5,same,gross_margin,65,1760.42
-purchase,2025-07-01,category,pom hl,6,any,gross_margin,65,2196.23
-purchase,2025-07-01,category,pom hl,6,same,gross_margin,65,2053.53
+purchase,2025-07-01,category,pom hl,4,any,gross_margin,65,1694.13
+purchase,2025-07-01,category,pom hl,4,same,gross_margin,65,1574.05
+purchase,2025-07-01,category,pom hl,5,any,gross_margin,65,1870.73
+purchase,2025-07-01,category,pom hl,5,same,gross_margin,65,1730.63
+purchase,2025-07-01,category,pom hl,6,any,gross_margin,65,2166.45
+purchase,2025-07-01,category,pom hl,6,same,gross_margin,65,2023.75
 purchase,2025-07-01,category,pom sh,0,any,gross_margin,4,641.75
 purchase,2025-07-01,category,pom sh,0,same,gross_margin,4,457.12
 purchase,2025-07-01,category,pom sh,1,any,gross_margin,4,641.75
@@ -871,14 +871,14 @@ purchase,2025-08-01,category,pom hl,0,any,gross_margin,61,757.12
 purchase,2025-08-01,category,pom hl,0,same,gross_margin,61,673.7
 purchase,2025-08-01,category,pom hl,1,any,gross_margin,61,922.08
 purchase,2025-08-01,category,pom hl,1,same,gross_margin,61,833.52
-purchase,2025-08-01,category,pom hl,2,any,gross_margin,61,1122.71
-purchase,2025-08-01,category,pom hl,2,same,gross_margin,61,1028.91
-purchase,2025-08-01,category,pom hl,3,any,gross_margin,61,1755.05
-purchase,2025-08-01,category,pom hl,3,same,gross_margin,61,1641.1
-purchase,2025-08-01,category,pom hl,4,any,gross_margin,61,1963.97
-purchase,2025-08-01,category,pom hl,4,same,gross_margin,61,1837.24
-purchase,2025-08-01,category,pom hl,5,any,gross_margin,61,2076.59
-purchase,2025-08-01,category,pom hl,5,same,gross_margin,61,1942.16
+purchase,2025-08-01,category,pom hl,2,any,gross_margin,61,1106.35
+purchase,2025-08-01,category,pom hl,2,same,gross_margin,61,1012.55
+purchase,2025-08-01,category,pom hl,3,any,gross_margin,61,1581.27
+purchase,2025-08-01,category,pom hl,3,same,gross_margin,61,1470.4
+purchase,2025-08-01,category,pom hl,4,any,gross_margin,61,1790.2
+purchase,2025-08-01,category,pom hl,4,same,gross_margin,61,1666.55
+purchase,2025-08-01,category,pom hl,5,any,gross_margin,61,1902.82
+purchase,2025-08-01,category,pom hl,5,same,gross_margin,61,1771.47
 purchase,2025-08-01,category,pom sh,0,any,gross_margin,5,390.0
 purchase,2025-08-01,category,pom sh,0,same,gross_margin,5,390.0
 purchase,2025-08-01,category,pom sh,1,any,gross_margin,5,390.0
@@ -933,14 +933,14 @@ purchase,2025-09-01,category,pom bg,4,any,gross_margin,2,319.0
 purchase,2025-09-01,category,pom bg,4,same,gross_margin,2,319.0
 purchase,2025-09-01,category,pom hl,0,any,gross_margin,65,639.74
 purchase,2025-09-01,category,pom hl,0,same,gross_margin,65,580.38
-purchase,2025-09-01,category,pom hl,1,any,gross_margin,65,795.79
-purchase,2025-09-01,category,pom hl,1,same,gross_margin,65,736.43
-purchase,2025-09-01,category,pom hl,2,any,gross_margin,65,982.88
-purchase,2025-09-01,category,pom hl,2,same,gross_margin,65,914.25
-purchase,2025-09-01,category,pom hl,3,any,gross_margin,65,1339.57
-purchase,2025-09-01,category,pom hl,3,same,gross_margin,65,1260.74
-purchase,2025-09-01,category,pom hl,4,any,gross_margin,65,1465.18
-purchase,2025-09-01,category,pom hl,4,same,gross_margin,65,1372.77
+purchase,2025-09-01,category,pom hl,1,any,gross_margin,65,789.79
+purchase,2025-09-01,category,pom hl,1,same,gross_margin,65,730.43
+purchase,2025-09-01,category,pom hl,2,any,gross_margin,65,955.83
+purchase,2025-09-01,category,pom hl,2,same,gross_margin,65,887.2
+purchase,2025-09-01,category,pom hl,3,any,gross_margin,65,1312.52
+purchase,2025-09-01,category,pom hl,3,same,gross_margin,65,1233.7
+purchase,2025-09-01,category,pom hl,4,any,gross_margin,65,1438.14
+purchase,2025-09-01,category,pom hl,4,same,gross_margin,65,1345.72
 purchase,2025-09-01,category,pom sh,0,any,gross_margin,12,502.0
 purchase,2025-09-01,category,pom sh,0,same,gross_margin,12,472.08
 purchase,2025-09-01,category,pom sh,1,any,gross_margin,12,502.0
@@ -951,22 +951,22 @@ purchase,2025-09-01,category,pom sh,3,any,gross_margin,12,512.75
 purchase,2025-09-01,category,pom sh,3,same,gross_margin,12,472.08
 purchase,2025-09-01,category,pom sh,4,any,gross_margin,12,512.75
 purchase,2025-09-01,category,pom sh,4,same,gross_margin,12,472.08
-purchase,2025-10-01,category,otc hl,0,any,gross_margin,2,478.6
-purchase,2025-10-01,category,otc hl,0,same,gross_margin,2,239.3
-purchase,2025-10-01,category,otc hl,1,any,gross_margin,2,478.6
-purchase,2025-10-01,category,otc hl,1,same,gross_margin,2,239.3
-purchase,2025-10-01,category,otc hl,2,any,gross_margin,2,478.6
-purchase,2025-10-01,category,otc hl,2,same,gross_margin,2,239.3
-purchase,2025-10-01,category,otc hl,3,any,gross_margin,2,478.6
-purchase,2025-10-01,category,otc hl,3,same,gross_margin,2,239.3
-purchase,2025-10-01,category,otc sh,0,any,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,0,same,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,1,any,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,1,same,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,2,any,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,2,same,gross_margin,16,135.69
-purchase,2025-10-01,category,otc sh,3,any,gross_margin,16,144.15
-purchase,2025-10-01,category,otc sh,3,same,gross_margin,16,144.15
+purchase,2025-10-01,category,otc hl,0,any,gross_margin,2,344.6
+purchase,2025-10-01,category,otc hl,0,same,gross_margin,2,172.3
+purchase,2025-10-01,category,otc hl,1,any,gross_margin,2,344.6
+purchase,2025-10-01,category,otc hl,1,same,gross_margin,2,172.3
+purchase,2025-10-01,category,otc hl,2,any,gross_margin,2,344.6
+purchase,2025-10-01,category,otc hl,2,same,gross_margin,2,172.3
+purchase,2025-10-01,category,otc hl,3,any,gross_margin,2,344.6
+purchase,2025-10-01,category,otc hl,3,same,gross_margin,2,172.3
+purchase,2025-10-01,category,otc sh,0,any,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,0,same,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,1,any,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,1,same,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,2,any,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,2,same,gross_margin,16,130.12
+purchase,2025-10-01,category,otc sh,3,any,gross_margin,16,138.59
+purchase,2025-10-01,category,otc sh,3,same,gross_margin,16,138.59
 purchase,2025-10-01,category,pom bg,0,any,gross_margin,3,295.75
 purchase,2025-10-01,category,pom bg,0,same,gross_margin,3,295.75
 purchase,2025-10-01,category,pom bg,1,any,gross_margin,3,295.75
@@ -975,34 +975,34 @@ purchase,2025-10-01,category,pom bg,2,any,gross_margin,3,295.75
 purchase,2025-10-01,category,pom bg,2,same,gross_margin,3,295.75
 purchase,2025-10-01,category,pom bg,3,any,gross_margin,3,295.75
 purchase,2025-10-01,category,pom bg,3,same,gross_margin,3,295.75
-purchase,2025-10-01,category,pom hl,0,any,gross_margin,76,724.35
-purchase,2025-10-01,category,pom hl,0,same,gross_margin,76,700.06
-purchase,2025-10-01,category,pom hl,1,any,gross_margin,76,843.23
-purchase,2025-10-01,category,pom hl,1,same,gross_margin,76,818.94
-purchase,2025-10-01,category,pom hl,2,any,gross_margin,76,1039.33
-purchase,2025-10-01,category,pom hl,2,same,gross_margin,76,1011.45
-purchase,2025-10-01,category,pom hl,3,any,gross_margin,76,1387.92
-purchase,2025-10-01,category,pom hl,3,same,gross_margin,76,1333.0
-purchase,2025-10-01,category,pom sh,0,any,gross_margin,4,503.5
-purchase,2025-10-01,category,pom sh,0,same,gross_margin,4,503.5
-purchase,2025-10-01,category,pom sh,1,any,gross_margin,4,503.5
-purchase,2025-10-01,category,pom sh,1,same,gross_margin,4,503.5
-purchase,2025-10-01,category,pom sh,2,any,gross_margin,4,689.88
-purchase,2025-10-01,category,pom sh,2,same,gross_margin,4,689.88
-purchase,2025-10-01,category,pom sh,3,any,gross_margin,4,689.88
-purchase,2025-10-01,category,pom sh,3,same,gross_margin,4,689.88
+purchase,2025-10-01,category,pom hl,0,any,gross_margin,76,697.75
+purchase,2025-10-01,category,pom hl,0,same,gross_margin,76,673.46
+purchase,2025-10-01,category,pom hl,1,any,gross_margin,76,798.24
+purchase,2025-10-01,category,pom hl,1,same,gross_margin,76,773.95
+purchase,2025-10-01,category,pom hl,2,any,gross_margin,76,978.42
+purchase,2025-10-01,category,pom hl,2,same,gross_margin,76,950.54
+purchase,2025-10-01,category,pom hl,3,any,gross_margin,76,1297.43
+purchase,2025-10-01,category,pom hl,3,same,gross_margin,76,1242.51
+purchase,2025-10-01,category,pom sh,0,any,gross_margin,4,423.5
+purchase,2025-10-01,category,pom sh,0,same,gross_margin,4,423.5
+purchase,2025-10-01,category,pom sh,1,any,gross_margin,4,423.5
+purchase,2025-10-01,category,pom sh,1,same,gross_margin,4,423.5
+purchase,2025-10-01,category,pom sh,2,any,gross_margin,4,609.88
+purchase,2025-10-01,category,pom sh,2,same,gross_margin,4,609.88
+purchase,2025-10-01,category,pom sh,3,any,gross_margin,4,609.88
+purchase,2025-10-01,category,pom sh,3,same,gross_margin,4,609.88
 purchase,2025-11-01,category,otc hl,0,any,gross_margin,7,304.56
 purchase,2025-11-01,category,otc hl,0,same,gross_margin,7,153.59
 purchase,2025-11-01,category,otc hl,1,any,gross_margin,7,304.56
 purchase,2025-11-01,category,otc hl,1,same,gross_margin,7,153.59
 purchase,2025-11-01,category,otc hl,2,any,gross_margin,7,368.91
 purchase,2025-11-01,category,otc hl,2,same,gross_margin,7,185.76
-purchase,2025-11-01,category,otc sh,0,any,gross_margin,65,125.6
-purchase,2025-11-01,category,otc sh,0,same,gross_margin,65,124.0
-purchase,2025-11-01,category,otc sh,1,any,gross_margin,65,129.07
-purchase,2025-11-01,category,otc sh,1,same,gross_margin,65,125.44
-purchase,2025-11-01,category,otc sh,2,any,gross_margin,65,131.62
-purchase,2025-11-01,category,otc sh,2,same,gross_margin,65,126.71
+purchase,2025-11-01,category,otc sh,0,any,gross_margin,65,121.49
+purchase,2025-11-01,category,otc sh,0,same,gross_margin,65,119.89
+purchase,2025-11-01,category,otc sh,1,any,gross_margin,65,124.96
+purchase,2025-11-01,category,otc sh,1,same,gross_margin,65,121.33
+purchase,2025-11-01,category,otc sh,2,any,gross_margin,65,127.51
+purchase,2025-11-01,category,otc sh,2,same,gross_margin,65,122.61
 purchase,2025-11-01,category,pom bg,0,any,gross_margin,3,352.0
 purchase,2025-11-01,category,pom bg,0,same,gross_margin,3,282.33
 purchase,2025-11-01,category,pom bg,1,any,gross_margin,3,604.63
@@ -1025,10 +1025,10 @@ purchase,2025-12-01,category,otc hl,0,any,gross_margin,1,691.75
 purchase,2025-12-01,category,otc hl,0,same,gross_margin,1,691.75
 purchase,2025-12-01,category,otc hl,1,any,gross_margin,1,1141.26
 purchase,2025-12-01,category,otc hl,1,same,gross_margin,1,1058.22
-purchase,2025-12-01,category,otc sh,0,any,gross_margin,54,131.37
-purchase,2025-12-01,category,otc sh,0,same,gross_margin,54,129.54
-purchase,2025-12-01,category,otc sh,1,any,gross_margin,54,131.37
-purchase,2025-12-01,category,otc sh,1,same,gross_margin,54,129.54
+purchase,2025-12-01,category,otc sh,0,any,gross_margin,54,129.72
+purchase,2025-12-01,category,otc sh,0,same,gross_margin,54,127.89
+purchase,2025-12-01,category,otc sh,1,any,gross_margin,54,129.72
+purchase,2025-12-01,category,otc sh,1,same,gross_margin,54,127.89
 purchase,2025-12-01,category,pom bg,0,any,gross_margin,3,310.54
 purchase,2025-12-01,category,pom bg,0,same,gross_margin,3,310.54
 purchase,2025-12-01,category,pom bg,1,any,gross_margin,3,310.54

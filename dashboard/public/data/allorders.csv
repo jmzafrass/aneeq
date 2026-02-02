@@ -545,7 +545,6 @@ C9DA25A2D1,Sub Renewal,Delivered,05/06/2025,349,POM HL,Oral Mix,Cameron Fernande
 2A6F82D7B4,New Sub,Delivered,06/06/2025,390,POM HL,Essential boost,Harshad Suresh,UAE,,Stopped,3664
 9951,New Sub,Delivered,06/06/2025,629,POM HL,Power Regrowth,Bobby Kusnandar,UAE,,Ongoing,3682
 911D1DB365,Sub Renewal,Delivered,06/06/2025,837,POM HL,Oral Mix,Lorenz Adrianne Acosta,UAE,3 months,Ongoing,2858
-7635FE5B1D,New Sub,Delivered,06/06/2025,629,POM HL,Power Regrowth,Bobby Kusnandar,UAE,,Ongoing,3682
 B71C03733A,Sub Renewal,Delivered,07/06/2025,299,POM HL,Oral Mix,Smail Bahieddine,UAE,,Ongoing,280
 E2690FE0D5,Sub Renewal,Delivered,07/06/2025,390,POM HL,Essential boost,Nasir Alowais,UAE,,Ongoing,2852
 29CA616FA0,New Sub,Delivered,07/06/2025,1860.3,"POM HL, OTC SK, OTC HL","Ultimate Revival, Advanced Routine, Regrowth pack",Mohamed Ballaith,UAE,3 months,Ongoing,3161
@@ -1632,25 +1631,15 @@ B751424596,Come back,Delivered,16/10/2025,349,POM HL,Oral Mix,Abdulla AlOmaira,U
 12317,Sub Renewal,Delivered,16/10/2025,390,POM HL,Essential boost,Mohammed Al Araimi,UAE,1,,4695
 12318,Sub Renewal,Delivered,16/10/2025,390,POM HL,Essential boost,Ali Almarzooqi,UAE,1,,4693
 12319,Sub Renewal,Delivered,17/10/2025,390,POM HL,Essential boost,Rohan Joseph,UAE,1,,4737
-2E747AA761,Sub Renewal,Delivered,17/10/2025,309,POM HL,Oral Mix,Wasim Akram,UAE,,,2729
+2E747AA761,Sub Renewal,Delivered,17/10/2025,309,POM HL,Oral Mix,Wasim Akram,UAE,1,,2729
 7B10FD5AD8,Sub Renewal,Delivered,17/10/2025,749,POM HL,Oral Mix,Hamad Alhammadi,UAE,3 months,,3499
 A00AD2458B,Sub Renewal,Delivered,17/10/2025,559,POM HL,Oral Mix,Abdulrhman Menbet,UAE,2 months,,3740
 12320,New Sub,Delivered,17/10/2025,749,POM HL,Oral Mix,Turan Selvi,UAE,3 months,,4828
-62D1E5FAB4,Sub Renewal,Delivered,17/10/2025,309,POM HL,Oral Mix,Walid Elmusrati,UAE,,,329
+62D1E5FAB4,Sub Renewal,Delivered,17/10/2025,309,POM HL,Oral Mix,Walid Elmusrati,UAE,1,,329
 A3CEB035E7,Sub Renewal,Delivered,17/10/2025,1599,POM HL,Ultimate Revival,Hamza Mustafa,UAE,3 months,,3370
-12324,New Sub,Delivered,17/10/2025,339,POM HL,Oral Minoxidil,Sultan Al Afeefi,UAE,,,4551
-AEF68A7DE0,Sub Renewal,Delivered,17/10/2025,593.1,POM HL,Ultimate Revival,Abdulla Salami,UAE,,,2974
+12324,New Sub,Delivered,17/10/2025,339,POM HL,Oral Minoxidil,Sultan Al Afeefi,UAE,1,,4551
+AEF68A7DE0,Sub Renewal,Delivered,17/10/2025,593.1,POM HL,Ultimate Revival,Abdulla Salami,UAE,1,,2974
 12326,One time,Delivered,17/10/2025,320,POM SH,Vital Recharge,Bassel Sawy,UAE,,,4811
-PAY-4D0217287C,New Sub,Delivered,17/10/2025,390,POM HL,Essential Boost,Rohan Joseph,UAE,1,,4737
-PAY-2E747AA761,Sub Renewal,Delivered,17/10/2025,309,POM HL,Essential Boost,Wasim Akram,UAE,1,,2729
-PAY-7B10FD5AD8,Sub Renewal,Delivered,17/10/2025,749,POM HL,Oral Finasteride + Minoxidil,Hamad Alhammadi,UAE,3,,3499
-PAY-A00AD2458B,Sub Renewal,Delivered,17/10/2025,559,POM HL,Oral Finasteride + Minoxidil,Abdulrhman Menbet,UAE,2,,3740
-PAY-58E7B87136,New Sub,Delivered,17/10/2025,749,POM HL,Oral Finasteride + Minoxidil,Turan Selvi,UAE,3 months,,4828
-PAY-62D1E5FAB4,Sub Renewal,Delivered,17/10/2025,309,POM HL,Essential Boost,Walid Elmusrati,UAE,1,,329
-PAY-A3CEB035E7,Sub Renewal,Delivered,17/10/2025,"1,599.00",POM HL,Ultimate Revival,Hamza Mustafa,UAE,3,,3370
-PAY-493F60F630,New Sub,Delivered,17/10/2025,339,POM HL,Oral Minoxidil,Sultan Al Afeefi,UAE,1,,4551
-PAY-AEF68A7DE0,New Sub,Delivered,17/10/2025,593.1,POM HL,Ultimate Revival,Abdulla Salami,UAE,1,,2974
-PAY-03874540CB,One Time,Delivered,17/10/2025,320,POM SH,Vital Recharge,Bassel Dubai,UAE,,,4811
 PAY-CE7CBC5CB0,New Sub,Delivered,17/10/2025,849,POM HL,Essential Boost,Ng Jun Xuan,UAE,3 months,,4830
 PAY-1E9B3C25E2,Sub Renewal,Delivered,17/10/2025,659,POM HL,Oral Finasteride + Minoxidil,Matthew Pugh,UAE,1,,3788
 PAY-A5B92E0AF2,New Sub,Delivered,17/10/2025,390,POM HL,Essential Boost,Denis Thurich,UAE,1,,4831
@@ -1782,19 +1771,15 @@ PAY-760259C142,New Sub,Delivered,30/10/2025,849,POM HL,Essential Boost,Ahmed Al 
 PAY-4EAFC7E18B,One Time,Delivered,30/10/2025,129,OTC SH,Delay Spray,David Jackson,UAE,,,4961
 PAY-0D3AB655E3,Sub Renewal,Delivered,31/10/2025,659,POM HL,Ultimate Revival,mohamed alowais,UAE,1,,3704
 PAY-3FDE19543E,Sub Renewal,Delivered,31/10/2025,749,POM HL,Oral Finasteride + Minoxidil,Abdulla Jumaa,UAE,3,,4138
-PAY-846CF4E276,New Sub,Delivered,31/10/2025,679,POM HL,Oral Minoxidil,Hares Shirbaz,UAE,3 months,,4967
-PAY - CASH,One Time,Delivered,31/10/2025,89,OTC SH,Delay Spray,Asif Iqbal,UAE,,,925
+12569,New Sub,Delivered,31/10/2025,679,POM HL,Oral Minoxidil,Hares Shirbaz,Dubai,3 months,,4967
+12573,One time,Delivered,31/10/2025,89,OTC SH,Delay Spray,Asif Iqbal,Ras Al Khaima,,,925
 PAY-F7A9718098,Sub Renewal,Delivered,31/10/2025,390,POM HL,Essential Boost,Harshad Suresh,UAE,1,,3664
 PAY-89CC18BDF8,Sub Renewal,Delivered,31/10/2025,679,POM HL,Oral Minoxidil,Walid Al Haddad,UAE,1,,3385
-PAY-7E5A90CE24,One Time,Delivered,31/10/2025,268,"OTC HL, OTC SH","Regrowth Hair Pack, Delay Spray",Osama Afaneh,UAE,,,4971
+12571,One time,Delivered,31/10/2025,268,"OTC HL, OTC SH","Regrowth Hair Pack, Delay Spray",Osama Afaneh,Dubai,,,4971
 PAY-343B1CD137,Sub Renewal,Delivered,31/10/2025,339,POM HL,Oral Minoxidil,Maryam Saeed,UAE,1,,4154
 12577,One time,Delivered,31/10/2025,129,OTC SH,Delay Spray,Mohamad Halik,Sharjah,,,4973
-12569,New Sub,Delivered,31/10/2025,679,POM HL,Oral Minoxidil,Hares Shirbaz,Dubai,,,4967
-12573,One time,Delivered,31/10/2025,89,OTC SH,Delay Spray,Asif Iqbal,Ras Al Khaima,,,925
 12579,New Sub,Delivered,31/10/2025,349,POM HL,Oral Finasteride + Minoxidil,Murad Ismail,abu dhabi,,,4974
 12576,Sub Renewal,Delivered,31/10/2025,659,POM HL,Ultimate Revival,Ahmad AlAttar,Dubai,1,,4121
-12571,One time,Delivered,31/10/2025,268,"OTC HL, OTC SH","Regrowth Hair Pack, Delay Spray",Osama Afaneh,Dubai,,,4971
-PAY-814A9CB97F,Sub Renewal,Delivered,31/10/2025,659,POM HL,Oral Finasteride + Minoxidil,Ahmad AlAttar,,1,,4121
 12604,New Sub,Delivered,01/11/2025,629,POM HL,Essential Boost,Imran Ali,Dubai,,,4683
 12588,Sub Renewal,Delivered,01/11/2025,719,POM HL,Essential Boost,Ali Elchaabi,Dubai,1,,4176
 12584,Sub Renewal,Delivered,01/11/2025,659,POM HL,Ultimate Revival,Thiago Oliveira,Dubai,1,,3481
@@ -1807,7 +1792,6 @@ PAY-117A64B82A,Sub Renewal,Delivered,01/11/2025,349,POM HL,Essential Boost,Maxwe
 PAY-3DF6626A2F,Sub Renewal,Delivered,01/11/2025,390,POM HL,Essential Boost,Naveed Shabbir,,1,,3340
 PAY-560639BE54,Sub Renewal,Delivered,01/11/2025,1599,POM HL,Ultimate Revival,Ahmad AlGergawi,,3 months,,4270
 PAY-345E54199E,Sub Renewal,Delivered,01/11/2025,349,POM HL,Essential Boost,Yousuf Khoori,,1,,4089
-PAY-D6B0A62869,Sub Renewal,Delivered,01/11/2025,659,POM HL,Oral Finasteride + Minoxidil,Thiago Oliveira,,1,,3481
 PAY-62C37715E7,New Sub,Delivered,01/11/2025,355,POM HL,Essential Boost,Michael Myers,,1,,4969
 PAY-6069BF2281,New Sub,Delivered,01/11/2025,319,POM BG,Beard growth serum,Tolu Babalola,,1,,4985
 12609,One time,Delivered,02/11/2025,89,OTC SH,Delay Spray,Usman Masood,Dubai,,,4858
@@ -1829,8 +1813,6 @@ PAY-B605E4AB7A,Sub Renewal,Delivered,02/11/2025,349,POM HL,Essential Boost,Saad 
 PAY-8E18D8854A,Sub Renewal,Delivered,03/11/2025,390,POM HL,Essential Boost,Sahil Lall,,1,,4462
 PAY-C9FAF5A2B8,One Time,Delivered,03/11/2025,129,OTC SH,Delay Spray,Muhammad Azeem,,,,5009
 PAY-99175DEE3B,Sub Renewal,Delivered,03/11/2025,349,POM HL,Essential Boost,Daniel Thomaz,,1,,4647
-PAY-3464F99A33,Sub Renewal,Delivered,03/11/2025,339,POM HL,Oral Finasteride + Minoxidil,Majid Al Amoudi,,1,,4205
-PAY-7416EFE229,Sub Renewal,Delivered,03/11/2025,551.65,POM HL,Ultimate Revival,Haitham AlHashimi,,1,,3382
 PAY-DB796DA74D,New Sub,Delivered,03/11/2025,559,POM HL,Oral Finasteride + Minoxidil,John Dennehy,,2 months,,5013
 PAY-88FC386B14,New Sub,Delivered,03/11/2025,337.5,POM HL,Essential Boost,Bulat Mirgarifanov,,1,,5006
 12662,Sub Renewal,Delivered,04/11/2025,659,POM HL,Ultimate Revival,Ahmed Yousef,Ajman - musherief,1,,3967
@@ -1841,8 +1823,6 @@ PAY-88FC386B14,New Sub,Delivered,03/11/2025,337.5,POM HL,Essential Boost,Bulat M
 12658,One time,Delivered,04/11/2025,629,POM SH,Vital Recharge,Mihai Serb,Abu Dhabi,,,5027
 PAY-7CD65ED47F,Sub Renewal,Delivered,04/11/2025,390,POM HL,Essential Boost,Hamzah Alraeesi,,1,,3089
 PAY-BE7479F128,Sub Renewal,Delivered,04/11/2025,309,POM HL,Essential Boost,wael najjar,,1,,5418
-PAY-1421610BFE,Sub Renewal,Delivered,04/11/2025,659,POM HL,Oral Finasteride + Minoxidil,Ahmed Yousef,,1,,3967
-PAY-EA243BFE74,Sub Renewal,Delivered,04/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Abdulla Alghaithi,,1,,4109
 PAY-81FB223B34,Sub Renewal,Delivered,04/11/2025,549,POM HL,Oral Finasteride + Minoxidil,Mohan Mathew,,2 months,,4593
 PAY-905FE4AFB6,Sub Renewal,Delivered,04/11/2025,629,POM HL,Power Regrowth,naser alameri,,1,,4614
 PAY-EB57166311,Sub Renewal,Delivered,04/11/2025,319,POM HL,Oral Minoxidil,Hossam Charif,,1,,3754
@@ -1854,11 +1834,9 @@ PAY-CD4BE58EEA,Sub Renewal,Delivered,04/11/2025,539,POM HL,Oral Minoxidil,Theyab
 12669,One time,Delivered,05/11/2025,129,OTC SH,Delay Spray,Sam Ballard,Yas Island,,,5037
 12704,Sub Renewal,Delivered,05/11/2025,629,"POM HL, POM HL","Oral Minoxidil, Essential Boost",Farid Sukhon,Dubai,1,,3205
 12701,New Sub,Delivered,05/11/2025,891.45,POM HL,Essential Boost,Elias Abi khalil,Dubai al satwa,,,5045
-PAY-4F54181BF7,Sub Renewal,Delivered,05/11/2025,629,POM HL,Oral Finasteride + Minoxidil,Farid Sukhon,,1,,3205
 PAY-1466F5A7FF,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Rashed Al Mansoori,,1,,1305
 PAY-A3885EA40F,Sub Renewal,Delivered,05/11/2025,299,POM HL,Oral Finasteride + Minoxidil,Smail Bahieddine,,1,,280
 PAY-C2BB4FFC60,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Cameron Fernandez,,1,,3020
-PAY-2E7138DDEE,Sub Renewal,Delivered,05/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Sharif Haffar,,3 months,,4215
 PAY-436939BF2A,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Ahmed Seif,,1,,3886
 PAY-D0E47E72B0,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Zayed Almesabi,,1,,3222
 PAY-E51E8FCCDA,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Ahmad Mohammed,,1,,3375
@@ -1867,21 +1845,17 @@ PAY-E51E8FCCDA,Sub Renewal,Delivered,05/11/2025,349,POM HL,Essential Boost,Ahmad
 12709,New Sub,Delivered,06/11/2025,764.1,POM HL,Essential Boost,Hunain Bin Riaz,Dubai,,,5057
 12714,New Sub,Delivered,06/11/2025,320,POM HL,Essential Boost,Pol Mas,Dubai,,,5046
 PAY-D408EB6DCA,Sub Renewal,Delivered,06/11/2025,349,POM HL,Essential Boost,Nouhaila,,1,,1228
-PAY-297835E70D,Sub Renewal,Delivered,06/11/2025,629,POM HL,Oral Finasteride + Minoxidil,Jamil AlAtrash,,2 months,,4549
-PAY-4CB5E021EE,Sub Renewal,Delivered,06/11/2025,629,POM HL,Oral Finasteride + Minoxidil,Rashed Al Marshoodi,,1,,4239
 PAY-9579DAD569,Sub Renewal,Delivered,06/11/2025,349,POM HL,Essential Boost,Cameron Fernandez,,1,,3020
 12733,Sub Renewal,Delivered,07/11/2025,355,POM HL,Essential Boost,Youssef Mussa,Sharjah,1,,3688
 12726,New Sub,Delivered,07/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Yousef Muti,Dubai,,,5070
 12724,One time,Delivered,07/11/2025,129,OTC SH,Delay Spray,Prince Sam,Sharjah,,,5068
 12719,Sub Renewal,Delivered,07/11/2025,1099,POM HL,Power Regrowth,Mahdi El Sousi,Dubai,1,,3217
 12728,One time,Delivered,07/11/2025,129,OTC SH,Delay Spray,Richard Jacob,Abu Dhabi,,,woo_richardjacob@me.com
-PAY-29F50C86FB,Sub Renewal,Delivered,07/11/2025,1099,POM HL,Oral Finasteride + Minoxidil,Salem Almsafri,,2 months,,3217
 PAY-DB826879CA,Sub Renewal,Delivered,07/11/2025,1499,POM HL,Power Regrowth,Hussain Altajir,,3 months,,3294
 PAY-03DC6F508F,Sub Renewal,Delivered,07/11/2025,390,POM HL,Essential Boost,محمود النوفلي,,1,,3945
 PAY-BC9C584A98,Sub Renewal,Delivered,07/11/2025,1499,POM HL,Power Regrowth,Bobby Kusnandar,,3 months,,3682
 PAY-9A38A19F7D,Sub Renewal,Delivered,07/11/2025,339,POM HL,Oral Minoxidil,Ashok Kumar,,1,,3397
 PAY-1B410440B8,Sub Renewal,Delivered,07/11/2025,349,POM HL,Essential Boost,Kamel Alayash,,1,,3243
-PAY-76E4492894,Sub Renewal,Delivered,07/11/2025,355,POM HL,Essential Boost,Youssef Mussa,,1,,3688
 12744,New Sub,Delivered,08/11/2025,849,POM HL,Essential Boost,Yousef ElShamashergy,Dubai,,,5081
 12749,New Sub,Delivered,08/11/2025,718,"OTC SH, POM HL","Delay Spray, Power Regrowth",Dennise Dy,Al Qasimia,,,5084
 12738,One time,Delivered,08/11/2025,89,OTC SH,Delay Spray,Mohd Amir,International city,,,5077
@@ -1899,9 +1873,6 @@ PAY-7F323C536F,Sub Renewal,Delivered,08/11/2025,319,POM HL,Essential Boost,Hamad
 PAY-77819F1E05,Sub Renewal,Delivered,09/11/2025,299,POM HL,Oral Finasteride + Minoxidil,Mohamed AlMemari,,1,,2950
 PAY-714C7C991F,Sub Renewal,Delivered,09/11/2025,390,POM HL,Essential Boost,ziad shehade,,1,,3605
 PAY-E3AEE23E70,Sub Renewal,Delivered,09/11/2025,349,POM HL,Essential Boost,Amro Yahia,,1,,4761
-PAY-0ECF2C2685,Sub Renewal,Delivered,09/11/2025,1599,POM HL,Oral Finasteride + Minoxidil,Ravindra Rao,,3 months,,3150
-PAY-1877F8B9E6,Sub Renewal,Delivered,09/11/2025,636.65,POM HL,Oral Finasteride + Minoxidil,Leon Colaco,,3 months,,4261
-PAY-8CC64CE4FC,Sub Renewal,Delivered,09/11/2025,1599,POM HL,Oral Finasteride + Minoxidil,Ahmad AlGergawi,,3 months,,4270
 PAY-E8B6CAE0D3,New Sub,Delivered,09/11/2025,618,POM HL,Oral Finasteride + Minoxidil,Rashed Almheiri,,2 months,,5086
 12805,One time,Delivered,10/11/2025,75.65,OTC SH,Delay Spray,Hafiz Umair Ahmad,Abu Dhabi,,,5115
 12776,One time,Delivered,10/11/2025,268,"OTC HL, OTC SH","Regrowth Hair Pack, Delay Spray",Khalifa Almuhairi,Dubai,,,5100
@@ -1915,12 +1886,10 @@ PAY-E8B6CAE0D3,New Sub,Delivered,09/11/2025,618,POM HL,Oral Finasteride + Minoxi
 12797,One time,Delivered,10/11/2025,89,OTC SH,Delay Spray,Firas Kurdi,Abu dhabi,,,5109
 12779,One time,Delivered,10/11/2025,188,"OTC HL, OTC HL","Revive Hair Conditioner, Restore Shampoo",Ahmed Al Sadi,Dubai,,,3912
 12774,New Sub,Delivered,10/11/2025,319,POM BG,Beard growth serum,Sultan Almannaee,Sharjah,,,3749
-PAY-09E29C87A8,One Time,Delivered,10/11/2025,188,"OTC HL, OTC HL","Revive Hair Conditioner, Restore Shampoo",Ahmed Al Sadi,,,,3912
 PAY-53F9D18AB3,Sub Renewal,Delivered,10/11/2025,659,POM HL,Ultimate Revival,Joseph Davey,,1,,4663
 PAY-EE2C96B82C,Sub Renewal,Delivered,10/11/2025,509,POM HL,Oral Minoxidil,Abdalla Abou shaheen,,2 months,,3961
 PAY-9D69689A2C,New Sub,Delivered,10/11/2025,1599,"POM HL, POM HL","Topical Minoxidil + Finasteride Foam, Oral Minoxidil",Kunal Pania,,3 months,,5104
 PAY-4D66566C46,Sub Renewal,Delivered,10/11/2025,319,POM HL,Oral Minoxidil,Neil Camenzuli,,1,,3914
-PAY-FEE9E96E75,Sub Renewal,Delivered,10/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Waleed Shehadeh,,3 months,,4279
 PAY-7D9F26EFAC,Sub Renewal,Delivered,10/11/2025,849,POM HL,Essential Boost,Andrew Kadamani,,3 months,,4702
 PAY-A67713381B,Sub Renewal,Delivered,10/11/2025,349,POM HL,Essential Boost,mohamed ahmed,,1,,3230
 12825,Sub Renewal,Delivered,11/11/2025,629,POM HL,Power Regrowth,Mohsin Bushehri,"West Yas, Abu Dhabi",1,,4003
@@ -1937,13 +1906,10 @@ PAY-8D41C2AC23,Sub Renewal,Delivered,11/11/2025,719,POM HL,Oral Minoxidil,Rashed
 PAY-C06CF116B3,Sub Renewal,Delivered,11/11/2025,390,POM HL,Essential Boost,Eisa Bin Hafez,,1,,4755
 PAY-0B03E758C6,Sub Renewal,Delivered,11/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Ahmad houmani,,3 months,,3081
 PAY-7EDD8C2C68,Sub Renewal,Delivered,11/11/2025,319,POM HL,Oral Minoxidil,Sultan Almansoori,,1,,3719
-PAY-E5352FD9FA,Sub Renewal,Delivered,11/11/2025,629,POM HL,Oral Finasteride + Minoxidil,Mohsin Bushehri,,1,,4003
 PAY-BACFC90BB0,Sub Renewal,Delivered,11/11/2025,390,POM HL,Essential Boost,Mohammed Jaafar,,1,,3026
 PAY-25B0366FED,Sub Renewal,Delivered,11/11/2025,237.15,POM HL,Oral Minoxidil,Jean Luc BLAKIME,,1,,2642
-PAY-163F7D5A64,Sub Renewal,Delivered,11/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Hesham Alshemoosi,,3 months,,3463
 PAY-97141B33DA,Sub Renewal,Delivered,11/11/2025,319,POM HL,Oral Minoxidil,Danielle Hammerich,,1,,3634
 PAY-42BD3A3631,Sub Renewal,Delivered,11/11/2025,559,POM HL,Oral Finasteride + Minoxidil,Amadeus Davoudi,,2 months,,3459
-PAY - 12821,One Time,Delivered,11/11/2025,89,OTC SH,Delay Spray,mohd saif,,,,5125
 PAY-C96E79997D,New Sub,Delivered,11/11/2025,798,"OTC HL, POM HL","Regrowth Hair Pack, Ultimate Revival",Suhail Al Ketbi,,1,,5120
 PAY-4E4E825D80,New Sub,Delivered,11/11/2025,629,POM HL,Power Regrowth,Mhmod Kadom,,1,,5136
 PAY-2DF21096D3,Sub Renewal,Delivered,11/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Mansour,,1,,3771
@@ -1956,7 +1922,6 @@ PAY-2DF21096D3,Sub Renewal,Delivered,11/11/2025,349,POM HL,Oral Finasteride + Mi
 12862,Sub Renewal,Delivered,12/11/2025,1499,POM HL,Power Regrowth,Luis Rafael Navas,Dubai,1,,4310
 PAY-73E05C7A3B,Sub Renewal,Delivered,12/11/2025,390,POM HL,Essential Boost,Naveel Mahboob,,1,,3146
 PAY-489603326A,Sub Renewal,Delivered,12/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Abdulla Alshamsi,,3 months,,3475
-PAY-E1B47B756D,Sub Renewal,Delivered,12/11/2025,1499,POM HL,Oral Finasteride + Minoxidil,Luis Rafael Navas,,3 months,,4310
 PAY-C903EFDF28,Sub Renewal,Delivered,12/11/2025,629,"POM BG, POM HL","Beard growth serum, Essential Boost",Mansoor Alkaabi,,1,,4251
 PAY-4F2BDC10D6,Sub Renewal,Delivered,12/11/2025,390,POM HL,Essential Boost,Ahmad AlTaher,,1,,3469
 PAY-B543FA5733,New Sub,Delivered,12/11/2025,849,POM HL,Essential Boost,Khalifa Alteneiji,,3 months,,1120
@@ -1969,19 +1934,15 @@ PAY-1076329AA1,Sub Renewal,Delivered,13/11/2025,749,POM HL,Oral Finasteride + Mi
 PAY-FAD17BEB0E,Sub Renewal,Delivered,13/11/2025,749,POM HL,Topical Minoxidil + Finasteride Foam,Hussam Ismael,,3 months,,4303
 PAY-11A7729374,Sub Renewal,Delivered,13/11/2025,539,POM HL,Oral Finasteride + Minoxidil,Rodrigue Fattouche,,2 months,,2600
 PAY-BDC962EE13,Sub Renewal,Delivered,13/11/2025,659,POM HL,Ultimate Revival,Hamdan Alsamt,,1,,3087
-PAY-8F2AA3258A,Sub Renewal,Delivered,13/11/2025,659,POM HL,Oral Finasteride + Minoxidil,Rashed Almheiri,,1,,2925
 PAY-2A934C3B43,New Sub,Delivered,13/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Khalifa AlHarmoodi,,3 months,,3691
 PAY-4AEF191D57,Sub Renewal,Delivered,13/11/2025,299,POM HL,Essential Boost,Denis Thurich,,1,,4831
 PAY-B20BA12AC4,Sub Renewal,Delivered,13/11/2025,349,POM HL,Essential Boost,Essa Alshamsi,,1,,1254
-PAY-2075C597F2,Sub Renewal,Delivered,13/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Gay Valery Shteinberg,,1,,4685
-PAY-3FAD37D8DC,Sub Renewal,Delivered,13/11/2025,349,POM HL,Essential Boost,Essa Alshamsi,,1,,1254
 PAY-D3F6EF0A52,Sub Renewal,Delivered,13/11/2025,349,POM HL,Essential Boost,Abdulla Almheiri,,1,,3075
 12923,One time,Delivered,14/11/2025,208,"OTC SK, OTC SH","Eye Cream, Delay Spray",Barat Ali,Sharjah,,,mamo_PAY - 12923
 12930,New Sub,Delivered,14/11/2025,1499,POM HL,Power Regrowth,Ahmad abbas,Madinat zayed,,,5174
 12921,One time,Delivered,14/11/2025,89,OTC SH,Delay Spray,Arya Fakour,Dubai,,,5166
 12929,Sub Renewal,Delivered,14/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Yaseaf Alzaabi,Kalba,1,,3760
 12936,One time,Delivered,14/11/2025,667,"OTC SH, OTC HL","Delay Spray, Regrowth Hair Pack",Omar Altamimi,Dubai,,,5177
-PAY-DAE34CF595,Sub Renewal,Delivered,14/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Yaseaf Alzaabi,,1,,3760
 PAY-A4E8B04FEA,Sub Renewal,Delivered,14/11/2025,390,POM HL,Essential Boost,Nasir Alowais,,1,,2852
 PAY-21693CE480,Sub Renewal,Delivered,14/11/2025,319,POM HL,Oral Minoxidil,Abdulllah Alshetiwi,,1,,3987
 PAY-74F21BD2E7,Sub Renewal,Delivered,14/11/2025,606.2,"OTC HL, POM HL","Restore Shampoo, Ultimate Revival",Saif Alrandy,,1,,3023
@@ -2009,7 +1970,6 @@ PAY-A64B81EFA3,Sub Renewal,Delivered,17/11/2025,359,POM HL,Essential Boost,Zayed
 PAY-A80F35EE8E,Sub Renewal,Delivered,17/11/2025,1499,POM HL,Topical Minoxidil + Finasteride Foam,Ali Alduraye,,3 months,,2612
 PAY-064C2524E0,Sub Renewal,Delivered,17/11/2025,309,POM HL,Essential Boost,Wasim Akram,,1,,2729
 PAY-3FFA0D8879,Sub Renewal,Delivered,17/11/2025,1699,POM HL,Ultimate Revival,Humaid Buhumaid,,3 months,,2295
-PAY-1A9867356C,Sub Renewal,Delivered,17/11/2025,659,POM HL,,Matthew Pugh,,1,,3788
 PAY-3B380FB83F,Sub Renewal,Delivered,17/11/2025,309,POM HL,Essential Boost,Walid Elmusrati,,1,,329
 12993,New Sub,Delivered,18/11/2025,559,POM HL,Oral Finasteride + Minoxidil,Moosa Alzaabi,Abu Dhabi,,,5231
 12988,One time,Delivered,18/11/2025,129,OTC SH,Delay Spray,Sarfaraz Gani,Dubai,,,5229
@@ -2021,7 +1981,6 @@ PAY-3B380FB83F,Sub Renewal,Delivered,17/11/2025,309,POM HL,Essential Boost,Walid
 13000,One time,Delivered,18/11/2025,129,OTC SH,Delay Spray,Ahmed Maged,Dubai Sports City,,,2506
 PAY-FA23493C2E,Sub Renewal,Delivered,18/11/2025,349,POM HL,Essential Boost,Esam Abdelsalam,,1,,2715
 PAY-623B15A111,One Time,Delivered,18/11/2025,758,POM HL,Oral Minoxidil,Madhu Sankunni,,,,mamo_madhu.kunnath@hotmail.com
-PAY - 12997,One Time,Delivered,18/11/2025,89,OTC SH,Delay Spray,Nino Mausisa,,,,5221
 PAY-5FAA1F9E2B,Sub Renewal,Delivered,18/11/2025,309,POM HL,Essential Boost,Abdalla Mohamed,,1,,2676
 PAY-C1D956D3DF,Sub Renewal,Delivered,18/11/2025,337.5,POM HL,Essential Boost,Hamad Alnimer,,1,,4805
 PAY-B7B53A37ED,Sub Renewal,Delivered,18/11/2025,749,POM HL,Essential Boost,Rashid AlSalami,,3 months,,4079
@@ -2033,7 +1992,7 @@ PAY-5E8AB921A3,New Sub,Delivered,18/11/2025,418,"POM BG, OTC HL","Beard growth s
 13015,One time,Delivered,19/11/2025,89,OTC SH,Delay Spray,Arjun Vennu,Dubai,,,5244
 13040,New Sub,Delivered,19/11/2025,629,POM HL,Essential Boost,Emad Wasef,Dubai,,,3290
 13038,New Sub,Delivered,19/11/2025,319,POM HL,Oral Minoxidil,Mohammad Nabulsi,Dubai,,,5254
-13021,One time,Delivered,19/11/2025,139,OTC HL,Regrowth Hair Pack,kareem hassan,Abu Dhabi,,,2940
+13021,One time,Delivered,19/11/2025,139,OTC HL,Regrowth Hair Pack,kareem hassan,Abu Dhabi,1,,2940
 13018,New Sub,Delivered,19/11/2025,849,POM HL,Essential Boost,Walid amri,Dubai,,,5088
 13020,One time,Delivered,19/11/2025,79,OTC HL,Restore Shampoo,Sachin Madhu,Dubai,,,sachin@gmail.com
 13034,One time,Delivered,19/11/2025,129,OTC SH,Delay Spray,Saeed Ahmad,Dubai,,,5253
@@ -2044,11 +2003,7 @@ PAY-5E8AB921A3,New Sub,Delivered,18/11/2025,418,"POM BG, OTC HL","Beard growth s
 13036,New Sub,Delivered,19/11/2025,849,POM HL,Essential Boost,Feras Alkharaan,Dubai,,,4869
 13022,Sub Renewal,Delivered,19/11/2025,629,POM HL,Essential Boost,Louay Sarrage,Dubai,1,,3619
 PAY-8B521EA09E,Sub Renewal,Delivered,19/11/2025,349,POM HL,Essential Boost,Mehdy Mamode,,1,,3826
-PAY - 13017,One Time,Delivered,19/11/2025,89,OTC SH,Delay Spray,Abid shah,,,,5237
-PAY-94CEDF6BA3,Sub Renewal,Delivered,19/11/2025,390,POM HL,Essential Boost,Abdulrahman Alnuaimi,,1,,4596
-PAY-DCC5C70E37,Sub Renewal,Delivered,19/11/2025,629,POM HL,Essential Boost,Louay Sarrage,,2 months,,3619
 PAY-E0D327477E,Sub Renewal,Delivered,19/11/2025,390,"POM HL, OTC HL","Essential Boost, Restore Shampoo",ahmed Al kaabi,,1,,2752
-PAY-4AB0831CBC,One Time,Delivered,19/11/2025,139,POM HL,Oral Finasteride + Minoxidil,Kareem Hasan,,1,,2940
 13058,One time,Delivered,20/11/2025,89,OTC SH,Delay Spray,Mohamed Moussa,Abu Dhabi,,,5263
 13042,One time,Delivered,20/11/2025,390,POM SH,Vital Recharge,Nuno Fidalgo,Discovery Gardens,,,unknown_4
 13056,New Sub,Delivered,20/11/2025,390,POM HL,Essential Boost,Lawrence Evans,Dubai,,,5210
@@ -2067,7 +2022,6 @@ PAY-1F8CE43F93,Sub Renewal,Delivered,20/11/2025,339,POM HL,Essential Boost,Mayad
 13072,New Sub,Delivered,21/11/2025,749,POM HL,Oral Finasteride + Minoxidil,Ryan Durand,Dubai,,,4635
 13062,One time,Delivered,21/11/2025,355,POM SH,Vital Recharge,Akhlaq Ansari,Dubai,,,5266
 PAY-24FEFFC622,Sub Renewal,Delivered,21/11/2025,2109,POM HL,Ultimate Revival,Hasan Alali,,4 months,,3175
-PAY-7E89ACB0A3,Sub Renewal,Delivered,21/11/2025,319,POM HL,Oral Minoxidil,Hareth Sabrah,,1,,3820
 PAY-B1551D677F,Sub Renewal,Delivered,21/11/2025,339,POM HL,Oral Minoxidil,Shiraz Ahmad,,1,,4129
 PAY-BDC8625244,Sub Renewal,Delivered,21/11/2025,309,POM HL,Essential Boost,Fakher Bader,,1,,1524
 PAY - 13066,One Time,Delivered,21/11/2025,89,POM HL,Oral Finasteride + Minoxidil,Anoop krishnan,,,,3884
@@ -2082,7 +2036,6 @@ PAY-3E66AAB381,Sub Renewal,Delivered,21/11/2025,629,POM HL,Essential Boost,Abdul
 13100,New Sub,Delivered,22/11/2025,719,POM HL,Oral Minoxidil,Redha Aldhlaky,Dubai - albaraha,,,5284
 PAY-F0DEB923ED,Sub Renewal,Delivered,22/11/2025,309,POM HL,Essential Boost,Humaid Alhosani,,1,,2632
 PAY-46B63438E4,Sub Renewal,Delivered,22/11/2025,309,POM HL,Essential Boost,Shaheel Ahamed,,1,,5662
-PAY-BB445C3683,Sub Renewal,Delivered,22/11/2025,636.65,POM HL,Oral Finasteride + Minoxidil,Laith Alzubi,,3 months,,4447
 13130,One time,Delivered,23/11/2025,89,OTC SH,Delay Spray,Hafiz Jalal,Alqouz dubai,,,5302
 13116,One time,Delivered,23/11/2025,129,OTC SH,Delay Spray,Saddam Hussain,Abu Dhabi,,,5294
 13108,New Sub,Delivered,23/11/2025,559,POM HL,Oral Finasteride + Minoxidil,Suha Khalil,Amman,,,5259
@@ -2092,7 +2045,6 @@ PAY-BB445C3683,Sub Renewal,Delivered,22/11/2025,636.65,POM HL,Oral Finasteride +
 PAY-97ED7386F3,Sub Renewal,Delivered,23/11/2025,390,POM HL,Essential Boost,Saif Al Mheiri,,1,,3287
 PAY-D30C8EEF58,Sub Renewal,Delivered,23/11/2025,349,POM HL,Essential Boost,Omar Saab,,1,,3390
 PAY-B79F8D8EFE,Sub Renewal,Delivered,23/11/2025,1599,POM HL,Ultimate Revival,Ahmad Saeed AlMahmoud,,3 months,,4440
-PAY-3B8210A711,Sub Renewal,Delivered,23/11/2025,390,POM HL,Essential Boost,Farzeen Muhammed,,1,,4402
 PAY-01A5C4CD4E,New Sub,Delivered,23/11/2025,390,POM HL,Essential Boost,Tamer,,1,,5288
 13135,New Sub,Delivered,24/11/2025,319,POM HL,Oral Minoxidil,Ahmed Elgohary,Dubai,,,318
 13146,New Sub,Delivered,24/11/2025,928,"OTC HL, POM HL","Restore Shampoo, Essential Boost",Paul Fisher,Dubai,,,4655
@@ -2101,7 +2053,6 @@ PAY-01A5C4CD4E,New Sub,Delivered,23/11/2025,390,POM HL,Essential Boost,Tamer,,1,
 13144,New Sub,Delivered,24/11/2025,319,POM HL,Oral Minoxidil,Abdulrahman Alshammiry,Abdullah mubark,,,5313
 13154,One time,Delivered,24/11/2025,129,OTC SH,Delay Spray,Saeed Alkaabi,Abudhabi - alain,,,5316
 PAY-BB9E34E7C5,Sub Renewal,Delivered,24/11/2025,279,POM HL,Oral Minoxidil,Sayed Dahdah,,,,3187
-PAY-038034C82C,Sub Renewal,Delivered,24/11/2025,629,POM HL,Power Regrowth,Salem Alshehhi,,1,,484
 PAY-F410CFC38B,Sub Renewal,Delivered,24/11/2025,559,POM HL,Oral Finasteride + Minoxidil,Mansour Ahmed,,2 months,,2618
 PAY-E446D550E7,Sub Renewal,Delivered,24/11/2025,1599,POM HL,Ultimate Revival,Taj elkhayat,,3 months,,3127
 PAY-30EC33F317,Sub Renewal,Delivered,24/11/2025,659,POM HL,Ultimate Revival,Haytham Ahmad,,1,,2671
@@ -2128,16 +2079,13 @@ PAY-3142D6EFC1,Sub Renewal,Delivered,25/11/2025,390,POM HL,Essential Boost,Ahmed
 13204,One time,Delivered,26/11/2025,218,OTC SH,Delay Spray,Elie Yared,Dubai,,,5344
 13180,Sub Renewal,Delivered,26/11/2025,629,POM HL,Power Regrowth,Kayed AlQassimi,Ras Al Khaimah,1,,3284
 13208,Sub Renewal,Delivered,26/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Graeme Mulcair,Dubai,1,,3367
-PAY-98DC2EF7D9,Sub Renewal,Delivered,26/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Graeme Mulcair,,1,,3367
 PAY-C9C7FEFC04,Sub Renewal,Delivered,26/11/2025,1468,POM HL,Oral Minoxidil,Ayman Nayeb,,3 months,,2546
 PAY-AB660FB5E4,One Time,Delivered,26/11/2025,450,POM SH,Max Power,Dale Ryder,,1,,2886
 PAY-21074E2F1A,Sub Renewal,Delivered,26/11/2025,1199,POM HL,Ultimate Revival,james ibley,,2 months,,3494
 PAY-31C27A334F,Sub Renewal,Delivered,26/11/2025,927,POM HL,Oral Finasteride + Minoxidil,Ahmed musallam Kashoob,,3 months,,2867
 PAY-C83C43AAB7,Sub Renewal,Delivered,26/11/2025,649,POM HL,Power Regrowth,Sultan AlQasimi,,1,,1519
 PAY-E389BB56AA,Sub Renewal,Delivered,26/11/2025,350,POM HL,Topical Minoxidil + Finasteride Foam,Osama Tariq,,1,,4842
-PAY-7AEB17F7E9,Sub Renewal,Delivered,26/11/2025,629,POM HL,,Kayed AlQassimi,,1,,3284
 PAY-60422DE69B,Sub Renewal,Delivered,26/11/2025,849,POM HL,Essential Boost,John Hamrogue,,3 months,,4513
-PAY-96A0F944AA,Sub Renewal,Delivered,26/11/2025,349,POM HL,Oral Finasteride + Minoxidil,Shaheel Ahamed,,1,,4899
 13222,One time,Delivered,27/11/2025,129,OTC SH,Delay Spray,Sajith Babu,Dubai,,,5354
 13233,New Sub,Delivered,27/11/2025,786.45,POM HL,Oral Finasteride + Minoxidil,Ahmed Al Ameeri,Fujairah,,,5364
 13231,New Sub,Delivered,27/11/2025,460.95,"OTC SH, POM SH","Delay Spray, Vital Recharge",Syed Salman uddin,Dubai,,,5362
@@ -2182,7 +2130,6 @@ PAY-BB6A925D0A,Sub Renewal,Delivered,29/11/2025,390,POM HL,Essential Boost,OMAR 
 PAY-BF14BB8063,Sub Renewal,Delivered,29/11/2025,390,POM HL,Essential Boost,Harshad Suresh,,1,,3664
 PAY-C28C7612F6,Sub Renewal,Delivered,29/11/2025,629,POM HL,Power Regrowth,Mubarak Saeed,,1,,3137
 PAY-542E52E18F,Sub Renewal,Delivered,29/11/2025,659,POM HL,Ultimate Revival,Bassel Salman,,1,,3583
-PAY-5013B5A135,Sub Renewal,Delivered,29/11/2025,539,POM HL,Essential Boost,Hassan Al Hammadi,,1,,4148
 PAY-5686B6AC7F,New Sub,Delivered,29/11/2025,754.95,POM HL,Essential Boost,Brandon Morris,,3 months,,5388
 13302,One time,Delivered,30/11/2025,93.45,OTC SH,Delay Spray,Antonio Gozum,Al Barsha,,,5395
 13294,New Sub,Delivered,30/11/2025,455.17,"POM BG, POM HL","Beard growth serum, Essential Boost",Tayfun Taylan,Dubai,,,5368
@@ -2370,7 +2317,6 @@ PAY-568F223C02,Sub Renewal,Delivered,12/12/2025,629,"POM BG, POM HL","Beard grow
 PAY-AE7AD0510E,Sub Renewal,Delivered,13/12/2025,349,POM HL,Essential Boost,Joris Slomp,,1,,1254
 PAY-28E7057B7C,Sub Renewal,Delivered,13/12/2025,659,POM HL,Ultimate Revival,Hamdan Alsamt,,1,,3087
 PAY-AC3F98B5AD,Sub Renewal,Delivered,13/12/2025,349,POM HL,Essential Boost,Abdulla Almheiri,,1,,3075
-PAY-869F6761B3,Sub Renewal,Delivered,13/12/2025,349,POM HL,Essential Boost,Essa Alshamsi,,1,,1254
 13634,New Sub,Delivered,14/12/2025,1498,POM HL,Oral Finasteride + Minoxidil,Ali Ozyon,Amwaj Island,,,4568
 13643,One time,Delivered,14/12/2025,93.45,OTC SH,Delay Spray,Manzoor Sayed,Dubai / al qusais,,,5189
 13625,One time,Delivered,14/12/2025,186.9,OTC SH,Delay Spray,Muhammad Raqib,Abu Dhabi,,,5569
@@ -2429,7 +2375,6 @@ PAY-6DC156F9D7,New Sub,Delivered,16/12/2025,261.71,POM BG,Beard growth serum,Sae
 13736,New Sub,Delivered,17/12/2025,712.95,POM HL,Oral Minoxidil,Mohamed Hassan,Ajman,,,4058
 13714,New Sub,Delivered,17/12/2025,585.9,POM HL,Oral Minoxidil,John Dennehy,Dubai,,,5498
 13722,New Sub,Delivered,17/12/2025,743.4,"POM HL, OTC HL","Power Regrowth, Restore Shampoo",Ahmad AlAttar,Dubai,,,4121
-PAY - 13721,One Time,Delivered,17/12/2025,89,OTC SH,Delay Spray,Anas Shashieh,,,,5606
 PAY-D9BFD77691,Sub Renewal,Delivered,17/12/2025,359,POM HL,Essential Boost,Zayed Alqubaisi,,1,,2873
 PAY-2D117BBF70,Sub Renewal,Delivered,17/12/2025,749,POM HL,Oral Finasteride + Minoxidil,Sherwin Abrenica,,3 months,,3395
 PAY-413CE263E1,Sub Renewal,Delivered,17/12/2025,309,POM HL,Essential Boost,Wasim Akram,,1,,2729
@@ -2549,7 +2494,6 @@ PAY-1377E26E73,Sub Renewal,Delivered,27/12/2025,390,POM HL,Essential Boost,Patri
 PAY-B4596CC2A7,Sub Renewal,Delivered,27/12/2025,349,POM HL,Essential Boost,Omar Alhemeiri,,1,,3199
 PAY-7E4F7F25C9,Sub Renewal,Delivered,27/12/2025,649,POM HL,Power Regrowth,Saif Al Omaira,,1,,4913
 PAY-7797031B72,Sub Renewal,Delivered,27/12/2025,309,POM HL,Essential Boost,Khalid Alhassawi,,1,,2888
-PAY-9921257F02,Sub Renewal,Delivered,27/12/2025,309,POM HL,Essential Boost,Ahmad Ishaq,,1,,4697
 PAY-969B0A8EE4,Sub Renewal,Delivered,27/12/2025,349,POM HL,Essential Boost,Abdulla Al Shamsi,,1,,3591
 PAY-EE3FE34FA1,Sub Renewal,Delivered,27/12/2025,349,POM HL,Essential Boost,Rohan Joseph,,1,,2905
 13956,New Sub,Delivered,28/12/2025,1320.9,POM SH,Vital Recharge,Aurel Iancu,Dubai,,,5733
@@ -2564,7 +2508,6 @@ PAY-EE3FE34FA1,Sub Renewal,Delivered,27/12/2025,349,POM HL,Essential Boost,Rohan
 PAY-B0630BE269,Sub Renewal,Delivered,28/12/2025,339,POM HL,Oral Minoxidil,Mohamed Badawi,,1,,4920
 PAY-FD49B61930,Sub Renewal,Delivered,28/12/2025,349,POM HL,Essential Boost,Morris,,1,,2966
 PAY-A4C3D0A17F,Sub Renewal,Delivered,28/12/2025,659,POM HL,Ultimate Revival,Rashid Alabdooli,,1,,3868
-PAY-BFAE64633B,Sub Renewal,Delivered,28/12/2025,334.95,POM HL,Oral Minoxidil,Ahmed Elgohary,,1,,318
 14013,One time,Delivered,29/12/2025,93.45,OTC SH,Delay Spray,Wael Rudwan,Dubai,,,5748
 13989,One time,Delivered,29/12/2025,93.45,OTC SH,Delay Spray,Danish Jabbar,Dubai,,,5515
 14002,New Sub,Delivered,29/12/2025,1573.95,POM HL,Power Regrowth,Mohamed Alhanaee,Abu Dhabi,,,5743
@@ -2591,7 +2534,6 @@ PAY-E1301B442A,Sub Renewal,Delivered,30/12/2025,309,POM HL,Essential Boost,Karim
 PAY-D5BA4CE011,Sub Renewal,Delivered,30/12/2025,339,POM HL,Oral Minoxidil,Sultan Almarri,,1,,4154
 PAY-7095AFEF02,New Sub,Delivered,30/12/2025,390,POM HL,Essential Boost,Yazan Alshaqran,,1,,mamo_y.shagran@gmail.com
 PAY-C7FFF7990A,Sub Renewal,Delivered,30/12/2025,366.45,POM HL,Oral Finasteride + Minoxidil,Ahmed Al Hosani,,1,,3798
-PAY-F86FFEAEC4,Sub Renewal,Delivered,30/12/2025,565.95,POM HL,Oral Minoxidil,Ahmad Sharaf Aldine,,2 months,,4532
 PAY-0DD6418C74,Sub Renewal,Delivered,30/12/2025,293.16,POM HL,Oral Minoxidil,Duha Mohamed,,1,,2579
 14043,One time,Delivered,31/12/2025,89,OTC SH,Delay Spray,Amadeus Davoudi,,,,3459
 14047,New Sub,Delivered,31/12/2025,336,POM SH,Vital Recharge,Amit Mittal,Discovery garden jebel ali,,,5760
@@ -2979,15 +2921,11 @@ PAY-31951894F3,Sub Renewal,Delivered,27/01/2026,350,POM HL,Essential Boost,Marwa
 15679,Sub Renewal,Delivered,28/01/2026,372.75,POM HL,Essential Boost,Farzeen Muhammed,Dubai,1,,4402
 15836,One time,Delivered,28/01/2026,472.5,POM SH,Max Power,Mohammed sahil Sajan,Dubai,,,mamo_PAY-77CD84049A
 15829,New Sub,Delivered,28/01/2026,372.75,POM HL,Essential Boost,Ziad Nasr,Dubai,,,6306
-15811,One time,Delivered,28/01/2026,0,"OTC HL, OTC HL","Restore Shampoo, Restore Shampoo",Test Test,Dubai,,,6342
 15809,One time,Delivered,28/01/2026,409.5,POM HL,Rx Hair Loss Serum,Nabil Mahmud,Dubai,,,4950
 15841,New Sub,Delivered,28/01/2026,891.45,POM HL,Essential Boost,Walid amri,Dubai,,,5088
 PAY-3F964453CD,Sub Renewal,Delivered,28/01/2026,309,POM HL,Essential Boost,Ahmad Ishaq alblooshi,,1,,4697
-PAY-A5B440695A,Sub Renewal,Delivered,28/01/2026,309,POM HL,Essential Boost,Ahmad Ishaq,,1,,4697
 PAY-4BB5E5C8CA,Sub Renewal,Delivered,28/01/2026,649,POM HL,Essential Boost,Saif Al Omaira,,1,,4913
 PAY-76254E6AFB,Sub Renewal,Delivered,28/01/2026,749,POM HL,Ultimate Revival,Mohammed Alkaabi,,3 months,,4139
-PAY-2373DA51F4,Sub Renewal,Delivered,28/01/2026,712.95,POM HL,Oral Minoxidil,Jacob Beesley,,,,4939
-PAY-59E7DB3533,Sub Renewal,Delivered,28/01/2026,334.95,POM HL,Oral Minoxidil,Ahmed Elgohary,,,,318
 15870,Sub Renewal,Delivered,29/01/2026,293.16,POM HL,Oral Minoxidil,Duha Mohamed Ahmed,Abu dhabi,1,,2579
 15893,Sub Renewal,Delivered,29/01/2026,660.45,POM HL,Power Regrowth,Mubarak Saeed,Al Dhannah (ruwais)/ Abu Dhabi,1,,3137
 15889,One time,Delivered,29/01/2026,93.45,OTC SH,Delay Spray,Ramil Soriano,Al Jadaf,,,6362
@@ -3014,7 +2952,6 @@ PAY-311A2A3029,Sub Renewal,Delivered,29/01/2026,659,POM HL,Oral Finasteride + Mi
 PAY-0C4AF94A4B,Sub Renewal,Delivered,30/01/2026,309,POM HL,Essential Boost,Karim Rady,,1,,2726
 PAY-4F66C72A7B,Sub Renewal,Delivered,30/01/2026,339,"OTC SK, POM HL","Eye Cream, Oral Minoxidil",Sultan Almarri,,1,,4154
 PAY-77FC73C730,Sub Renewal,Delivered,30/01/2026,390,POM HL,Oral Finasteride + Minoxidil,Abdulla Bin Harib,,1,,4734
-PAY-0438AE57FF,Sub Renewal,Delivered,30/01/2026,891.45,POM HL,Essential Boost,Ahmed Al Qamzi,,,,4956
 15954,One time,Delivered,31/01/2026,93.45,OTC SH,Delay Spray,Qareeb Ullah,Al Ain,,,6399
 15951,Sub Renewal,Delivered,31/01/2026,339,POM HL,Oral Minoxidil,Abdulwahab Alothman,Kuwait city,1,,5397
 15934,One time,Delivered,31/01/2026,82.95,OTC SH,Delay Spray,Hassan Bilal,Dubai,,,6383
@@ -3057,4 +2994,3 @@ PAY-E62C31EE1D,Sub Renewal,Delivered,02/02/2026,349,POM HL,Essential Boost,Saad 
 16014,One time,Delivered,02/02/2026,0,OTC SK,Face Cleanser,test testfff,dubai,,,6298
 16016,Sub Renewal,Delivered,02/02/2026,334.95,POM HL,Oral Minoxidil,Sultan Almansoori,Dubai,1,,3719
 16019,Sub Renewal,Delivered,02/02/2026,349,POM HL,Oral Finasteride + Minoxidil,Abdulaziz Al Daour,Dubai,1,,3275
-16017,One time,Delivered,02/02/2026,0,OTC SK,Moisturizer with SPF 50,test testfff,dubai,,,6298
