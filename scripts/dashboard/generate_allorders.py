@@ -532,7 +532,8 @@ def main():
             "User", "Order_id",
             "customer_details_name", "customer_details_email",
             "Product Category", "Product Display Name",
-            "Type", "billing_cycle", "payment_name", "external_id",
+            "Type", "billing_cycle", "subscription_frequency_interval",
+            "payment_name", "external_id",
         ],
     )
     print(f"   → {len(mamo_records)} Mamo transactions")
@@ -745,13 +746,18 @@ def main():
                 notes_fixed_wc += 1
                 continue
 
-        # Mamo orders: look up billing_cycle
+        # Mamo orders: look up billing_cycle, then subscription_frequency_interval
         mf = mamo_by_id.get(oid)
         if not mf and oid.startswith("PAY-"):
             mf = mamo_by_id.get(oid[4:])
         if mf:
+            # Try billing_cycle first
             bc = mf.get("billing_cycle")
             notes_val = format_notes_months(bc)
+            # Fallback: subscription_frequency_interval (integer months)
+            if not notes_val:
+                sfi = mf.get("subscription_frequency_interval")
+                notes_val = format_notes_months(sfi)
             if notes_val:
                 row["Notes"] = notes_val
                 notes_fixed_mamo += 1
@@ -798,7 +804,8 @@ def main():
             "User", "Order_id",
             "customer_details_name", "customer_details_email",
             "Product Category", "Product Display Name",
-            "Type", "billing_cycle", "payment_name",
+            "Type", "billing_cycle", "subscription_frequency_interval",
+            "payment_name",
         ],
         filter_formula=new_mamo_filter,
     )
@@ -926,8 +933,10 @@ def main():
         # Type
         type_val = (f.get("Type") or "").strip()
 
-        # Notes from billing_cycle
+        # Notes from billing_cycle → subscription_frequency_interval fallback
         notes = format_notes_months(f.get("billing_cycle"))
+        if not notes:
+            notes = format_notes_months(f.get("subscription_frequency_interval"))
 
         # name_uid via User link
         uid = ""
