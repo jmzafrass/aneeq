@@ -110,7 +110,16 @@ export function computeChurnSummary(orders: ProcessedOrderRow[]): ChurnSummary {
     if (order.order_month > CUTOFF_KEY) continue;
     monthSet.add(order.order_month);
 
-    const categories = Array.from(new Set(order.skuNames.map((sku) => SKU_CATEGORY_MAP[sku] ?? "Unknown")));
+    // Derive categories from SKU names; fall back to verticals (from Category column) for unmatched SKUs
+    const skuCategories = new Set(order.skuNames.map((sku) => SKU_CATEGORY_MAP[sku]).filter(Boolean));
+    // Also include categories derived from the order's verticals (processOrders.ts already parsed Category column)
+    for (const v of order.verticals) {
+      const upper = v.toUpperCase();
+      if (SUBSCRIPTION_CATEGORIES.has(upper) || upper.startsWith("OTC") || upper.startsWith("POM")) {
+        skuCategories.add(upper);
+      }
+    }
+    const categories = Array.from(skuCategories.size > 0 ? skuCategories : new Set(["Unknown"]));
     const isSubscription = categories.some((category) => SUBSCRIPTION_CATEGORIES.has(category));
     const customerId = order.customerId;
     if (!customerId) continue;

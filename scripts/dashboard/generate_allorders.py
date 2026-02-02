@@ -243,22 +243,31 @@ def format_price(val):
 
 
 def format_notes_months(billing_cycle):
-    """Convert billing_cycle number to 'X months' format if > 1."""
+    """Convert billing_cycle to 'X months' format. Handles: 3, '3×month', '2 months', etc."""
     if not billing_cycle:
         return ""
-    # Handle em-dash or other non-numeric values
     bc_str = str(billing_cycle).strip()
     if bc_str in ("—", "-", "", "None"):
         return ""
-    try:
-        months = int(float(bc_str))
-        if months > 1:
-            return f"{months} months"
-        if months == 1:
-            return "1"
-        return ""
-    except (ValueError, TypeError):
-        return ""
+    # Try to extract number from formats like "3×month", "2×month", "1×month"
+    m = re.match(r"(\d+)\s*[×x×]\s*month", bc_str, re.IGNORECASE)
+    if m:
+        months = int(m.group(1))
+    else:
+        try:
+            months = int(float(bc_str))
+        except (ValueError, TypeError):
+            # Try "N months" or "N month" format
+            m2 = re.match(r"(\d+)\s*month", bc_str, re.IGNORECASE)
+            if m2:
+                months = int(m2.group(1))
+            else:
+                return ""
+    if months > 1:
+        return f"{months} months"
+    if months == 1:
+        return "1"
+    return ""
 
 
 # =============================================================================
@@ -718,6 +727,39 @@ def main():
     print(f"   Fixed: {consistency_fixes}")
 
     # ------------------------------------------------------------------
+    # 8b. Fix empty Notes (billing cycle) on existing rows
+    # ------------------------------------------------------------------
+    print("\n8b. Fixing empty Notes (billing cycle) ...")
+    notes_fixed_wc = 0
+    notes_fixed_mamo = 0
+    for row in existing_rows:
+        if row.get("Notes", "").strip():
+            continue  # Already has Notes
+        oid = clean_order_id(row["Order_id"])
+
+        # WC subscription renewals: default 1 month
+        if oid.isdigit():
+            row_type = (row.get("Type") or "").strip()
+            if row_type == "Sub Renewal":
+                row["Notes"] = "1"
+                notes_fixed_wc += 1
+                continue
+
+        # Mamo orders: look up billing_cycle
+        mf = mamo_by_id.get(oid)
+        if not mf and oid.startswith("PAY-"):
+            mf = mamo_by_id.get(oid[4:])
+        if mf:
+            bc = mf.get("billing_cycle")
+            notes_val = format_notes_months(bc)
+            if notes_val:
+                row["Notes"] = notes_val
+                notes_fixed_mamo += 1
+
+    print(f"   WC Sub Renewal → '1': {notes_fixed_wc}")
+    print(f"   Mamo billing_cycle:   {notes_fixed_mamo}")
+
+    # ------------------------------------------------------------------
     # 9. Fetch new orders (Nov 2025+)
     # ------------------------------------------------------------------
     print("\n9. Fetching new orders (Nov 2025 → present) ...")
@@ -808,9 +850,13 @@ def main():
         else:
             uid = ""
 
+        # Notes: WC subscription renewals are monthly billing cycles
+        order_type = derive_type(f)
+        notes = "1" if order_type == "Sub Renewal" else ""
+
         new_rows.append({
             "Order_id": oid,
-            "Type": derive_type(f),
+            "Type": order_type,
             "Status Order": "Delivered",
             "Order Date": date_str,
             "Price": format_price(f.get("total")),
@@ -818,7 +864,7 @@ def main():
             "SKUs": skus,
             "Customer": customer,
             "Location": location,
-            "Notes": "",
+            "Notes": notes,
             "Status Customer": "",
             "name_uid": uid,
         })
