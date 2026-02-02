@@ -590,7 +590,16 @@ def main():
             if mid.startswith("PAY-"):
                 mamo_to_user_recid[mid[4:]] = user_link[0]
 
+    # WC Airtable record_id → WC order id (to resolve Mamo Order_id links)
+    wc_recid_to_oid = {}
+    for rec in wc_records:
+        f = rec.get("fields", {})
+        oid = str(f.get("id", "")).strip()
+        if oid:
+            wc_recid_to_oid[rec["id"]] = oid
+
     print(f"   WC map: {len(wc_map)} order→customer_id entries")
+    print(f"   WC recid→oid: {len(wc_recid_to_oid)} entries")
     print(f"   Mamo→User: {len(mamo_to_user_recid)} entries")
     print(f"   User by name: {len(user_by_name)} entries")
     print(f"   User by recid: {len(user_by_recid)} entries")
@@ -733,7 +742,7 @@ def main():
     )
     print(f"   New WC orders fetched: {len(new_wc_records)}")
 
-    # New standalone Mamo: captured, no WC Order link, after Oct 2025
+    # ALL captured Mamo after Oct 2025 (source of truth from Nov onwards)
     new_mamo_filter = (
         "AND("
         "{status}='captured',"
@@ -751,14 +760,7 @@ def main():
         ],
         filter_formula=new_mamo_filter,
     )
-    # Filter standalone Mamo only (no WC Order link)
-    standalone_mamo = []
-    for rec in new_mamo_records:
-        f = rec.get("fields", {})
-        order_link = f.get("Order_id")
-        if not order_link or (isinstance(order_link, list) and len(order_link) == 0):
-            standalone_mamo.append(rec)
-    print(f"   New Mamo fetched: {len(new_mamo_records)}, standalone: {len(standalone_mamo)}")
+    print(f"   New Mamo fetched: {len(new_mamo_records)} (all captured, source of truth)")
 
     # Build new rows
     new_rows = []
@@ -822,22 +824,40 @@ def main():
         })
         existing_oids.add(oid)
 
-    # Process new standalone Mamo
-    for rec in standalone_mamo:
+    # Process ALL captured Mamo (source of truth from Nov onwards)
+    # Skip only if the Mamo ID or its linked WC order ID is already in the CSV
+    mamo_added = 0
+    mamo_covered_by_wc = 0
+    for rec in new_mamo_records:
         f = rec.get("fields", {})
         mid = str(f.get("id", "")).strip()
         if not mid:
             continue
+
+        # Check if Mamo ID already in CSV
         if mid in existing_oids:
             skipped_existing += 1
             continue
-        # Also check hex without PAY-
         hex_id = mid[4:] if mid.startswith("PAY-") else mid
         if hex_id in existing_oids:
             skipped_existing += 1
             continue
 
-        # Parse date
+        # Check if linked WC order is already in CSV (covered by WC fetch)
+        order_links = f.get("Order_id") or []
+        if isinstance(order_links, list) and len(order_links) > 0:
+            wc_covered = False
+            for recid in order_links:
+                wc_oid = wc_recid_to_oid.get(recid, "")
+                if wc_oid and wc_oid in existing_oids:
+                    wc_covered = True
+                    break
+            if wc_covered:
+                mamo_covered_by_wc += 1
+                continue
+
+        # This Mamo transaction is NOT yet in CSV — add it
+        # Parse date (use Mamo created_date = actual payment date)
         date_str = parse_iso_to_ddmmyyyy(f.get("created_date", ""))
 
         # Customer name
@@ -884,6 +904,9 @@ def main():
             "name_uid": uid,
         })
         existing_oids.add(mid)
+        mamo_added += 1
+
+    print(f"   Mamo: {mamo_added} added, {mamo_covered_by_wc} covered by WC orders")
 
     print(f"   New rows to append: {len(new_rows)}")
     print(f"   Skipped (already in CSV): {skipped_existing}")

@@ -1,4 +1,4 @@
-import { addDays, addMonths, startOfDay, startOfMonth } from "date-fns";
+import { addDays, addMonths, format as formatDate, startOfDay, startOfMonth } from "date-fns";
 
 import { CHURN_CUTOFF_KEY, SKU_CATEGORY_MAP, SUBSCRIPTION_CATEGORIES } from "./constants";
 import type {
@@ -14,7 +14,7 @@ const CUTOFF_DATE = new Date(CHURN_CUTOFF_KEY);
 const CUTOFF_KEY = CHURN_CUTOFF_KEY;
 
 function monthKey(date: Date) {
-  return startOfMonth(date).toISOString().slice(0, 10);
+  return formatDate(startOfMonth(date), "yyyy-MM-dd");
 }
 
 function addMonthKey(key: string, monthsToAdd: number) {
@@ -37,7 +37,7 @@ function markDaily(store: Map<string, Set<string>>, start: Date, endExclusive: D
   let current = startOfDay(start);
   const cutoff = startOfDay(CUTOFF_DATE);
   while (current < endExclusive && current <= cutoff) {
-    const key = current.toISOString().slice(0, 10);
+    const key = formatDate(current, "yyyy-MM-dd");
     if (!store.has(key)) store.set(key, new Set());
     store.get(key)!.add(customerId);
     current = addDays(current, 1);
@@ -46,11 +46,11 @@ function markDaily(store: Map<string, Set<string>>, start: Date, endExclusive: D
 
 function isoWeekStart(dateStr: string) {
   const d = new Date(dateStr);
-  const utc = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-  const day = utc.getUTCDay();
+  // Use local date components to avoid timezone shift
+  const day = d.getDay();
   const delta = (day + 6) % 7; // Monday = 0
-  utc.setUTCDate(utc.getUTCDate() - delta);
-  return utc.toISOString().slice(0, 10);
+  const monday = new Date(d.getFullYear(), d.getMonth(), d.getDate() - delta);
+  return formatDate(monday, "yyyy-MM-dd");
 }
 
 function weeklySets(store: Map<string, Set<string>>) {
