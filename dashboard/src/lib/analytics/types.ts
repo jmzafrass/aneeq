@@ -1,6 +1,7 @@
 export type Dimension = "overall" | "category" | "sku";
 export type Metric = "any" | "same";
 export type Measure = "revenue" | "gm";
+export type Segment = "all" | "subscribers" | "onetime";
 
 export interface RetentionRawRow {
   cohort_month: string;
@@ -8,6 +9,7 @@ export interface RetentionRawRow {
   first_value?: string;
   m?: number;
   metric?: Metric;
+  segment?: Segment;
   cohort_size?: number;
   retention?: string | number;
   [key: string]: unknown;
@@ -20,6 +22,7 @@ export interface RetentionRow {
   first_value: string;
   m: number;
   metric: Metric;
+  segment: Segment;
   cohort_size: number;
   retention: number;
 }
@@ -32,6 +35,7 @@ export interface LtvRawRow {
   m?: number;
   metric?: Metric;
   measure?: Measure | string;
+  segment?: Segment;
   cohort_size?: number;
   ltv_per_user?: number | string;
   [key: string]: unknown;
@@ -46,6 +50,7 @@ export interface LtvRow {
   m: number;
   metric: Metric;
   measure: Measure;
+  segment: Segment;
   cohort_size: number;
   ltv_per_user: number;
 }

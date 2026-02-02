@@ -1,6 +1,6 @@
 import { LTV_URL } from "./constants";
 import { parseCsv } from "./csv";
-import { Dimension, LtvRawRow, LtvRow, Metric } from "./types";
+import { Dimension, LtvRawRow, LtvRow, Metric, Segment } from "./types";
 import { isValidCohort, normalizeMeasure, parseCohortMonthKey } from "./utils";
 
 function extractDimension(value: unknown): Dimension {
@@ -11,6 +11,12 @@ function extractDimension(value: unknown): Dimension {
 function extractMetric(value: unknown): Metric {
   if (value === "same") return "same";
   return "any";
+}
+
+function extractSegment(value: unknown): Segment {
+  if (value === "subscribers") return "subscribers";
+  if (value === "onetime") return "onetime";
+  return "all";
 }
 
 function ensureFirstValue(dimension: Dimension, raw: unknown) {
@@ -54,6 +60,7 @@ export async function fetchLtvData(cacheBuster?: number, signal?: AbortSignal) {
       m: coerceNumber(entry.m),
       metric,
       measure: normalizeMeasure(entry.measure),
+      segment: extractSegment(entry.segment),
       cohort_size: coerceNumber(entry.cohort_size),
       ltv_per_user: ltvPerUser,
     });

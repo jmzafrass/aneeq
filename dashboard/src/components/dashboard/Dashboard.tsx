@@ -15,7 +15,7 @@ import { useLtvData } from "@/hooks/useLtvData";
 import { useRetentionData } from "@/hooks/useRetentionData";
 import { RETENTION_URL, LTV_URL } from "@/lib/analytics/constants";
 import { addMonths, classNames, monthKeyFromDate, monthsDiff } from "@/lib/analytics/utils";
-import type { Dimension, Metric, LtvRow, RetentionRow } from "@/lib/analytics/types";
+import type { Dimension, Metric, LtvRow, RetentionRow, Segment } from "@/lib/analytics/types";
 import { ChurnV2Dashboard } from "@/components/churn-v2/ChurnV2Dashboard";
 
 interface PivotResult {
@@ -29,6 +29,7 @@ function buildRetentionPivot(
   filters: {
     dimension: Dimension;
     metric: Metric;
+    segment: Segment;
     firstValue: string;
     startMonth: string;
     endMonth: string;
@@ -36,6 +37,7 @@ function buildRetentionPivot(
   lastObservedMonth: string,
 ): PivotResult {
   const filtered = rows.filter((row) => {
+    if (row.segment !== filters.segment) return false;
     if (row.dimension !== filters.dimension) return false;
     if (filters.dimension !== "overall" && row.first_value !== filters.firstValue) return false;
     if (row.metric !== filters.metric) return false;
@@ -78,6 +80,7 @@ function buildLtvPivot(
   filters: {
     dimension: Dimension;
     metric: Metric;
+    segment: Segment;
     firstValue: string;
     startMonth: string;
     endMonth: string;
@@ -85,6 +88,7 @@ function buildLtvPivot(
   lastObservedMonth: string,
 ): PivotResult {
   const filtered = rows.filter((row) => {
+    if (row.segment !== filters.segment) return false;
     if (row.dimension !== filters.dimension) return false;
     if (filters.dimension !== "overall" && row.first_value !== filters.firstValue) return false;
     if (row.metric !== filters.metric) return false;
@@ -189,33 +193,36 @@ export function Dashboard() {
 
   const [dimension, setDimension] = useState<Dimension>("overall");
   const [metric, setMetric] = useState<Metric>("any");
+  const [segment, setSegment] = useState<Segment>("all");
   const [firstValue, setFirstValue] = useState("ALL");
   const [startMonth, setStartMonth] = useState("");
   const [endMonth, setEndMonth] = useState("");
 
   const [ltvDimension, setLtvDimension] = useState<Dimension>("overall");
   const [ltvMetric, setLtvMetric] = useState<Metric>("any");
+  const [ltvSegment, setLtvSegment] = useState<Segment>("all");
   const [ltvFirstValue, setLtvFirstValue] = useState("ALL");
   const [ltvStartMonth, setLtvStartMonth] = useState("");
   const [ltvEndMonth, setLtvEndMonth] = useState("");
 
   const uniqueRetention = useMemo(() => {
+    const segmentRows = retentionRows.filter((row) => row.segment === segment);
     const categories = Array.from(
-      new Set(retentionRows.filter((row) => row.dimension === "category").map((row) => row.first_value)),
+      new Set(segmentRows.filter((row) => row.dimension === "category").map((row) => row.first_value)),
     )
       .filter(Boolean)
       .sort();
     const skus = Array.from(
-      new Set(retentionRows.filter((row) => row.dimension === "sku").map((row) => row.first_value)),
+      new Set(segmentRows.filter((row) => row.dimension === "sku").map((row) => row.first_value)),
     )
       .filter(Boolean)
       .sort();
-    const months = Array.from(new Set(retentionRows.map((row) => row.cohortMonthKey))).sort();
+    const months = Array.from(new Set(segmentRows.map((row) => row.cohortMonthKey))).sort();
     return { categories, skus, months };
-  }, [retentionRows]);
+  }, [retentionRows, segment]);
 
   const uniqueLtv = useMemo(() => {
-    const gmRows = ltvRows.filter((row) => row.measure === "gm");
+    const gmRows = ltvRows.filter((row) => row.measure === "gm" && row.segment === ltvSegment);
     const categories = Array.from(
       new Set(gmRows.filter((row) => row.dimension === "category").map((row) => row.first_value)),
     )
@@ -226,7 +233,7 @@ export function Dashboard() {
       .sort();
     const months = Array.from(new Set(gmRows.map((row) => row.cohortMonthKey))).sort();
     return { categories, skus, months };
-  }, [ltvRows]);
+  }, [ltvRows, ltvSegment]);
 
   useEffect(() => {
     if (!startMonth && uniqueRetention.months.length) {
@@ -312,13 +319,14 @@ export function Dashboard() {
         {
           dimension,
           metric: effectiveMetric,
+          segment,
           firstValue: effectiveFirstValue,
           startMonth,
           endMonth,
         },
         lastObservedRetentionMonth,
       ),
-    [retentionRows, dimension, effectiveMetric, effectiveFirstValue, startMonth, endMonth, lastObservedRetentionMonth],
+    [retentionRows, dimension, effectiveMetric, segment, effectiveFirstValue, startMonth, endMonth, lastObservedRetentionMonth],
   );
 
   const ltvPivot = useMemo(
@@ -328,6 +336,7 @@ export function Dashboard() {
       {
         dimension: ltvDimension,
         metric: effectiveLtvMetric,
+        segment: ltvSegment,
         firstValue: effectiveLtvFirstValue,
         startMonth: ltvStartMonth,
         endMonth: ltvEndMonth,
@@ -338,6 +347,7 @@ export function Dashboard() {
       ltvRows,
       ltvDimension,
       effectiveLtvMetric,
+      ltvSegment,
       effectiveLtvFirstValue,
       ltvStartMonth,
       ltvEndMonth,
@@ -444,6 +454,7 @@ export function Dashboard() {
                 <RetentionFilters
                   dimension={dimension}
                   metric={effectiveMetric}
+                  segment={segment}
                   firstValue={effectiveFirstValue}
                   startMonth={startMonth}
                   endMonth={endMonth}
@@ -462,6 +473,7 @@ export function Dashboard() {
                     }
                   }}
                   onMetricChange={(value) => setMetric(value)}
+                  onSegmentChange={(value) => setSegment(value)}
                   onFirstValueChange={(value) => setFirstValue(value)}
                   onStartMonthChange={setStartMonth}
                   onEndMonthChange={setEndMonth}
@@ -475,8 +487,9 @@ export function Dashboard() {
 
                 <div className="text-xs text-gray-600 bg-gray-50 p-3 rounded">
                   <p>
-                    <strong>Notes:</strong> Retention uses delivered-only purchases; dates are parsed day-first (dd/mm/yyyy) in the
-                    source pipeline. &quot;Any&quot; counts any-product repurchase; &quot;Same&quot; counts stickiness within the first category/SKU.
+                    <strong>Notes:</strong> Subscription-aware retention: subscribers count as &quot;active&quot; for their full billing cadence
+                    (e.g., a 3-month subscriber is retained for 3 months after each purchase). One-time buyers are retained only in
+                    purchase month. &quot;Subscribers&quot; segment shows subscriber-only cohorts; &quot;One-time&quot; shows non-subscription cohorts.
                   </p>
                   {(retentionLoading || !retentionRows.length) && <p className="mt-1">Loading retention data…</p>}
                 </div>
@@ -486,6 +499,7 @@ export function Dashboard() {
                 <LtvFilters
                   dimension={ltvDimension}
                   metric={effectiveLtvMetric}
+                  segment={ltvSegment}
                   firstValue={effectiveLtvFirstValue}
                   startMonth={ltvStartMonth}
                   endMonth={ltvEndMonth}
@@ -504,6 +518,7 @@ export function Dashboard() {
                     }
                   }}
                   onMetricChange={(value) => setLtvMetric(value)}
+                  onSegmentChange={(value) => setLtvSegment(value)}
                   onFirstValueChange={(value) => setLtvFirstValue(value)}
                   onStartMonthChange={setLtvStartMonth}
                   onEndMonthChange={setLtvEndMonth}

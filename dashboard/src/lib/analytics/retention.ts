@@ -1,6 +1,6 @@
 import { RETENTION_URL } from "./constants";
 import { parseCsv } from "./csv";
-import { Dimension, Metric, RetentionRawRow, RetentionRow } from "./types";
+import { Dimension, Metric, RetentionRawRow, RetentionRow, Segment } from "./types";
 import { isValidCohort, parseCohortMonthKey, parseRetention } from "./utils";
 
 function extractDimension(value: unknown): Dimension {
@@ -11,6 +11,12 @@ function extractDimension(value: unknown): Dimension {
 function extractMetric(value: unknown): Metric {
   if (value === "same") return "same";
   return "any";
+}
+
+function extractSegment(value: unknown): Segment {
+  if (value === "subscribers") return "subscribers";
+  if (value === "onetime") return "onetime";
+  return "all";
 }
 
 function ensureFirstValue(dimension: Dimension, raw: unknown) {
@@ -33,13 +39,14 @@ function shapeWideRows(rawRows: RetentionRawRow[]) {
     const dimension = extractDimension(raw.dimension);
     const firstValue = ensureFirstValue(dimension, raw.first_value);
     const metric = extractMetric(raw.metric);
+    const segment = extractSegment(raw.segment);
     const cohortSize = coerceNumber(
       raw.cohort_size ?? (raw as Record<string, unknown>).cohortsize ?? (raw as Record<string, unknown>).size,
     );
 
     for (const [column, value] of Object.entries(raw)) {
       if (column === "cohort_month" || column === "dimension" || column === "first_value" || column === "metric") continue;
-      if (column === "cohort_size" || column === "size" || column === "cohortsize") continue;
+      if (column === "cohort_size" || column === "size" || column === "cohortsize" || column === "segment") continue;
       if (column === "retention" || column === "m") continue;
 
       const trimmed = column.trim();
@@ -61,6 +68,7 @@ function shapeWideRows(rawRows: RetentionRawRow[]) {
         first_value: firstValue,
         m: monthNumber,
         metric,
+        segment,
         cohort_size: cohortSize,
         retention: parsedValue,
       });
@@ -78,6 +86,7 @@ function shapeLongRows(rawRows: RetentionRawRow[]) {
     const dimension = extractDimension(raw.dimension);
     const firstValue = ensureFirstValue(dimension, raw.first_value);
     const metric = extractMetric(raw.metric);
+    const segment = extractSegment(raw.segment);
     const mValue = coerceNumber(raw.m);
     if (!Number.isInteger(mValue) || mValue < 0) continue;
     const retention = parseRetention(raw.retention);
@@ -89,6 +98,7 @@ function shapeLongRows(rawRows: RetentionRawRow[]) {
       first_value: firstValue,
       m: mValue,
       metric,
+      segment,
       cohort_size: coerceNumber(raw.cohort_size),
       retention,
     });

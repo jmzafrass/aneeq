@@ -2,8 +2,14 @@
 """
 Generate purchase_retention.csv and ltv_by_category_sku.csv from allorders.csv.
 
-Reverse-engineered from dashboard/src/lib/orders/compute.ts
-Replicates the exact cohort retention and cumulative LTV algorithms.
+Uses subscription-aware retention: subscribers are counted as "active" (retained)
+for the full duration of their billing cadence, not just when they make a purchase.
+This matches the logic in dashboard/src/lib/orders/churn.ts.
+
+Generates 3 segments per cohort:
+  - "all"         = all customers, subscription-aware
+  - "subscribers"  = only customers whose first purchase included a subscription (POM HL/BG)
+  - "onetime"      = only non-subscription first-purchase customers, purchase-based
 
 Usage:
     python3 scripts/dashboard/generate_retention_ltv.py
@@ -30,7 +36,7 @@ RETENTION_CSV = os.path.join(DATA_DIR, 'purchase_retention.csv')
 LTV_CSV = os.path.join(DATA_DIR, 'ltv_by_category_sku.csv')
 
 # =============================================================================
-# Constants (from compute.ts)
+# Constants (from compute.ts / constants.ts)
 # =============================================================================
 
 CATEGORY_PRIORITY = ["pom hl", "pom bg", "pom sh", "otc hl", "otc sh", "otc sk"]
@@ -119,6 +125,32 @@ def to_number(raw: str) -> float:
     return val if val == val else 0.0  # NaN guard
 
 
+def parse_cadence(notes: str) -> int:
+    """Parse billing cadence from Notes field.
+    Matches churn.ts parseCadence(): extracts numbers before month/months/mo/mos,
+    sums them, defaults to 1.
+    Also handles plain numbers (e.g. '1', '3') that don't have 'month' suffix."""
+    notes = (notes or '').strip()
+    if not notes:
+        return 1
+    # First try "N month(s)" pattern (matches churn.ts)
+    matches = re.findall(r'(\d+)\s*(?:month|months|mo|mos)', notes, re.IGNORECASE)
+    if matches:
+        total = sum(int(m) for m in matches)
+        return total if total > 0 else 1
+    # Fall back to plain number
+    match = re.match(r'^(\d+)$', notes)
+    if match:
+        val = int(match.group(1))
+        return val if val > 0 else 1
+    return 1
+
+
+def is_subscription_order(order) -> bool:
+    """Check if order contains subscription categories (POM HL or POM BG)."""
+    return any(cat in SUBSCRIPTION_CATEGORIES for cat in order.categories)
+
+
 # =============================================================================
 # Order Data Structure
 # =============================================================================
@@ -186,12 +218,22 @@ def load_orders(csv_path: str) -> List[Order]:
 
 
 # =============================================================================
-# Core Computation (mirrors compute.ts computeAllFromOrders)
+# Core Computation — Subscription-Aware Retention + LTV
 # =============================================================================
 
 def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dict]]:
-    """Compute cohort retention and cumulative LTV.
-    Exact port of compute.ts lines 527-725."""
+    """Compute subscription-aware cohort retention and cumulative LTV.
+
+    For retention:
+      - Subscribers are "active" for the full billing cadence period after each purchase.
+        E.g., a 3-month subscriber who bought in Jan is active in Jan, Feb, Mar.
+      - One-time buyers are active only in their purchase month.
+      - Three segments: "all" (mixed), "subscribers" (sub-only), "onetime" (ot-only).
+
+    For LTV:
+      - Uses actual purchase revenue (not projected).
+      - Segments control which UIDs are included in the cohort denominator.
+    """
 
     if not orders:
         return [], []
@@ -209,6 +251,7 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
 
     uid_first_month: Dict[str, str] = {}
     uid_first_category: Dict[str, str] = {}
+    uid_is_subscriber: Dict[str, bool] = {}
 
     for uid, user_orders in orders_by_uid.items():
         user_orders.sort(key=lambda o: o.date)
@@ -219,8 +262,14 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
         for o in same_month:
             all_cats.extend(o.categories)
         uid_first_category[uid] = prioritize_category(all_cats)
+        # A subscriber is someone whose first-month orders include a subscription category
+        uid_is_subscriber[uid] = any(is_subscription_order(o) for o in same_month)
 
-    # --- Purchase month sets (lines 544-557) ---
+    sub_count = sum(1 for v in uid_is_subscriber.values() if v)
+    ot_count = sum(1 for v in uid_is_subscriber.values() if not v)
+    print(f"  Segment split: {sub_count} subscribers, {ot_count} one-time")
+
+    # --- Purchase month sets (original, for fallback / one-time) ---
     purchases_by_uid: Dict[str, Set[str]] = defaultdict(set)
     purchases_by_uid_by_cat: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
 
@@ -232,7 +281,42 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
         for cat in o.categories:
             purchases_by_uid_by_cat[o.uid][cat].add(month)
 
-    # --- Revenue maps (lines 632-650) ---
+    # --- Subscription-aware active month sets ---
+    # Mirrors churn.ts: subscribers projected forward by cadence
+    active_months_by_uid: Dict[str, Set[str]] = defaultdict(set)
+    active_months_by_uid_by_cat: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
+
+    cadence_stats = defaultdict(int)
+    for o in orders:
+        month = ym(o.date)
+        if month > as_of_month:
+            continue
+
+        if is_subscription_order(o):
+            cadence = parse_cadence(o.notes)
+            cadence_stats[cadence] += 1
+            for i in range(cadence):
+                projected = ym(add_months(o.date, i))
+                if projected > as_of_month:
+                    break
+                active_months_by_uid[o.uid].add(projected)
+                # Category-level: only project subscription categories
+                for cat in o.categories:
+                    if cat in SUBSCRIPTION_CATEGORIES:
+                        active_months_by_uid_by_cat[o.uid][cat].add(projected)
+                    else:
+                        # Non-sub categories in a sub order: only purchase month
+                        if i == 0:
+                            active_months_by_uid_by_cat[o.uid][cat].add(projected)
+        else:
+            # One-time: active only in purchase month
+            active_months_by_uid[o.uid].add(month)
+            for cat in o.categories:
+                active_months_by_uid_by_cat[o.uid][cat].add(month)
+
+    print(f"  Cadence distribution: {dict(sorted(cadence_stats.items()))}")
+
+    # --- Revenue maps ---
     revenue_by_uid: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
     revenue_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]] = \
         defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
@@ -248,55 +332,50 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                 revenue_by_uid_by_cat[o.uid][cat][month] += share
 
     # --- Build cohorts ---
-    # Overall: cohort_month → set of uids (lines 561-565)
+    # Overall: cohort_month -> set of uids
     overall_cohorts: Dict[str, Set[str]] = defaultdict(set)
+    sub_cohorts: Dict[str, Set[str]] = defaultdict(set)
+    ot_cohorts: Dict[str, Set[str]] = defaultdict(set)
+
     for uid, cohort in uid_first_month.items():
         overall_cohorts[cohort].add(uid)
+        if uid_is_subscriber[uid]:
+            sub_cohorts[cohort].add(uid)
+        else:
+            ot_cohorts[cohort].add(uid)
 
-    # Category: cohort_month → category → set of uids (lines 588-596)
+    # Category: cohort_month -> category -> set of uids
     category_cohorts: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
+    category_sub_cohorts: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
+    category_ot_cohorts: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))
+
     for uid, cohort in uid_first_month.items():
         cat = uid_first_category.get(uid, '')
         if not cat:
             continue
         category_cohorts[cohort][cat].add(uid)
+        if uid_is_subscriber[uid]:
+            category_sub_cohorts[cohort][cat].add(uid)
+        else:
+            category_ot_cohorts[cohort][cat].add(uid)
 
     # =================================================================
-    # RETENTION (lines 559-630)
+    # RETENTION — subscription-aware
     # =================================================================
     retention_rows: List[dict] = []
 
-    # Overall retention (lines 567-586)
-    for cohort_month in sorted(overall_cohorts.keys()):
-        users = overall_cohorts[cohort_month]
-        cohort_size = len(users)
-        cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
-
-        for offset in range(MAX_OFFSET + 1):
-            target_month = ym(add_months(cohort_date, offset))
-            if target_month > as_of_month:
-                break
-
-            retained = sum(
-                1 for uid in users
-                if target_month in purchases_by_uid.get(uid, set())
-            )
-            pct = (retained / cohort_size * 100) if cohort_size else 0
-
-            retention_rows.append({
-                'cohort_month': f"{cohort_month}-01",
-                'dimension': 'overall',
-                'first_value': 'ALL',
-                'm': offset,
-                'metric': 'any',
-                'cohort_size': cohort_size,
-                'retention': f"{pct:.2f}%",
-            })
-
-    # Category retention (lines 598-630)
-    for cohort_month in sorted(category_cohorts.keys()):
-        for category in sorted(category_cohorts[cohort_month].keys()):
-            users = category_cohorts[cohort_month][category]
+    def compute_segment_retention(
+        cohort_map: Dict[str, Set[str]],
+        active_map: Dict[str, Set[str]],
+        segment: str,
+        dimension: str,
+        first_value: str,
+        metric: str,
+    ):
+        for cohort_month in sorted(cohort_map.keys()):
+            users = cohort_map[cohort_month]
+            if not users:
+                continue
             cohort_size = len(users)
             cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
 
@@ -305,79 +384,104 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                 if target_month > as_of_month:
                     break
 
-                retained_any = sum(
+                retained = sum(
                     1 for uid in users
-                    if target_month in purchases_by_uid.get(uid, set())
+                    if target_month in active_map.get(uid, set())
                 )
-                retained_same = sum(
-                    1 for uid in users
-                    if target_month in purchases_by_uid_by_cat.get(uid, {}).get(category, set())
-                )
-
-                pct_any = (retained_any / cohort_size * 100) if cohort_size else 0
-                pct_same = (retained_same / cohort_size * 100) if cohort_size else 0
+                pct = (retained / cohort_size * 100) if cohort_size else 0
 
                 retention_rows.append({
                     'cohort_month': f"{cohort_month}-01",
-                    'dimension': 'category',
-                    'first_value': category,
+                    'dimension': dimension,
+                    'first_value': first_value,
                     'm': offset,
-                    'metric': 'any',
+                    'metric': metric,
+                    'segment': segment,
                     'cohort_size': cohort_size,
-                    'retention': f"{pct_any:.2f}%",
+                    'retention': f"{pct:.2f}%",
                 })
-                retention_rows.append({
-                    'cohort_month': f"{cohort_month}-01",
-                    'dimension': 'category',
-                    'first_value': category,
-                    'm': offset,
-                    'metric': 'same',
-                    'cohort_size': cohort_size,
-                    'retention': f"{pct_same:.2f}%",
-                })
+
+    def compute_category_segment_retention(
+        cat_cohort_map: Dict[str, Dict[str, Set[str]]],
+        active_map_any: Dict[str, Set[str]],
+        active_map_cat: Dict[str, Dict[str, Set[str]]],
+        segment: str,
+    ):
+        for cohort_month in sorted(cat_cohort_map.keys()):
+            for category in sorted(cat_cohort_map[cohort_month].keys()):
+                users = cat_cohort_map[cohort_month][category]
+                if not users:
+                    continue
+                cohort_size = len(users)
+                cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
+
+                for offset in range(MAX_OFFSET + 1):
+                    target_month = ym(add_months(cohort_date, offset))
+                    if target_month > as_of_month:
+                        break
+
+                    retained_any = sum(
+                        1 for uid in users
+                        if target_month in active_map_any.get(uid, set())
+                    )
+                    retained_same = sum(
+                        1 for uid in users
+                        if target_month in active_map_cat.get(uid, {}).get(category, set())
+                    )
+
+                    pct_any = (retained_any / cohort_size * 100) if cohort_size else 0
+                    pct_same = (retained_same / cohort_size * 100) if cohort_size else 0
+
+                    retention_rows.append({
+                        'cohort_month': f"{cohort_month}-01",
+                        'dimension': 'category',
+                        'first_value': category,
+                        'm': offset,
+                        'metric': 'any',
+                        'segment': segment,
+                        'cohort_size': cohort_size,
+                        'retention': f"{pct_any:.2f}%",
+                    })
+                    retention_rows.append({
+                        'cohort_month': f"{cohort_month}-01",
+                        'dimension': 'category',
+                        'first_value': category,
+                        'm': offset,
+                        'metric': 'same',
+                        'segment': segment,
+                        'cohort_size': cohort_size,
+                        'retention': f"{pct_same:.2f}%",
+                    })
+
+    # --- Segment "all": subscription-aware for everyone ---
+    compute_segment_retention(overall_cohorts, active_months_by_uid, 'all', 'overall', 'ALL', 'any')
+    compute_category_segment_retention(category_cohorts, active_months_by_uid, active_months_by_uid_by_cat, 'all')
+
+    # --- Segment "subscribers": subscription-aware, subscriber UIDs only ---
+    compute_segment_retention(sub_cohorts, active_months_by_uid, 'subscribers', 'overall', 'ALL', 'any')
+    compute_category_segment_retention(category_sub_cohorts, active_months_by_uid, active_months_by_uid_by_cat, 'subscribers')
+
+    # --- Segment "onetime": purchase-based, one-time UIDs only ---
+    compute_segment_retention(ot_cohorts, purchases_by_uid, 'onetime', 'overall', 'ALL', 'any')
+    compute_category_segment_retention(category_ot_cohorts, purchases_by_uid, purchases_by_uid_by_cat, 'onetime')
 
     # =================================================================
-    # LTV (lines 632-725)
+    # LTV — segmented
     # =================================================================
     ltv_rows: List[dict] = []
 
-    # Overall LTV (lines 654-678)
-    for cohort_month in sorted(overall_cohorts.keys()):
-        users = overall_cohorts[cohort_month]
-        cohort_size = len(users)
-        cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
-
-        for offset in range(MAX_OFFSET + 1):
-            target_date = add_months(cohort_date, offset)
-            if ym(target_date) > as_of_month:
-                break
-
-            # Cumulative revenue from month 0 through month offset
-            total = 0.0
-            for uid in users:
-                month_rev = revenue_by_uid.get(uid, {})
-                for step in range(offset + 1):
-                    key = ym(add_months(cohort_date, step))
-                    total += month_rev.get(key, 0)
-
-            ltv = round(total / cohort_size, 2) if cohort_size else 0
-
-            ltv_rows.append({
-                'cohort_type': 'purchase',
-                'cohort_month': f"{cohort_month}-01",
-                'dimension': 'overall',
-                'first_value': 'ALL',
-                'm': offset,
-                'metric': 'any',
-                'measure': 'gross_margin',
-                'cohort_size': cohort_size,
-                'ltv_per_user': ltv,
-            })
-
-    # Category LTV (lines 681-725)
-    for cohort_month in sorted(category_cohorts.keys()):
-        for category in sorted(category_cohorts[cohort_month].keys()):
-            users = category_cohorts[cohort_month][category]
+    def compute_segment_ltv(
+        cohort_map: Dict[str, Set[str]],
+        segment: str,
+        dimension: str,
+        first_value: str,
+        metric: str,
+        rev_map: Dict[str, Dict[str, float]],
+    ):
+        for cohort_month in sorted(cohort_map.keys()):
+            users = cohort_map[cohort_month]
+            if not users:
+                continue
             cohort_size = len(users)
             cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
 
@@ -386,46 +490,95 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                 if ym(target_date) > as_of_month:
                     break
 
-                total_any = 0.0
-                total_same = 0.0
+                total = 0.0
                 for uid in users:
-                    # "any" = all revenue across all categories
-                    month_rev = revenue_by_uid.get(uid, {})
+                    month_rev = rev_map.get(uid, {})
                     for step in range(offset + 1):
                         key = ym(add_months(cohort_date, step))
-                        total_any += month_rev.get(key, 0)
+                        total += month_rev.get(key, 0)
 
-                    # "same" = revenue only from this specific category
-                    cat_rev = revenue_by_uid_by_cat.get(uid, {}).get(category, {})
-                    for step in range(offset + 1):
-                        key = ym(add_months(cohort_date, step))
-                        total_same += cat_rev.get(key, 0)
-
-                ltv_any = round(total_any / cohort_size, 2) if cohort_size else 0
-                ltv_same = round(total_same / cohort_size, 2) if cohort_size else 0
+                ltv = round(total / cohort_size, 2) if cohort_size else 0
 
                 ltv_rows.append({
                     'cohort_type': 'purchase',
                     'cohort_month': f"{cohort_month}-01",
-                    'dimension': 'category',
-                    'first_value': category,
+                    'dimension': dimension,
+                    'first_value': first_value,
                     'm': offset,
-                    'metric': 'any',
+                    'metric': metric,
                     'measure': 'gross_margin',
+                    'segment': segment,
                     'cohort_size': cohort_size,
-                    'ltv_per_user': ltv_any,
+                    'ltv_per_user': ltv,
                 })
-                ltv_rows.append({
-                    'cohort_type': 'purchase',
-                    'cohort_month': f"{cohort_month}-01",
-                    'dimension': 'category',
-                    'first_value': category,
-                    'm': offset,
-                    'metric': 'same',
-                    'measure': 'gross_margin',
-                    'cohort_size': cohort_size,
-                    'ltv_per_user': ltv_same,
-                })
+
+    def compute_category_segment_ltv(
+        cat_cohort_map: Dict[str, Dict[str, Set[str]]],
+        segment: str,
+    ):
+        for cohort_month in sorted(cat_cohort_map.keys()):
+            for category in sorted(cat_cohort_map[cohort_month].keys()):
+                users = cat_cohort_map[cohort_month][category]
+                if not users:
+                    continue
+                cohort_size = len(users)
+                cohort_date = date(int(cohort_month[:4]), int(cohort_month[5:7]), 1)
+
+                for offset in range(MAX_OFFSET + 1):
+                    target_date = add_months(cohort_date, offset)
+                    if ym(target_date) > as_of_month:
+                        break
+
+                    total_any = 0.0
+                    total_same = 0.0
+                    for uid in users:
+                        month_rev = revenue_by_uid.get(uid, {})
+                        for step in range(offset + 1):
+                            key = ym(add_months(cohort_date, step))
+                            total_any += month_rev.get(key, 0)
+
+                        cat_rev = revenue_by_uid_by_cat.get(uid, {}).get(category, {})
+                        for step in range(offset + 1):
+                            key = ym(add_months(cohort_date, step))
+                            total_same += cat_rev.get(key, 0)
+
+                    ltv_any = round(total_any / cohort_size, 2) if cohort_size else 0
+                    ltv_same = round(total_same / cohort_size, 2) if cohort_size else 0
+
+                    ltv_rows.append({
+                        'cohort_type': 'purchase',
+                        'cohort_month': f"{cohort_month}-01",
+                        'dimension': 'category',
+                        'first_value': category,
+                        'm': offset,
+                        'metric': 'any',
+                        'measure': 'gross_margin',
+                        'segment': segment,
+                        'cohort_size': cohort_size,
+                        'ltv_per_user': ltv_any,
+                    })
+                    ltv_rows.append({
+                        'cohort_type': 'purchase',
+                        'cohort_month': f"{cohort_month}-01",
+                        'dimension': 'category',
+                        'first_value': category,
+                        'm': offset,
+                        'metric': 'same',
+                        'measure': 'gross_margin',
+                        'segment': segment,
+                        'cohort_size': cohort_size,
+                        'ltv_per_user': ltv_same,
+                    })
+
+    # Overall LTV by segment
+    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', revenue_by_uid)
+    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', revenue_by_uid)
+    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', revenue_by_uid)
+
+    # Category LTV by segment
+    compute_category_segment_ltv(category_cohorts, 'all')
+    compute_category_segment_ltv(category_sub_cohorts, 'subscribers')
+    compute_category_segment_ltv(category_ot_cohorts, 'onetime')
 
     return retention_rows, ltv_rows
 
@@ -435,7 +588,7 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
 # =============================================================================
 
 def write_retention_csv(rows: List[dict], filepath: str) -> int:
-    fieldnames = ['cohort_month', 'dimension', 'first_value', 'm', 'metric', 'cohort_size', 'retention']
+    fieldnames = ['cohort_month', 'dimension', 'first_value', 'm', 'metric', 'segment', 'cohort_size', 'retention']
     with open(filepath, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -446,7 +599,7 @@ def write_retention_csv(rows: List[dict], filepath: str) -> int:
 
 def write_ltv_csv(rows: List[dict], filepath: str) -> int:
     fieldnames = ['cohort_type', 'cohort_month', 'dimension', 'first_value',
-                  'm', 'metric', 'measure', 'cohort_size', 'ltv_per_user']
+                  'm', 'metric', 'measure', 'segment', 'cohort_size', 'ltv_per_user']
     with open(filepath, 'w', newline='', encoding='utf-8') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -464,7 +617,7 @@ def main():
 
     print("=" * 60)
     print("GENERATE RETENTION & LTV CSVs")
-    print("Reverse-engineered from dashboard/src/lib/orders/compute.ts")
+    print("Subscription-aware retention (ports churn.ts logic)")
     if dry_run:
         print("  *** DRY RUN — no files will be written ***")
     print("=" * 60)
@@ -476,7 +629,7 @@ def main():
     unique_months = sorted(set(o.month_key for o in orders))
     print(f"  Delivered orders: {len(orders)}")
     print(f"  Unique customers: {len(unique_uids)}")
-    print(f"  Date range: {unique_months[0] if unique_months else '?'} → {unique_months[-1] if unique_months else '?'}")
+    print(f"  Date range: {unique_months[0] if unique_months else '?'} -> {unique_months[-1] if unique_months else '?'}")
 
     # Category breakdown
     cat_counts: Dict[str, int] = defaultdict(int)
@@ -487,58 +640,42 @@ def main():
     for cat in sorted(cat_counts.keys()):
         print(f"    {cat:20s} {cat_counts[cat]:,}")
 
-    print(f"\n2. COMPUTING COHORT METRICS")
+    print(f"\n2. COMPUTING COHORT METRICS (subscription-aware)")
     retention_rows, ltv_rows = compute_retention_and_ltv(orders)
 
     # Summaries
-    ret_overall = [r for r in retention_rows if r['dimension'] == 'overall']
-    ret_category = [r for r in retention_rows if r['dimension'] == 'category']
-    ltv_overall = [r for r in ltv_rows if r['dimension'] == 'overall']
-    ltv_category = [r for r in ltv_rows if r['dimension'] == 'category']
+    for seg in ('all', 'subscribers', 'onetime'):
+        seg_ret = [r for r in retention_rows if r['segment'] == seg and r['dimension'] == 'overall']
+        seg_ltv = [r for r in ltv_rows if r['segment'] == seg and r['dimension'] == 'overall']
+        print(f"\n  Segment '{seg}':")
+        print(f"    Retention rows (overall): {len(seg_ret)}")
+        print(f"    LTV rows (overall):       {len(seg_ltv)}")
 
-    ret_cohorts = sorted(set(r['cohort_month'] for r in retention_rows))
-    ltv_cohorts = sorted(set(r['cohort_month'] for r in ltv_rows))
+        # Show M0/M1 for recent cohorts
+        m0_rows = [r for r in seg_ret if r['m'] == 0]
+        m1_rows = {r['cohort_month']: r for r in seg_ret if r['m'] == 1}
+        if m0_rows:
+            print(f"    Recent cohorts:")
+            for r in m0_rows[-5:]:
+                cm = r['cohort_month']
+                m1 = m1_rows.get(cm)
+                m1_str = m1['retention'] if m1 else '-'
+                print(f"      {cm}: n={r['cohort_size']:3d}, M0={r['retention']}, M1={m1_str}")
 
-    print(f"\n  RETENTION:")
-    print(f"    Overall rows:  {len(ret_overall)}")
-    print(f"    Category rows: {len(ret_category)}")
-    print(f"    Total rows:    {len(retention_rows)}")
-    print(f"    Cohorts:       {len(ret_cohorts)} ({ret_cohorts[0] if ret_cohorts else '?'} → {ret_cohorts[-1] if ret_cohorts else '?'})")
-
-    # Show overall cohort sizes
-    print(f"\n    Overall cohort sizes:")
-    seen_cohorts = set()
-    for r in ret_overall:
-        cm = r['cohort_month']
-        if cm not in seen_cohorts and r['m'] == 0:
-            seen_cohorts.add(cm)
-            print(f"      {cm}: {r['cohort_size']} users, retention m0={r['retention']}")
-
-    # Category cohort breakdown
-    cat_in_ret = sorted(set(r['first_value'] for r in ret_category))
-    print(f"\n    Categories in retention: {', '.join(cat_in_ret)}")
-
-    print(f"\n  LTV:")
-    print(f"    Overall rows:  {len(ltv_overall)}")
-    print(f"    Category rows: {len(ltv_category)}")
-    print(f"    Total rows:    {len(ltv_rows)}")
-    print(f"    Cohorts:       {len(ltv_cohorts)} ({ltv_cohorts[0] if ltv_cohorts else '?'} → {ltv_cohorts[-1] if ltv_cohorts else '?'})")
-
-    # Show overall LTV at m=0 for each cohort
-    print(f"\n    Overall LTV (m=0) by cohort:")
-    for r in ltv_overall:
-        if r['m'] == 0:
-            print(f"      {r['cohort_month']}: {r['cohort_size']} users, LTV/user = {r['ltv_per_user']}")
+    total_ret = len(retention_rows)
+    total_ltv = len(ltv_rows)
+    print(f"\n  Total retention rows: {total_ret}")
+    print(f"  Total LTV rows:      {total_ltv}")
 
     if dry_run:
         print(f"\n3. DRY RUN — skipping file writes")
     else:
         print(f"\n3. WRITING CSV FILES")
         n_ret = write_retention_csv(retention_rows, RETENTION_CSV)
-        print(f"  Wrote {n_ret} rows → {RETENTION_CSV}")
+        print(f"  Wrote {n_ret} rows -> {RETENTION_CSV}")
 
         n_ltv = write_ltv_csv(ltv_rows, LTV_CSV)
-        print(f"  Wrote {n_ltv} rows → {LTV_CSV}")
+        print(f"  Wrote {n_ltv} rows -> {LTV_CSV}")
 
     # Spot checks
     print(f"\n4. SPOT CHECKS")
@@ -553,10 +690,11 @@ def main():
         print(f"  OK: All m=0 retention = 100.00%")
 
     # Check: LTV should be monotonically non-decreasing per cohort
+    ltv_overall_all = [r for r in ltv_rows if r['dimension'] == 'overall' and r['segment'] == 'all']
     ltv_issues = 0
-    for cm in sorted(set(r['cohort_month'] for r in ltv_overall)):
+    for cm in sorted(set(r['cohort_month'] for r in ltv_overall_all)):
         cohort_rows = sorted(
-            [r for r in ltv_overall if r['cohort_month'] == cm],
+            [r for r in ltv_overall_all if r['cohort_month'] == cm],
             key=lambda r: r['m']
         )
         prev = 0
@@ -572,12 +710,16 @@ def main():
     elif ltv_issues > 3:
         print(f"  ... and {ltv_issues - 3} more LTV decrease warnings")
 
-    # Check: retention categories match LTV categories
-    ltv_cats = sorted(set(r['first_value'] for r in ltv_category))
-    if cat_in_ret == ltv_cats:
-        print(f"  OK: Retention and LTV have same categories")
-    else:
-        print(f"  WARNING: Category mismatch — Ret: {cat_in_ret}, LTV: {ltv_cats}")
+    # Check: POM HL subscriber M1 retention (Antoine's benchmark: ~79-82%)
+    pom_hl_sub = [r for r in retention_rows
+                  if r['dimension'] == 'category' and r['first_value'] == 'pom hl'
+                  and r['segment'] == 'subscribers' and r['metric'] == 'same']
+    pom_m1 = {r['cohort_month']: r for r in pom_hl_sub if r['m'] == 1}
+    if pom_m1:
+        print(f"\n  POM HL subscriber 'same' retention (M1) — target ~79-82%:")
+        for cm in sorted(pom_m1.keys())[-6:]:
+            r = pom_m1[cm]
+            print(f"    {cm}: n={r['cohort_size']}, M1={r['retention']}")
 
     print("\n" + "=" * 60)
     if dry_run:

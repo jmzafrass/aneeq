@@ -1,1055 +1,2226 @@
-cohort_month,dimension,first_value,m,metric,cohort_size,retention
-2024-10-01,overall,ALL,0,any,3,100.00%
-2024-10-01,overall,ALL,1,any,3,66.67%
-2024-10-01,overall,ALL,2,any,3,66.67%
-2024-10-01,overall,ALL,3,any,3,66.67%
-2024-10-01,overall,ALL,4,any,3,33.33%
-2024-10-01,overall,ALL,5,any,3,0.00%
-2024-10-01,overall,ALL,6,any,3,0.00%
-2024-10-01,overall,ALL,7,any,3,33.33%
-2024-10-01,overall,ALL,8,any,3,33.33%
-2024-10-01,overall,ALL,9,any,3,33.33%
-2024-10-01,overall,ALL,10,any,3,0.00%
-2024-10-01,overall,ALL,11,any,3,0.00%
-2024-10-01,overall,ALL,12,any,3,0.00%
-2024-11-01,overall,ALL,0,any,5,100.00%
-2024-11-01,overall,ALL,1,any,5,40.00%
-2024-11-01,overall,ALL,2,any,5,20.00%
-2024-11-01,overall,ALL,3,any,5,20.00%
-2024-11-01,overall,ALL,4,any,5,20.00%
-2024-11-01,overall,ALL,5,any,5,20.00%
-2024-11-01,overall,ALL,6,any,5,20.00%
-2024-11-01,overall,ALL,7,any,5,0.00%
-2024-11-01,overall,ALL,8,any,5,20.00%
-2024-11-01,overall,ALL,9,any,5,20.00%
-2024-11-01,overall,ALL,10,any,5,20.00%
-2024-11-01,overall,ALL,11,any,5,20.00%
-2024-11-01,overall,ALL,12,any,5,20.00%
-2024-12-01,overall,ALL,0,any,19,100.00%
-2024-12-01,overall,ALL,1,any,19,63.16%
-2024-12-01,overall,ALL,2,any,19,63.16%
-2024-12-01,overall,ALL,3,any,19,57.89%
-2024-12-01,overall,ALL,4,any,19,63.16%
-2024-12-01,overall,ALL,5,any,19,52.63%
-2024-12-01,overall,ALL,6,any,19,36.84%
-2024-12-01,overall,ALL,7,any,19,36.84%
-2024-12-01,overall,ALL,8,any,19,36.84%
-2024-12-01,overall,ALL,9,any,19,31.58%
-2024-12-01,overall,ALL,10,any,19,36.84%
-2024-12-01,overall,ALL,11,any,19,31.58%
-2024-12-01,overall,ALL,12,any,19,31.58%
-2025-01-01,overall,ALL,0,any,21,100.00%
-2025-01-01,overall,ALL,1,any,21,28.57%
-2025-01-01,overall,ALL,2,any,21,28.57%
-2025-01-01,overall,ALL,3,any,21,14.29%
-2025-01-01,overall,ALL,4,any,21,9.52%
-2025-01-01,overall,ALL,5,any,21,14.29%
-2025-01-01,overall,ALL,6,any,21,4.76%
-2025-01-01,overall,ALL,7,any,21,14.29%
-2025-01-01,overall,ALL,8,any,21,4.76%
-2025-01-01,overall,ALL,9,any,21,0.00%
-2025-01-01,overall,ALL,10,any,21,4.76%
-2025-01-01,overall,ALL,11,any,21,0.00%
-2025-01-01,overall,ALL,12,any,21,4.76%
-2025-02-01,overall,ALL,0,any,16,100.00%
-2025-02-01,overall,ALL,1,any,16,68.75%
-2025-02-01,overall,ALL,2,any,16,56.25%
-2025-02-01,overall,ALL,3,any,16,43.75%
-2025-02-01,overall,ALL,4,any,16,37.50%
-2025-02-01,overall,ALL,5,any,16,37.50%
-2025-02-01,overall,ALL,6,any,16,37.50%
-2025-02-01,overall,ALL,7,any,16,31.25%
-2025-02-01,overall,ALL,8,any,16,31.25%
-2025-02-01,overall,ALL,9,any,16,18.75%
-2025-02-01,overall,ALL,10,any,16,25.00%
-2025-02-01,overall,ALL,11,any,16,25.00%
-2025-03-01,overall,ALL,0,any,60,100.00%
-2025-03-01,overall,ALL,1,any,60,55.00%
-2025-03-01,overall,ALL,2,any,60,46.67%
-2025-03-01,overall,ALL,3,any,60,40.00%
-2025-03-01,overall,ALL,4,any,60,38.33%
-2025-03-01,overall,ALL,5,any,60,38.33%
-2025-03-01,overall,ALL,6,any,60,35.00%
-2025-03-01,overall,ALL,7,any,60,30.00%
-2025-03-01,overall,ALL,8,any,60,20.00%
-2025-03-01,overall,ALL,9,any,60,28.33%
-2025-03-01,overall,ALL,10,any,60,21.67%
-2025-04-01,overall,ALL,0,any,78,100.00%
-2025-04-01,overall,ALL,1,any,78,44.87%
-2025-04-01,overall,ALL,2,any,78,47.44%
-2025-04-01,overall,ALL,3,any,78,47.44%
-2025-04-01,overall,ALL,4,any,78,41.03%
-2025-04-01,overall,ALL,5,any,78,34.62%
-2025-04-01,overall,ALL,6,any,78,34.62%
-2025-04-01,overall,ALL,7,any,78,26.92%
-2025-04-01,overall,ALL,8,any,78,28.21%
-2025-04-01,overall,ALL,9,any,78,24.36%
-2025-05-01,overall,ALL,0,any,73,100.00%
-2025-05-01,overall,ALL,1,any,73,57.53%
-2025-05-01,overall,ALL,2,any,73,54.79%
-2025-05-01,overall,ALL,3,any,73,49.32%
-2025-05-01,overall,ALL,4,any,73,41.10%
-2025-05-01,overall,ALL,5,any,73,32.88%
-2025-05-01,overall,ALL,6,any,73,36.99%
-2025-05-01,overall,ALL,7,any,73,30.14%
-2025-05-01,overall,ALL,8,any,73,30.14%
-2025-06-01,overall,ALL,0,any,75,100.00%
-2025-06-01,overall,ALL,1,any,75,48.00%
-2025-06-01,overall,ALL,2,any,75,52.00%
-2025-06-01,overall,ALL,3,any,75,38.67%
-2025-06-01,overall,ALL,4,any,75,32.00%
-2025-06-01,overall,ALL,5,any,75,29.33%
-2025-06-01,overall,ALL,6,any,75,36.00%
-2025-06-01,overall,ALL,7,any,75,22.67%
-2025-07-01,overall,ALL,0,any,76,100.00%
-2025-07-01,overall,ALL,1,any,76,27.63%
-2025-07-01,overall,ALL,2,any,76,36.84%
-2025-07-01,overall,ALL,3,any,76,50.00%
-2025-07-01,overall,ALL,4,any,76,34.21%
-2025-07-01,overall,ALL,5,any,76,28.95%
-2025-07-01,overall,ALL,6,any,76,35.53%
-2025-08-01,overall,ALL,0,any,76,100.00%
-2025-08-01,overall,ALL,1,any,76,25.00%
-2025-08-01,overall,ALL,2,any,76,26.32%
-2025-08-01,overall,ALL,3,any,76,40.79%
-2025-08-01,overall,ALL,4,any,76,19.74%
-2025-08-01,overall,ALL,5,any,76,15.79%
-2025-09-01,overall,ALL,0,any,88,100.00%
-2025-09-01,overall,ALL,1,any,88,25.00%
-2025-09-01,overall,ALL,2,any,88,26.14%
-2025-09-01,overall,ALL,3,any,88,39.77%
-2025-09-01,overall,ALL,4,any,88,19.32%
-2025-10-01,overall,ALL,0,any,101,100.00%
-2025-10-01,overall,ALL,1,any,101,16.83%
-2025-10-01,overall,ALL,2,any,101,23.76%
-2025-10-01,overall,ALL,3,any,101,30.69%
-2025-11-01,overall,ALL,0,any,162,100.00%
-2025-11-01,overall,ALL,1,any,162,16.67%
-2025-11-01,overall,ALL,2,any,162,17.28%
-2025-12-01,overall,ALL,0,any,146,100.00%
-2025-12-01,overall,ALL,1,any,146,17.12%
-2026-01-01,overall,ALL,0,any,165,100.00%
-2024-10-01,category,pom hl,0,any,3,100.00%
-2024-10-01,category,pom hl,0,same,3,100.00%
-2024-10-01,category,pom hl,1,any,3,66.67%
-2024-10-01,category,pom hl,1,same,3,66.67%
-2024-10-01,category,pom hl,2,any,3,66.67%
-2024-10-01,category,pom hl,2,same,3,66.67%
-2024-10-01,category,pom hl,3,any,3,66.67%
-2024-10-01,category,pom hl,3,same,3,66.67%
-2024-10-01,category,pom hl,4,any,3,33.33%
-2024-10-01,category,pom hl,4,same,3,33.33%
-2024-10-01,category,pom hl,5,any,3,0.00%
-2024-10-01,category,pom hl,5,same,3,0.00%
-2024-10-01,category,pom hl,6,any,3,0.00%
-2024-10-01,category,pom hl,6,same,3,0.00%
-2024-10-01,category,pom hl,7,any,3,33.33%
-2024-10-01,category,pom hl,7,same,3,33.33%
-2024-10-01,category,pom hl,8,any,3,33.33%
-2024-10-01,category,pom hl,8,same,3,33.33%
-2024-10-01,category,pom hl,9,any,3,33.33%
-2024-10-01,category,pom hl,9,same,3,33.33%
-2024-10-01,category,pom hl,10,any,3,0.00%
-2024-10-01,category,pom hl,10,same,3,0.00%
-2024-10-01,category,pom hl,11,any,3,0.00%
-2024-10-01,category,pom hl,11,same,3,0.00%
-2024-10-01,category,pom hl,12,any,3,0.00%
-2024-10-01,category,pom hl,12,same,3,0.00%
-2024-11-01,category,otc sh,0,any,1,100.00%
-2024-11-01,category,otc sh,0,same,1,100.00%
-2024-11-01,category,otc sh,1,any,1,0.00%
-2024-11-01,category,otc sh,1,same,1,0.00%
-2024-11-01,category,otc sh,2,any,1,0.00%
-2024-11-01,category,otc sh,2,same,1,0.00%
-2024-11-01,category,otc sh,3,any,1,0.00%
-2024-11-01,category,otc sh,3,same,1,0.00%
-2024-11-01,category,otc sh,4,any,1,0.00%
-2024-11-01,category,otc sh,4,same,1,0.00%
-2024-11-01,category,otc sh,5,any,1,0.00%
-2024-11-01,category,otc sh,5,same,1,0.00%
-2024-11-01,category,otc sh,6,any,1,0.00%
-2024-11-01,category,otc sh,6,same,1,0.00%
-2024-11-01,category,otc sh,7,any,1,0.00%
-2024-11-01,category,otc sh,7,same,1,0.00%
-2024-11-01,category,otc sh,8,any,1,0.00%
-2024-11-01,category,otc sh,8,same,1,0.00%
-2024-11-01,category,otc sh,9,any,1,0.00%
-2024-11-01,category,otc sh,9,same,1,0.00%
-2024-11-01,category,otc sh,10,any,1,0.00%
-2024-11-01,category,otc sh,10,same,1,0.00%
-2024-11-01,category,otc sh,11,any,1,0.00%
-2024-11-01,category,otc sh,11,same,1,0.00%
-2024-11-01,category,otc sh,12,any,1,0.00%
-2024-11-01,category,otc sh,12,same,1,0.00%
-2024-11-01,category,pom hl,0,any,3,100.00%
-2024-11-01,category,pom hl,0,same,3,100.00%
-2024-11-01,category,pom hl,1,any,3,66.67%
-2024-11-01,category,pom hl,1,same,3,66.67%
-2024-11-01,category,pom hl,2,any,3,33.33%
-2024-11-01,category,pom hl,2,same,3,33.33%
-2024-11-01,category,pom hl,3,any,3,33.33%
-2024-11-01,category,pom hl,3,same,3,33.33%
-2024-11-01,category,pom hl,4,any,3,33.33%
-2024-11-01,category,pom hl,4,same,3,33.33%
-2024-11-01,category,pom hl,5,any,3,33.33%
-2024-11-01,category,pom hl,5,same,3,33.33%
-2024-11-01,category,pom hl,6,any,3,33.33%
-2024-11-01,category,pom hl,6,same,3,33.33%
-2024-11-01,category,pom hl,7,any,3,0.00%
-2024-11-01,category,pom hl,7,same,3,0.00%
-2024-11-01,category,pom hl,8,any,3,33.33%
-2024-11-01,category,pom hl,8,same,3,33.33%
-2024-11-01,category,pom hl,9,any,3,33.33%
-2024-11-01,category,pom hl,9,same,3,33.33%
-2024-11-01,category,pom hl,10,any,3,33.33%
-2024-11-01,category,pom hl,10,same,3,33.33%
-2024-11-01,category,pom hl,11,any,3,33.33%
-2024-11-01,category,pom hl,11,same,3,33.33%
-2024-11-01,category,pom hl,12,any,3,33.33%
-2024-11-01,category,pom hl,12,same,3,33.33%
-2024-11-01,category,pom sh,0,any,1,100.00%
-2024-11-01,category,pom sh,0,same,1,100.00%
-2024-11-01,category,pom sh,1,any,1,0.00%
-2024-11-01,category,pom sh,1,same,1,0.00%
-2024-11-01,category,pom sh,2,any,1,0.00%
-2024-11-01,category,pom sh,2,same,1,0.00%
-2024-11-01,category,pom sh,3,any,1,0.00%
-2024-11-01,category,pom sh,3,same,1,0.00%
-2024-11-01,category,pom sh,4,any,1,0.00%
-2024-11-01,category,pom sh,4,same,1,0.00%
-2024-11-01,category,pom sh,5,any,1,0.00%
-2024-11-01,category,pom sh,5,same,1,0.00%
-2024-11-01,category,pom sh,6,any,1,0.00%
-2024-11-01,category,pom sh,6,same,1,0.00%
-2024-11-01,category,pom sh,7,any,1,0.00%
-2024-11-01,category,pom sh,7,same,1,0.00%
-2024-11-01,category,pom sh,8,any,1,0.00%
-2024-11-01,category,pom sh,8,same,1,0.00%
-2024-11-01,category,pom sh,9,any,1,0.00%
-2024-11-01,category,pom sh,9,same,1,0.00%
-2024-11-01,category,pom sh,10,any,1,0.00%
-2024-11-01,category,pom sh,10,same,1,0.00%
-2024-11-01,category,pom sh,11,any,1,0.00%
-2024-11-01,category,pom sh,11,same,1,0.00%
-2024-11-01,category,pom sh,12,any,1,0.00%
-2024-11-01,category,pom sh,12,same,1,0.00%
-2024-12-01,category,pom hl,0,any,14,100.00%
-2024-12-01,category,pom hl,0,same,14,100.00%
-2024-12-01,category,pom hl,1,any,14,71.43%
-2024-12-01,category,pom hl,1,same,14,71.43%
-2024-12-01,category,pom hl,2,any,14,71.43%
-2024-12-01,category,pom hl,2,same,14,71.43%
-2024-12-01,category,pom hl,3,any,14,71.43%
-2024-12-01,category,pom hl,3,same,14,71.43%
-2024-12-01,category,pom hl,4,any,14,71.43%
-2024-12-01,category,pom hl,4,same,14,71.43%
-2024-12-01,category,pom hl,5,any,14,64.29%
-2024-12-01,category,pom hl,5,same,14,64.29%
-2024-12-01,category,pom hl,6,any,14,50.00%
-2024-12-01,category,pom hl,6,same,14,50.00%
-2024-12-01,category,pom hl,7,any,14,50.00%
-2024-12-01,category,pom hl,7,same,14,50.00%
-2024-12-01,category,pom hl,8,any,14,50.00%
-2024-12-01,category,pom hl,8,same,14,50.00%
-2024-12-01,category,pom hl,9,any,14,42.86%
-2024-12-01,category,pom hl,9,same,14,42.86%
-2024-12-01,category,pom hl,10,any,14,50.00%
-2024-12-01,category,pom hl,10,same,14,42.86%
-2024-12-01,category,pom hl,11,any,14,42.86%
-2024-12-01,category,pom hl,11,same,14,42.86%
-2024-12-01,category,pom hl,12,any,14,42.86%
-2024-12-01,category,pom hl,12,same,14,42.86%
-2024-12-01,category,pom sh,0,any,5,100.00%
-2024-12-01,category,pom sh,0,same,5,100.00%
-2024-12-01,category,pom sh,1,any,5,40.00%
-2024-12-01,category,pom sh,1,same,5,20.00%
-2024-12-01,category,pom sh,2,any,5,40.00%
-2024-12-01,category,pom sh,2,same,5,20.00%
-2024-12-01,category,pom sh,3,any,5,20.00%
-2024-12-01,category,pom sh,3,same,5,20.00%
-2024-12-01,category,pom sh,4,any,5,40.00%
-2024-12-01,category,pom sh,4,same,5,20.00%
-2024-12-01,category,pom sh,5,any,5,20.00%
-2024-12-01,category,pom sh,5,same,5,0.00%
-2024-12-01,category,pom sh,6,any,5,0.00%
-2024-12-01,category,pom sh,6,same,5,0.00%
-2024-12-01,category,pom sh,7,any,5,0.00%
-2024-12-01,category,pom sh,7,same,5,0.00%
-2024-12-01,category,pom sh,8,any,5,0.00%
-2024-12-01,category,pom sh,8,same,5,0.00%
-2024-12-01,category,pom sh,9,any,5,0.00%
-2024-12-01,category,pom sh,9,same,5,0.00%
-2024-12-01,category,pom sh,10,any,5,0.00%
-2024-12-01,category,pom sh,10,same,5,0.00%
-2024-12-01,category,pom sh,11,any,5,0.00%
-2024-12-01,category,pom sh,11,same,5,0.00%
-2024-12-01,category,pom sh,12,any,5,0.00%
-2024-12-01,category,pom sh,12,same,5,0.00%
-2025-01-01,category,otc hl,0,any,1,100.00%
-2025-01-01,category,otc hl,0,same,1,100.00%
-2025-01-01,category,otc hl,1,any,1,0.00%
-2025-01-01,category,otc hl,1,same,1,0.00%
-2025-01-01,category,otc hl,2,any,1,0.00%
-2025-01-01,category,otc hl,2,same,1,0.00%
-2025-01-01,category,otc hl,3,any,1,0.00%
-2025-01-01,category,otc hl,3,same,1,0.00%
-2025-01-01,category,otc hl,4,any,1,0.00%
-2025-01-01,category,otc hl,4,same,1,0.00%
-2025-01-01,category,otc hl,5,any,1,0.00%
-2025-01-01,category,otc hl,5,same,1,0.00%
-2025-01-01,category,otc hl,6,any,1,0.00%
-2025-01-01,category,otc hl,6,same,1,0.00%
-2025-01-01,category,otc hl,7,any,1,0.00%
-2025-01-01,category,otc hl,7,same,1,0.00%
-2025-01-01,category,otc hl,8,any,1,0.00%
-2025-01-01,category,otc hl,8,same,1,0.00%
-2025-01-01,category,otc hl,9,any,1,0.00%
-2025-01-01,category,otc hl,9,same,1,0.00%
-2025-01-01,category,otc hl,10,any,1,0.00%
-2025-01-01,category,otc hl,10,same,1,0.00%
-2025-01-01,category,otc hl,11,any,1,0.00%
-2025-01-01,category,otc hl,11,same,1,0.00%
-2025-01-01,category,otc hl,12,any,1,0.00%
-2025-01-01,category,otc hl,12,same,1,0.00%
-2025-01-01,category,otc sh,0,any,1,100.00%
-2025-01-01,category,otc sh,0,same,1,100.00%
-2025-01-01,category,otc sh,1,any,1,0.00%
-2025-01-01,category,otc sh,1,same,1,0.00%
-2025-01-01,category,otc sh,2,any,1,0.00%
-2025-01-01,category,otc sh,2,same,1,0.00%
-2025-01-01,category,otc sh,3,any,1,0.00%
-2025-01-01,category,otc sh,3,same,1,0.00%
-2025-01-01,category,otc sh,4,any,1,0.00%
-2025-01-01,category,otc sh,4,same,1,0.00%
-2025-01-01,category,otc sh,5,any,1,0.00%
-2025-01-01,category,otc sh,5,same,1,0.00%
-2025-01-01,category,otc sh,6,any,1,0.00%
-2025-01-01,category,otc sh,6,same,1,0.00%
-2025-01-01,category,otc sh,7,any,1,0.00%
-2025-01-01,category,otc sh,7,same,1,0.00%
-2025-01-01,category,otc sh,8,any,1,0.00%
-2025-01-01,category,otc sh,8,same,1,0.00%
-2025-01-01,category,otc sh,9,any,1,0.00%
-2025-01-01,category,otc sh,9,same,1,0.00%
-2025-01-01,category,otc sh,10,any,1,0.00%
-2025-01-01,category,otc sh,10,same,1,0.00%
-2025-01-01,category,otc sh,11,any,1,0.00%
-2025-01-01,category,otc sh,11,same,1,0.00%
-2025-01-01,category,otc sh,12,any,1,0.00%
-2025-01-01,category,otc sh,12,same,1,0.00%
-2025-01-01,category,otc sk,0,any,2,100.00%
-2025-01-01,category,otc sk,0,same,2,100.00%
-2025-01-01,category,otc sk,1,any,2,0.00%
-2025-01-01,category,otc sk,1,same,2,0.00%
-2025-01-01,category,otc sk,2,any,2,50.00%
-2025-01-01,category,otc sk,2,same,2,50.00%
-2025-01-01,category,otc sk,3,any,2,0.00%
-2025-01-01,category,otc sk,3,same,2,0.00%
-2025-01-01,category,otc sk,4,any,2,0.00%
-2025-01-01,category,otc sk,4,same,2,0.00%
-2025-01-01,category,otc sk,5,any,2,0.00%
-2025-01-01,category,otc sk,5,same,2,0.00%
-2025-01-01,category,otc sk,6,any,2,0.00%
-2025-01-01,category,otc sk,6,same,2,0.00%
-2025-01-01,category,otc sk,7,any,2,0.00%
-2025-01-01,category,otc sk,7,same,2,0.00%
-2025-01-01,category,otc sk,8,any,2,0.00%
-2025-01-01,category,otc sk,8,same,2,0.00%
-2025-01-01,category,otc sk,9,any,2,0.00%
-2025-01-01,category,otc sk,9,same,2,0.00%
-2025-01-01,category,otc sk,10,any,2,0.00%
-2025-01-01,category,otc sk,10,same,2,0.00%
-2025-01-01,category,otc sk,11,any,2,0.00%
-2025-01-01,category,otc sk,11,same,2,0.00%
-2025-01-01,category,otc sk,12,any,2,0.00%
-2025-01-01,category,otc sk,12,same,2,0.00%
-2025-01-01,category,pom hl,0,any,6,100.00%
-2025-01-01,category,pom hl,0,same,6,100.00%
-2025-01-01,category,pom hl,1,any,6,83.33%
-2025-01-01,category,pom hl,1,same,6,83.33%
-2025-01-01,category,pom hl,2,any,6,83.33%
-2025-01-01,category,pom hl,2,same,6,83.33%
-2025-01-01,category,pom hl,3,any,6,33.33%
-2025-01-01,category,pom hl,3,same,6,16.67%
-2025-01-01,category,pom hl,4,any,6,33.33%
-2025-01-01,category,pom hl,4,same,6,16.67%
-2025-01-01,category,pom hl,5,any,6,33.33%
-2025-01-01,category,pom hl,5,same,6,33.33%
-2025-01-01,category,pom hl,6,any,6,16.67%
-2025-01-01,category,pom hl,6,same,6,16.67%
-2025-01-01,category,pom hl,7,any,6,16.67%
-2025-01-01,category,pom hl,7,same,6,16.67%
-2025-01-01,category,pom hl,8,any,6,16.67%
-2025-01-01,category,pom hl,8,same,6,16.67%
-2025-01-01,category,pom hl,9,any,6,0.00%
-2025-01-01,category,pom hl,9,same,6,0.00%
-2025-01-01,category,pom hl,10,any,6,0.00%
-2025-01-01,category,pom hl,10,same,6,0.00%
-2025-01-01,category,pom hl,11,any,6,0.00%
-2025-01-01,category,pom hl,11,same,6,0.00%
-2025-01-01,category,pom hl,12,any,6,16.67%
-2025-01-01,category,pom hl,12,same,6,16.67%
-2025-01-01,category,pom sh,0,any,11,100.00%
-2025-01-01,category,pom sh,0,same,11,100.00%
-2025-01-01,category,pom sh,1,any,11,9.09%
-2025-01-01,category,pom sh,1,same,11,9.09%
-2025-01-01,category,pom sh,2,any,11,0.00%
-2025-01-01,category,pom sh,2,same,11,0.00%
-2025-01-01,category,pom sh,3,any,11,9.09%
-2025-01-01,category,pom sh,3,same,11,9.09%
-2025-01-01,category,pom sh,4,any,11,0.00%
-2025-01-01,category,pom sh,4,same,11,0.00%
-2025-01-01,category,pom sh,5,any,11,9.09%
-2025-01-01,category,pom sh,5,same,11,9.09%
-2025-01-01,category,pom sh,6,any,11,0.00%
-2025-01-01,category,pom sh,6,same,11,0.00%
-2025-01-01,category,pom sh,7,any,11,18.18%
-2025-01-01,category,pom sh,7,same,11,18.18%
-2025-01-01,category,pom sh,8,any,11,0.00%
-2025-01-01,category,pom sh,8,same,11,0.00%
-2025-01-01,category,pom sh,9,any,11,0.00%
-2025-01-01,category,pom sh,9,same,11,0.00%
-2025-01-01,category,pom sh,10,any,11,9.09%
-2025-01-01,category,pom sh,10,same,11,9.09%
-2025-01-01,category,pom sh,11,any,11,0.00%
-2025-01-01,category,pom sh,11,same,11,0.00%
-2025-01-01,category,pom sh,12,any,11,0.00%
-2025-01-01,category,pom sh,12,same,11,0.00%
-2025-02-01,category,pom hl,0,any,11,100.00%
-2025-02-01,category,pom hl,0,same,11,100.00%
-2025-02-01,category,pom hl,1,any,11,90.91%
-2025-02-01,category,pom hl,1,same,11,90.91%
-2025-02-01,category,pom hl,2,any,11,72.73%
-2025-02-01,category,pom hl,2,same,11,72.73%
-2025-02-01,category,pom hl,3,any,11,54.55%
-2025-02-01,category,pom hl,3,same,11,54.55%
-2025-02-01,category,pom hl,4,any,11,54.55%
-2025-02-01,category,pom hl,4,same,11,54.55%
-2025-02-01,category,pom hl,5,any,11,36.36%
-2025-02-01,category,pom hl,5,same,11,36.36%
-2025-02-01,category,pom hl,6,any,11,54.55%
-2025-02-01,category,pom hl,6,same,11,54.55%
-2025-02-01,category,pom hl,7,any,11,45.45%
-2025-02-01,category,pom hl,7,same,11,45.45%
-2025-02-01,category,pom hl,8,any,11,36.36%
-2025-02-01,category,pom hl,8,same,11,36.36%
-2025-02-01,category,pom hl,9,any,11,18.18%
-2025-02-01,category,pom hl,9,same,11,18.18%
-2025-02-01,category,pom hl,10,any,11,36.36%
-2025-02-01,category,pom hl,10,same,11,36.36%
-2025-02-01,category,pom hl,11,any,11,18.18%
-2025-02-01,category,pom hl,11,same,11,18.18%
-2025-02-01,category,pom sh,0,any,5,100.00%
-2025-02-01,category,pom sh,0,same,5,100.00%
-2025-02-01,category,pom sh,1,any,5,20.00%
-2025-02-01,category,pom sh,1,same,5,20.00%
-2025-02-01,category,pom sh,2,any,5,20.00%
-2025-02-01,category,pom sh,2,same,5,20.00%
-2025-02-01,category,pom sh,3,any,5,20.00%
-2025-02-01,category,pom sh,3,same,5,20.00%
-2025-02-01,category,pom sh,4,any,5,0.00%
-2025-02-01,category,pom sh,4,same,5,0.00%
-2025-02-01,category,pom sh,5,any,5,40.00%
-2025-02-01,category,pom sh,5,same,5,40.00%
-2025-02-01,category,pom sh,6,any,5,0.00%
-2025-02-01,category,pom sh,6,same,5,0.00%
-2025-02-01,category,pom sh,7,any,5,0.00%
-2025-02-01,category,pom sh,7,same,5,0.00%
-2025-02-01,category,pom sh,8,any,5,20.00%
-2025-02-01,category,pom sh,8,same,5,20.00%
-2025-02-01,category,pom sh,9,any,5,20.00%
-2025-02-01,category,pom sh,9,same,5,0.00%
-2025-02-01,category,pom sh,10,any,5,0.00%
-2025-02-01,category,pom sh,10,same,5,0.00%
-2025-02-01,category,pom sh,11,any,5,40.00%
-2025-02-01,category,pom sh,11,same,5,40.00%
-2025-03-01,category,otc hl,0,any,8,100.00%
-2025-03-01,category,otc hl,0,same,8,100.00%
-2025-03-01,category,otc hl,1,any,8,0.00%
-2025-03-01,category,otc hl,1,same,8,0.00%
-2025-03-01,category,otc hl,2,any,8,0.00%
-2025-03-01,category,otc hl,2,same,8,0.00%
-2025-03-01,category,otc hl,3,any,8,0.00%
-2025-03-01,category,otc hl,3,same,8,0.00%
-2025-03-01,category,otc hl,4,any,8,0.00%
-2025-03-01,category,otc hl,4,same,8,0.00%
-2025-03-01,category,otc hl,5,any,8,0.00%
-2025-03-01,category,otc hl,5,same,8,0.00%
-2025-03-01,category,otc hl,6,any,8,12.50%
-2025-03-01,category,otc hl,6,same,8,12.50%
-2025-03-01,category,otc hl,7,any,8,0.00%
-2025-03-01,category,otc hl,7,same,8,0.00%
-2025-03-01,category,otc hl,8,any,8,0.00%
-2025-03-01,category,otc hl,8,same,8,0.00%
-2025-03-01,category,otc hl,9,any,8,12.50%
-2025-03-01,category,otc hl,9,same,8,12.50%
-2025-03-01,category,otc hl,10,any,8,0.00%
-2025-03-01,category,otc hl,10,same,8,0.00%
-2025-03-01,category,pom hl,0,any,46,100.00%
-2025-03-01,category,pom hl,0,same,46,100.00%
-2025-03-01,category,pom hl,1,any,46,65.22%
-2025-03-01,category,pom hl,1,same,46,63.04%
-2025-03-01,category,pom hl,2,any,46,58.70%
-2025-03-01,category,pom hl,2,same,46,58.70%
-2025-03-01,category,pom hl,3,any,46,47.83%
-2025-03-01,category,pom hl,3,same,46,47.83%
-2025-03-01,category,pom hl,4,any,46,47.83%
-2025-03-01,category,pom hl,4,same,46,47.83%
-2025-03-01,category,pom hl,5,any,46,43.48%
-2025-03-01,category,pom hl,5,same,46,43.48%
-2025-03-01,category,pom hl,6,any,46,41.30%
-2025-03-01,category,pom hl,6,same,46,41.30%
-2025-03-01,category,pom hl,7,any,46,36.96%
-2025-03-01,category,pom hl,7,same,46,34.78%
-2025-03-01,category,pom hl,8,any,46,23.91%
-2025-03-01,category,pom hl,8,same,46,23.91%
-2025-03-01,category,pom hl,9,any,46,30.43%
-2025-03-01,category,pom hl,9,same,46,30.43%
-2025-03-01,category,pom hl,10,any,46,26.09%
-2025-03-01,category,pom hl,10,same,46,26.09%
-2025-03-01,category,pom sh,0,any,6,100.00%
-2025-03-01,category,pom sh,0,same,6,100.00%
-2025-03-01,category,pom sh,1,any,6,50.00%
-2025-03-01,category,pom sh,1,same,6,50.00%
-2025-03-01,category,pom sh,2,any,6,16.67%
-2025-03-01,category,pom sh,2,same,6,16.67%
-2025-03-01,category,pom sh,3,any,6,33.33%
-2025-03-01,category,pom sh,3,same,6,33.33%
-2025-03-01,category,pom sh,4,any,6,16.67%
-2025-03-01,category,pom sh,4,same,6,16.67%
-2025-03-01,category,pom sh,5,any,6,50.00%
-2025-03-01,category,pom sh,5,same,6,50.00%
-2025-03-01,category,pom sh,6,any,6,16.67%
-2025-03-01,category,pom sh,6,same,6,16.67%
-2025-03-01,category,pom sh,7,any,6,16.67%
-2025-03-01,category,pom sh,7,same,6,16.67%
-2025-03-01,category,pom sh,8,any,6,16.67%
-2025-03-01,category,pom sh,8,same,6,16.67%
-2025-03-01,category,pom sh,9,any,6,33.33%
-2025-03-01,category,pom sh,9,same,6,33.33%
-2025-03-01,category,pom sh,10,any,6,16.67%
-2025-03-01,category,pom sh,10,same,6,0.00%
-2025-04-01,category,otc hl,0,any,2,100.00%
-2025-04-01,category,otc hl,0,same,2,100.00%
-2025-04-01,category,otc hl,1,any,2,0.00%
-2025-04-01,category,otc hl,1,same,2,0.00%
-2025-04-01,category,otc hl,2,any,2,0.00%
-2025-04-01,category,otc hl,2,same,2,0.00%
-2025-04-01,category,otc hl,3,any,2,0.00%
-2025-04-01,category,otc hl,3,same,2,0.00%
-2025-04-01,category,otc hl,4,any,2,0.00%
-2025-04-01,category,otc hl,4,same,2,0.00%
-2025-04-01,category,otc hl,5,any,2,0.00%
-2025-04-01,category,otc hl,5,same,2,0.00%
-2025-04-01,category,otc hl,6,any,2,0.00%
-2025-04-01,category,otc hl,6,same,2,0.00%
-2025-04-01,category,otc hl,7,any,2,0.00%
-2025-04-01,category,otc hl,7,same,2,0.00%
-2025-04-01,category,otc hl,8,any,2,0.00%
-2025-04-01,category,otc hl,8,same,2,0.00%
-2025-04-01,category,otc hl,9,any,2,0.00%
-2025-04-01,category,otc hl,9,same,2,0.00%
-2025-04-01,category,otc sh,0,any,1,100.00%
-2025-04-01,category,otc sh,0,same,1,100.00%
-2025-04-01,category,otc sh,1,any,1,0.00%
-2025-04-01,category,otc sh,1,same,1,0.00%
-2025-04-01,category,otc sh,2,any,1,0.00%
-2025-04-01,category,otc sh,2,same,1,0.00%
-2025-04-01,category,otc sh,3,any,1,0.00%
-2025-04-01,category,otc sh,3,same,1,0.00%
-2025-04-01,category,otc sh,4,any,1,0.00%
-2025-04-01,category,otc sh,4,same,1,0.00%
-2025-04-01,category,otc sh,5,any,1,0.00%
-2025-04-01,category,otc sh,5,same,1,0.00%
-2025-04-01,category,otc sh,6,any,1,0.00%
-2025-04-01,category,otc sh,6,same,1,0.00%
-2025-04-01,category,otc sh,7,any,1,0.00%
-2025-04-01,category,otc sh,7,same,1,0.00%
-2025-04-01,category,otc sh,8,any,1,0.00%
-2025-04-01,category,otc sh,8,same,1,0.00%
-2025-04-01,category,otc sh,9,any,1,0.00%
-2025-04-01,category,otc sh,9,same,1,0.00%
-2025-04-01,category,pom hl,0,any,71,100.00%
-2025-04-01,category,pom hl,0,same,71,100.00%
-2025-04-01,category,pom hl,1,any,71,49.30%
-2025-04-01,category,pom hl,1,same,71,47.89%
-2025-04-01,category,pom hl,2,any,71,52.11%
-2025-04-01,category,pom hl,2,same,71,52.11%
-2025-04-01,category,pom hl,3,any,71,52.11%
-2025-04-01,category,pom hl,3,same,71,52.11%
-2025-04-01,category,pom hl,4,any,71,45.07%
-2025-04-01,category,pom hl,4,same,71,45.07%
-2025-04-01,category,pom hl,5,any,71,38.03%
-2025-04-01,category,pom hl,5,same,71,38.03%
-2025-04-01,category,pom hl,6,any,71,36.62%
-2025-04-01,category,pom hl,6,same,71,36.62%
-2025-04-01,category,pom hl,7,any,71,29.58%
-2025-04-01,category,pom hl,7,same,71,29.58%
-2025-04-01,category,pom hl,8,any,71,30.99%
-2025-04-01,category,pom hl,8,same,71,30.99%
-2025-04-01,category,pom hl,9,any,71,26.76%
-2025-04-01,category,pom hl,9,same,71,26.76%
-2025-04-01,category,pom sh,0,any,4,100.00%
-2025-04-01,category,pom sh,0,same,4,100.00%
-2025-04-01,category,pom sh,1,any,4,0.00%
-2025-04-01,category,pom sh,1,same,4,0.00%
-2025-04-01,category,pom sh,2,any,4,0.00%
-2025-04-01,category,pom sh,2,same,4,0.00%
-2025-04-01,category,pom sh,3,any,4,0.00%
-2025-04-01,category,pom sh,3,same,4,0.00%
-2025-04-01,category,pom sh,4,any,4,0.00%
-2025-04-01,category,pom sh,4,same,4,0.00%
-2025-04-01,category,pom sh,5,any,4,0.00%
-2025-04-01,category,pom sh,5,same,4,0.00%
-2025-04-01,category,pom sh,6,any,4,25.00%
-2025-04-01,category,pom sh,6,same,4,25.00%
-2025-04-01,category,pom sh,7,any,4,0.00%
-2025-04-01,category,pom sh,7,same,4,0.00%
-2025-04-01,category,pom sh,8,any,4,0.00%
-2025-04-01,category,pom sh,8,same,4,0.00%
-2025-04-01,category,pom sh,9,any,4,0.00%
-2025-04-01,category,pom sh,9,same,4,0.00%
-2025-05-01,category,otc hl,0,any,2,100.00%
-2025-05-01,category,otc hl,0,same,2,100.00%
-2025-05-01,category,otc hl,1,any,2,50.00%
-2025-05-01,category,otc hl,1,same,2,0.00%
-2025-05-01,category,otc hl,2,any,2,50.00%
-2025-05-01,category,otc hl,2,same,2,0.00%
-2025-05-01,category,otc hl,3,any,2,50.00%
-2025-05-01,category,otc hl,3,same,2,0.00%
-2025-05-01,category,otc hl,4,any,2,50.00%
-2025-05-01,category,otc hl,4,same,2,0.00%
-2025-05-01,category,otc hl,5,any,2,0.00%
-2025-05-01,category,otc hl,5,same,2,0.00%
-2025-05-01,category,otc hl,6,any,2,0.00%
-2025-05-01,category,otc hl,6,same,2,0.00%
-2025-05-01,category,otc hl,7,any,2,50.00%
-2025-05-01,category,otc hl,7,same,2,50.00%
-2025-05-01,category,otc hl,8,any,2,0.00%
-2025-05-01,category,otc hl,8,same,2,0.00%
-2025-05-01,category,pom bg,0,any,1,100.00%
-2025-05-01,category,pom bg,0,same,1,100.00%
-2025-05-01,category,pom bg,1,any,1,0.00%
-2025-05-01,category,pom bg,1,same,1,0.00%
-2025-05-01,category,pom bg,2,any,1,0.00%
-2025-05-01,category,pom bg,2,same,1,0.00%
-2025-05-01,category,pom bg,3,any,1,0.00%
-2025-05-01,category,pom bg,3,same,1,0.00%
-2025-05-01,category,pom bg,4,any,1,0.00%
-2025-05-01,category,pom bg,4,same,1,0.00%
-2025-05-01,category,pom bg,5,any,1,0.00%
-2025-05-01,category,pom bg,5,same,1,0.00%
-2025-05-01,category,pom bg,6,any,1,0.00%
-2025-05-01,category,pom bg,6,same,1,0.00%
-2025-05-01,category,pom bg,7,any,1,0.00%
-2025-05-01,category,pom bg,7,same,1,0.00%
-2025-05-01,category,pom bg,8,any,1,0.00%
-2025-05-01,category,pom bg,8,same,1,0.00%
-2025-05-01,category,pom hl,0,any,68,100.00%
-2025-05-01,category,pom hl,0,same,68,100.00%
-2025-05-01,category,pom hl,1,any,68,60.29%
-2025-05-01,category,pom hl,1,same,68,60.29%
-2025-05-01,category,pom hl,2,any,68,57.35%
-2025-05-01,category,pom hl,2,same,68,57.35%
-2025-05-01,category,pom hl,3,any,68,51.47%
-2025-05-01,category,pom hl,3,same,68,51.47%
-2025-05-01,category,pom hl,4,any,68,42.65%
-2025-05-01,category,pom hl,4,same,68,42.65%
-2025-05-01,category,pom hl,5,any,68,35.29%
-2025-05-01,category,pom hl,5,same,68,35.29%
-2025-05-01,category,pom hl,6,any,68,39.71%
-2025-05-01,category,pom hl,6,same,68,39.71%
-2025-05-01,category,pom hl,7,any,68,30.88%
-2025-05-01,category,pom hl,7,same,68,29.41%
-2025-05-01,category,pom hl,8,any,68,32.35%
-2025-05-01,category,pom hl,8,same,68,32.35%
-2025-05-01,category,pom sh,0,any,2,100.00%
-2025-05-01,category,pom sh,0,same,2,100.00%
-2025-05-01,category,pom sh,1,any,2,0.00%
-2025-05-01,category,pom sh,1,same,2,0.00%
-2025-05-01,category,pom sh,2,any,2,0.00%
-2025-05-01,category,pom sh,2,same,2,0.00%
-2025-05-01,category,pom sh,3,any,2,0.00%
-2025-05-01,category,pom sh,3,same,2,0.00%
-2025-05-01,category,pom sh,4,any,2,0.00%
-2025-05-01,category,pom sh,4,same,2,0.00%
-2025-05-01,category,pom sh,5,any,2,0.00%
-2025-05-01,category,pom sh,5,same,2,0.00%
-2025-05-01,category,pom sh,6,any,2,0.00%
-2025-05-01,category,pom sh,6,same,2,0.00%
-2025-05-01,category,pom sh,7,any,2,0.00%
-2025-05-01,category,pom sh,7,same,2,0.00%
-2025-05-01,category,pom sh,8,any,2,0.00%
-2025-05-01,category,pom sh,8,same,2,0.00%
-2025-06-01,category,otc sh,0,any,6,100.00%
-2025-06-01,category,otc sh,0,same,6,100.00%
-2025-06-01,category,otc sh,1,any,6,0.00%
-2025-06-01,category,otc sh,1,same,6,0.00%
-2025-06-01,category,otc sh,2,any,6,0.00%
-2025-06-01,category,otc sh,2,same,6,0.00%
-2025-06-01,category,otc sh,3,any,6,0.00%
-2025-06-01,category,otc sh,3,same,6,0.00%
-2025-06-01,category,otc sh,4,any,6,0.00%
-2025-06-01,category,otc sh,4,same,6,0.00%
-2025-06-01,category,otc sh,5,any,6,0.00%
-2025-06-01,category,otc sh,5,same,6,0.00%
-2025-06-01,category,otc sh,6,any,6,0.00%
-2025-06-01,category,otc sh,6,same,6,0.00%
-2025-06-01,category,otc sh,7,any,6,0.00%
-2025-06-01,category,otc sh,7,same,6,0.00%
-2025-06-01,category,otc sk,0,any,1,100.00%
-2025-06-01,category,otc sk,0,same,1,100.00%
-2025-06-01,category,otc sk,1,any,1,0.00%
-2025-06-01,category,otc sk,1,same,1,0.00%
-2025-06-01,category,otc sk,2,any,1,0.00%
-2025-06-01,category,otc sk,2,same,1,0.00%
-2025-06-01,category,otc sk,3,any,1,0.00%
-2025-06-01,category,otc sk,3,same,1,0.00%
-2025-06-01,category,otc sk,4,any,1,0.00%
-2025-06-01,category,otc sk,4,same,1,0.00%
-2025-06-01,category,otc sk,5,any,1,0.00%
-2025-06-01,category,otc sk,5,same,1,0.00%
-2025-06-01,category,otc sk,6,any,1,0.00%
-2025-06-01,category,otc sk,6,same,1,0.00%
-2025-06-01,category,otc sk,7,any,1,0.00%
-2025-06-01,category,otc sk,7,same,1,0.00%
-2025-06-01,category,pom bg,0,any,1,100.00%
-2025-06-01,category,pom bg,0,same,1,100.00%
-2025-06-01,category,pom bg,1,any,1,100.00%
-2025-06-01,category,pom bg,1,same,1,100.00%
-2025-06-01,category,pom bg,2,any,1,100.00%
-2025-06-01,category,pom bg,2,same,1,100.00%
-2025-06-01,category,pom bg,3,any,1,0.00%
-2025-06-01,category,pom bg,3,same,1,0.00%
-2025-06-01,category,pom bg,4,any,1,0.00%
-2025-06-01,category,pom bg,4,same,1,0.00%
-2025-06-01,category,pom bg,5,any,1,0.00%
-2025-06-01,category,pom bg,5,same,1,0.00%
-2025-06-01,category,pom bg,6,any,1,0.00%
-2025-06-01,category,pom bg,6,same,1,0.00%
-2025-06-01,category,pom bg,7,any,1,0.00%
-2025-06-01,category,pom bg,7,same,1,0.00%
-2025-06-01,category,pom hl,0,any,65,100.00%
-2025-06-01,category,pom hl,0,same,65,100.00%
-2025-06-01,category,pom hl,1,any,65,53.85%
-2025-06-01,category,pom hl,1,same,65,53.85%
-2025-06-01,category,pom hl,2,any,65,58.46%
-2025-06-01,category,pom hl,2,same,65,58.46%
-2025-06-01,category,pom hl,3,any,65,44.62%
-2025-06-01,category,pom hl,3,same,65,44.62%
-2025-06-01,category,pom hl,4,any,65,36.92%
-2025-06-01,category,pom hl,4,same,65,35.38%
-2025-06-01,category,pom hl,5,any,65,33.85%
-2025-06-01,category,pom hl,5,same,65,32.31%
-2025-06-01,category,pom hl,6,any,65,41.54%
-2025-06-01,category,pom hl,6,same,65,40.00%
-2025-06-01,category,pom hl,7,any,65,26.15%
-2025-06-01,category,pom hl,7,same,65,24.62%
-2025-06-01,category,pom sh,0,any,2,100.00%
-2025-06-01,category,pom sh,0,same,2,100.00%
-2025-06-01,category,pom sh,1,any,2,0.00%
-2025-06-01,category,pom sh,1,same,2,0.00%
-2025-06-01,category,pom sh,2,any,2,0.00%
-2025-06-01,category,pom sh,2,same,2,0.00%
-2025-06-01,category,pom sh,3,any,2,0.00%
-2025-06-01,category,pom sh,3,same,2,0.00%
-2025-06-01,category,pom sh,4,any,2,0.00%
-2025-06-01,category,pom sh,4,same,2,0.00%
-2025-06-01,category,pom sh,5,any,2,0.00%
-2025-06-01,category,pom sh,5,same,2,0.00%
-2025-06-01,category,pom sh,6,any,2,0.00%
-2025-06-01,category,pom sh,6,same,2,0.00%
-2025-06-01,category,pom sh,7,any,2,0.00%
-2025-06-01,category,pom sh,7,same,2,0.00%
-2025-07-01,category,otc hl,0,any,3,100.00%
-2025-07-01,category,otc hl,0,same,3,100.00%
-2025-07-01,category,otc hl,1,any,3,0.00%
-2025-07-01,category,otc hl,1,same,3,0.00%
-2025-07-01,category,otc hl,2,any,3,0.00%
-2025-07-01,category,otc hl,2,same,3,0.00%
-2025-07-01,category,otc hl,3,any,3,0.00%
-2025-07-01,category,otc hl,3,same,3,0.00%
-2025-07-01,category,otc hl,4,any,3,0.00%
-2025-07-01,category,otc hl,4,same,3,0.00%
-2025-07-01,category,otc hl,5,any,3,33.33%
-2025-07-01,category,otc hl,5,same,3,33.33%
-2025-07-01,category,otc hl,6,any,3,0.00%
-2025-07-01,category,otc hl,6,same,3,0.00%
-2025-07-01,category,otc sh,0,any,3,100.00%
-2025-07-01,category,otc sh,0,same,3,100.00%
-2025-07-01,category,otc sh,1,any,3,0.00%
-2025-07-01,category,otc sh,1,same,3,0.00%
-2025-07-01,category,otc sh,2,any,3,0.00%
-2025-07-01,category,otc sh,2,same,3,0.00%
-2025-07-01,category,otc sh,3,any,3,0.00%
-2025-07-01,category,otc sh,3,same,3,0.00%
-2025-07-01,category,otc sh,4,any,3,0.00%
-2025-07-01,category,otc sh,4,same,3,0.00%
-2025-07-01,category,otc sh,5,any,3,0.00%
-2025-07-01,category,otc sh,5,same,3,0.00%
-2025-07-01,category,otc sh,6,any,3,0.00%
-2025-07-01,category,otc sh,6,same,3,0.00%
-2025-07-01,category,otc sk,0,any,1,100.00%
-2025-07-01,category,otc sk,0,same,1,100.00%
-2025-07-01,category,otc sk,1,any,1,0.00%
-2025-07-01,category,otc sk,1,same,1,0.00%
-2025-07-01,category,otc sk,2,any,1,0.00%
-2025-07-01,category,otc sk,2,same,1,0.00%
-2025-07-01,category,otc sk,3,any,1,0.00%
-2025-07-01,category,otc sk,3,same,1,0.00%
-2025-07-01,category,otc sk,4,any,1,0.00%
-2025-07-01,category,otc sk,4,same,1,0.00%
-2025-07-01,category,otc sk,5,any,1,0.00%
-2025-07-01,category,otc sk,5,same,1,0.00%
-2025-07-01,category,otc sk,6,any,1,0.00%
-2025-07-01,category,otc sk,6,same,1,0.00%
-2025-07-01,category,pom hl,0,any,65,100.00%
-2025-07-01,category,pom hl,0,same,65,100.00%
-2025-07-01,category,pom hl,1,any,65,32.31%
-2025-07-01,category,pom hl,1,same,65,32.31%
-2025-07-01,category,pom hl,2,any,65,43.08%
-2025-07-01,category,pom hl,2,same,65,41.54%
-2025-07-01,category,pom hl,3,any,65,58.46%
-2025-07-01,category,pom hl,3,same,65,56.92%
-2025-07-01,category,pom hl,4,any,65,40.00%
-2025-07-01,category,pom hl,4,same,65,36.92%
-2025-07-01,category,pom hl,5,any,65,32.31%
-2025-07-01,category,pom hl,5,same,65,29.23%
-2025-07-01,category,pom hl,6,any,65,41.54%
-2025-07-01,category,pom hl,6,same,65,41.54%
-2025-07-01,category,pom sh,0,any,4,100.00%
-2025-07-01,category,pom sh,0,same,4,100.00%
-2025-07-01,category,pom sh,1,any,4,0.00%
-2025-07-01,category,pom sh,1,same,4,0.00%
-2025-07-01,category,pom sh,2,any,4,0.00%
-2025-07-01,category,pom sh,2,same,4,0.00%
-2025-07-01,category,pom sh,3,any,4,0.00%
-2025-07-01,category,pom sh,3,same,4,0.00%
-2025-07-01,category,pom sh,4,any,4,0.00%
-2025-07-01,category,pom sh,4,same,4,0.00%
-2025-07-01,category,pom sh,5,any,4,0.00%
-2025-07-01,category,pom sh,5,same,4,0.00%
-2025-07-01,category,pom sh,6,any,4,0.00%
-2025-07-01,category,pom sh,6,same,4,0.00%
-2025-08-01,category,otc hl,0,any,3,100.00%
-2025-08-01,category,otc hl,0,same,3,100.00%
-2025-08-01,category,otc hl,1,any,3,0.00%
-2025-08-01,category,otc hl,1,same,3,0.00%
-2025-08-01,category,otc hl,2,any,3,33.33%
-2025-08-01,category,otc hl,2,same,3,0.00%
-2025-08-01,category,otc hl,3,any,3,0.00%
-2025-08-01,category,otc hl,3,same,3,0.00%
-2025-08-01,category,otc hl,4,any,3,0.00%
-2025-08-01,category,otc hl,4,same,3,0.00%
-2025-08-01,category,otc hl,5,any,3,0.00%
-2025-08-01,category,otc hl,5,same,3,0.00%
-2025-08-01,category,otc sh,0,any,4,100.00%
-2025-08-01,category,otc sh,0,same,4,100.00%
-2025-08-01,category,otc sh,1,any,4,0.00%
-2025-08-01,category,otc sh,1,same,4,0.00%
-2025-08-01,category,otc sh,2,any,4,0.00%
-2025-08-01,category,otc sh,2,same,4,0.00%
-2025-08-01,category,otc sh,3,any,4,0.00%
-2025-08-01,category,otc sh,3,same,4,0.00%
-2025-08-01,category,otc sh,4,any,4,0.00%
-2025-08-01,category,otc sh,4,same,4,0.00%
-2025-08-01,category,otc sh,5,any,4,0.00%
-2025-08-01,category,otc sh,5,same,4,0.00%
-2025-08-01,category,pom bg,0,any,3,100.00%
-2025-08-01,category,pom bg,0,same,3,100.00%
-2025-08-01,category,pom bg,1,any,3,33.33%
-2025-08-01,category,pom bg,1,same,3,33.33%
-2025-08-01,category,pom bg,2,any,3,0.00%
-2025-08-01,category,pom bg,2,same,3,0.00%
-2025-08-01,category,pom bg,3,any,3,0.00%
-2025-08-01,category,pom bg,3,same,3,0.00%
-2025-08-01,category,pom bg,4,any,3,0.00%
-2025-08-01,category,pom bg,4,same,3,0.00%
-2025-08-01,category,pom bg,5,any,3,0.00%
-2025-08-01,category,pom bg,5,same,3,0.00%
-2025-08-01,category,pom hl,0,any,61,100.00%
-2025-08-01,category,pom hl,0,same,61,100.00%
-2025-08-01,category,pom hl,1,any,61,29.51%
-2025-08-01,category,pom hl,1,same,61,29.51%
-2025-08-01,category,pom hl,2,any,61,31.15%
-2025-08-01,category,pom hl,2,same,61,29.51%
-2025-08-01,category,pom hl,3,any,61,50.82%
-2025-08-01,category,pom hl,3,same,61,50.82%
-2025-08-01,category,pom hl,4,any,61,24.59%
-2025-08-01,category,pom hl,4,same,61,24.59%
-2025-08-01,category,pom hl,5,any,61,19.67%
-2025-08-01,category,pom hl,5,same,61,16.39%
-2025-08-01,category,pom sh,0,any,5,100.00%
-2025-08-01,category,pom sh,0,same,5,100.00%
-2025-08-01,category,pom sh,1,any,5,0.00%
-2025-08-01,category,pom sh,1,same,5,0.00%
-2025-08-01,category,pom sh,2,any,5,0.00%
-2025-08-01,category,pom sh,2,same,5,0.00%
-2025-08-01,category,pom sh,3,any,5,0.00%
-2025-08-01,category,pom sh,3,same,5,0.00%
-2025-08-01,category,pom sh,4,any,5,0.00%
-2025-08-01,category,pom sh,4,same,5,0.00%
-2025-08-01,category,pom sh,5,any,5,0.00%
-2025-08-01,category,pom sh,5,same,5,0.00%
-2025-09-01,category,otc hl,0,any,2,100.00%
-2025-09-01,category,otc hl,0,same,2,100.00%
-2025-09-01,category,otc hl,1,any,2,0.00%
-2025-09-01,category,otc hl,1,same,2,0.00%
-2025-09-01,category,otc hl,2,any,2,0.00%
-2025-09-01,category,otc hl,2,same,2,0.00%
-2025-09-01,category,otc hl,3,any,2,0.00%
-2025-09-01,category,otc hl,3,same,2,0.00%
-2025-09-01,category,otc hl,4,any,2,0.00%
-2025-09-01,category,otc hl,4,same,2,0.00%
-2025-09-01,category,otc sh,0,any,6,100.00%
-2025-09-01,category,otc sh,0,same,6,100.00%
-2025-09-01,category,otc sh,1,any,6,16.67%
-2025-09-01,category,otc sh,1,same,6,16.67%
-2025-09-01,category,otc sh,2,any,6,16.67%
-2025-09-01,category,otc sh,2,same,6,16.67%
-2025-09-01,category,otc sh,3,any,6,16.67%
-2025-09-01,category,otc sh,3,same,6,16.67%
-2025-09-01,category,otc sh,4,any,6,16.67%
-2025-09-01,category,otc sh,4,same,6,16.67%
-2025-09-01,category,otc sk,0,any,1,100.00%
-2025-09-01,category,otc sk,0,same,1,100.00%
-2025-09-01,category,otc sk,1,any,1,0.00%
-2025-09-01,category,otc sk,1,same,1,0.00%
-2025-09-01,category,otc sk,2,any,1,0.00%
-2025-09-01,category,otc sk,2,same,1,0.00%
-2025-09-01,category,otc sk,3,any,1,0.00%
-2025-09-01,category,otc sk,3,same,1,0.00%
-2025-09-01,category,otc sk,4,any,1,0.00%
-2025-09-01,category,otc sk,4,same,1,0.00%
-2025-09-01,category,pom bg,0,any,2,100.00%
-2025-09-01,category,pom bg,0,same,2,100.00%
-2025-09-01,category,pom bg,1,any,2,0.00%
-2025-09-01,category,pom bg,1,same,2,0.00%
-2025-09-01,category,pom bg,2,any,2,0.00%
-2025-09-01,category,pom bg,2,same,2,0.00%
-2025-09-01,category,pom bg,3,any,2,0.00%
-2025-09-01,category,pom bg,3,same,2,0.00%
-2025-09-01,category,pom bg,4,any,2,0.00%
-2025-09-01,category,pom bg,4,same,2,0.00%
-2025-09-01,category,pom hl,0,any,65,100.00%
-2025-09-01,category,pom hl,0,same,65,100.00%
-2025-09-01,category,pom hl,1,any,65,32.31%
-2025-09-01,category,pom hl,1,same,65,32.31%
-2025-09-01,category,pom hl,2,any,65,32.31%
-2025-09-01,category,pom hl,2,same,65,30.77%
-2025-09-01,category,pom hl,3,any,65,52.31%
-2025-09-01,category,pom hl,3,same,65,50.77%
-2025-09-01,category,pom hl,4,any,65,24.62%
-2025-09-01,category,pom hl,4,same,65,21.54%
-2025-09-01,category,pom sh,0,any,12,100.00%
-2025-09-01,category,pom sh,0,same,12,100.00%
-2025-09-01,category,pom sh,1,any,12,0.00%
-2025-09-01,category,pom sh,1,same,12,0.00%
-2025-09-01,category,pom sh,2,any,12,8.33%
-2025-09-01,category,pom sh,2,same,12,0.00%
-2025-09-01,category,pom sh,3,any,12,0.00%
-2025-09-01,category,pom sh,3,same,12,0.00%
-2025-09-01,category,pom sh,4,any,12,0.00%
-2025-09-01,category,pom sh,4,same,12,0.00%
-2025-10-01,category,otc hl,0,any,2,100.00%
-2025-10-01,category,otc hl,0,same,2,100.00%
-2025-10-01,category,otc hl,1,any,2,0.00%
-2025-10-01,category,otc hl,1,same,2,0.00%
-2025-10-01,category,otc hl,2,any,2,0.00%
-2025-10-01,category,otc hl,2,same,2,0.00%
-2025-10-01,category,otc hl,3,any,2,0.00%
-2025-10-01,category,otc hl,3,same,2,0.00%
-2025-10-01,category,otc sh,0,any,16,100.00%
-2025-10-01,category,otc sh,0,same,16,100.00%
-2025-10-01,category,otc sh,1,any,16,0.00%
-2025-10-01,category,otc sh,1,same,16,0.00%
-2025-10-01,category,otc sh,2,any,16,0.00%
-2025-10-01,category,otc sh,2,same,16,0.00%
-2025-10-01,category,otc sh,3,any,16,6.25%
-2025-10-01,category,otc sh,3,same,16,6.25%
-2025-10-01,category,pom bg,0,any,3,100.00%
-2025-10-01,category,pom bg,0,same,3,100.00%
-2025-10-01,category,pom bg,1,any,3,0.00%
-2025-10-01,category,pom bg,1,same,3,0.00%
-2025-10-01,category,pom bg,2,any,3,0.00%
-2025-10-01,category,pom bg,2,same,3,0.00%
-2025-10-01,category,pom bg,3,any,3,0.00%
-2025-10-01,category,pom bg,3,same,3,0.00%
-2025-10-01,category,pom hl,0,any,76,100.00%
-2025-10-01,category,pom hl,0,same,76,100.00%
-2025-10-01,category,pom hl,1,any,76,22.37%
-2025-10-01,category,pom hl,1,same,76,22.37%
-2025-10-01,category,pom hl,2,any,76,28.95%
-2025-10-01,category,pom hl,2,same,76,28.95%
-2025-10-01,category,pom hl,3,any,76,39.47%
-2025-10-01,category,pom hl,3,same,76,39.47%
-2025-10-01,category,pom sh,0,any,4,100.00%
-2025-10-01,category,pom sh,0,same,4,100.00%
-2025-10-01,category,pom sh,1,any,4,0.00%
-2025-10-01,category,pom sh,1,same,4,0.00%
-2025-10-01,category,pom sh,2,any,4,50.00%
-2025-10-01,category,pom sh,2,same,4,50.00%
-2025-10-01,category,pom sh,3,any,4,0.00%
-2025-10-01,category,pom sh,3,same,4,0.00%
-2025-11-01,category,otc hl,0,any,7,100.00%
-2025-11-01,category,otc hl,0,same,7,100.00%
-2025-11-01,category,otc hl,1,any,7,0.00%
-2025-11-01,category,otc hl,1,same,7,0.00%
-2025-11-01,category,otc hl,2,any,7,14.29%
-2025-11-01,category,otc hl,2,same,7,14.29%
-2025-11-01,category,otc sh,0,any,65,100.00%
-2025-11-01,category,otc sh,0,same,65,100.00%
-2025-11-01,category,otc sh,1,any,65,3.08%
-2025-11-01,category,otc sh,1,same,65,1.54%
-2025-11-01,category,otc sh,2,any,65,1.54%
-2025-11-01,category,otc sh,2,same,65,1.54%
-2025-11-01,category,pom bg,0,any,3,100.00%
-2025-11-01,category,pom bg,0,same,3,100.00%
-2025-11-01,category,pom bg,1,any,3,66.67%
-2025-11-01,category,pom bg,1,same,3,66.67%
-2025-11-01,category,pom bg,2,any,3,66.67%
-2025-11-01,category,pom bg,2,same,3,66.67%
-2025-11-01,category,pom hl,0,any,77,100.00%
-2025-11-01,category,pom hl,0,same,77,100.00%
-2025-11-01,category,pom hl,1,any,77,29.87%
-2025-11-01,category,pom hl,1,same,77,22.08%
-2025-11-01,category,pom hl,2,any,77,29.87%
-2025-11-01,category,pom hl,2,same,77,28.57%
-2025-11-01,category,pom sh,0,any,10,100.00%
-2025-11-01,category,pom sh,0,same,10,100.00%
-2025-11-01,category,pom sh,1,any,10,0.00%
-2025-11-01,category,pom sh,1,same,10,0.00%
-2025-11-01,category,pom sh,2,any,10,10.00%
-2025-11-01,category,pom sh,2,same,10,10.00%
-2025-12-01,category,otc hl,0,any,1,100.00%
-2025-12-01,category,otc hl,0,same,1,100.00%
-2025-12-01,category,otc hl,1,any,1,100.00%
-2025-12-01,category,otc hl,1,same,1,100.00%
-2025-12-01,category,otc sh,0,any,54,100.00%
-2025-12-01,category,otc sh,0,same,54,100.00%
-2025-12-01,category,otc sh,1,any,54,0.00%
-2025-12-01,category,otc sh,1,same,54,0.00%
-2025-12-01,category,pom bg,0,any,3,100.00%
-2025-12-01,category,pom bg,0,same,3,100.00%
-2025-12-01,category,pom bg,1,any,3,0.00%
-2025-12-01,category,pom bg,1,same,3,0.00%
-2025-12-01,category,pom hl,0,any,66,100.00%
-2025-12-01,category,pom hl,0,same,66,100.00%
-2025-12-01,category,pom hl,1,any,66,36.36%
-2025-12-01,category,pom hl,1,same,66,34.85%
-2025-12-01,category,pom sh,0,any,22,100.00%
-2025-12-01,category,pom sh,0,same,22,100.00%
-2025-12-01,category,pom sh,1,any,22,0.00%
-2025-12-01,category,pom sh,1,same,22,0.00%
-2026-01-01,category,otc hl,0,any,3,100.00%
-2026-01-01,category,otc hl,0,same,3,100.00%
-2026-01-01,category,otc sh,0,any,51,100.00%
-2026-01-01,category,otc sh,0,same,51,100.00%
-2026-01-01,category,otc sk,0,any,1,100.00%
-2026-01-01,category,otc sk,0,same,1,100.00%
-2026-01-01,category,pom bg,0,any,1,100.00%
-2026-01-01,category,pom bg,0,same,1,100.00%
-2026-01-01,category,pom hl,0,any,85,100.00%
-2026-01-01,category,pom hl,0,same,85,100.00%
-2026-01-01,category,pom sh,0,any,24,100.00%
-2026-01-01,category,pom sh,0,same,24,100.00%
+cohort_month,dimension,first_value,m,metric,segment,cohort_size,retention
+2024-10-01,overall,ALL,0,any,all,3,100.00%
+2024-10-01,overall,ALL,1,any,all,3,66.67%
+2024-10-01,overall,ALL,2,any,all,3,66.67%
+2024-10-01,overall,ALL,3,any,all,3,66.67%
+2024-10-01,overall,ALL,4,any,all,3,33.33%
+2024-10-01,overall,ALL,5,any,all,3,0.00%
+2024-10-01,overall,ALL,6,any,all,3,0.00%
+2024-10-01,overall,ALL,7,any,all,3,33.33%
+2024-10-01,overall,ALL,8,any,all,3,33.33%
+2024-10-01,overall,ALL,9,any,all,3,33.33%
+2024-10-01,overall,ALL,10,any,all,3,0.00%
+2024-10-01,overall,ALL,11,any,all,3,0.00%
+2024-10-01,overall,ALL,12,any,all,3,0.00%
+2024-11-01,overall,ALL,0,any,all,5,100.00%
+2024-11-01,overall,ALL,1,any,all,5,40.00%
+2024-11-01,overall,ALL,2,any,all,5,20.00%
+2024-11-01,overall,ALL,3,any,all,5,20.00%
+2024-11-01,overall,ALL,4,any,all,5,20.00%
+2024-11-01,overall,ALL,5,any,all,5,20.00%
+2024-11-01,overall,ALL,6,any,all,5,20.00%
+2024-11-01,overall,ALL,7,any,all,5,0.00%
+2024-11-01,overall,ALL,8,any,all,5,20.00%
+2024-11-01,overall,ALL,9,any,all,5,20.00%
+2024-11-01,overall,ALL,10,any,all,5,20.00%
+2024-11-01,overall,ALL,11,any,all,5,20.00%
+2024-11-01,overall,ALL,12,any,all,5,20.00%
+2024-12-01,overall,ALL,0,any,all,19,100.00%
+2024-12-01,overall,ALL,1,any,all,19,68.42%
+2024-12-01,overall,ALL,2,any,all,19,63.16%
+2024-12-01,overall,ALL,3,any,all,19,63.16%
+2024-12-01,overall,ALL,4,any,all,19,68.42%
+2024-12-01,overall,ALL,5,any,all,19,52.63%
+2024-12-01,overall,ALL,6,any,all,19,42.11%
+2024-12-01,overall,ALL,7,any,all,19,42.11%
+2024-12-01,overall,ALL,8,any,all,19,42.11%
+2024-12-01,overall,ALL,9,any,all,19,36.84%
+2024-12-01,overall,ALL,10,any,all,19,36.84%
+2024-12-01,overall,ALL,11,any,all,19,31.58%
+2024-12-01,overall,ALL,12,any,all,19,36.84%
+2025-01-01,overall,ALL,0,any,all,21,100.00%
+2025-01-01,overall,ALL,1,any,all,21,33.33%
+2025-01-01,overall,ALL,2,any,all,21,33.33%
+2025-01-01,overall,ALL,3,any,all,21,19.05%
+2025-01-01,overall,ALL,4,any,all,21,14.29%
+2025-01-01,overall,ALL,5,any,all,21,19.05%
+2025-01-01,overall,ALL,6,any,all,21,4.76%
+2025-01-01,overall,ALL,7,any,all,21,14.29%
+2025-01-01,overall,ALL,8,any,all,21,4.76%
+2025-01-01,overall,ALL,9,any,all,21,4.76%
+2025-01-01,overall,ALL,10,any,all,21,4.76%
+2025-01-01,overall,ALL,11,any,all,21,0.00%
+2025-01-01,overall,ALL,12,any,all,21,4.76%
+2025-02-01,overall,ALL,0,any,all,16,100.00%
+2025-02-01,overall,ALL,1,any,all,16,75.00%
+2025-02-01,overall,ALL,2,any,all,16,62.50%
+2025-02-01,overall,ALL,3,any,all,16,50.00%
+2025-02-01,overall,ALL,4,any,all,16,43.75%
+2025-02-01,overall,ALL,5,any,all,16,50.00%
+2025-02-01,overall,ALL,6,any,all,16,37.50%
+2025-02-01,overall,ALL,7,any,all,16,43.75%
+2025-02-01,overall,ALL,8,any,all,16,37.50%
+2025-02-01,overall,ALL,9,any,all,16,25.00%
+2025-02-01,overall,ALL,10,any,all,16,31.25%
+2025-02-01,overall,ALL,11,any,all,16,37.50%
+2025-03-01,overall,ALL,0,any,all,60,100.00%
+2025-03-01,overall,ALL,1,any,all,60,65.00%
+2025-03-01,overall,ALL,2,any,all,60,53.33%
+2025-03-01,overall,ALL,3,any,all,60,46.67%
+2025-03-01,overall,ALL,4,any,all,60,45.00%
+2025-03-01,overall,ALL,5,any,all,60,46.67%
+2025-03-01,overall,ALL,6,any,all,60,40.00%
+2025-03-01,overall,ALL,7,any,all,60,38.33%
+2025-03-01,overall,ALL,8,any,all,60,23.33%
+2025-03-01,overall,ALL,9,any,all,60,35.00%
+2025-03-01,overall,ALL,10,any,all,60,30.00%
+2025-04-01,overall,ALL,0,any,all,78,100.00%
+2025-04-01,overall,ALL,1,any,all,78,70.51%
+2025-04-01,overall,ALL,2,any,all,78,65.38%
+2025-04-01,overall,ALL,3,any,all,78,55.13%
+2025-04-01,overall,ALL,4,any,all,78,53.85%
+2025-04-01,overall,ALL,5,any,all,78,55.13%
+2025-04-01,overall,ALL,6,any,all,78,43.59%
+2025-04-01,overall,ALL,7,any,all,78,35.90%
+2025-04-01,overall,ALL,8,any,all,78,37.18%
+2025-04-01,overall,ALL,9,any,all,78,35.90%
+2025-05-01,overall,ALL,0,any,all,73,100.00%
+2025-05-01,overall,ALL,1,any,all,73,80.82%
+2025-05-01,overall,ALL,2,any,all,73,73.97%
+2025-05-01,overall,ALL,3,any,all,73,57.53%
+2025-05-01,overall,ALL,4,any,all,73,56.16%
+2025-05-01,overall,ALL,5,any,all,73,47.95%
+2025-05-01,overall,ALL,6,any,all,73,47.95%
+2025-05-01,overall,ALL,7,any,all,73,41.10%
+2025-05-01,overall,ALL,8,any,all,73,36.99%
+2025-06-01,overall,ALL,0,any,all,75,100.00%
+2025-06-01,overall,ALL,1,any,all,75,72.00%
+2025-06-01,overall,ALL,2,any,all,75,69.33%
+2025-06-01,overall,ALL,3,any,all,75,50.67%
+2025-06-01,overall,ALL,4,any,all,75,44.00%
+2025-06-01,overall,ALL,5,any,all,75,42.67%
+2025-06-01,overall,ALL,6,any,all,75,40.00%
+2025-06-01,overall,ALL,7,any,all,75,32.00%
+2025-07-01,overall,ALL,0,any,all,76,100.00%
+2025-07-01,overall,ALL,1,any,all,76,72.37%
+2025-07-01,overall,ALL,2,any,all,76,73.68%
+2025-07-01,overall,ALL,3,any,all,76,61.84%
+2025-07-01,overall,ALL,4,any,all,76,57.89%
+2025-07-01,overall,ALL,5,any,all,76,53.95%
+2025-07-01,overall,ALL,6,any,all,76,43.42%
+2025-08-01,overall,ALL,0,any,all,76,100.00%
+2025-08-01,overall,ALL,1,any,all,76,75.00%
+2025-08-01,overall,ALL,2,any,all,76,75.00%
+2025-08-01,overall,ALL,3,any,all,76,53.95%
+2025-08-01,overall,ALL,4,any,all,76,39.47%
+2025-08-01,overall,ALL,5,any,all,76,39.47%
+2025-09-01,overall,ALL,0,any,all,88,100.00%
+2025-09-01,overall,ALL,1,any,all,88,61.36%
+2025-09-01,overall,ALL,2,any,all,88,54.55%
+2025-09-01,overall,ALL,3,any,all,88,43.18%
+2025-09-01,overall,ALL,4,any,all,88,30.68%
+2025-10-01,overall,ALL,0,any,all,101,100.00%
+2025-10-01,overall,ALL,1,any,all,101,59.41%
+2025-10-01,overall,ALL,2,any,all,101,56.44%
+2025-10-01,overall,ALL,3,any,all,101,34.65%
+2025-11-01,overall,ALL,0,any,all,162,100.00%
+2025-11-01,overall,ALL,1,any,all,162,38.27%
+2025-11-01,overall,ALL,2,any,all,162,35.19%
+2025-12-01,overall,ALL,0,any,all,146,100.00%
+2025-12-01,overall,ALL,1,any,all,146,39.73%
+2026-01-01,overall,ALL,0,any,all,165,100.00%
+2024-10-01,category,pom hl,0,any,all,3,100.00%
+2024-10-01,category,pom hl,0,same,all,3,100.00%
+2024-10-01,category,pom hl,1,any,all,3,66.67%
+2024-10-01,category,pom hl,1,same,all,3,66.67%
+2024-10-01,category,pom hl,2,any,all,3,66.67%
+2024-10-01,category,pom hl,2,same,all,3,66.67%
+2024-10-01,category,pom hl,3,any,all,3,66.67%
+2024-10-01,category,pom hl,3,same,all,3,66.67%
+2024-10-01,category,pom hl,4,any,all,3,33.33%
+2024-10-01,category,pom hl,4,same,all,3,33.33%
+2024-10-01,category,pom hl,5,any,all,3,0.00%
+2024-10-01,category,pom hl,5,same,all,3,0.00%
+2024-10-01,category,pom hl,6,any,all,3,0.00%
+2024-10-01,category,pom hl,6,same,all,3,0.00%
+2024-10-01,category,pom hl,7,any,all,3,33.33%
+2024-10-01,category,pom hl,7,same,all,3,33.33%
+2024-10-01,category,pom hl,8,any,all,3,33.33%
+2024-10-01,category,pom hl,8,same,all,3,33.33%
+2024-10-01,category,pom hl,9,any,all,3,33.33%
+2024-10-01,category,pom hl,9,same,all,3,33.33%
+2024-10-01,category,pom hl,10,any,all,3,0.00%
+2024-10-01,category,pom hl,10,same,all,3,0.00%
+2024-10-01,category,pom hl,11,any,all,3,0.00%
+2024-10-01,category,pom hl,11,same,all,3,0.00%
+2024-10-01,category,pom hl,12,any,all,3,0.00%
+2024-10-01,category,pom hl,12,same,all,3,0.00%
+2024-11-01,category,otc sh,0,any,all,1,100.00%
+2024-11-01,category,otc sh,0,same,all,1,100.00%
+2024-11-01,category,otc sh,1,any,all,1,0.00%
+2024-11-01,category,otc sh,1,same,all,1,0.00%
+2024-11-01,category,otc sh,2,any,all,1,0.00%
+2024-11-01,category,otc sh,2,same,all,1,0.00%
+2024-11-01,category,otc sh,3,any,all,1,0.00%
+2024-11-01,category,otc sh,3,same,all,1,0.00%
+2024-11-01,category,otc sh,4,any,all,1,0.00%
+2024-11-01,category,otc sh,4,same,all,1,0.00%
+2024-11-01,category,otc sh,5,any,all,1,0.00%
+2024-11-01,category,otc sh,5,same,all,1,0.00%
+2024-11-01,category,otc sh,6,any,all,1,0.00%
+2024-11-01,category,otc sh,6,same,all,1,0.00%
+2024-11-01,category,otc sh,7,any,all,1,0.00%
+2024-11-01,category,otc sh,7,same,all,1,0.00%
+2024-11-01,category,otc sh,8,any,all,1,0.00%
+2024-11-01,category,otc sh,8,same,all,1,0.00%
+2024-11-01,category,otc sh,9,any,all,1,0.00%
+2024-11-01,category,otc sh,9,same,all,1,0.00%
+2024-11-01,category,otc sh,10,any,all,1,0.00%
+2024-11-01,category,otc sh,10,same,all,1,0.00%
+2024-11-01,category,otc sh,11,any,all,1,0.00%
+2024-11-01,category,otc sh,11,same,all,1,0.00%
+2024-11-01,category,otc sh,12,any,all,1,0.00%
+2024-11-01,category,otc sh,12,same,all,1,0.00%
+2024-11-01,category,pom hl,0,any,all,3,100.00%
+2024-11-01,category,pom hl,0,same,all,3,100.00%
+2024-11-01,category,pom hl,1,any,all,3,66.67%
+2024-11-01,category,pom hl,1,same,all,3,66.67%
+2024-11-01,category,pom hl,2,any,all,3,33.33%
+2024-11-01,category,pom hl,2,same,all,3,33.33%
+2024-11-01,category,pom hl,3,any,all,3,33.33%
+2024-11-01,category,pom hl,3,same,all,3,33.33%
+2024-11-01,category,pom hl,4,any,all,3,33.33%
+2024-11-01,category,pom hl,4,same,all,3,33.33%
+2024-11-01,category,pom hl,5,any,all,3,33.33%
+2024-11-01,category,pom hl,5,same,all,3,33.33%
+2024-11-01,category,pom hl,6,any,all,3,33.33%
+2024-11-01,category,pom hl,6,same,all,3,33.33%
+2024-11-01,category,pom hl,7,any,all,3,0.00%
+2024-11-01,category,pom hl,7,same,all,3,0.00%
+2024-11-01,category,pom hl,8,any,all,3,33.33%
+2024-11-01,category,pom hl,8,same,all,3,33.33%
+2024-11-01,category,pom hl,9,any,all,3,33.33%
+2024-11-01,category,pom hl,9,same,all,3,33.33%
+2024-11-01,category,pom hl,10,any,all,3,33.33%
+2024-11-01,category,pom hl,10,same,all,3,33.33%
+2024-11-01,category,pom hl,11,any,all,3,33.33%
+2024-11-01,category,pom hl,11,same,all,3,33.33%
+2024-11-01,category,pom hl,12,any,all,3,33.33%
+2024-11-01,category,pom hl,12,same,all,3,33.33%
+2024-11-01,category,pom sh,0,any,all,1,100.00%
+2024-11-01,category,pom sh,0,same,all,1,100.00%
+2024-11-01,category,pom sh,1,any,all,1,0.00%
+2024-11-01,category,pom sh,1,same,all,1,0.00%
+2024-11-01,category,pom sh,2,any,all,1,0.00%
+2024-11-01,category,pom sh,2,same,all,1,0.00%
+2024-11-01,category,pom sh,3,any,all,1,0.00%
+2024-11-01,category,pom sh,3,same,all,1,0.00%
+2024-11-01,category,pom sh,4,any,all,1,0.00%
+2024-11-01,category,pom sh,4,same,all,1,0.00%
+2024-11-01,category,pom sh,5,any,all,1,0.00%
+2024-11-01,category,pom sh,5,same,all,1,0.00%
+2024-11-01,category,pom sh,6,any,all,1,0.00%
+2024-11-01,category,pom sh,6,same,all,1,0.00%
+2024-11-01,category,pom sh,7,any,all,1,0.00%
+2024-11-01,category,pom sh,7,same,all,1,0.00%
+2024-11-01,category,pom sh,8,any,all,1,0.00%
+2024-11-01,category,pom sh,8,same,all,1,0.00%
+2024-11-01,category,pom sh,9,any,all,1,0.00%
+2024-11-01,category,pom sh,9,same,all,1,0.00%
+2024-11-01,category,pom sh,10,any,all,1,0.00%
+2024-11-01,category,pom sh,10,same,all,1,0.00%
+2024-11-01,category,pom sh,11,any,all,1,0.00%
+2024-11-01,category,pom sh,11,same,all,1,0.00%
+2024-11-01,category,pom sh,12,any,all,1,0.00%
+2024-11-01,category,pom sh,12,same,all,1,0.00%
+2024-12-01,category,pom hl,0,any,all,14,100.00%
+2024-12-01,category,pom hl,0,same,all,14,100.00%
+2024-12-01,category,pom hl,1,any,all,14,78.57%
+2024-12-01,category,pom hl,1,same,all,14,78.57%
+2024-12-01,category,pom hl,2,any,all,14,71.43%
+2024-12-01,category,pom hl,2,same,all,14,71.43%
+2024-12-01,category,pom hl,3,any,all,14,78.57%
+2024-12-01,category,pom hl,3,same,all,14,78.57%
+2024-12-01,category,pom hl,4,any,all,14,78.57%
+2024-12-01,category,pom hl,4,same,all,14,78.57%
+2024-12-01,category,pom hl,5,any,all,14,64.29%
+2024-12-01,category,pom hl,5,same,all,14,64.29%
+2024-12-01,category,pom hl,6,any,all,14,57.14%
+2024-12-01,category,pom hl,6,same,all,14,57.14%
+2024-12-01,category,pom hl,7,any,all,14,57.14%
+2024-12-01,category,pom hl,7,same,all,14,57.14%
+2024-12-01,category,pom hl,8,any,all,14,57.14%
+2024-12-01,category,pom hl,8,same,all,14,57.14%
+2024-12-01,category,pom hl,9,any,all,14,50.00%
+2024-12-01,category,pom hl,9,same,all,14,50.00%
+2024-12-01,category,pom hl,10,any,all,14,50.00%
+2024-12-01,category,pom hl,10,same,all,14,50.00%
+2024-12-01,category,pom hl,11,any,all,14,42.86%
+2024-12-01,category,pom hl,11,same,all,14,42.86%
+2024-12-01,category,pom hl,12,any,all,14,50.00%
+2024-12-01,category,pom hl,12,same,all,14,50.00%
+2024-12-01,category,pom sh,0,any,all,5,100.00%
+2024-12-01,category,pom sh,0,same,all,5,100.00%
+2024-12-01,category,pom sh,1,any,all,5,40.00%
+2024-12-01,category,pom sh,1,same,all,5,20.00%
+2024-12-01,category,pom sh,2,any,all,5,40.00%
+2024-12-01,category,pom sh,2,same,all,5,20.00%
+2024-12-01,category,pom sh,3,any,all,5,20.00%
+2024-12-01,category,pom sh,3,same,all,5,20.00%
+2024-12-01,category,pom sh,4,any,all,5,40.00%
+2024-12-01,category,pom sh,4,same,all,5,20.00%
+2024-12-01,category,pom sh,5,any,all,5,20.00%
+2024-12-01,category,pom sh,5,same,all,5,0.00%
+2024-12-01,category,pom sh,6,any,all,5,0.00%
+2024-12-01,category,pom sh,6,same,all,5,0.00%
+2024-12-01,category,pom sh,7,any,all,5,0.00%
+2024-12-01,category,pom sh,7,same,all,5,0.00%
+2024-12-01,category,pom sh,8,any,all,5,0.00%
+2024-12-01,category,pom sh,8,same,all,5,0.00%
+2024-12-01,category,pom sh,9,any,all,5,0.00%
+2024-12-01,category,pom sh,9,same,all,5,0.00%
+2024-12-01,category,pom sh,10,any,all,5,0.00%
+2024-12-01,category,pom sh,10,same,all,5,0.00%
+2024-12-01,category,pom sh,11,any,all,5,0.00%
+2024-12-01,category,pom sh,11,same,all,5,0.00%
+2024-12-01,category,pom sh,12,any,all,5,0.00%
+2024-12-01,category,pom sh,12,same,all,5,0.00%
+2025-01-01,category,otc hl,0,any,all,1,100.00%
+2025-01-01,category,otc hl,0,same,all,1,100.00%
+2025-01-01,category,otc hl,1,any,all,1,0.00%
+2025-01-01,category,otc hl,1,same,all,1,0.00%
+2025-01-01,category,otc hl,2,any,all,1,0.00%
+2025-01-01,category,otc hl,2,same,all,1,0.00%
+2025-01-01,category,otc hl,3,any,all,1,0.00%
+2025-01-01,category,otc hl,3,same,all,1,0.00%
+2025-01-01,category,otc hl,4,any,all,1,0.00%
+2025-01-01,category,otc hl,4,same,all,1,0.00%
+2025-01-01,category,otc hl,5,any,all,1,0.00%
+2025-01-01,category,otc hl,5,same,all,1,0.00%
+2025-01-01,category,otc hl,6,any,all,1,0.00%
+2025-01-01,category,otc hl,6,same,all,1,0.00%
+2025-01-01,category,otc hl,7,any,all,1,0.00%
+2025-01-01,category,otc hl,7,same,all,1,0.00%
+2025-01-01,category,otc hl,8,any,all,1,0.00%
+2025-01-01,category,otc hl,8,same,all,1,0.00%
+2025-01-01,category,otc hl,9,any,all,1,0.00%
+2025-01-01,category,otc hl,9,same,all,1,0.00%
+2025-01-01,category,otc hl,10,any,all,1,0.00%
+2025-01-01,category,otc hl,10,same,all,1,0.00%
+2025-01-01,category,otc hl,11,any,all,1,0.00%
+2025-01-01,category,otc hl,11,same,all,1,0.00%
+2025-01-01,category,otc hl,12,any,all,1,0.00%
+2025-01-01,category,otc hl,12,same,all,1,0.00%
+2025-01-01,category,otc sh,0,any,all,1,100.00%
+2025-01-01,category,otc sh,0,same,all,1,100.00%
+2025-01-01,category,otc sh,1,any,all,1,0.00%
+2025-01-01,category,otc sh,1,same,all,1,0.00%
+2025-01-01,category,otc sh,2,any,all,1,0.00%
+2025-01-01,category,otc sh,2,same,all,1,0.00%
+2025-01-01,category,otc sh,3,any,all,1,0.00%
+2025-01-01,category,otc sh,3,same,all,1,0.00%
+2025-01-01,category,otc sh,4,any,all,1,0.00%
+2025-01-01,category,otc sh,4,same,all,1,0.00%
+2025-01-01,category,otc sh,5,any,all,1,0.00%
+2025-01-01,category,otc sh,5,same,all,1,0.00%
+2025-01-01,category,otc sh,6,any,all,1,0.00%
+2025-01-01,category,otc sh,6,same,all,1,0.00%
+2025-01-01,category,otc sh,7,any,all,1,0.00%
+2025-01-01,category,otc sh,7,same,all,1,0.00%
+2025-01-01,category,otc sh,8,any,all,1,0.00%
+2025-01-01,category,otc sh,8,same,all,1,0.00%
+2025-01-01,category,otc sh,9,any,all,1,0.00%
+2025-01-01,category,otc sh,9,same,all,1,0.00%
+2025-01-01,category,otc sh,10,any,all,1,0.00%
+2025-01-01,category,otc sh,10,same,all,1,0.00%
+2025-01-01,category,otc sh,11,any,all,1,0.00%
+2025-01-01,category,otc sh,11,same,all,1,0.00%
+2025-01-01,category,otc sh,12,any,all,1,0.00%
+2025-01-01,category,otc sh,12,same,all,1,0.00%
+2025-01-01,category,otc sk,0,any,all,2,100.00%
+2025-01-01,category,otc sk,0,same,all,2,100.00%
+2025-01-01,category,otc sk,1,any,all,2,0.00%
+2025-01-01,category,otc sk,1,same,all,2,0.00%
+2025-01-01,category,otc sk,2,any,all,2,50.00%
+2025-01-01,category,otc sk,2,same,all,2,50.00%
+2025-01-01,category,otc sk,3,any,all,2,0.00%
+2025-01-01,category,otc sk,3,same,all,2,0.00%
+2025-01-01,category,otc sk,4,any,all,2,0.00%
+2025-01-01,category,otc sk,4,same,all,2,0.00%
+2025-01-01,category,otc sk,5,any,all,2,0.00%
+2025-01-01,category,otc sk,5,same,all,2,0.00%
+2025-01-01,category,otc sk,6,any,all,2,0.00%
+2025-01-01,category,otc sk,6,same,all,2,0.00%
+2025-01-01,category,otc sk,7,any,all,2,0.00%
+2025-01-01,category,otc sk,7,same,all,2,0.00%
+2025-01-01,category,otc sk,8,any,all,2,0.00%
+2025-01-01,category,otc sk,8,same,all,2,0.00%
+2025-01-01,category,otc sk,9,any,all,2,0.00%
+2025-01-01,category,otc sk,9,same,all,2,0.00%
+2025-01-01,category,otc sk,10,any,all,2,0.00%
+2025-01-01,category,otc sk,10,same,all,2,0.00%
+2025-01-01,category,otc sk,11,any,all,2,0.00%
+2025-01-01,category,otc sk,11,same,all,2,0.00%
+2025-01-01,category,otc sk,12,any,all,2,0.00%
+2025-01-01,category,otc sk,12,same,all,2,0.00%
+2025-01-01,category,pom hl,0,any,all,6,100.00%
+2025-01-01,category,pom hl,0,same,all,6,100.00%
+2025-01-01,category,pom hl,1,any,all,6,100.00%
+2025-01-01,category,pom hl,1,same,all,6,100.00%
+2025-01-01,category,pom hl,2,any,all,6,100.00%
+2025-01-01,category,pom hl,2,same,all,6,100.00%
+2025-01-01,category,pom hl,3,any,all,6,50.00%
+2025-01-01,category,pom hl,3,same,all,6,33.33%
+2025-01-01,category,pom hl,4,any,all,6,50.00%
+2025-01-01,category,pom hl,4,same,all,6,33.33%
+2025-01-01,category,pom hl,5,any,all,6,50.00%
+2025-01-01,category,pom hl,5,same,all,6,50.00%
+2025-01-01,category,pom hl,6,any,all,6,16.67%
+2025-01-01,category,pom hl,6,same,all,6,16.67%
+2025-01-01,category,pom hl,7,any,all,6,16.67%
+2025-01-01,category,pom hl,7,same,all,6,16.67%
+2025-01-01,category,pom hl,8,any,all,6,16.67%
+2025-01-01,category,pom hl,8,same,all,6,16.67%
+2025-01-01,category,pom hl,9,any,all,6,16.67%
+2025-01-01,category,pom hl,9,same,all,6,16.67%
+2025-01-01,category,pom hl,10,any,all,6,0.00%
+2025-01-01,category,pom hl,10,same,all,6,0.00%
+2025-01-01,category,pom hl,11,any,all,6,0.00%
+2025-01-01,category,pom hl,11,same,all,6,0.00%
+2025-01-01,category,pom hl,12,any,all,6,16.67%
+2025-01-01,category,pom hl,12,same,all,6,16.67%
+2025-01-01,category,pom sh,0,any,all,11,100.00%
+2025-01-01,category,pom sh,0,same,all,11,100.00%
+2025-01-01,category,pom sh,1,any,all,11,9.09%
+2025-01-01,category,pom sh,1,same,all,11,9.09%
+2025-01-01,category,pom sh,2,any,all,11,0.00%
+2025-01-01,category,pom sh,2,same,all,11,0.00%
+2025-01-01,category,pom sh,3,any,all,11,9.09%
+2025-01-01,category,pom sh,3,same,all,11,9.09%
+2025-01-01,category,pom sh,4,any,all,11,0.00%
+2025-01-01,category,pom sh,4,same,all,11,0.00%
+2025-01-01,category,pom sh,5,any,all,11,9.09%
+2025-01-01,category,pom sh,5,same,all,11,9.09%
+2025-01-01,category,pom sh,6,any,all,11,0.00%
+2025-01-01,category,pom sh,6,same,all,11,0.00%
+2025-01-01,category,pom sh,7,any,all,11,18.18%
+2025-01-01,category,pom sh,7,same,all,11,18.18%
+2025-01-01,category,pom sh,8,any,all,11,0.00%
+2025-01-01,category,pom sh,8,same,all,11,0.00%
+2025-01-01,category,pom sh,9,any,all,11,0.00%
+2025-01-01,category,pom sh,9,same,all,11,0.00%
+2025-01-01,category,pom sh,10,any,all,11,9.09%
+2025-01-01,category,pom sh,10,same,all,11,9.09%
+2025-01-01,category,pom sh,11,any,all,11,0.00%
+2025-01-01,category,pom sh,11,same,all,11,0.00%
+2025-01-01,category,pom sh,12,any,all,11,0.00%
+2025-01-01,category,pom sh,12,same,all,11,0.00%
+2025-02-01,category,pom hl,0,any,all,11,100.00%
+2025-02-01,category,pom hl,0,same,all,11,100.00%
+2025-02-01,category,pom hl,1,any,all,11,100.00%
+2025-02-01,category,pom hl,1,same,all,11,100.00%
+2025-02-01,category,pom hl,2,any,all,11,81.82%
+2025-02-01,category,pom hl,2,same,all,11,81.82%
+2025-02-01,category,pom hl,3,any,all,11,63.64%
+2025-02-01,category,pom hl,3,same,all,11,63.64%
+2025-02-01,category,pom hl,4,any,all,11,63.64%
+2025-02-01,category,pom hl,4,same,all,11,63.64%
+2025-02-01,category,pom hl,5,any,all,11,54.55%
+2025-02-01,category,pom hl,5,same,all,11,54.55%
+2025-02-01,category,pom hl,6,any,all,11,54.55%
+2025-02-01,category,pom hl,6,same,all,11,54.55%
+2025-02-01,category,pom hl,7,any,all,11,63.64%
+2025-02-01,category,pom hl,7,same,all,11,63.64%
+2025-02-01,category,pom hl,8,any,all,11,45.45%
+2025-02-01,category,pom hl,8,same,all,11,45.45%
+2025-02-01,category,pom hl,9,any,all,11,27.27%
+2025-02-01,category,pom hl,9,same,all,11,27.27%
+2025-02-01,category,pom hl,10,any,all,11,45.45%
+2025-02-01,category,pom hl,10,same,all,11,45.45%
+2025-02-01,category,pom hl,11,any,all,11,36.36%
+2025-02-01,category,pom hl,11,same,all,11,36.36%
+2025-02-01,category,pom sh,0,any,all,5,100.00%
+2025-02-01,category,pom sh,0,same,all,5,100.00%
+2025-02-01,category,pom sh,1,any,all,5,20.00%
+2025-02-01,category,pom sh,1,same,all,5,20.00%
+2025-02-01,category,pom sh,2,any,all,5,20.00%
+2025-02-01,category,pom sh,2,same,all,5,20.00%
+2025-02-01,category,pom sh,3,any,all,5,20.00%
+2025-02-01,category,pom sh,3,same,all,5,20.00%
+2025-02-01,category,pom sh,4,any,all,5,0.00%
+2025-02-01,category,pom sh,4,same,all,5,0.00%
+2025-02-01,category,pom sh,5,any,all,5,40.00%
+2025-02-01,category,pom sh,5,same,all,5,40.00%
+2025-02-01,category,pom sh,6,any,all,5,0.00%
+2025-02-01,category,pom sh,6,same,all,5,0.00%
+2025-02-01,category,pom sh,7,any,all,5,0.00%
+2025-02-01,category,pom sh,7,same,all,5,0.00%
+2025-02-01,category,pom sh,8,any,all,5,20.00%
+2025-02-01,category,pom sh,8,same,all,5,20.00%
+2025-02-01,category,pom sh,9,any,all,5,20.00%
+2025-02-01,category,pom sh,9,same,all,5,0.00%
+2025-02-01,category,pom sh,10,any,all,5,0.00%
+2025-02-01,category,pom sh,10,same,all,5,0.00%
+2025-02-01,category,pom sh,11,any,all,5,40.00%
+2025-02-01,category,pom sh,11,same,all,5,40.00%
+2025-03-01,category,otc hl,0,any,all,8,100.00%
+2025-03-01,category,otc hl,0,same,all,8,100.00%
+2025-03-01,category,otc hl,1,any,all,8,0.00%
+2025-03-01,category,otc hl,1,same,all,8,0.00%
+2025-03-01,category,otc hl,2,any,all,8,0.00%
+2025-03-01,category,otc hl,2,same,all,8,0.00%
+2025-03-01,category,otc hl,3,any,all,8,0.00%
+2025-03-01,category,otc hl,3,same,all,8,0.00%
+2025-03-01,category,otc hl,4,any,all,8,0.00%
+2025-03-01,category,otc hl,4,same,all,8,0.00%
+2025-03-01,category,otc hl,5,any,all,8,0.00%
+2025-03-01,category,otc hl,5,same,all,8,0.00%
+2025-03-01,category,otc hl,6,any,all,8,12.50%
+2025-03-01,category,otc hl,6,same,all,8,12.50%
+2025-03-01,category,otc hl,7,any,all,8,0.00%
+2025-03-01,category,otc hl,7,same,all,8,0.00%
+2025-03-01,category,otc hl,8,any,all,8,0.00%
+2025-03-01,category,otc hl,8,same,all,8,0.00%
+2025-03-01,category,otc hl,9,any,all,8,12.50%
+2025-03-01,category,otc hl,9,same,all,8,12.50%
+2025-03-01,category,otc hl,10,any,all,8,0.00%
+2025-03-01,category,otc hl,10,same,all,8,0.00%
+2025-03-01,category,pom hl,0,any,all,46,100.00%
+2025-03-01,category,pom hl,0,same,all,46,100.00%
+2025-03-01,category,pom hl,1,any,all,46,78.26%
+2025-03-01,category,pom hl,1,same,all,46,78.26%
+2025-03-01,category,pom hl,2,any,all,46,67.39%
+2025-03-01,category,pom hl,2,same,all,46,67.39%
+2025-03-01,category,pom hl,3,any,all,46,56.52%
+2025-03-01,category,pom hl,3,same,all,46,56.52%
+2025-03-01,category,pom hl,4,any,all,46,56.52%
+2025-03-01,category,pom hl,4,same,all,46,56.52%
+2025-03-01,category,pom hl,5,any,all,46,54.35%
+2025-03-01,category,pom hl,5,same,all,46,54.35%
+2025-03-01,category,pom hl,6,any,all,46,47.83%
+2025-03-01,category,pom hl,6,same,all,46,47.83%
+2025-03-01,category,pom hl,7,any,all,46,47.83%
+2025-03-01,category,pom hl,7,same,all,46,45.65%
+2025-03-01,category,pom hl,8,any,all,46,28.26%
+2025-03-01,category,pom hl,8,same,all,46,28.26%
+2025-03-01,category,pom hl,9,any,all,46,39.13%
+2025-03-01,category,pom hl,9,same,all,46,39.13%
+2025-03-01,category,pom hl,10,any,all,46,36.96%
+2025-03-01,category,pom hl,10,same,all,46,36.96%
+2025-03-01,category,pom sh,0,any,all,6,100.00%
+2025-03-01,category,pom sh,0,same,all,6,100.00%
+2025-03-01,category,pom sh,1,any,all,6,50.00%
+2025-03-01,category,pom sh,1,same,all,6,50.00%
+2025-03-01,category,pom sh,2,any,all,6,16.67%
+2025-03-01,category,pom sh,2,same,all,6,16.67%
+2025-03-01,category,pom sh,3,any,all,6,33.33%
+2025-03-01,category,pom sh,3,same,all,6,33.33%
+2025-03-01,category,pom sh,4,any,all,6,16.67%
+2025-03-01,category,pom sh,4,same,all,6,16.67%
+2025-03-01,category,pom sh,5,any,all,6,50.00%
+2025-03-01,category,pom sh,5,same,all,6,50.00%
+2025-03-01,category,pom sh,6,any,all,6,16.67%
+2025-03-01,category,pom sh,6,same,all,6,16.67%
+2025-03-01,category,pom sh,7,any,all,6,16.67%
+2025-03-01,category,pom sh,7,same,all,6,16.67%
+2025-03-01,category,pom sh,8,any,all,6,16.67%
+2025-03-01,category,pom sh,8,same,all,6,16.67%
+2025-03-01,category,pom sh,9,any,all,6,33.33%
+2025-03-01,category,pom sh,9,same,all,6,33.33%
+2025-03-01,category,pom sh,10,any,all,6,16.67%
+2025-03-01,category,pom sh,10,same,all,6,0.00%
+2025-04-01,category,otc hl,0,any,all,2,100.00%
+2025-04-01,category,otc hl,0,same,all,2,100.00%
+2025-04-01,category,otc hl,1,any,all,2,0.00%
+2025-04-01,category,otc hl,1,same,all,2,0.00%
+2025-04-01,category,otc hl,2,any,all,2,0.00%
+2025-04-01,category,otc hl,2,same,all,2,0.00%
+2025-04-01,category,otc hl,3,any,all,2,0.00%
+2025-04-01,category,otc hl,3,same,all,2,0.00%
+2025-04-01,category,otc hl,4,any,all,2,0.00%
+2025-04-01,category,otc hl,4,same,all,2,0.00%
+2025-04-01,category,otc hl,5,any,all,2,0.00%
+2025-04-01,category,otc hl,5,same,all,2,0.00%
+2025-04-01,category,otc hl,6,any,all,2,0.00%
+2025-04-01,category,otc hl,6,same,all,2,0.00%
+2025-04-01,category,otc hl,7,any,all,2,0.00%
+2025-04-01,category,otc hl,7,same,all,2,0.00%
+2025-04-01,category,otc hl,8,any,all,2,0.00%
+2025-04-01,category,otc hl,8,same,all,2,0.00%
+2025-04-01,category,otc hl,9,any,all,2,0.00%
+2025-04-01,category,otc hl,9,same,all,2,0.00%
+2025-04-01,category,otc sh,0,any,all,1,100.00%
+2025-04-01,category,otc sh,0,same,all,1,100.00%
+2025-04-01,category,otc sh,1,any,all,1,0.00%
+2025-04-01,category,otc sh,1,same,all,1,0.00%
+2025-04-01,category,otc sh,2,any,all,1,0.00%
+2025-04-01,category,otc sh,2,same,all,1,0.00%
+2025-04-01,category,otc sh,3,any,all,1,0.00%
+2025-04-01,category,otc sh,3,same,all,1,0.00%
+2025-04-01,category,otc sh,4,any,all,1,0.00%
+2025-04-01,category,otc sh,4,same,all,1,0.00%
+2025-04-01,category,otc sh,5,any,all,1,0.00%
+2025-04-01,category,otc sh,5,same,all,1,0.00%
+2025-04-01,category,otc sh,6,any,all,1,0.00%
+2025-04-01,category,otc sh,6,same,all,1,0.00%
+2025-04-01,category,otc sh,7,any,all,1,0.00%
+2025-04-01,category,otc sh,7,same,all,1,0.00%
+2025-04-01,category,otc sh,8,any,all,1,0.00%
+2025-04-01,category,otc sh,8,same,all,1,0.00%
+2025-04-01,category,otc sh,9,any,all,1,0.00%
+2025-04-01,category,otc sh,9,same,all,1,0.00%
+2025-04-01,category,pom hl,0,any,all,71,100.00%
+2025-04-01,category,pom hl,0,same,all,71,100.00%
+2025-04-01,category,pom hl,1,any,all,71,77.46%
+2025-04-01,category,pom hl,1,same,all,71,77.46%
+2025-04-01,category,pom hl,2,any,all,71,71.83%
+2025-04-01,category,pom hl,2,same,all,71,71.83%
+2025-04-01,category,pom hl,3,any,all,71,60.56%
+2025-04-01,category,pom hl,3,same,all,71,60.56%
+2025-04-01,category,pom hl,4,any,all,71,59.15%
+2025-04-01,category,pom hl,4,same,all,71,59.15%
+2025-04-01,category,pom hl,5,any,all,71,60.56%
+2025-04-01,category,pom hl,5,same,all,71,60.56%
+2025-04-01,category,pom hl,6,any,all,71,46.48%
+2025-04-01,category,pom hl,6,same,all,71,46.48%
+2025-04-01,category,pom hl,7,any,all,71,39.44%
+2025-04-01,category,pom hl,7,same,all,71,39.44%
+2025-04-01,category,pom hl,8,any,all,71,40.85%
+2025-04-01,category,pom hl,8,same,all,71,40.85%
+2025-04-01,category,pom hl,9,any,all,71,39.44%
+2025-04-01,category,pom hl,9,same,all,71,39.44%
+2025-04-01,category,pom sh,0,any,all,4,100.00%
+2025-04-01,category,pom sh,0,same,all,4,100.00%
+2025-04-01,category,pom sh,1,any,all,4,0.00%
+2025-04-01,category,pom sh,1,same,all,4,0.00%
+2025-04-01,category,pom sh,2,any,all,4,0.00%
+2025-04-01,category,pom sh,2,same,all,4,0.00%
+2025-04-01,category,pom sh,3,any,all,4,0.00%
+2025-04-01,category,pom sh,3,same,all,4,0.00%
+2025-04-01,category,pom sh,4,any,all,4,0.00%
+2025-04-01,category,pom sh,4,same,all,4,0.00%
+2025-04-01,category,pom sh,5,any,all,4,0.00%
+2025-04-01,category,pom sh,5,same,all,4,0.00%
+2025-04-01,category,pom sh,6,any,all,4,25.00%
+2025-04-01,category,pom sh,6,same,all,4,25.00%
+2025-04-01,category,pom sh,7,any,all,4,0.00%
+2025-04-01,category,pom sh,7,same,all,4,0.00%
+2025-04-01,category,pom sh,8,any,all,4,0.00%
+2025-04-01,category,pom sh,8,same,all,4,0.00%
+2025-04-01,category,pom sh,9,any,all,4,0.00%
+2025-04-01,category,pom sh,9,same,all,4,0.00%
+2025-05-01,category,otc hl,0,any,all,2,100.00%
+2025-05-01,category,otc hl,0,same,all,2,100.00%
+2025-05-01,category,otc hl,1,any,all,2,50.00%
+2025-05-01,category,otc hl,1,same,all,2,0.00%
+2025-05-01,category,otc hl,2,any,all,2,50.00%
+2025-05-01,category,otc hl,2,same,all,2,0.00%
+2025-05-01,category,otc hl,3,any,all,2,50.00%
+2025-05-01,category,otc hl,3,same,all,2,0.00%
+2025-05-01,category,otc hl,4,any,all,2,50.00%
+2025-05-01,category,otc hl,4,same,all,2,0.00%
+2025-05-01,category,otc hl,5,any,all,2,0.00%
+2025-05-01,category,otc hl,5,same,all,2,0.00%
+2025-05-01,category,otc hl,6,any,all,2,0.00%
+2025-05-01,category,otc hl,6,same,all,2,0.00%
+2025-05-01,category,otc hl,7,any,all,2,50.00%
+2025-05-01,category,otc hl,7,same,all,2,50.00%
+2025-05-01,category,otc hl,8,any,all,2,0.00%
+2025-05-01,category,otc hl,8,same,all,2,0.00%
+2025-05-01,category,pom bg,0,any,all,1,100.00%
+2025-05-01,category,pom bg,0,same,all,1,100.00%
+2025-05-01,category,pom bg,1,any,all,1,0.00%
+2025-05-01,category,pom bg,1,same,all,1,0.00%
+2025-05-01,category,pom bg,2,any,all,1,0.00%
+2025-05-01,category,pom bg,2,same,all,1,0.00%
+2025-05-01,category,pom bg,3,any,all,1,0.00%
+2025-05-01,category,pom bg,3,same,all,1,0.00%
+2025-05-01,category,pom bg,4,any,all,1,0.00%
+2025-05-01,category,pom bg,4,same,all,1,0.00%
+2025-05-01,category,pom bg,5,any,all,1,0.00%
+2025-05-01,category,pom bg,5,same,all,1,0.00%
+2025-05-01,category,pom bg,6,any,all,1,0.00%
+2025-05-01,category,pom bg,6,same,all,1,0.00%
+2025-05-01,category,pom bg,7,any,all,1,0.00%
+2025-05-01,category,pom bg,7,same,all,1,0.00%
+2025-05-01,category,pom bg,8,any,all,1,0.00%
+2025-05-01,category,pom bg,8,same,all,1,0.00%
+2025-05-01,category,pom hl,0,any,all,68,100.00%
+2025-05-01,category,pom hl,0,same,all,68,100.00%
+2025-05-01,category,pom hl,1,any,all,68,85.29%
+2025-05-01,category,pom hl,1,same,all,68,85.29%
+2025-05-01,category,pom hl,2,any,all,68,77.94%
+2025-05-01,category,pom hl,2,same,all,68,77.94%
+2025-05-01,category,pom hl,3,any,all,68,60.29%
+2025-05-01,category,pom hl,3,same,all,68,60.29%
+2025-05-01,category,pom hl,4,any,all,68,58.82%
+2025-05-01,category,pom hl,4,same,all,68,58.82%
+2025-05-01,category,pom hl,5,any,all,68,51.47%
+2025-05-01,category,pom hl,5,same,all,68,51.47%
+2025-05-01,category,pom hl,6,any,all,68,51.47%
+2025-05-01,category,pom hl,6,same,all,68,51.47%
+2025-05-01,category,pom hl,7,any,all,68,42.65%
+2025-05-01,category,pom hl,7,same,all,68,42.65%
+2025-05-01,category,pom hl,8,any,all,68,39.71%
+2025-05-01,category,pom hl,8,same,all,68,39.71%
+2025-05-01,category,pom sh,0,any,all,2,100.00%
+2025-05-01,category,pom sh,0,same,all,2,100.00%
+2025-05-01,category,pom sh,1,any,all,2,0.00%
+2025-05-01,category,pom sh,1,same,all,2,0.00%
+2025-05-01,category,pom sh,2,any,all,2,0.00%
+2025-05-01,category,pom sh,2,same,all,2,0.00%
+2025-05-01,category,pom sh,3,any,all,2,0.00%
+2025-05-01,category,pom sh,3,same,all,2,0.00%
+2025-05-01,category,pom sh,4,any,all,2,0.00%
+2025-05-01,category,pom sh,4,same,all,2,0.00%
+2025-05-01,category,pom sh,5,any,all,2,0.00%
+2025-05-01,category,pom sh,5,same,all,2,0.00%
+2025-05-01,category,pom sh,6,any,all,2,0.00%
+2025-05-01,category,pom sh,6,same,all,2,0.00%
+2025-05-01,category,pom sh,7,any,all,2,0.00%
+2025-05-01,category,pom sh,7,same,all,2,0.00%
+2025-05-01,category,pom sh,8,any,all,2,0.00%
+2025-05-01,category,pom sh,8,same,all,2,0.00%
+2025-06-01,category,otc sh,0,any,all,6,100.00%
+2025-06-01,category,otc sh,0,same,all,6,100.00%
+2025-06-01,category,otc sh,1,any,all,6,0.00%
+2025-06-01,category,otc sh,1,same,all,6,0.00%
+2025-06-01,category,otc sh,2,any,all,6,0.00%
+2025-06-01,category,otc sh,2,same,all,6,0.00%
+2025-06-01,category,otc sh,3,any,all,6,0.00%
+2025-06-01,category,otc sh,3,same,all,6,0.00%
+2025-06-01,category,otc sh,4,any,all,6,0.00%
+2025-06-01,category,otc sh,4,same,all,6,0.00%
+2025-06-01,category,otc sh,5,any,all,6,0.00%
+2025-06-01,category,otc sh,5,same,all,6,0.00%
+2025-06-01,category,otc sh,6,any,all,6,0.00%
+2025-06-01,category,otc sh,6,same,all,6,0.00%
+2025-06-01,category,otc sh,7,any,all,6,0.00%
+2025-06-01,category,otc sh,7,same,all,6,0.00%
+2025-06-01,category,otc sk,0,any,all,1,100.00%
+2025-06-01,category,otc sk,0,same,all,1,100.00%
+2025-06-01,category,otc sk,1,any,all,1,0.00%
+2025-06-01,category,otc sk,1,same,all,1,0.00%
+2025-06-01,category,otc sk,2,any,all,1,0.00%
+2025-06-01,category,otc sk,2,same,all,1,0.00%
+2025-06-01,category,otc sk,3,any,all,1,0.00%
+2025-06-01,category,otc sk,3,same,all,1,0.00%
+2025-06-01,category,otc sk,4,any,all,1,0.00%
+2025-06-01,category,otc sk,4,same,all,1,0.00%
+2025-06-01,category,otc sk,5,any,all,1,0.00%
+2025-06-01,category,otc sk,5,same,all,1,0.00%
+2025-06-01,category,otc sk,6,any,all,1,0.00%
+2025-06-01,category,otc sk,6,same,all,1,0.00%
+2025-06-01,category,otc sk,7,any,all,1,0.00%
+2025-06-01,category,otc sk,7,same,all,1,0.00%
+2025-06-01,category,pom bg,0,any,all,1,100.00%
+2025-06-01,category,pom bg,0,same,all,1,100.00%
+2025-06-01,category,pom bg,1,any,all,1,100.00%
+2025-06-01,category,pom bg,1,same,all,1,100.00%
+2025-06-01,category,pom bg,2,any,all,1,100.00%
+2025-06-01,category,pom bg,2,same,all,1,100.00%
+2025-06-01,category,pom bg,3,any,all,1,0.00%
+2025-06-01,category,pom bg,3,same,all,1,0.00%
+2025-06-01,category,pom bg,4,any,all,1,0.00%
+2025-06-01,category,pom bg,4,same,all,1,0.00%
+2025-06-01,category,pom bg,5,any,all,1,0.00%
+2025-06-01,category,pom bg,5,same,all,1,0.00%
+2025-06-01,category,pom bg,6,any,all,1,0.00%
+2025-06-01,category,pom bg,6,same,all,1,0.00%
+2025-06-01,category,pom bg,7,any,all,1,0.00%
+2025-06-01,category,pom bg,7,same,all,1,0.00%
+2025-06-01,category,pom hl,0,any,all,65,100.00%
+2025-06-01,category,pom hl,0,same,all,65,100.00%
+2025-06-01,category,pom hl,1,any,all,65,81.54%
+2025-06-01,category,pom hl,1,same,all,65,81.54%
+2025-06-01,category,pom hl,2,any,all,65,78.46%
+2025-06-01,category,pom hl,2,same,all,65,78.46%
+2025-06-01,category,pom hl,3,any,all,65,58.46%
+2025-06-01,category,pom hl,3,same,all,65,58.46%
+2025-06-01,category,pom hl,4,any,all,65,50.77%
+2025-06-01,category,pom hl,4,same,all,65,49.23%
+2025-06-01,category,pom hl,5,any,all,65,49.23%
+2025-06-01,category,pom hl,5,same,all,65,47.69%
+2025-06-01,category,pom hl,6,any,all,65,46.15%
+2025-06-01,category,pom hl,6,same,all,65,44.62%
+2025-06-01,category,pom hl,7,any,all,65,36.92%
+2025-06-01,category,pom hl,7,same,all,65,35.38%
+2025-06-01,category,pom sh,0,any,all,2,100.00%
+2025-06-01,category,pom sh,0,same,all,2,100.00%
+2025-06-01,category,pom sh,1,any,all,2,0.00%
+2025-06-01,category,pom sh,1,same,all,2,0.00%
+2025-06-01,category,pom sh,2,any,all,2,0.00%
+2025-06-01,category,pom sh,2,same,all,2,0.00%
+2025-06-01,category,pom sh,3,any,all,2,0.00%
+2025-06-01,category,pom sh,3,same,all,2,0.00%
+2025-06-01,category,pom sh,4,any,all,2,0.00%
+2025-06-01,category,pom sh,4,same,all,2,0.00%
+2025-06-01,category,pom sh,5,any,all,2,0.00%
+2025-06-01,category,pom sh,5,same,all,2,0.00%
+2025-06-01,category,pom sh,6,any,all,2,0.00%
+2025-06-01,category,pom sh,6,same,all,2,0.00%
+2025-06-01,category,pom sh,7,any,all,2,0.00%
+2025-06-01,category,pom sh,7,same,all,2,0.00%
+2025-07-01,category,otc hl,0,any,all,3,100.00%
+2025-07-01,category,otc hl,0,same,all,3,100.00%
+2025-07-01,category,otc hl,1,any,all,3,0.00%
+2025-07-01,category,otc hl,1,same,all,3,0.00%
+2025-07-01,category,otc hl,2,any,all,3,0.00%
+2025-07-01,category,otc hl,2,same,all,3,0.00%
+2025-07-01,category,otc hl,3,any,all,3,0.00%
+2025-07-01,category,otc hl,3,same,all,3,0.00%
+2025-07-01,category,otc hl,4,any,all,3,0.00%
+2025-07-01,category,otc hl,4,same,all,3,0.00%
+2025-07-01,category,otc hl,5,any,all,3,33.33%
+2025-07-01,category,otc hl,5,same,all,3,33.33%
+2025-07-01,category,otc hl,6,any,all,3,0.00%
+2025-07-01,category,otc hl,6,same,all,3,0.00%
+2025-07-01,category,otc sh,0,any,all,3,100.00%
+2025-07-01,category,otc sh,0,same,all,3,100.00%
+2025-07-01,category,otc sh,1,any,all,3,0.00%
+2025-07-01,category,otc sh,1,same,all,3,0.00%
+2025-07-01,category,otc sh,2,any,all,3,0.00%
+2025-07-01,category,otc sh,2,same,all,3,0.00%
+2025-07-01,category,otc sh,3,any,all,3,0.00%
+2025-07-01,category,otc sh,3,same,all,3,0.00%
+2025-07-01,category,otc sh,4,any,all,3,0.00%
+2025-07-01,category,otc sh,4,same,all,3,0.00%
+2025-07-01,category,otc sh,5,any,all,3,0.00%
+2025-07-01,category,otc sh,5,same,all,3,0.00%
+2025-07-01,category,otc sh,6,any,all,3,0.00%
+2025-07-01,category,otc sh,6,same,all,3,0.00%
+2025-07-01,category,otc sk,0,any,all,1,100.00%
+2025-07-01,category,otc sk,0,same,all,1,100.00%
+2025-07-01,category,otc sk,1,any,all,1,0.00%
+2025-07-01,category,otc sk,1,same,all,1,0.00%
+2025-07-01,category,otc sk,2,any,all,1,0.00%
+2025-07-01,category,otc sk,2,same,all,1,0.00%
+2025-07-01,category,otc sk,3,any,all,1,0.00%
+2025-07-01,category,otc sk,3,same,all,1,0.00%
+2025-07-01,category,otc sk,4,any,all,1,0.00%
+2025-07-01,category,otc sk,4,same,all,1,0.00%
+2025-07-01,category,otc sk,5,any,all,1,0.00%
+2025-07-01,category,otc sk,5,same,all,1,0.00%
+2025-07-01,category,otc sk,6,any,all,1,0.00%
+2025-07-01,category,otc sk,6,same,all,1,0.00%
+2025-07-01,category,pom hl,0,any,all,65,100.00%
+2025-07-01,category,pom hl,0,same,all,65,100.00%
+2025-07-01,category,pom hl,1,any,all,65,84.62%
+2025-07-01,category,pom hl,1,same,all,65,84.62%
+2025-07-01,category,pom hl,2,any,all,65,86.15%
+2025-07-01,category,pom hl,2,same,all,65,86.15%
+2025-07-01,category,pom hl,3,any,all,65,72.31%
+2025-07-01,category,pom hl,3,same,all,65,72.31%
+2025-07-01,category,pom hl,4,any,all,65,67.69%
+2025-07-01,category,pom hl,4,same,all,65,66.15%
+2025-07-01,category,pom hl,5,any,all,65,61.54%
+2025-07-01,category,pom hl,5,same,all,65,60.00%
+2025-07-01,category,pom hl,6,any,all,65,50.77%
+2025-07-01,category,pom hl,6,same,all,65,50.77%
+2025-07-01,category,pom sh,0,any,all,4,100.00%
+2025-07-01,category,pom sh,0,same,all,4,100.00%
+2025-07-01,category,pom sh,1,any,all,4,0.00%
+2025-07-01,category,pom sh,1,same,all,4,0.00%
+2025-07-01,category,pom sh,2,any,all,4,0.00%
+2025-07-01,category,pom sh,2,same,all,4,0.00%
+2025-07-01,category,pom sh,3,any,all,4,0.00%
+2025-07-01,category,pom sh,3,same,all,4,0.00%
+2025-07-01,category,pom sh,4,any,all,4,0.00%
+2025-07-01,category,pom sh,4,same,all,4,0.00%
+2025-07-01,category,pom sh,5,any,all,4,0.00%
+2025-07-01,category,pom sh,5,same,all,4,0.00%
+2025-07-01,category,pom sh,6,any,all,4,0.00%
+2025-07-01,category,pom sh,6,same,all,4,0.00%
+2025-08-01,category,otc hl,0,any,all,3,100.00%
+2025-08-01,category,otc hl,0,same,all,3,100.00%
+2025-08-01,category,otc hl,1,any,all,3,0.00%
+2025-08-01,category,otc hl,1,same,all,3,0.00%
+2025-08-01,category,otc hl,2,any,all,3,33.33%
+2025-08-01,category,otc hl,2,same,all,3,0.00%
+2025-08-01,category,otc hl,3,any,all,3,0.00%
+2025-08-01,category,otc hl,3,same,all,3,0.00%
+2025-08-01,category,otc hl,4,any,all,3,0.00%
+2025-08-01,category,otc hl,4,same,all,3,0.00%
+2025-08-01,category,otc hl,5,any,all,3,0.00%
+2025-08-01,category,otc hl,5,same,all,3,0.00%
+2025-08-01,category,otc sh,0,any,all,4,100.00%
+2025-08-01,category,otc sh,0,same,all,4,100.00%
+2025-08-01,category,otc sh,1,any,all,4,0.00%
+2025-08-01,category,otc sh,1,same,all,4,0.00%
+2025-08-01,category,otc sh,2,any,all,4,0.00%
+2025-08-01,category,otc sh,2,same,all,4,0.00%
+2025-08-01,category,otc sh,3,any,all,4,0.00%
+2025-08-01,category,otc sh,3,same,all,4,0.00%
+2025-08-01,category,otc sh,4,any,all,4,0.00%
+2025-08-01,category,otc sh,4,same,all,4,0.00%
+2025-08-01,category,otc sh,5,any,all,4,0.00%
+2025-08-01,category,otc sh,5,same,all,4,0.00%
+2025-08-01,category,pom bg,0,any,all,3,100.00%
+2025-08-01,category,pom bg,0,same,all,3,100.00%
+2025-08-01,category,pom bg,1,any,all,3,33.33%
+2025-08-01,category,pom bg,1,same,all,3,33.33%
+2025-08-01,category,pom bg,2,any,all,3,0.00%
+2025-08-01,category,pom bg,2,same,all,3,0.00%
+2025-08-01,category,pom bg,3,any,all,3,0.00%
+2025-08-01,category,pom bg,3,same,all,3,0.00%
+2025-08-01,category,pom bg,4,any,all,3,0.00%
+2025-08-01,category,pom bg,4,same,all,3,0.00%
+2025-08-01,category,pom bg,5,any,all,3,0.00%
+2025-08-01,category,pom bg,5,same,all,3,0.00%
+2025-08-01,category,pom hl,0,any,all,61,100.00%
+2025-08-01,category,pom hl,0,same,all,61,100.00%
+2025-08-01,category,pom hl,1,any,all,61,91.80%
+2025-08-01,category,pom hl,1,same,all,61,91.80%
+2025-08-01,category,pom hl,2,any,all,61,91.80%
+2025-08-01,category,pom hl,2,same,all,61,90.16%
+2025-08-01,category,pom hl,3,any,all,61,67.21%
+2025-08-01,category,pom hl,3,same,all,61,67.21%
+2025-08-01,category,pom hl,4,any,all,61,49.18%
+2025-08-01,category,pom hl,4,same,all,61,49.18%
+2025-08-01,category,pom hl,5,any,all,61,49.18%
+2025-08-01,category,pom hl,5,same,all,61,45.90%
+2025-08-01,category,pom sh,0,any,all,5,100.00%
+2025-08-01,category,pom sh,0,same,all,5,100.00%
+2025-08-01,category,pom sh,1,any,all,5,0.00%
+2025-08-01,category,pom sh,1,same,all,5,0.00%
+2025-08-01,category,pom sh,2,any,all,5,0.00%
+2025-08-01,category,pom sh,2,same,all,5,0.00%
+2025-08-01,category,pom sh,3,any,all,5,0.00%
+2025-08-01,category,pom sh,3,same,all,5,0.00%
+2025-08-01,category,pom sh,4,any,all,5,0.00%
+2025-08-01,category,pom sh,4,same,all,5,0.00%
+2025-08-01,category,pom sh,5,any,all,5,0.00%
+2025-08-01,category,pom sh,5,same,all,5,0.00%
+2025-09-01,category,otc hl,0,any,all,2,100.00%
+2025-09-01,category,otc hl,0,same,all,2,100.00%
+2025-09-01,category,otc hl,1,any,all,2,0.00%
+2025-09-01,category,otc hl,1,same,all,2,0.00%
+2025-09-01,category,otc hl,2,any,all,2,0.00%
+2025-09-01,category,otc hl,2,same,all,2,0.00%
+2025-09-01,category,otc hl,3,any,all,2,0.00%
+2025-09-01,category,otc hl,3,same,all,2,0.00%
+2025-09-01,category,otc hl,4,any,all,2,0.00%
+2025-09-01,category,otc hl,4,same,all,2,0.00%
+2025-09-01,category,otc sh,0,any,all,6,100.00%
+2025-09-01,category,otc sh,0,same,all,6,100.00%
+2025-09-01,category,otc sh,1,any,all,6,16.67%
+2025-09-01,category,otc sh,1,same,all,6,16.67%
+2025-09-01,category,otc sh,2,any,all,6,16.67%
+2025-09-01,category,otc sh,2,same,all,6,16.67%
+2025-09-01,category,otc sh,3,any,all,6,16.67%
+2025-09-01,category,otc sh,3,same,all,6,16.67%
+2025-09-01,category,otc sh,4,any,all,6,16.67%
+2025-09-01,category,otc sh,4,same,all,6,16.67%
+2025-09-01,category,otc sk,0,any,all,1,100.00%
+2025-09-01,category,otc sk,0,same,all,1,100.00%
+2025-09-01,category,otc sk,1,any,all,1,0.00%
+2025-09-01,category,otc sk,1,same,all,1,0.00%
+2025-09-01,category,otc sk,2,any,all,1,0.00%
+2025-09-01,category,otc sk,2,same,all,1,0.00%
+2025-09-01,category,otc sk,3,any,all,1,0.00%
+2025-09-01,category,otc sk,3,same,all,1,0.00%
+2025-09-01,category,otc sk,4,any,all,1,0.00%
+2025-09-01,category,otc sk,4,same,all,1,0.00%
+2025-09-01,category,pom bg,0,any,all,2,100.00%
+2025-09-01,category,pom bg,0,same,all,2,100.00%
+2025-09-01,category,pom bg,1,any,all,2,0.00%
+2025-09-01,category,pom bg,1,same,all,2,0.00%
+2025-09-01,category,pom bg,2,any,all,2,0.00%
+2025-09-01,category,pom bg,2,same,all,2,0.00%
+2025-09-01,category,pom bg,3,any,all,2,0.00%
+2025-09-01,category,pom bg,3,same,all,2,0.00%
+2025-09-01,category,pom bg,4,any,all,2,0.00%
+2025-09-01,category,pom bg,4,same,all,2,0.00%
+2025-09-01,category,pom hl,0,any,all,65,100.00%
+2025-09-01,category,pom hl,0,same,all,65,100.00%
+2025-09-01,category,pom hl,1,any,all,65,81.54%
+2025-09-01,category,pom hl,1,same,all,65,81.54%
+2025-09-01,category,pom hl,2,any,all,65,70.77%
+2025-09-01,category,pom hl,2,same,all,65,69.23%
+2025-09-01,category,pom hl,3,any,all,65,56.92%
+2025-09-01,category,pom hl,3,same,all,65,56.92%
+2025-09-01,category,pom hl,4,any,all,65,40.00%
+2025-09-01,category,pom hl,4,same,all,65,38.46%
+2025-09-01,category,pom sh,0,any,all,12,100.00%
+2025-09-01,category,pom sh,0,same,all,12,100.00%
+2025-09-01,category,pom sh,1,any,all,12,0.00%
+2025-09-01,category,pom sh,1,same,all,12,0.00%
+2025-09-01,category,pom sh,2,any,all,12,8.33%
+2025-09-01,category,pom sh,2,same,all,12,0.00%
+2025-09-01,category,pom sh,3,any,all,12,0.00%
+2025-09-01,category,pom sh,3,same,all,12,0.00%
+2025-09-01,category,pom sh,4,any,all,12,0.00%
+2025-09-01,category,pom sh,4,same,all,12,0.00%
+2025-10-01,category,otc hl,0,any,all,2,100.00%
+2025-10-01,category,otc hl,0,same,all,2,100.00%
+2025-10-01,category,otc hl,1,any,all,2,0.00%
+2025-10-01,category,otc hl,1,same,all,2,0.00%
+2025-10-01,category,otc hl,2,any,all,2,0.00%
+2025-10-01,category,otc hl,2,same,all,2,0.00%
+2025-10-01,category,otc hl,3,any,all,2,0.00%
+2025-10-01,category,otc hl,3,same,all,2,0.00%
+2025-10-01,category,otc sh,0,any,all,16,100.00%
+2025-10-01,category,otc sh,0,same,all,16,100.00%
+2025-10-01,category,otc sh,1,any,all,16,0.00%
+2025-10-01,category,otc sh,1,same,all,16,0.00%
+2025-10-01,category,otc sh,2,any,all,16,0.00%
+2025-10-01,category,otc sh,2,same,all,16,0.00%
+2025-10-01,category,otc sh,3,any,all,16,6.25%
+2025-10-01,category,otc sh,3,same,all,16,6.25%
+2025-10-01,category,pom bg,0,any,all,3,100.00%
+2025-10-01,category,pom bg,0,same,all,3,100.00%
+2025-10-01,category,pom bg,1,any,all,3,0.00%
+2025-10-01,category,pom bg,1,same,all,3,0.00%
+2025-10-01,category,pom bg,2,any,all,3,0.00%
+2025-10-01,category,pom bg,2,same,all,3,0.00%
+2025-10-01,category,pom bg,3,any,all,3,0.00%
+2025-10-01,category,pom bg,3,same,all,3,0.00%
+2025-10-01,category,pom hl,0,any,all,76,100.00%
+2025-10-01,category,pom hl,0,same,all,76,100.00%
+2025-10-01,category,pom hl,1,any,all,76,78.95%
+2025-10-01,category,pom hl,1,same,all,76,78.95%
+2025-10-01,category,pom hl,2,any,all,76,72.37%
+2025-10-01,category,pom hl,2,same,all,76,72.37%
+2025-10-01,category,pom hl,3,any,all,76,44.74%
+2025-10-01,category,pom hl,3,same,all,76,44.74%
+2025-10-01,category,pom sh,0,any,all,4,100.00%
+2025-10-01,category,pom sh,0,same,all,4,100.00%
+2025-10-01,category,pom sh,1,any,all,4,0.00%
+2025-10-01,category,pom sh,1,same,all,4,0.00%
+2025-10-01,category,pom sh,2,any,all,4,50.00%
+2025-10-01,category,pom sh,2,same,all,4,50.00%
+2025-10-01,category,pom sh,3,any,all,4,0.00%
+2025-10-01,category,pom sh,3,same,all,4,0.00%
+2025-11-01,category,otc hl,0,any,all,7,100.00%
+2025-11-01,category,otc hl,0,same,all,7,100.00%
+2025-11-01,category,otc hl,1,any,all,7,0.00%
+2025-11-01,category,otc hl,1,same,all,7,0.00%
+2025-11-01,category,otc hl,2,any,all,7,14.29%
+2025-11-01,category,otc hl,2,same,all,7,14.29%
+2025-11-01,category,otc sh,0,any,all,65,100.00%
+2025-11-01,category,otc sh,0,same,all,65,100.00%
+2025-11-01,category,otc sh,1,any,all,65,3.08%
+2025-11-01,category,otc sh,1,same,all,65,1.54%
+2025-11-01,category,otc sh,2,any,all,65,1.54%
+2025-11-01,category,otc sh,2,same,all,65,1.54%
+2025-11-01,category,pom bg,0,any,all,3,100.00%
+2025-11-01,category,pom bg,0,same,all,3,100.00%
+2025-11-01,category,pom bg,1,any,all,3,66.67%
+2025-11-01,category,pom bg,1,same,all,3,66.67%
+2025-11-01,category,pom bg,2,any,all,3,66.67%
+2025-11-01,category,pom bg,2,same,all,3,66.67%
+2025-11-01,category,pom hl,0,any,all,77,100.00%
+2025-11-01,category,pom hl,0,same,all,77,100.00%
+2025-11-01,category,pom hl,1,any,all,77,75.32%
+2025-11-01,category,pom hl,1,same,all,77,72.73%
+2025-11-01,category,pom hl,2,any,all,77,67.53%
+2025-11-01,category,pom hl,2,same,all,77,66.23%
+2025-11-01,category,pom sh,0,any,all,10,100.00%
+2025-11-01,category,pom sh,0,same,all,10,100.00%
+2025-11-01,category,pom sh,1,any,all,10,0.00%
+2025-11-01,category,pom sh,1,same,all,10,0.00%
+2025-11-01,category,pom sh,2,any,all,10,10.00%
+2025-11-01,category,pom sh,2,same,all,10,10.00%
+2025-12-01,category,otc hl,0,any,all,1,100.00%
+2025-12-01,category,otc hl,0,same,all,1,100.00%
+2025-12-01,category,otc hl,1,any,all,1,100.00%
+2025-12-01,category,otc hl,1,same,all,1,100.00%
+2025-12-01,category,otc sh,0,any,all,54,100.00%
+2025-12-01,category,otc sh,0,same,all,54,100.00%
+2025-12-01,category,otc sh,1,any,all,54,0.00%
+2025-12-01,category,otc sh,1,same,all,54,0.00%
+2025-12-01,category,pom bg,0,any,all,3,100.00%
+2025-12-01,category,pom bg,0,same,all,3,100.00%
+2025-12-01,category,pom bg,1,any,all,3,0.00%
+2025-12-01,category,pom bg,1,same,all,3,0.00%
+2025-12-01,category,pom hl,0,any,all,66,100.00%
+2025-12-01,category,pom hl,0,same,all,66,100.00%
+2025-12-01,category,pom hl,1,any,all,66,86.36%
+2025-12-01,category,pom hl,1,same,all,66,86.36%
+2025-12-01,category,pom sh,0,any,all,22,100.00%
+2025-12-01,category,pom sh,0,same,all,22,100.00%
+2025-12-01,category,pom sh,1,any,all,22,0.00%
+2025-12-01,category,pom sh,1,same,all,22,0.00%
+2026-01-01,category,otc hl,0,any,all,3,100.00%
+2026-01-01,category,otc hl,0,same,all,3,100.00%
+2026-01-01,category,otc sh,0,any,all,51,100.00%
+2026-01-01,category,otc sh,0,same,all,51,100.00%
+2026-01-01,category,otc sk,0,any,all,1,100.00%
+2026-01-01,category,otc sk,0,same,all,1,100.00%
+2026-01-01,category,pom bg,0,any,all,1,100.00%
+2026-01-01,category,pom bg,0,same,all,1,100.00%
+2026-01-01,category,pom hl,0,any,all,85,100.00%
+2026-01-01,category,pom hl,0,same,all,85,100.00%
+2026-01-01,category,pom sh,0,any,all,24,100.00%
+2026-01-01,category,pom sh,0,same,all,24,100.00%
+2024-10-01,overall,ALL,0,any,subscribers,3,100.00%
+2024-10-01,overall,ALL,1,any,subscribers,3,66.67%
+2024-10-01,overall,ALL,2,any,subscribers,3,66.67%
+2024-10-01,overall,ALL,3,any,subscribers,3,66.67%
+2024-10-01,overall,ALL,4,any,subscribers,3,33.33%
+2024-10-01,overall,ALL,5,any,subscribers,3,0.00%
+2024-10-01,overall,ALL,6,any,subscribers,3,0.00%
+2024-10-01,overall,ALL,7,any,subscribers,3,33.33%
+2024-10-01,overall,ALL,8,any,subscribers,3,33.33%
+2024-10-01,overall,ALL,9,any,subscribers,3,33.33%
+2024-10-01,overall,ALL,10,any,subscribers,3,0.00%
+2024-10-01,overall,ALL,11,any,subscribers,3,0.00%
+2024-10-01,overall,ALL,12,any,subscribers,3,0.00%
+2024-11-01,overall,ALL,0,any,subscribers,3,100.00%
+2024-11-01,overall,ALL,1,any,subscribers,3,66.67%
+2024-11-01,overall,ALL,2,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,3,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,4,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,5,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,6,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,7,any,subscribers,3,0.00%
+2024-11-01,overall,ALL,8,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,9,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,10,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,11,any,subscribers,3,33.33%
+2024-11-01,overall,ALL,12,any,subscribers,3,33.33%
+2024-12-01,overall,ALL,0,any,subscribers,14,100.00%
+2024-12-01,overall,ALL,1,any,subscribers,14,78.57%
+2024-12-01,overall,ALL,2,any,subscribers,14,71.43%
+2024-12-01,overall,ALL,3,any,subscribers,14,78.57%
+2024-12-01,overall,ALL,4,any,subscribers,14,78.57%
+2024-12-01,overall,ALL,5,any,subscribers,14,64.29%
+2024-12-01,overall,ALL,6,any,subscribers,14,57.14%
+2024-12-01,overall,ALL,7,any,subscribers,14,57.14%
+2024-12-01,overall,ALL,8,any,subscribers,14,57.14%
+2024-12-01,overall,ALL,9,any,subscribers,14,50.00%
+2024-12-01,overall,ALL,10,any,subscribers,14,50.00%
+2024-12-01,overall,ALL,11,any,subscribers,14,42.86%
+2024-12-01,overall,ALL,12,any,subscribers,14,50.00%
+2025-01-01,overall,ALL,0,any,subscribers,6,100.00%
+2025-01-01,overall,ALL,1,any,subscribers,6,100.00%
+2025-01-01,overall,ALL,2,any,subscribers,6,100.00%
+2025-01-01,overall,ALL,3,any,subscribers,6,50.00%
+2025-01-01,overall,ALL,4,any,subscribers,6,50.00%
+2025-01-01,overall,ALL,5,any,subscribers,6,50.00%
+2025-01-01,overall,ALL,6,any,subscribers,6,16.67%
+2025-01-01,overall,ALL,7,any,subscribers,6,16.67%
+2025-01-01,overall,ALL,8,any,subscribers,6,16.67%
+2025-01-01,overall,ALL,9,any,subscribers,6,16.67%
+2025-01-01,overall,ALL,10,any,subscribers,6,0.00%
+2025-01-01,overall,ALL,11,any,subscribers,6,0.00%
+2025-01-01,overall,ALL,12,any,subscribers,6,16.67%
+2025-02-01,overall,ALL,0,any,subscribers,11,100.00%
+2025-02-01,overall,ALL,1,any,subscribers,11,100.00%
+2025-02-01,overall,ALL,2,any,subscribers,11,81.82%
+2025-02-01,overall,ALL,3,any,subscribers,11,63.64%
+2025-02-01,overall,ALL,4,any,subscribers,11,63.64%
+2025-02-01,overall,ALL,5,any,subscribers,11,54.55%
+2025-02-01,overall,ALL,6,any,subscribers,11,54.55%
+2025-02-01,overall,ALL,7,any,subscribers,11,63.64%
+2025-02-01,overall,ALL,8,any,subscribers,11,45.45%
+2025-02-01,overall,ALL,9,any,subscribers,11,27.27%
+2025-02-01,overall,ALL,10,any,subscribers,11,45.45%
+2025-02-01,overall,ALL,11,any,subscribers,11,36.36%
+2025-03-01,overall,ALL,0,any,subscribers,46,100.00%
+2025-03-01,overall,ALL,1,any,subscribers,46,78.26%
+2025-03-01,overall,ALL,2,any,subscribers,46,67.39%
+2025-03-01,overall,ALL,3,any,subscribers,46,56.52%
+2025-03-01,overall,ALL,4,any,subscribers,46,56.52%
+2025-03-01,overall,ALL,5,any,subscribers,46,54.35%
+2025-03-01,overall,ALL,6,any,subscribers,46,47.83%
+2025-03-01,overall,ALL,7,any,subscribers,46,47.83%
+2025-03-01,overall,ALL,8,any,subscribers,46,28.26%
+2025-03-01,overall,ALL,9,any,subscribers,46,39.13%
+2025-03-01,overall,ALL,10,any,subscribers,46,36.96%
+2025-04-01,overall,ALL,0,any,subscribers,71,100.00%
+2025-04-01,overall,ALL,1,any,subscribers,71,77.46%
+2025-04-01,overall,ALL,2,any,subscribers,71,71.83%
+2025-04-01,overall,ALL,3,any,subscribers,71,60.56%
+2025-04-01,overall,ALL,4,any,subscribers,71,59.15%
+2025-04-01,overall,ALL,5,any,subscribers,71,60.56%
+2025-04-01,overall,ALL,6,any,subscribers,71,46.48%
+2025-04-01,overall,ALL,7,any,subscribers,71,39.44%
+2025-04-01,overall,ALL,8,any,subscribers,71,40.85%
+2025-04-01,overall,ALL,9,any,subscribers,71,39.44%
+2025-05-01,overall,ALL,0,any,subscribers,69,100.00%
+2025-05-01,overall,ALL,1,any,subscribers,69,84.06%
+2025-05-01,overall,ALL,2,any,subscribers,69,76.81%
+2025-05-01,overall,ALL,3,any,subscribers,69,59.42%
+2025-05-01,overall,ALL,4,any,subscribers,69,57.97%
+2025-05-01,overall,ALL,5,any,subscribers,69,50.72%
+2025-05-01,overall,ALL,6,any,subscribers,69,50.72%
+2025-05-01,overall,ALL,7,any,subscribers,69,42.03%
+2025-05-01,overall,ALL,8,any,subscribers,69,39.13%
+2025-06-01,overall,ALL,0,any,subscribers,66,100.00%
+2025-06-01,overall,ALL,1,any,subscribers,66,81.82%
+2025-06-01,overall,ALL,2,any,subscribers,66,78.79%
+2025-06-01,overall,ALL,3,any,subscribers,66,57.58%
+2025-06-01,overall,ALL,4,any,subscribers,66,50.00%
+2025-06-01,overall,ALL,5,any,subscribers,66,48.48%
+2025-06-01,overall,ALL,6,any,subscribers,66,45.45%
+2025-06-01,overall,ALL,7,any,subscribers,66,36.36%
+2025-07-01,overall,ALL,0,any,subscribers,65,100.00%
+2025-07-01,overall,ALL,1,any,subscribers,65,84.62%
+2025-07-01,overall,ALL,2,any,subscribers,65,86.15%
+2025-07-01,overall,ALL,3,any,subscribers,65,72.31%
+2025-07-01,overall,ALL,4,any,subscribers,65,67.69%
+2025-07-01,overall,ALL,5,any,subscribers,65,61.54%
+2025-07-01,overall,ALL,6,any,subscribers,65,50.77%
+2025-08-01,overall,ALL,0,any,subscribers,64,100.00%
+2025-08-01,overall,ALL,1,any,subscribers,64,89.06%
+2025-08-01,overall,ALL,2,any,subscribers,64,87.50%
+2025-08-01,overall,ALL,3,any,subscribers,64,64.06%
+2025-08-01,overall,ALL,4,any,subscribers,64,46.88%
+2025-08-01,overall,ALL,5,any,subscribers,64,46.88%
+2025-09-01,overall,ALL,0,any,subscribers,67,100.00%
+2025-09-01,overall,ALL,1,any,subscribers,67,79.10%
+2025-09-01,overall,ALL,2,any,subscribers,67,68.66%
+2025-09-01,overall,ALL,3,any,subscribers,67,55.22%
+2025-09-01,overall,ALL,4,any,subscribers,67,38.81%
+2025-10-01,overall,ALL,0,any,subscribers,79,100.00%
+2025-10-01,overall,ALL,1,any,subscribers,79,75.95%
+2025-10-01,overall,ALL,2,any,subscribers,79,69.62%
+2025-10-01,overall,ALL,3,any,subscribers,79,43.04%
+2025-11-01,overall,ALL,0,any,subscribers,80,100.00%
+2025-11-01,overall,ALL,1,any,subscribers,80,75.00%
+2025-11-01,overall,ALL,2,any,subscribers,80,67.50%
+2025-12-01,overall,ALL,0,any,subscribers,69,100.00%
+2025-12-01,overall,ALL,1,any,subscribers,69,82.61%
+2026-01-01,overall,ALL,0,any,subscribers,86,100.00%
+2024-10-01,category,pom hl,0,any,subscribers,3,100.00%
+2024-10-01,category,pom hl,0,same,subscribers,3,100.00%
+2024-10-01,category,pom hl,1,any,subscribers,3,66.67%
+2024-10-01,category,pom hl,1,same,subscribers,3,66.67%
+2024-10-01,category,pom hl,2,any,subscribers,3,66.67%
+2024-10-01,category,pom hl,2,same,subscribers,3,66.67%
+2024-10-01,category,pom hl,3,any,subscribers,3,66.67%
+2024-10-01,category,pom hl,3,same,subscribers,3,66.67%
+2024-10-01,category,pom hl,4,any,subscribers,3,33.33%
+2024-10-01,category,pom hl,4,same,subscribers,3,33.33%
+2024-10-01,category,pom hl,5,any,subscribers,3,0.00%
+2024-10-01,category,pom hl,5,same,subscribers,3,0.00%
+2024-10-01,category,pom hl,6,any,subscribers,3,0.00%
+2024-10-01,category,pom hl,6,same,subscribers,3,0.00%
+2024-10-01,category,pom hl,7,any,subscribers,3,33.33%
+2024-10-01,category,pom hl,7,same,subscribers,3,33.33%
+2024-10-01,category,pom hl,8,any,subscribers,3,33.33%
+2024-10-01,category,pom hl,8,same,subscribers,3,33.33%
+2024-10-01,category,pom hl,9,any,subscribers,3,33.33%
+2024-10-01,category,pom hl,9,same,subscribers,3,33.33%
+2024-10-01,category,pom hl,10,any,subscribers,3,0.00%
+2024-10-01,category,pom hl,10,same,subscribers,3,0.00%
+2024-10-01,category,pom hl,11,any,subscribers,3,0.00%
+2024-10-01,category,pom hl,11,same,subscribers,3,0.00%
+2024-10-01,category,pom hl,12,any,subscribers,3,0.00%
+2024-10-01,category,pom hl,12,same,subscribers,3,0.00%
+2024-11-01,category,pom hl,0,any,subscribers,3,100.00%
+2024-11-01,category,pom hl,0,same,subscribers,3,100.00%
+2024-11-01,category,pom hl,1,any,subscribers,3,66.67%
+2024-11-01,category,pom hl,1,same,subscribers,3,66.67%
+2024-11-01,category,pom hl,2,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,2,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,3,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,3,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,4,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,4,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,5,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,5,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,6,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,6,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,7,any,subscribers,3,0.00%
+2024-11-01,category,pom hl,7,same,subscribers,3,0.00%
+2024-11-01,category,pom hl,8,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,8,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,9,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,9,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,10,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,10,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,11,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,11,same,subscribers,3,33.33%
+2024-11-01,category,pom hl,12,any,subscribers,3,33.33%
+2024-11-01,category,pom hl,12,same,subscribers,3,33.33%
+2024-12-01,category,pom hl,0,any,subscribers,14,100.00%
+2024-12-01,category,pom hl,0,same,subscribers,14,100.00%
+2024-12-01,category,pom hl,1,any,subscribers,14,78.57%
+2024-12-01,category,pom hl,1,same,subscribers,14,78.57%
+2024-12-01,category,pom hl,2,any,subscribers,14,71.43%
+2024-12-01,category,pom hl,2,same,subscribers,14,71.43%
+2024-12-01,category,pom hl,3,any,subscribers,14,78.57%
+2024-12-01,category,pom hl,3,same,subscribers,14,78.57%
+2024-12-01,category,pom hl,4,any,subscribers,14,78.57%
+2024-12-01,category,pom hl,4,same,subscribers,14,78.57%
+2024-12-01,category,pom hl,5,any,subscribers,14,64.29%
+2024-12-01,category,pom hl,5,same,subscribers,14,64.29%
+2024-12-01,category,pom hl,6,any,subscribers,14,57.14%
+2024-12-01,category,pom hl,6,same,subscribers,14,57.14%
+2024-12-01,category,pom hl,7,any,subscribers,14,57.14%
+2024-12-01,category,pom hl,7,same,subscribers,14,57.14%
+2024-12-01,category,pom hl,8,any,subscribers,14,57.14%
+2024-12-01,category,pom hl,8,same,subscribers,14,57.14%
+2024-12-01,category,pom hl,9,any,subscribers,14,50.00%
+2024-12-01,category,pom hl,9,same,subscribers,14,50.00%
+2024-12-01,category,pom hl,10,any,subscribers,14,50.00%
+2024-12-01,category,pom hl,10,same,subscribers,14,50.00%
+2024-12-01,category,pom hl,11,any,subscribers,14,42.86%
+2024-12-01,category,pom hl,11,same,subscribers,14,42.86%
+2024-12-01,category,pom hl,12,any,subscribers,14,50.00%
+2024-12-01,category,pom hl,12,same,subscribers,14,50.00%
+2025-01-01,category,pom hl,0,any,subscribers,6,100.00%
+2025-01-01,category,pom hl,0,same,subscribers,6,100.00%
+2025-01-01,category,pom hl,1,any,subscribers,6,100.00%
+2025-01-01,category,pom hl,1,same,subscribers,6,100.00%
+2025-01-01,category,pom hl,2,any,subscribers,6,100.00%
+2025-01-01,category,pom hl,2,same,subscribers,6,100.00%
+2025-01-01,category,pom hl,3,any,subscribers,6,50.00%
+2025-01-01,category,pom hl,3,same,subscribers,6,33.33%
+2025-01-01,category,pom hl,4,any,subscribers,6,50.00%
+2025-01-01,category,pom hl,4,same,subscribers,6,33.33%
+2025-01-01,category,pom hl,5,any,subscribers,6,50.00%
+2025-01-01,category,pom hl,5,same,subscribers,6,50.00%
+2025-01-01,category,pom hl,6,any,subscribers,6,16.67%
+2025-01-01,category,pom hl,6,same,subscribers,6,16.67%
+2025-01-01,category,pom hl,7,any,subscribers,6,16.67%
+2025-01-01,category,pom hl,7,same,subscribers,6,16.67%
+2025-01-01,category,pom hl,8,any,subscribers,6,16.67%
+2025-01-01,category,pom hl,8,same,subscribers,6,16.67%
+2025-01-01,category,pom hl,9,any,subscribers,6,16.67%
+2025-01-01,category,pom hl,9,same,subscribers,6,16.67%
+2025-01-01,category,pom hl,10,any,subscribers,6,0.00%
+2025-01-01,category,pom hl,10,same,subscribers,6,0.00%
+2025-01-01,category,pom hl,11,any,subscribers,6,0.00%
+2025-01-01,category,pom hl,11,same,subscribers,6,0.00%
+2025-01-01,category,pom hl,12,any,subscribers,6,16.67%
+2025-01-01,category,pom hl,12,same,subscribers,6,16.67%
+2025-02-01,category,pom hl,0,any,subscribers,11,100.00%
+2025-02-01,category,pom hl,0,same,subscribers,11,100.00%
+2025-02-01,category,pom hl,1,any,subscribers,11,100.00%
+2025-02-01,category,pom hl,1,same,subscribers,11,100.00%
+2025-02-01,category,pom hl,2,any,subscribers,11,81.82%
+2025-02-01,category,pom hl,2,same,subscribers,11,81.82%
+2025-02-01,category,pom hl,3,any,subscribers,11,63.64%
+2025-02-01,category,pom hl,3,same,subscribers,11,63.64%
+2025-02-01,category,pom hl,4,any,subscribers,11,63.64%
+2025-02-01,category,pom hl,4,same,subscribers,11,63.64%
+2025-02-01,category,pom hl,5,any,subscribers,11,54.55%
+2025-02-01,category,pom hl,5,same,subscribers,11,54.55%
+2025-02-01,category,pom hl,6,any,subscribers,11,54.55%
+2025-02-01,category,pom hl,6,same,subscribers,11,54.55%
+2025-02-01,category,pom hl,7,any,subscribers,11,63.64%
+2025-02-01,category,pom hl,7,same,subscribers,11,63.64%
+2025-02-01,category,pom hl,8,any,subscribers,11,45.45%
+2025-02-01,category,pom hl,8,same,subscribers,11,45.45%
+2025-02-01,category,pom hl,9,any,subscribers,11,27.27%
+2025-02-01,category,pom hl,9,same,subscribers,11,27.27%
+2025-02-01,category,pom hl,10,any,subscribers,11,45.45%
+2025-02-01,category,pom hl,10,same,subscribers,11,45.45%
+2025-02-01,category,pom hl,11,any,subscribers,11,36.36%
+2025-02-01,category,pom hl,11,same,subscribers,11,36.36%
+2025-03-01,category,pom hl,0,any,subscribers,46,100.00%
+2025-03-01,category,pom hl,0,same,subscribers,46,100.00%
+2025-03-01,category,pom hl,1,any,subscribers,46,78.26%
+2025-03-01,category,pom hl,1,same,subscribers,46,78.26%
+2025-03-01,category,pom hl,2,any,subscribers,46,67.39%
+2025-03-01,category,pom hl,2,same,subscribers,46,67.39%
+2025-03-01,category,pom hl,3,any,subscribers,46,56.52%
+2025-03-01,category,pom hl,3,same,subscribers,46,56.52%
+2025-03-01,category,pom hl,4,any,subscribers,46,56.52%
+2025-03-01,category,pom hl,4,same,subscribers,46,56.52%
+2025-03-01,category,pom hl,5,any,subscribers,46,54.35%
+2025-03-01,category,pom hl,5,same,subscribers,46,54.35%
+2025-03-01,category,pom hl,6,any,subscribers,46,47.83%
+2025-03-01,category,pom hl,6,same,subscribers,46,47.83%
+2025-03-01,category,pom hl,7,any,subscribers,46,47.83%
+2025-03-01,category,pom hl,7,same,subscribers,46,45.65%
+2025-03-01,category,pom hl,8,any,subscribers,46,28.26%
+2025-03-01,category,pom hl,8,same,subscribers,46,28.26%
+2025-03-01,category,pom hl,9,any,subscribers,46,39.13%
+2025-03-01,category,pom hl,9,same,subscribers,46,39.13%
+2025-03-01,category,pom hl,10,any,subscribers,46,36.96%
+2025-03-01,category,pom hl,10,same,subscribers,46,36.96%
+2025-04-01,category,pom hl,0,any,subscribers,71,100.00%
+2025-04-01,category,pom hl,0,same,subscribers,71,100.00%
+2025-04-01,category,pom hl,1,any,subscribers,71,77.46%
+2025-04-01,category,pom hl,1,same,subscribers,71,77.46%
+2025-04-01,category,pom hl,2,any,subscribers,71,71.83%
+2025-04-01,category,pom hl,2,same,subscribers,71,71.83%
+2025-04-01,category,pom hl,3,any,subscribers,71,60.56%
+2025-04-01,category,pom hl,3,same,subscribers,71,60.56%
+2025-04-01,category,pom hl,4,any,subscribers,71,59.15%
+2025-04-01,category,pom hl,4,same,subscribers,71,59.15%
+2025-04-01,category,pom hl,5,any,subscribers,71,60.56%
+2025-04-01,category,pom hl,5,same,subscribers,71,60.56%
+2025-04-01,category,pom hl,6,any,subscribers,71,46.48%
+2025-04-01,category,pom hl,6,same,subscribers,71,46.48%
+2025-04-01,category,pom hl,7,any,subscribers,71,39.44%
+2025-04-01,category,pom hl,7,same,subscribers,71,39.44%
+2025-04-01,category,pom hl,8,any,subscribers,71,40.85%
+2025-04-01,category,pom hl,8,same,subscribers,71,40.85%
+2025-04-01,category,pom hl,9,any,subscribers,71,39.44%
+2025-04-01,category,pom hl,9,same,subscribers,71,39.44%
+2025-05-01,category,pom bg,0,any,subscribers,1,100.00%
+2025-05-01,category,pom bg,0,same,subscribers,1,100.00%
+2025-05-01,category,pom bg,1,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,1,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,2,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,2,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,3,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,3,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,4,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,4,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,5,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,5,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,6,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,6,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,7,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,7,same,subscribers,1,0.00%
+2025-05-01,category,pom bg,8,any,subscribers,1,0.00%
+2025-05-01,category,pom bg,8,same,subscribers,1,0.00%
+2025-05-01,category,pom hl,0,any,subscribers,68,100.00%
+2025-05-01,category,pom hl,0,same,subscribers,68,100.00%
+2025-05-01,category,pom hl,1,any,subscribers,68,85.29%
+2025-05-01,category,pom hl,1,same,subscribers,68,85.29%
+2025-05-01,category,pom hl,2,any,subscribers,68,77.94%
+2025-05-01,category,pom hl,2,same,subscribers,68,77.94%
+2025-05-01,category,pom hl,3,any,subscribers,68,60.29%
+2025-05-01,category,pom hl,3,same,subscribers,68,60.29%
+2025-05-01,category,pom hl,4,any,subscribers,68,58.82%
+2025-05-01,category,pom hl,4,same,subscribers,68,58.82%
+2025-05-01,category,pom hl,5,any,subscribers,68,51.47%
+2025-05-01,category,pom hl,5,same,subscribers,68,51.47%
+2025-05-01,category,pom hl,6,any,subscribers,68,51.47%
+2025-05-01,category,pom hl,6,same,subscribers,68,51.47%
+2025-05-01,category,pom hl,7,any,subscribers,68,42.65%
+2025-05-01,category,pom hl,7,same,subscribers,68,42.65%
+2025-05-01,category,pom hl,8,any,subscribers,68,39.71%
+2025-05-01,category,pom hl,8,same,subscribers,68,39.71%
+2025-06-01,category,pom bg,0,any,subscribers,1,100.00%
+2025-06-01,category,pom bg,0,same,subscribers,1,100.00%
+2025-06-01,category,pom bg,1,any,subscribers,1,100.00%
+2025-06-01,category,pom bg,1,same,subscribers,1,100.00%
+2025-06-01,category,pom bg,2,any,subscribers,1,100.00%
+2025-06-01,category,pom bg,2,same,subscribers,1,100.00%
+2025-06-01,category,pom bg,3,any,subscribers,1,0.00%
+2025-06-01,category,pom bg,3,same,subscribers,1,0.00%
+2025-06-01,category,pom bg,4,any,subscribers,1,0.00%
+2025-06-01,category,pom bg,4,same,subscribers,1,0.00%
+2025-06-01,category,pom bg,5,any,subscribers,1,0.00%
+2025-06-01,category,pom bg,5,same,subscribers,1,0.00%
+2025-06-01,category,pom bg,6,any,subscribers,1,0.00%
+2025-06-01,category,pom bg,6,same,subscribers,1,0.00%
+2025-06-01,category,pom bg,7,any,subscribers,1,0.00%
+2025-06-01,category,pom bg,7,same,subscribers,1,0.00%
+2025-06-01,category,pom hl,0,any,subscribers,65,100.00%
+2025-06-01,category,pom hl,0,same,subscribers,65,100.00%
+2025-06-01,category,pom hl,1,any,subscribers,65,81.54%
+2025-06-01,category,pom hl,1,same,subscribers,65,81.54%
+2025-06-01,category,pom hl,2,any,subscribers,65,78.46%
+2025-06-01,category,pom hl,2,same,subscribers,65,78.46%
+2025-06-01,category,pom hl,3,any,subscribers,65,58.46%
+2025-06-01,category,pom hl,3,same,subscribers,65,58.46%
+2025-06-01,category,pom hl,4,any,subscribers,65,50.77%
+2025-06-01,category,pom hl,4,same,subscribers,65,49.23%
+2025-06-01,category,pom hl,5,any,subscribers,65,49.23%
+2025-06-01,category,pom hl,5,same,subscribers,65,47.69%
+2025-06-01,category,pom hl,6,any,subscribers,65,46.15%
+2025-06-01,category,pom hl,6,same,subscribers,65,44.62%
+2025-06-01,category,pom hl,7,any,subscribers,65,36.92%
+2025-06-01,category,pom hl,7,same,subscribers,65,35.38%
+2025-07-01,category,pom hl,0,any,subscribers,65,100.00%
+2025-07-01,category,pom hl,0,same,subscribers,65,100.00%
+2025-07-01,category,pom hl,1,any,subscribers,65,84.62%
+2025-07-01,category,pom hl,1,same,subscribers,65,84.62%
+2025-07-01,category,pom hl,2,any,subscribers,65,86.15%
+2025-07-01,category,pom hl,2,same,subscribers,65,86.15%
+2025-07-01,category,pom hl,3,any,subscribers,65,72.31%
+2025-07-01,category,pom hl,3,same,subscribers,65,72.31%
+2025-07-01,category,pom hl,4,any,subscribers,65,67.69%
+2025-07-01,category,pom hl,4,same,subscribers,65,66.15%
+2025-07-01,category,pom hl,5,any,subscribers,65,61.54%
+2025-07-01,category,pom hl,5,same,subscribers,65,60.00%
+2025-07-01,category,pom hl,6,any,subscribers,65,50.77%
+2025-07-01,category,pom hl,6,same,subscribers,65,50.77%
+2025-08-01,category,pom bg,0,any,subscribers,3,100.00%
+2025-08-01,category,pom bg,0,same,subscribers,3,100.00%
+2025-08-01,category,pom bg,1,any,subscribers,3,33.33%
+2025-08-01,category,pom bg,1,same,subscribers,3,33.33%
+2025-08-01,category,pom bg,2,any,subscribers,3,0.00%
+2025-08-01,category,pom bg,2,same,subscribers,3,0.00%
+2025-08-01,category,pom bg,3,any,subscribers,3,0.00%
+2025-08-01,category,pom bg,3,same,subscribers,3,0.00%
+2025-08-01,category,pom bg,4,any,subscribers,3,0.00%
+2025-08-01,category,pom bg,4,same,subscribers,3,0.00%
+2025-08-01,category,pom bg,5,any,subscribers,3,0.00%
+2025-08-01,category,pom bg,5,same,subscribers,3,0.00%
+2025-08-01,category,pom hl,0,any,subscribers,61,100.00%
+2025-08-01,category,pom hl,0,same,subscribers,61,100.00%
+2025-08-01,category,pom hl,1,any,subscribers,61,91.80%
+2025-08-01,category,pom hl,1,same,subscribers,61,91.80%
+2025-08-01,category,pom hl,2,any,subscribers,61,91.80%
+2025-08-01,category,pom hl,2,same,subscribers,61,90.16%
+2025-08-01,category,pom hl,3,any,subscribers,61,67.21%
+2025-08-01,category,pom hl,3,same,subscribers,61,67.21%
+2025-08-01,category,pom hl,4,any,subscribers,61,49.18%
+2025-08-01,category,pom hl,4,same,subscribers,61,49.18%
+2025-08-01,category,pom hl,5,any,subscribers,61,49.18%
+2025-08-01,category,pom hl,5,same,subscribers,61,45.90%
+2025-09-01,category,pom bg,0,any,subscribers,2,100.00%
+2025-09-01,category,pom bg,0,same,subscribers,2,100.00%
+2025-09-01,category,pom bg,1,any,subscribers,2,0.00%
+2025-09-01,category,pom bg,1,same,subscribers,2,0.00%
+2025-09-01,category,pom bg,2,any,subscribers,2,0.00%
+2025-09-01,category,pom bg,2,same,subscribers,2,0.00%
+2025-09-01,category,pom bg,3,any,subscribers,2,0.00%
+2025-09-01,category,pom bg,3,same,subscribers,2,0.00%
+2025-09-01,category,pom bg,4,any,subscribers,2,0.00%
+2025-09-01,category,pom bg,4,same,subscribers,2,0.00%
+2025-09-01,category,pom hl,0,any,subscribers,65,100.00%
+2025-09-01,category,pom hl,0,same,subscribers,65,100.00%
+2025-09-01,category,pom hl,1,any,subscribers,65,81.54%
+2025-09-01,category,pom hl,1,same,subscribers,65,81.54%
+2025-09-01,category,pom hl,2,any,subscribers,65,70.77%
+2025-09-01,category,pom hl,2,same,subscribers,65,69.23%
+2025-09-01,category,pom hl,3,any,subscribers,65,56.92%
+2025-09-01,category,pom hl,3,same,subscribers,65,56.92%
+2025-09-01,category,pom hl,4,any,subscribers,65,40.00%
+2025-09-01,category,pom hl,4,same,subscribers,65,38.46%
+2025-10-01,category,pom bg,0,any,subscribers,3,100.00%
+2025-10-01,category,pom bg,0,same,subscribers,3,100.00%
+2025-10-01,category,pom bg,1,any,subscribers,3,0.00%
+2025-10-01,category,pom bg,1,same,subscribers,3,0.00%
+2025-10-01,category,pom bg,2,any,subscribers,3,0.00%
+2025-10-01,category,pom bg,2,same,subscribers,3,0.00%
+2025-10-01,category,pom bg,3,any,subscribers,3,0.00%
+2025-10-01,category,pom bg,3,same,subscribers,3,0.00%
+2025-10-01,category,pom hl,0,any,subscribers,76,100.00%
+2025-10-01,category,pom hl,0,same,subscribers,76,100.00%
+2025-10-01,category,pom hl,1,any,subscribers,76,78.95%
+2025-10-01,category,pom hl,1,same,subscribers,76,78.95%
+2025-10-01,category,pom hl,2,any,subscribers,76,72.37%
+2025-10-01,category,pom hl,2,same,subscribers,76,72.37%
+2025-10-01,category,pom hl,3,any,subscribers,76,44.74%
+2025-10-01,category,pom hl,3,same,subscribers,76,44.74%
+2025-11-01,category,pom bg,0,any,subscribers,3,100.00%
+2025-11-01,category,pom bg,0,same,subscribers,3,100.00%
+2025-11-01,category,pom bg,1,any,subscribers,3,66.67%
+2025-11-01,category,pom bg,1,same,subscribers,3,66.67%
+2025-11-01,category,pom bg,2,any,subscribers,3,66.67%
+2025-11-01,category,pom bg,2,same,subscribers,3,66.67%
+2025-11-01,category,pom hl,0,any,subscribers,77,100.00%
+2025-11-01,category,pom hl,0,same,subscribers,77,100.00%
+2025-11-01,category,pom hl,1,any,subscribers,77,75.32%
+2025-11-01,category,pom hl,1,same,subscribers,77,72.73%
+2025-11-01,category,pom hl,2,any,subscribers,77,67.53%
+2025-11-01,category,pom hl,2,same,subscribers,77,66.23%
+2025-12-01,category,pom bg,0,any,subscribers,3,100.00%
+2025-12-01,category,pom bg,0,same,subscribers,3,100.00%
+2025-12-01,category,pom bg,1,any,subscribers,3,0.00%
+2025-12-01,category,pom bg,1,same,subscribers,3,0.00%
+2025-12-01,category,pom hl,0,any,subscribers,66,100.00%
+2025-12-01,category,pom hl,0,same,subscribers,66,100.00%
+2025-12-01,category,pom hl,1,any,subscribers,66,86.36%
+2025-12-01,category,pom hl,1,same,subscribers,66,86.36%
+2026-01-01,category,pom bg,0,any,subscribers,1,100.00%
+2026-01-01,category,pom bg,0,same,subscribers,1,100.00%
+2026-01-01,category,pom hl,0,any,subscribers,85,100.00%
+2026-01-01,category,pom hl,0,same,subscribers,85,100.00%
+2024-11-01,overall,ALL,0,any,onetime,2,100.00%
+2024-11-01,overall,ALL,1,any,onetime,2,0.00%
+2024-11-01,overall,ALL,2,any,onetime,2,0.00%
+2024-11-01,overall,ALL,3,any,onetime,2,0.00%
+2024-11-01,overall,ALL,4,any,onetime,2,0.00%
+2024-11-01,overall,ALL,5,any,onetime,2,0.00%
+2024-11-01,overall,ALL,6,any,onetime,2,0.00%
+2024-11-01,overall,ALL,7,any,onetime,2,0.00%
+2024-11-01,overall,ALL,8,any,onetime,2,0.00%
+2024-11-01,overall,ALL,9,any,onetime,2,0.00%
+2024-11-01,overall,ALL,10,any,onetime,2,0.00%
+2024-11-01,overall,ALL,11,any,onetime,2,0.00%
+2024-11-01,overall,ALL,12,any,onetime,2,0.00%
+2024-12-01,overall,ALL,0,any,onetime,5,100.00%
+2024-12-01,overall,ALL,1,any,onetime,5,40.00%
+2024-12-01,overall,ALL,2,any,onetime,5,40.00%
+2024-12-01,overall,ALL,3,any,onetime,5,20.00%
+2024-12-01,overall,ALL,4,any,onetime,5,40.00%
+2024-12-01,overall,ALL,5,any,onetime,5,20.00%
+2024-12-01,overall,ALL,6,any,onetime,5,0.00%
+2024-12-01,overall,ALL,7,any,onetime,5,0.00%
+2024-12-01,overall,ALL,8,any,onetime,5,0.00%
+2024-12-01,overall,ALL,9,any,onetime,5,0.00%
+2024-12-01,overall,ALL,10,any,onetime,5,0.00%
+2024-12-01,overall,ALL,11,any,onetime,5,0.00%
+2024-12-01,overall,ALL,12,any,onetime,5,0.00%
+2025-01-01,overall,ALL,0,any,onetime,15,100.00%
+2025-01-01,overall,ALL,1,any,onetime,15,6.67%
+2025-01-01,overall,ALL,2,any,onetime,15,6.67%
+2025-01-01,overall,ALL,3,any,onetime,15,6.67%
+2025-01-01,overall,ALL,4,any,onetime,15,0.00%
+2025-01-01,overall,ALL,5,any,onetime,15,6.67%
+2025-01-01,overall,ALL,6,any,onetime,15,0.00%
+2025-01-01,overall,ALL,7,any,onetime,15,13.33%
+2025-01-01,overall,ALL,8,any,onetime,15,0.00%
+2025-01-01,overall,ALL,9,any,onetime,15,0.00%
+2025-01-01,overall,ALL,10,any,onetime,15,6.67%
+2025-01-01,overall,ALL,11,any,onetime,15,0.00%
+2025-01-01,overall,ALL,12,any,onetime,15,0.00%
+2025-02-01,overall,ALL,0,any,onetime,5,100.00%
+2025-02-01,overall,ALL,1,any,onetime,5,20.00%
+2025-02-01,overall,ALL,2,any,onetime,5,20.00%
+2025-02-01,overall,ALL,3,any,onetime,5,20.00%
+2025-02-01,overall,ALL,4,any,onetime,5,0.00%
+2025-02-01,overall,ALL,5,any,onetime,5,40.00%
+2025-02-01,overall,ALL,6,any,onetime,5,0.00%
+2025-02-01,overall,ALL,7,any,onetime,5,0.00%
+2025-02-01,overall,ALL,8,any,onetime,5,20.00%
+2025-02-01,overall,ALL,9,any,onetime,5,20.00%
+2025-02-01,overall,ALL,10,any,onetime,5,0.00%
+2025-02-01,overall,ALL,11,any,onetime,5,40.00%
+2025-03-01,overall,ALL,0,any,onetime,14,100.00%
+2025-03-01,overall,ALL,1,any,onetime,14,21.43%
+2025-03-01,overall,ALL,2,any,onetime,14,7.14%
+2025-03-01,overall,ALL,3,any,onetime,14,14.29%
+2025-03-01,overall,ALL,4,any,onetime,14,7.14%
+2025-03-01,overall,ALL,5,any,onetime,14,21.43%
+2025-03-01,overall,ALL,6,any,onetime,14,14.29%
+2025-03-01,overall,ALL,7,any,onetime,14,7.14%
+2025-03-01,overall,ALL,8,any,onetime,14,7.14%
+2025-03-01,overall,ALL,9,any,onetime,14,21.43%
+2025-03-01,overall,ALL,10,any,onetime,14,7.14%
+2025-04-01,overall,ALL,0,any,onetime,7,100.00%
+2025-04-01,overall,ALL,1,any,onetime,7,0.00%
+2025-04-01,overall,ALL,2,any,onetime,7,0.00%
+2025-04-01,overall,ALL,3,any,onetime,7,0.00%
+2025-04-01,overall,ALL,4,any,onetime,7,0.00%
+2025-04-01,overall,ALL,5,any,onetime,7,0.00%
+2025-04-01,overall,ALL,6,any,onetime,7,14.29%
+2025-04-01,overall,ALL,7,any,onetime,7,0.00%
+2025-04-01,overall,ALL,8,any,onetime,7,0.00%
+2025-04-01,overall,ALL,9,any,onetime,7,0.00%
+2025-05-01,overall,ALL,0,any,onetime,4,100.00%
+2025-05-01,overall,ALL,1,any,onetime,4,25.00%
+2025-05-01,overall,ALL,2,any,onetime,4,25.00%
+2025-05-01,overall,ALL,3,any,onetime,4,25.00%
+2025-05-01,overall,ALL,4,any,onetime,4,25.00%
+2025-05-01,overall,ALL,5,any,onetime,4,0.00%
+2025-05-01,overall,ALL,6,any,onetime,4,0.00%
+2025-05-01,overall,ALL,7,any,onetime,4,25.00%
+2025-05-01,overall,ALL,8,any,onetime,4,0.00%
+2025-06-01,overall,ALL,0,any,onetime,9,100.00%
+2025-06-01,overall,ALL,1,any,onetime,9,0.00%
+2025-06-01,overall,ALL,2,any,onetime,9,0.00%
+2025-06-01,overall,ALL,3,any,onetime,9,0.00%
+2025-06-01,overall,ALL,4,any,onetime,9,0.00%
+2025-06-01,overall,ALL,5,any,onetime,9,0.00%
+2025-06-01,overall,ALL,6,any,onetime,9,0.00%
+2025-06-01,overall,ALL,7,any,onetime,9,0.00%
+2025-07-01,overall,ALL,0,any,onetime,11,100.00%
+2025-07-01,overall,ALL,1,any,onetime,11,0.00%
+2025-07-01,overall,ALL,2,any,onetime,11,0.00%
+2025-07-01,overall,ALL,3,any,onetime,11,0.00%
+2025-07-01,overall,ALL,4,any,onetime,11,0.00%
+2025-07-01,overall,ALL,5,any,onetime,11,9.09%
+2025-07-01,overall,ALL,6,any,onetime,11,0.00%
+2025-08-01,overall,ALL,0,any,onetime,12,100.00%
+2025-08-01,overall,ALL,1,any,onetime,12,0.00%
+2025-08-01,overall,ALL,2,any,onetime,12,8.33%
+2025-08-01,overall,ALL,3,any,onetime,12,0.00%
+2025-08-01,overall,ALL,4,any,onetime,12,0.00%
+2025-08-01,overall,ALL,5,any,onetime,12,0.00%
+2025-09-01,overall,ALL,0,any,onetime,21,100.00%
+2025-09-01,overall,ALL,1,any,onetime,21,4.76%
+2025-09-01,overall,ALL,2,any,onetime,21,9.52%
+2025-09-01,overall,ALL,3,any,onetime,21,4.76%
+2025-09-01,overall,ALL,4,any,onetime,21,4.76%
+2025-10-01,overall,ALL,0,any,onetime,22,100.00%
+2025-10-01,overall,ALL,1,any,onetime,22,0.00%
+2025-10-01,overall,ALL,2,any,onetime,22,9.09%
+2025-10-01,overall,ALL,3,any,onetime,22,4.55%
+2025-11-01,overall,ALL,0,any,onetime,82,100.00%
+2025-11-01,overall,ALL,1,any,onetime,82,2.44%
+2025-11-01,overall,ALL,2,any,onetime,82,3.66%
+2025-12-01,overall,ALL,0,any,onetime,77,100.00%
+2025-12-01,overall,ALL,1,any,onetime,77,1.30%
+2026-01-01,overall,ALL,0,any,onetime,79,100.00%
+2024-11-01,category,otc sh,0,any,onetime,1,100.00%
+2024-11-01,category,otc sh,0,same,onetime,1,100.00%
+2024-11-01,category,otc sh,1,any,onetime,1,0.00%
+2024-11-01,category,otc sh,1,same,onetime,1,0.00%
+2024-11-01,category,otc sh,2,any,onetime,1,0.00%
+2024-11-01,category,otc sh,2,same,onetime,1,0.00%
+2024-11-01,category,otc sh,3,any,onetime,1,0.00%
+2024-11-01,category,otc sh,3,same,onetime,1,0.00%
+2024-11-01,category,otc sh,4,any,onetime,1,0.00%
+2024-11-01,category,otc sh,4,same,onetime,1,0.00%
+2024-11-01,category,otc sh,5,any,onetime,1,0.00%
+2024-11-01,category,otc sh,5,same,onetime,1,0.00%
+2024-11-01,category,otc sh,6,any,onetime,1,0.00%
+2024-11-01,category,otc sh,6,same,onetime,1,0.00%
+2024-11-01,category,otc sh,7,any,onetime,1,0.00%
+2024-11-01,category,otc sh,7,same,onetime,1,0.00%
+2024-11-01,category,otc sh,8,any,onetime,1,0.00%
+2024-11-01,category,otc sh,8,same,onetime,1,0.00%
+2024-11-01,category,otc sh,9,any,onetime,1,0.00%
+2024-11-01,category,otc sh,9,same,onetime,1,0.00%
+2024-11-01,category,otc sh,10,any,onetime,1,0.00%
+2024-11-01,category,otc sh,10,same,onetime,1,0.00%
+2024-11-01,category,otc sh,11,any,onetime,1,0.00%
+2024-11-01,category,otc sh,11,same,onetime,1,0.00%
+2024-11-01,category,otc sh,12,any,onetime,1,0.00%
+2024-11-01,category,otc sh,12,same,onetime,1,0.00%
+2024-11-01,category,pom sh,0,any,onetime,1,100.00%
+2024-11-01,category,pom sh,0,same,onetime,1,100.00%
+2024-11-01,category,pom sh,1,any,onetime,1,0.00%
+2024-11-01,category,pom sh,1,same,onetime,1,0.00%
+2024-11-01,category,pom sh,2,any,onetime,1,0.00%
+2024-11-01,category,pom sh,2,same,onetime,1,0.00%
+2024-11-01,category,pom sh,3,any,onetime,1,0.00%
+2024-11-01,category,pom sh,3,same,onetime,1,0.00%
+2024-11-01,category,pom sh,4,any,onetime,1,0.00%
+2024-11-01,category,pom sh,4,same,onetime,1,0.00%
+2024-11-01,category,pom sh,5,any,onetime,1,0.00%
+2024-11-01,category,pom sh,5,same,onetime,1,0.00%
+2024-11-01,category,pom sh,6,any,onetime,1,0.00%
+2024-11-01,category,pom sh,6,same,onetime,1,0.00%
+2024-11-01,category,pom sh,7,any,onetime,1,0.00%
+2024-11-01,category,pom sh,7,same,onetime,1,0.00%
+2024-11-01,category,pom sh,8,any,onetime,1,0.00%
+2024-11-01,category,pom sh,8,same,onetime,1,0.00%
+2024-11-01,category,pom sh,9,any,onetime,1,0.00%
+2024-11-01,category,pom sh,9,same,onetime,1,0.00%
+2024-11-01,category,pom sh,10,any,onetime,1,0.00%
+2024-11-01,category,pom sh,10,same,onetime,1,0.00%
+2024-11-01,category,pom sh,11,any,onetime,1,0.00%
+2024-11-01,category,pom sh,11,same,onetime,1,0.00%
+2024-11-01,category,pom sh,12,any,onetime,1,0.00%
+2024-11-01,category,pom sh,12,same,onetime,1,0.00%
+2024-12-01,category,pom sh,0,any,onetime,5,100.00%
+2024-12-01,category,pom sh,0,same,onetime,5,100.00%
+2024-12-01,category,pom sh,1,any,onetime,5,40.00%
+2024-12-01,category,pom sh,1,same,onetime,5,20.00%
+2024-12-01,category,pom sh,2,any,onetime,5,40.00%
+2024-12-01,category,pom sh,2,same,onetime,5,20.00%
+2024-12-01,category,pom sh,3,any,onetime,5,20.00%
+2024-12-01,category,pom sh,3,same,onetime,5,20.00%
+2024-12-01,category,pom sh,4,any,onetime,5,40.00%
+2024-12-01,category,pom sh,4,same,onetime,5,20.00%
+2024-12-01,category,pom sh,5,any,onetime,5,20.00%
+2024-12-01,category,pom sh,5,same,onetime,5,0.00%
+2024-12-01,category,pom sh,6,any,onetime,5,0.00%
+2024-12-01,category,pom sh,6,same,onetime,5,0.00%
+2024-12-01,category,pom sh,7,any,onetime,5,0.00%
+2024-12-01,category,pom sh,7,same,onetime,5,0.00%
+2024-12-01,category,pom sh,8,any,onetime,5,0.00%
+2024-12-01,category,pom sh,8,same,onetime,5,0.00%
+2024-12-01,category,pom sh,9,any,onetime,5,0.00%
+2024-12-01,category,pom sh,9,same,onetime,5,0.00%
+2024-12-01,category,pom sh,10,any,onetime,5,0.00%
+2024-12-01,category,pom sh,10,same,onetime,5,0.00%
+2024-12-01,category,pom sh,11,any,onetime,5,0.00%
+2024-12-01,category,pom sh,11,same,onetime,5,0.00%
+2024-12-01,category,pom sh,12,any,onetime,5,0.00%
+2024-12-01,category,pom sh,12,same,onetime,5,0.00%
+2025-01-01,category,otc hl,0,any,onetime,1,100.00%
+2025-01-01,category,otc hl,0,same,onetime,1,100.00%
+2025-01-01,category,otc hl,1,any,onetime,1,0.00%
+2025-01-01,category,otc hl,1,same,onetime,1,0.00%
+2025-01-01,category,otc hl,2,any,onetime,1,0.00%
+2025-01-01,category,otc hl,2,same,onetime,1,0.00%
+2025-01-01,category,otc hl,3,any,onetime,1,0.00%
+2025-01-01,category,otc hl,3,same,onetime,1,0.00%
+2025-01-01,category,otc hl,4,any,onetime,1,0.00%
+2025-01-01,category,otc hl,4,same,onetime,1,0.00%
+2025-01-01,category,otc hl,5,any,onetime,1,0.00%
+2025-01-01,category,otc hl,5,same,onetime,1,0.00%
+2025-01-01,category,otc hl,6,any,onetime,1,0.00%
+2025-01-01,category,otc hl,6,same,onetime,1,0.00%
+2025-01-01,category,otc hl,7,any,onetime,1,0.00%
+2025-01-01,category,otc hl,7,same,onetime,1,0.00%
+2025-01-01,category,otc hl,8,any,onetime,1,0.00%
+2025-01-01,category,otc hl,8,same,onetime,1,0.00%
+2025-01-01,category,otc hl,9,any,onetime,1,0.00%
+2025-01-01,category,otc hl,9,same,onetime,1,0.00%
+2025-01-01,category,otc hl,10,any,onetime,1,0.00%
+2025-01-01,category,otc hl,10,same,onetime,1,0.00%
+2025-01-01,category,otc hl,11,any,onetime,1,0.00%
+2025-01-01,category,otc hl,11,same,onetime,1,0.00%
+2025-01-01,category,otc hl,12,any,onetime,1,0.00%
+2025-01-01,category,otc hl,12,same,onetime,1,0.00%
+2025-01-01,category,otc sh,0,any,onetime,1,100.00%
+2025-01-01,category,otc sh,0,same,onetime,1,100.00%
+2025-01-01,category,otc sh,1,any,onetime,1,0.00%
+2025-01-01,category,otc sh,1,same,onetime,1,0.00%
+2025-01-01,category,otc sh,2,any,onetime,1,0.00%
+2025-01-01,category,otc sh,2,same,onetime,1,0.00%
+2025-01-01,category,otc sh,3,any,onetime,1,0.00%
+2025-01-01,category,otc sh,3,same,onetime,1,0.00%
+2025-01-01,category,otc sh,4,any,onetime,1,0.00%
+2025-01-01,category,otc sh,4,same,onetime,1,0.00%
+2025-01-01,category,otc sh,5,any,onetime,1,0.00%
+2025-01-01,category,otc sh,5,same,onetime,1,0.00%
+2025-01-01,category,otc sh,6,any,onetime,1,0.00%
+2025-01-01,category,otc sh,6,same,onetime,1,0.00%
+2025-01-01,category,otc sh,7,any,onetime,1,0.00%
+2025-01-01,category,otc sh,7,same,onetime,1,0.00%
+2025-01-01,category,otc sh,8,any,onetime,1,0.00%
+2025-01-01,category,otc sh,8,same,onetime,1,0.00%
+2025-01-01,category,otc sh,9,any,onetime,1,0.00%
+2025-01-01,category,otc sh,9,same,onetime,1,0.00%
+2025-01-01,category,otc sh,10,any,onetime,1,0.00%
+2025-01-01,category,otc sh,10,same,onetime,1,0.00%
+2025-01-01,category,otc sh,11,any,onetime,1,0.00%
+2025-01-01,category,otc sh,11,same,onetime,1,0.00%
+2025-01-01,category,otc sh,12,any,onetime,1,0.00%
+2025-01-01,category,otc sh,12,same,onetime,1,0.00%
+2025-01-01,category,otc sk,0,any,onetime,2,100.00%
+2025-01-01,category,otc sk,0,same,onetime,2,100.00%
+2025-01-01,category,otc sk,1,any,onetime,2,0.00%
+2025-01-01,category,otc sk,1,same,onetime,2,0.00%
+2025-01-01,category,otc sk,2,any,onetime,2,50.00%
+2025-01-01,category,otc sk,2,same,onetime,2,50.00%
+2025-01-01,category,otc sk,3,any,onetime,2,0.00%
+2025-01-01,category,otc sk,3,same,onetime,2,0.00%
+2025-01-01,category,otc sk,4,any,onetime,2,0.00%
+2025-01-01,category,otc sk,4,same,onetime,2,0.00%
+2025-01-01,category,otc sk,5,any,onetime,2,0.00%
+2025-01-01,category,otc sk,5,same,onetime,2,0.00%
+2025-01-01,category,otc sk,6,any,onetime,2,0.00%
+2025-01-01,category,otc sk,6,same,onetime,2,0.00%
+2025-01-01,category,otc sk,7,any,onetime,2,0.00%
+2025-01-01,category,otc sk,7,same,onetime,2,0.00%
+2025-01-01,category,otc sk,8,any,onetime,2,0.00%
+2025-01-01,category,otc sk,8,same,onetime,2,0.00%
+2025-01-01,category,otc sk,9,any,onetime,2,0.00%
+2025-01-01,category,otc sk,9,same,onetime,2,0.00%
+2025-01-01,category,otc sk,10,any,onetime,2,0.00%
+2025-01-01,category,otc sk,10,same,onetime,2,0.00%
+2025-01-01,category,otc sk,11,any,onetime,2,0.00%
+2025-01-01,category,otc sk,11,same,onetime,2,0.00%
+2025-01-01,category,otc sk,12,any,onetime,2,0.00%
+2025-01-01,category,otc sk,12,same,onetime,2,0.00%
+2025-01-01,category,pom sh,0,any,onetime,11,100.00%
+2025-01-01,category,pom sh,0,same,onetime,11,100.00%
+2025-01-01,category,pom sh,1,any,onetime,11,9.09%
+2025-01-01,category,pom sh,1,same,onetime,11,9.09%
+2025-01-01,category,pom sh,2,any,onetime,11,0.00%
+2025-01-01,category,pom sh,2,same,onetime,11,0.00%
+2025-01-01,category,pom sh,3,any,onetime,11,9.09%
+2025-01-01,category,pom sh,3,same,onetime,11,9.09%
+2025-01-01,category,pom sh,4,any,onetime,11,0.00%
+2025-01-01,category,pom sh,4,same,onetime,11,0.00%
+2025-01-01,category,pom sh,5,any,onetime,11,9.09%
+2025-01-01,category,pom sh,5,same,onetime,11,9.09%
+2025-01-01,category,pom sh,6,any,onetime,11,0.00%
+2025-01-01,category,pom sh,6,same,onetime,11,0.00%
+2025-01-01,category,pom sh,7,any,onetime,11,18.18%
+2025-01-01,category,pom sh,7,same,onetime,11,18.18%
+2025-01-01,category,pom sh,8,any,onetime,11,0.00%
+2025-01-01,category,pom sh,8,same,onetime,11,0.00%
+2025-01-01,category,pom sh,9,any,onetime,11,0.00%
+2025-01-01,category,pom sh,9,same,onetime,11,0.00%
+2025-01-01,category,pom sh,10,any,onetime,11,9.09%
+2025-01-01,category,pom sh,10,same,onetime,11,9.09%
+2025-01-01,category,pom sh,11,any,onetime,11,0.00%
+2025-01-01,category,pom sh,11,same,onetime,11,0.00%
+2025-01-01,category,pom sh,12,any,onetime,11,0.00%
+2025-01-01,category,pom sh,12,same,onetime,11,0.00%
+2025-02-01,category,pom sh,0,any,onetime,5,100.00%
+2025-02-01,category,pom sh,0,same,onetime,5,100.00%
+2025-02-01,category,pom sh,1,any,onetime,5,20.00%
+2025-02-01,category,pom sh,1,same,onetime,5,20.00%
+2025-02-01,category,pom sh,2,any,onetime,5,20.00%
+2025-02-01,category,pom sh,2,same,onetime,5,20.00%
+2025-02-01,category,pom sh,3,any,onetime,5,20.00%
+2025-02-01,category,pom sh,3,same,onetime,5,20.00%
+2025-02-01,category,pom sh,4,any,onetime,5,0.00%
+2025-02-01,category,pom sh,4,same,onetime,5,0.00%
+2025-02-01,category,pom sh,5,any,onetime,5,40.00%
+2025-02-01,category,pom sh,5,same,onetime,5,40.00%
+2025-02-01,category,pom sh,6,any,onetime,5,0.00%
+2025-02-01,category,pom sh,6,same,onetime,5,0.00%
+2025-02-01,category,pom sh,7,any,onetime,5,0.00%
+2025-02-01,category,pom sh,7,same,onetime,5,0.00%
+2025-02-01,category,pom sh,8,any,onetime,5,20.00%
+2025-02-01,category,pom sh,8,same,onetime,5,20.00%
+2025-02-01,category,pom sh,9,any,onetime,5,20.00%
+2025-02-01,category,pom sh,9,same,onetime,5,0.00%
+2025-02-01,category,pom sh,10,any,onetime,5,0.00%
+2025-02-01,category,pom sh,10,same,onetime,5,0.00%
+2025-02-01,category,pom sh,11,any,onetime,5,40.00%
+2025-02-01,category,pom sh,11,same,onetime,5,40.00%
+2025-03-01,category,otc hl,0,any,onetime,8,100.00%
+2025-03-01,category,otc hl,0,same,onetime,8,100.00%
+2025-03-01,category,otc hl,1,any,onetime,8,0.00%
+2025-03-01,category,otc hl,1,same,onetime,8,0.00%
+2025-03-01,category,otc hl,2,any,onetime,8,0.00%
+2025-03-01,category,otc hl,2,same,onetime,8,0.00%
+2025-03-01,category,otc hl,3,any,onetime,8,0.00%
+2025-03-01,category,otc hl,3,same,onetime,8,0.00%
+2025-03-01,category,otc hl,4,any,onetime,8,0.00%
+2025-03-01,category,otc hl,4,same,onetime,8,0.00%
+2025-03-01,category,otc hl,5,any,onetime,8,0.00%
+2025-03-01,category,otc hl,5,same,onetime,8,0.00%
+2025-03-01,category,otc hl,6,any,onetime,8,12.50%
+2025-03-01,category,otc hl,6,same,onetime,8,12.50%
+2025-03-01,category,otc hl,7,any,onetime,8,0.00%
+2025-03-01,category,otc hl,7,same,onetime,8,0.00%
+2025-03-01,category,otc hl,8,any,onetime,8,0.00%
+2025-03-01,category,otc hl,8,same,onetime,8,0.00%
+2025-03-01,category,otc hl,9,any,onetime,8,12.50%
+2025-03-01,category,otc hl,9,same,onetime,8,12.50%
+2025-03-01,category,otc hl,10,any,onetime,8,0.00%
+2025-03-01,category,otc hl,10,same,onetime,8,0.00%
+2025-03-01,category,pom sh,0,any,onetime,6,100.00%
+2025-03-01,category,pom sh,0,same,onetime,6,100.00%
+2025-03-01,category,pom sh,1,any,onetime,6,50.00%
+2025-03-01,category,pom sh,1,same,onetime,6,50.00%
+2025-03-01,category,pom sh,2,any,onetime,6,16.67%
+2025-03-01,category,pom sh,2,same,onetime,6,16.67%
+2025-03-01,category,pom sh,3,any,onetime,6,33.33%
+2025-03-01,category,pom sh,3,same,onetime,6,33.33%
+2025-03-01,category,pom sh,4,any,onetime,6,16.67%
+2025-03-01,category,pom sh,4,same,onetime,6,16.67%
+2025-03-01,category,pom sh,5,any,onetime,6,50.00%
+2025-03-01,category,pom sh,5,same,onetime,6,50.00%
+2025-03-01,category,pom sh,6,any,onetime,6,16.67%
+2025-03-01,category,pom sh,6,same,onetime,6,16.67%
+2025-03-01,category,pom sh,7,any,onetime,6,16.67%
+2025-03-01,category,pom sh,7,same,onetime,6,16.67%
+2025-03-01,category,pom sh,8,any,onetime,6,16.67%
+2025-03-01,category,pom sh,8,same,onetime,6,16.67%
+2025-03-01,category,pom sh,9,any,onetime,6,33.33%
+2025-03-01,category,pom sh,9,same,onetime,6,33.33%
+2025-03-01,category,pom sh,10,any,onetime,6,16.67%
+2025-03-01,category,pom sh,10,same,onetime,6,0.00%
+2025-04-01,category,otc hl,0,any,onetime,2,100.00%
+2025-04-01,category,otc hl,0,same,onetime,2,100.00%
+2025-04-01,category,otc hl,1,any,onetime,2,0.00%
+2025-04-01,category,otc hl,1,same,onetime,2,0.00%
+2025-04-01,category,otc hl,2,any,onetime,2,0.00%
+2025-04-01,category,otc hl,2,same,onetime,2,0.00%
+2025-04-01,category,otc hl,3,any,onetime,2,0.00%
+2025-04-01,category,otc hl,3,same,onetime,2,0.00%
+2025-04-01,category,otc hl,4,any,onetime,2,0.00%
+2025-04-01,category,otc hl,4,same,onetime,2,0.00%
+2025-04-01,category,otc hl,5,any,onetime,2,0.00%
+2025-04-01,category,otc hl,5,same,onetime,2,0.00%
+2025-04-01,category,otc hl,6,any,onetime,2,0.00%
+2025-04-01,category,otc hl,6,same,onetime,2,0.00%
+2025-04-01,category,otc hl,7,any,onetime,2,0.00%
+2025-04-01,category,otc hl,7,same,onetime,2,0.00%
+2025-04-01,category,otc hl,8,any,onetime,2,0.00%
+2025-04-01,category,otc hl,8,same,onetime,2,0.00%
+2025-04-01,category,otc hl,9,any,onetime,2,0.00%
+2025-04-01,category,otc hl,9,same,onetime,2,0.00%
+2025-04-01,category,otc sh,0,any,onetime,1,100.00%
+2025-04-01,category,otc sh,0,same,onetime,1,100.00%
+2025-04-01,category,otc sh,1,any,onetime,1,0.00%
+2025-04-01,category,otc sh,1,same,onetime,1,0.00%
+2025-04-01,category,otc sh,2,any,onetime,1,0.00%
+2025-04-01,category,otc sh,2,same,onetime,1,0.00%
+2025-04-01,category,otc sh,3,any,onetime,1,0.00%
+2025-04-01,category,otc sh,3,same,onetime,1,0.00%
+2025-04-01,category,otc sh,4,any,onetime,1,0.00%
+2025-04-01,category,otc sh,4,same,onetime,1,0.00%
+2025-04-01,category,otc sh,5,any,onetime,1,0.00%
+2025-04-01,category,otc sh,5,same,onetime,1,0.00%
+2025-04-01,category,otc sh,6,any,onetime,1,0.00%
+2025-04-01,category,otc sh,6,same,onetime,1,0.00%
+2025-04-01,category,otc sh,7,any,onetime,1,0.00%
+2025-04-01,category,otc sh,7,same,onetime,1,0.00%
+2025-04-01,category,otc sh,8,any,onetime,1,0.00%
+2025-04-01,category,otc sh,8,same,onetime,1,0.00%
+2025-04-01,category,otc sh,9,any,onetime,1,0.00%
+2025-04-01,category,otc sh,9,same,onetime,1,0.00%
+2025-04-01,category,pom sh,0,any,onetime,4,100.00%
+2025-04-01,category,pom sh,0,same,onetime,4,100.00%
+2025-04-01,category,pom sh,1,any,onetime,4,0.00%
+2025-04-01,category,pom sh,1,same,onetime,4,0.00%
+2025-04-01,category,pom sh,2,any,onetime,4,0.00%
+2025-04-01,category,pom sh,2,same,onetime,4,0.00%
+2025-04-01,category,pom sh,3,any,onetime,4,0.00%
+2025-04-01,category,pom sh,3,same,onetime,4,0.00%
+2025-04-01,category,pom sh,4,any,onetime,4,0.00%
+2025-04-01,category,pom sh,4,same,onetime,4,0.00%
+2025-04-01,category,pom sh,5,any,onetime,4,0.00%
+2025-04-01,category,pom sh,5,same,onetime,4,0.00%
+2025-04-01,category,pom sh,6,any,onetime,4,25.00%
+2025-04-01,category,pom sh,6,same,onetime,4,25.00%
+2025-04-01,category,pom sh,7,any,onetime,4,0.00%
+2025-04-01,category,pom sh,7,same,onetime,4,0.00%
+2025-04-01,category,pom sh,8,any,onetime,4,0.00%
+2025-04-01,category,pom sh,8,same,onetime,4,0.00%
+2025-04-01,category,pom sh,9,any,onetime,4,0.00%
+2025-04-01,category,pom sh,9,same,onetime,4,0.00%
+2025-05-01,category,otc hl,0,any,onetime,2,100.00%
+2025-05-01,category,otc hl,0,same,onetime,2,100.00%
+2025-05-01,category,otc hl,1,any,onetime,2,50.00%
+2025-05-01,category,otc hl,1,same,onetime,2,0.00%
+2025-05-01,category,otc hl,2,any,onetime,2,50.00%
+2025-05-01,category,otc hl,2,same,onetime,2,0.00%
+2025-05-01,category,otc hl,3,any,onetime,2,50.00%
+2025-05-01,category,otc hl,3,same,onetime,2,0.00%
+2025-05-01,category,otc hl,4,any,onetime,2,50.00%
+2025-05-01,category,otc hl,4,same,onetime,2,0.00%
+2025-05-01,category,otc hl,5,any,onetime,2,0.00%
+2025-05-01,category,otc hl,5,same,onetime,2,0.00%
+2025-05-01,category,otc hl,6,any,onetime,2,0.00%
+2025-05-01,category,otc hl,6,same,onetime,2,0.00%
+2025-05-01,category,otc hl,7,any,onetime,2,50.00%
+2025-05-01,category,otc hl,7,same,onetime,2,50.00%
+2025-05-01,category,otc hl,8,any,onetime,2,0.00%
+2025-05-01,category,otc hl,8,same,onetime,2,0.00%
+2025-05-01,category,pom sh,0,any,onetime,2,100.00%
+2025-05-01,category,pom sh,0,same,onetime,2,100.00%
+2025-05-01,category,pom sh,1,any,onetime,2,0.00%
+2025-05-01,category,pom sh,1,same,onetime,2,0.00%
+2025-05-01,category,pom sh,2,any,onetime,2,0.00%
+2025-05-01,category,pom sh,2,same,onetime,2,0.00%
+2025-05-01,category,pom sh,3,any,onetime,2,0.00%
+2025-05-01,category,pom sh,3,same,onetime,2,0.00%
+2025-05-01,category,pom sh,4,any,onetime,2,0.00%
+2025-05-01,category,pom sh,4,same,onetime,2,0.00%
+2025-05-01,category,pom sh,5,any,onetime,2,0.00%
+2025-05-01,category,pom sh,5,same,onetime,2,0.00%
+2025-05-01,category,pom sh,6,any,onetime,2,0.00%
+2025-05-01,category,pom sh,6,same,onetime,2,0.00%
+2025-05-01,category,pom sh,7,any,onetime,2,0.00%
+2025-05-01,category,pom sh,7,same,onetime,2,0.00%
+2025-05-01,category,pom sh,8,any,onetime,2,0.00%
+2025-05-01,category,pom sh,8,same,onetime,2,0.00%
+2025-06-01,category,otc sh,0,any,onetime,6,100.00%
+2025-06-01,category,otc sh,0,same,onetime,6,100.00%
+2025-06-01,category,otc sh,1,any,onetime,6,0.00%
+2025-06-01,category,otc sh,1,same,onetime,6,0.00%
+2025-06-01,category,otc sh,2,any,onetime,6,0.00%
+2025-06-01,category,otc sh,2,same,onetime,6,0.00%
+2025-06-01,category,otc sh,3,any,onetime,6,0.00%
+2025-06-01,category,otc sh,3,same,onetime,6,0.00%
+2025-06-01,category,otc sh,4,any,onetime,6,0.00%
+2025-06-01,category,otc sh,4,same,onetime,6,0.00%
+2025-06-01,category,otc sh,5,any,onetime,6,0.00%
+2025-06-01,category,otc sh,5,same,onetime,6,0.00%
+2025-06-01,category,otc sh,6,any,onetime,6,0.00%
+2025-06-01,category,otc sh,6,same,onetime,6,0.00%
+2025-06-01,category,otc sh,7,any,onetime,6,0.00%
+2025-06-01,category,otc sh,7,same,onetime,6,0.00%
+2025-06-01,category,otc sk,0,any,onetime,1,100.00%
+2025-06-01,category,otc sk,0,same,onetime,1,100.00%
+2025-06-01,category,otc sk,1,any,onetime,1,0.00%
+2025-06-01,category,otc sk,1,same,onetime,1,0.00%
+2025-06-01,category,otc sk,2,any,onetime,1,0.00%
+2025-06-01,category,otc sk,2,same,onetime,1,0.00%
+2025-06-01,category,otc sk,3,any,onetime,1,0.00%
+2025-06-01,category,otc sk,3,same,onetime,1,0.00%
+2025-06-01,category,otc sk,4,any,onetime,1,0.00%
+2025-06-01,category,otc sk,4,same,onetime,1,0.00%
+2025-06-01,category,otc sk,5,any,onetime,1,0.00%
+2025-06-01,category,otc sk,5,same,onetime,1,0.00%
+2025-06-01,category,otc sk,6,any,onetime,1,0.00%
+2025-06-01,category,otc sk,6,same,onetime,1,0.00%
+2025-06-01,category,otc sk,7,any,onetime,1,0.00%
+2025-06-01,category,otc sk,7,same,onetime,1,0.00%
+2025-06-01,category,pom sh,0,any,onetime,2,100.00%
+2025-06-01,category,pom sh,0,same,onetime,2,100.00%
+2025-06-01,category,pom sh,1,any,onetime,2,0.00%
+2025-06-01,category,pom sh,1,same,onetime,2,0.00%
+2025-06-01,category,pom sh,2,any,onetime,2,0.00%
+2025-06-01,category,pom sh,2,same,onetime,2,0.00%
+2025-06-01,category,pom sh,3,any,onetime,2,0.00%
+2025-06-01,category,pom sh,3,same,onetime,2,0.00%
+2025-06-01,category,pom sh,4,any,onetime,2,0.00%
+2025-06-01,category,pom sh,4,same,onetime,2,0.00%
+2025-06-01,category,pom sh,5,any,onetime,2,0.00%
+2025-06-01,category,pom sh,5,same,onetime,2,0.00%
+2025-06-01,category,pom sh,6,any,onetime,2,0.00%
+2025-06-01,category,pom sh,6,same,onetime,2,0.00%
+2025-06-01,category,pom sh,7,any,onetime,2,0.00%
+2025-06-01,category,pom sh,7,same,onetime,2,0.00%
+2025-07-01,category,otc hl,0,any,onetime,3,100.00%
+2025-07-01,category,otc hl,0,same,onetime,3,100.00%
+2025-07-01,category,otc hl,1,any,onetime,3,0.00%
+2025-07-01,category,otc hl,1,same,onetime,3,0.00%
+2025-07-01,category,otc hl,2,any,onetime,3,0.00%
+2025-07-01,category,otc hl,2,same,onetime,3,0.00%
+2025-07-01,category,otc hl,3,any,onetime,3,0.00%
+2025-07-01,category,otc hl,3,same,onetime,3,0.00%
+2025-07-01,category,otc hl,4,any,onetime,3,0.00%
+2025-07-01,category,otc hl,4,same,onetime,3,0.00%
+2025-07-01,category,otc hl,5,any,onetime,3,33.33%
+2025-07-01,category,otc hl,5,same,onetime,3,33.33%
+2025-07-01,category,otc hl,6,any,onetime,3,0.00%
+2025-07-01,category,otc hl,6,same,onetime,3,0.00%
+2025-07-01,category,otc sh,0,any,onetime,3,100.00%
+2025-07-01,category,otc sh,0,same,onetime,3,100.00%
+2025-07-01,category,otc sh,1,any,onetime,3,0.00%
+2025-07-01,category,otc sh,1,same,onetime,3,0.00%
+2025-07-01,category,otc sh,2,any,onetime,3,0.00%
+2025-07-01,category,otc sh,2,same,onetime,3,0.00%
+2025-07-01,category,otc sh,3,any,onetime,3,0.00%
+2025-07-01,category,otc sh,3,same,onetime,3,0.00%
+2025-07-01,category,otc sh,4,any,onetime,3,0.00%
+2025-07-01,category,otc sh,4,same,onetime,3,0.00%
+2025-07-01,category,otc sh,5,any,onetime,3,0.00%
+2025-07-01,category,otc sh,5,same,onetime,3,0.00%
+2025-07-01,category,otc sh,6,any,onetime,3,0.00%
+2025-07-01,category,otc sh,6,same,onetime,3,0.00%
+2025-07-01,category,otc sk,0,any,onetime,1,100.00%
+2025-07-01,category,otc sk,0,same,onetime,1,100.00%
+2025-07-01,category,otc sk,1,any,onetime,1,0.00%
+2025-07-01,category,otc sk,1,same,onetime,1,0.00%
+2025-07-01,category,otc sk,2,any,onetime,1,0.00%
+2025-07-01,category,otc sk,2,same,onetime,1,0.00%
+2025-07-01,category,otc sk,3,any,onetime,1,0.00%
+2025-07-01,category,otc sk,3,same,onetime,1,0.00%
+2025-07-01,category,otc sk,4,any,onetime,1,0.00%
+2025-07-01,category,otc sk,4,same,onetime,1,0.00%
+2025-07-01,category,otc sk,5,any,onetime,1,0.00%
+2025-07-01,category,otc sk,5,same,onetime,1,0.00%
+2025-07-01,category,otc sk,6,any,onetime,1,0.00%
+2025-07-01,category,otc sk,6,same,onetime,1,0.00%
+2025-07-01,category,pom sh,0,any,onetime,4,100.00%
+2025-07-01,category,pom sh,0,same,onetime,4,100.00%
+2025-07-01,category,pom sh,1,any,onetime,4,0.00%
+2025-07-01,category,pom sh,1,same,onetime,4,0.00%
+2025-07-01,category,pom sh,2,any,onetime,4,0.00%
+2025-07-01,category,pom sh,2,same,onetime,4,0.00%
+2025-07-01,category,pom sh,3,any,onetime,4,0.00%
+2025-07-01,category,pom sh,3,same,onetime,4,0.00%
+2025-07-01,category,pom sh,4,any,onetime,4,0.00%
+2025-07-01,category,pom sh,4,same,onetime,4,0.00%
+2025-07-01,category,pom sh,5,any,onetime,4,0.00%
+2025-07-01,category,pom sh,5,same,onetime,4,0.00%
+2025-07-01,category,pom sh,6,any,onetime,4,0.00%
+2025-07-01,category,pom sh,6,same,onetime,4,0.00%
+2025-08-01,category,otc hl,0,any,onetime,3,100.00%
+2025-08-01,category,otc hl,0,same,onetime,3,100.00%
+2025-08-01,category,otc hl,1,any,onetime,3,0.00%
+2025-08-01,category,otc hl,1,same,onetime,3,0.00%
+2025-08-01,category,otc hl,2,any,onetime,3,33.33%
+2025-08-01,category,otc hl,2,same,onetime,3,0.00%
+2025-08-01,category,otc hl,3,any,onetime,3,0.00%
+2025-08-01,category,otc hl,3,same,onetime,3,0.00%
+2025-08-01,category,otc hl,4,any,onetime,3,0.00%
+2025-08-01,category,otc hl,4,same,onetime,3,0.00%
+2025-08-01,category,otc hl,5,any,onetime,3,0.00%
+2025-08-01,category,otc hl,5,same,onetime,3,0.00%
+2025-08-01,category,otc sh,0,any,onetime,4,100.00%
+2025-08-01,category,otc sh,0,same,onetime,4,100.00%
+2025-08-01,category,otc sh,1,any,onetime,4,0.00%
+2025-08-01,category,otc sh,1,same,onetime,4,0.00%
+2025-08-01,category,otc sh,2,any,onetime,4,0.00%
+2025-08-01,category,otc sh,2,same,onetime,4,0.00%
+2025-08-01,category,otc sh,3,any,onetime,4,0.00%
+2025-08-01,category,otc sh,3,same,onetime,4,0.00%
+2025-08-01,category,otc sh,4,any,onetime,4,0.00%
+2025-08-01,category,otc sh,4,same,onetime,4,0.00%
+2025-08-01,category,otc sh,5,any,onetime,4,0.00%
+2025-08-01,category,otc sh,5,same,onetime,4,0.00%
+2025-08-01,category,pom sh,0,any,onetime,5,100.00%
+2025-08-01,category,pom sh,0,same,onetime,5,100.00%
+2025-08-01,category,pom sh,1,any,onetime,5,0.00%
+2025-08-01,category,pom sh,1,same,onetime,5,0.00%
+2025-08-01,category,pom sh,2,any,onetime,5,0.00%
+2025-08-01,category,pom sh,2,same,onetime,5,0.00%
+2025-08-01,category,pom sh,3,any,onetime,5,0.00%
+2025-08-01,category,pom sh,3,same,onetime,5,0.00%
+2025-08-01,category,pom sh,4,any,onetime,5,0.00%
+2025-08-01,category,pom sh,4,same,onetime,5,0.00%
+2025-08-01,category,pom sh,5,any,onetime,5,0.00%
+2025-08-01,category,pom sh,5,same,onetime,5,0.00%
+2025-09-01,category,otc hl,0,any,onetime,2,100.00%
+2025-09-01,category,otc hl,0,same,onetime,2,100.00%
+2025-09-01,category,otc hl,1,any,onetime,2,0.00%
+2025-09-01,category,otc hl,1,same,onetime,2,0.00%
+2025-09-01,category,otc hl,2,any,onetime,2,0.00%
+2025-09-01,category,otc hl,2,same,onetime,2,0.00%
+2025-09-01,category,otc hl,3,any,onetime,2,0.00%
+2025-09-01,category,otc hl,3,same,onetime,2,0.00%
+2025-09-01,category,otc hl,4,any,onetime,2,0.00%
+2025-09-01,category,otc hl,4,same,onetime,2,0.00%
+2025-09-01,category,otc sh,0,any,onetime,6,100.00%
+2025-09-01,category,otc sh,0,same,onetime,6,100.00%
+2025-09-01,category,otc sh,1,any,onetime,6,16.67%
+2025-09-01,category,otc sh,1,same,onetime,6,16.67%
+2025-09-01,category,otc sh,2,any,onetime,6,16.67%
+2025-09-01,category,otc sh,2,same,onetime,6,16.67%
+2025-09-01,category,otc sh,3,any,onetime,6,16.67%
+2025-09-01,category,otc sh,3,same,onetime,6,16.67%
+2025-09-01,category,otc sh,4,any,onetime,6,16.67%
+2025-09-01,category,otc sh,4,same,onetime,6,16.67%
+2025-09-01,category,otc sk,0,any,onetime,1,100.00%
+2025-09-01,category,otc sk,0,same,onetime,1,100.00%
+2025-09-01,category,otc sk,1,any,onetime,1,0.00%
+2025-09-01,category,otc sk,1,same,onetime,1,0.00%
+2025-09-01,category,otc sk,2,any,onetime,1,0.00%
+2025-09-01,category,otc sk,2,same,onetime,1,0.00%
+2025-09-01,category,otc sk,3,any,onetime,1,0.00%
+2025-09-01,category,otc sk,3,same,onetime,1,0.00%
+2025-09-01,category,otc sk,4,any,onetime,1,0.00%
+2025-09-01,category,otc sk,4,same,onetime,1,0.00%
+2025-09-01,category,pom sh,0,any,onetime,12,100.00%
+2025-09-01,category,pom sh,0,same,onetime,12,100.00%
+2025-09-01,category,pom sh,1,any,onetime,12,0.00%
+2025-09-01,category,pom sh,1,same,onetime,12,0.00%
+2025-09-01,category,pom sh,2,any,onetime,12,8.33%
+2025-09-01,category,pom sh,2,same,onetime,12,0.00%
+2025-09-01,category,pom sh,3,any,onetime,12,0.00%
+2025-09-01,category,pom sh,3,same,onetime,12,0.00%
+2025-09-01,category,pom sh,4,any,onetime,12,0.00%
+2025-09-01,category,pom sh,4,same,onetime,12,0.00%
+2025-10-01,category,otc hl,0,any,onetime,2,100.00%
+2025-10-01,category,otc hl,0,same,onetime,2,100.00%
+2025-10-01,category,otc hl,1,any,onetime,2,0.00%
+2025-10-01,category,otc hl,1,same,onetime,2,0.00%
+2025-10-01,category,otc hl,2,any,onetime,2,0.00%
+2025-10-01,category,otc hl,2,same,onetime,2,0.00%
+2025-10-01,category,otc hl,3,any,onetime,2,0.00%
+2025-10-01,category,otc hl,3,same,onetime,2,0.00%
+2025-10-01,category,otc sh,0,any,onetime,16,100.00%
+2025-10-01,category,otc sh,0,same,onetime,16,100.00%
+2025-10-01,category,otc sh,1,any,onetime,16,0.00%
+2025-10-01,category,otc sh,1,same,onetime,16,0.00%
+2025-10-01,category,otc sh,2,any,onetime,16,0.00%
+2025-10-01,category,otc sh,2,same,onetime,16,0.00%
+2025-10-01,category,otc sh,3,any,onetime,16,6.25%
+2025-10-01,category,otc sh,3,same,onetime,16,6.25%
+2025-10-01,category,pom sh,0,any,onetime,4,100.00%
+2025-10-01,category,pom sh,0,same,onetime,4,100.00%
+2025-10-01,category,pom sh,1,any,onetime,4,0.00%
+2025-10-01,category,pom sh,1,same,onetime,4,0.00%
+2025-10-01,category,pom sh,2,any,onetime,4,50.00%
+2025-10-01,category,pom sh,2,same,onetime,4,50.00%
+2025-10-01,category,pom sh,3,any,onetime,4,0.00%
+2025-10-01,category,pom sh,3,same,onetime,4,0.00%
+2025-11-01,category,otc hl,0,any,onetime,7,100.00%
+2025-11-01,category,otc hl,0,same,onetime,7,100.00%
+2025-11-01,category,otc hl,1,any,onetime,7,0.00%
+2025-11-01,category,otc hl,1,same,onetime,7,0.00%
+2025-11-01,category,otc hl,2,any,onetime,7,14.29%
+2025-11-01,category,otc hl,2,same,onetime,7,14.29%
+2025-11-01,category,otc sh,0,any,onetime,65,100.00%
+2025-11-01,category,otc sh,0,same,onetime,65,100.00%
+2025-11-01,category,otc sh,1,any,onetime,65,3.08%
+2025-11-01,category,otc sh,1,same,onetime,65,1.54%
+2025-11-01,category,otc sh,2,any,onetime,65,1.54%
+2025-11-01,category,otc sh,2,same,onetime,65,1.54%
+2025-11-01,category,pom sh,0,any,onetime,10,100.00%
+2025-11-01,category,pom sh,0,same,onetime,10,100.00%
+2025-11-01,category,pom sh,1,any,onetime,10,0.00%
+2025-11-01,category,pom sh,1,same,onetime,10,0.00%
+2025-11-01,category,pom sh,2,any,onetime,10,10.00%
+2025-11-01,category,pom sh,2,same,onetime,10,10.00%
+2025-12-01,category,otc hl,0,any,onetime,1,100.00%
+2025-12-01,category,otc hl,0,same,onetime,1,100.00%
+2025-12-01,category,otc hl,1,any,onetime,1,100.00%
+2025-12-01,category,otc hl,1,same,onetime,1,100.00%
+2025-12-01,category,otc sh,0,any,onetime,54,100.00%
+2025-12-01,category,otc sh,0,same,onetime,54,100.00%
+2025-12-01,category,otc sh,1,any,onetime,54,0.00%
+2025-12-01,category,otc sh,1,same,onetime,54,0.00%
+2025-12-01,category,pom sh,0,any,onetime,22,100.00%
+2025-12-01,category,pom sh,0,same,onetime,22,100.00%
+2025-12-01,category,pom sh,1,any,onetime,22,0.00%
+2025-12-01,category,pom sh,1,same,onetime,22,0.00%
+2026-01-01,category,otc hl,0,any,onetime,3,100.00%
+2026-01-01,category,otc hl,0,same,onetime,3,100.00%
+2026-01-01,category,otc sh,0,any,onetime,51,100.00%
+2026-01-01,category,otc sh,0,same,onetime,51,100.00%
+2026-01-01,category,otc sk,0,any,onetime,1,100.00%
+2026-01-01,category,otc sk,0,same,onetime,1,100.00%
+2026-01-01,category,pom sh,0,any,onetime,24,100.00%
+2026-01-01,category,pom sh,0,same,onetime,24,100.00%
