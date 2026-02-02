@@ -132,7 +132,7 @@ export function UsersDashboard({ rows, isLoading, error, usingFallback }: UsersD
   }, [actualRows]);
 
   const cacBlended = useMemo(() => {
-    return CAC_BLENDED_RAW.filter((entry) => String(entry.month).slice(0, 7) <= "2025-07").map((entry) => ({
+    return CAC_BLENDED_RAW.map((entry) => ({
       month: String(entry.month).slice(0, 7),
       blended: Number(entry.blended_cac_total || 0),
     }));
@@ -390,7 +390,7 @@ export function UsersDashboard({ rows, isLoading, error, usingFallback }: UsersD
 
           <div className="bg-white p-6 rounded-xl shadow">
             <h3 className="text-lg font-medium mb-2">Blended CAC — Month over Month</h3>
-            <div className="text-xs text-gray-500 mb-3">Bars show blended CAC across all channels (USD). August hidden.</div>
+            <div className="text-xs text-gray-500 mb-3">Bars show blended CAC across all channels (USD).</div>
             <ResponsiveContainer width="100%" height={320}>
               <BarChart data={cacBlended} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />

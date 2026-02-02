@@ -117,16 +117,18 @@ function parseFlexibleDate(raw: unknown): Date | null {
 
   let match = value.match(monthFirst);
   if (match) {
-    const [, m, d, y] = match;
-    const month = Number.parseInt(m, 10);
-    const day = Number.parseInt(d, 10);
+    const [, first, second, y] = match;
+    const a = Number.parseInt(first, 10);
+    const b = Number.parseInt(second, 10);
     const year = Number.parseInt(y, 10);
-    if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
-      const date = new Date(year, month - 1, day);
+    // Prefer day-first (dd/mm/yyyy) since allorders.csv uses this format
+    if (b >= 1 && b <= 12 && a >= 1 && a <= 31) {
+      const date = new Date(year, b - 1, a);
       if (!Number.isNaN(date.getTime())) return date;
     }
-    if (day >= 1 && day <= 12 && month >= 1 && month <= 31) {
-      const date = new Date(year, day - 1, month);
+    // Fall back to month-first (mm/dd/yyyy)
+    if (a >= 1 && a <= 12 && b >= 1 && b <= 31) {
+      const date = new Date(year, a - 1, b);
       if (!Number.isNaN(date.getTime())) return date;
     }
   }

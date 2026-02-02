@@ -25,4 +25,14 @@ export const SUBSCRIPTION_CATEGORIES = new Set(["POM HL", "POM BG"]);
 
 export const MAGENTA_START_KEY = "2025-07-01";
 
-export const CHURN_CUTOFF_KEY = "2025-09-30";
+// Dynamic: last day of the most recently completed calendar month
+function computeChurnCutoff(): string {
+  const today = new Date();
+  const endOfLastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+  const y = endOfLastMonth.getFullYear();
+  const m = String(endOfLastMonth.getMonth() + 1).padStart(2, "0");
+  const d = String(endOfLastMonth.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+export const CHURN_CUTOFF_KEY = computeChurnCutoff();
