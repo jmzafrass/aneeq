@@ -1,0 +1,55 @@
+# ===== Python =====
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ===== Node.js (scoped to dashboard/) =====
+dashboard/node_modules/
+dashboard/.next/
+dashboard/out/
+dashboard/build/
+dashboard/.pnp
+dashboard/.pnp.*
+dashboard/.yarn/*
+!dashboard/.yarn/patches
+!dashboard/.yarn/plugins
+!dashboard/.yarn/releases
+!dashboard/.yarn/versions
+dashboard/coverage/
+dashboard/.vercel
+dashboard/*.tsbuildinfo
+dashboard/next-env.d.ts
+
+# ===== Data (sensitive operational CSVs) =====
+data/csv/**/*.csv
+data/json/
+data/backups/
+
+# NOTE: dashboard/public/data/*.csv is NOT ignored — those are tracked dashboard data sources
+
+# ===== Secrets & credentials =====
+CLAUDE.md
+.env*
+!.env.example
+*.pem
+
+# ===== OS & editor =====
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ===== Logs =====
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ===== Misc =====
+passport_images/
+output/

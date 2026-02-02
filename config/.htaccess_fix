@@ -1,0 +1,15 @@
+# Yii2 Web Directory .htaccess
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+# Ensure images, CSS, JS are served directly
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|pdf|svg|woff|woff2|ttf|eot)$">
+    # Disable PHP execution in upload directories
+    php_flag engine off
+</FilesMatch>
