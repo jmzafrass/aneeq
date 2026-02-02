@@ -269,6 +269,28 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
     ot_count = sum(1 for v in uid_is_subscriber.values() if not v)
     print(f"  Segment split: {sub_count} subscribers, {ot_count} one-time")
 
+    # --- Propagate cadence for subscription orders with empty notes ---
+    # Build per-customer known cadence from orders that have explicit notes
+    uid_known_cadence: Dict[str, List[Tuple[date, int]]] = defaultdict(list)
+    for o in orders:
+        if is_subscription_order(o) and o.notes.strip():
+            cadence = parse_cadence(o.notes)
+            uid_known_cadence[o.uid].append((o.date, cadence))
+
+    # Sort by date descending so most recent is first
+    for uid in uid_known_cadence:
+        uid_known_cadence[uid].sort(key=lambda x: x[0], reverse=True)
+
+    # For subscription orders with no notes, inherit from same customer's most recent known order
+    propagated = 0
+    for o in orders:
+        if is_subscription_order(o) and not o.notes.strip():
+            if o.uid in uid_known_cadence:
+                o.notes = str(uid_known_cadence[o.uid][0][1])
+                propagated += 1
+    if propagated:
+        print(f"  Cadence propagation: {propagated} orders inherited from same customer")
+
     # --- Purchase month sets (original, for fallback / one-time) ---
     purchases_by_uid: Dict[str, Set[str]] = defaultdict(set)
     purchases_by_uid_by_cat: Dict[str, Dict[str, Set[str]]] = defaultdict(lambda: defaultdict(set))

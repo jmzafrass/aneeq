@@ -748,14 +748,8 @@ def main():
             continue  # Already has Notes
         oid = clean_order_id(row["Order_id"])
 
-        # WC orders
+        # WC orders (Sub Renewal + New Sub): look up product sub_interval
         if oid.isdigit():
-            row_type = (row.get("Type") or "").strip()
-            if row_type == "Sub Renewal":
-                row["Notes"] = "1"
-                notes_fixed_wc += 1
-                continue
-            # New Sub: look up product sub_interval from Airtable
             wc_fields = wc_by_id.get(oid, {})
             prod_ids = wc_fields.get("ID (from Product) (from Last Update Items)") or []
             if isinstance(prod_ids, list):
@@ -787,7 +781,7 @@ def main():
                 row["Notes"] = notes_val
                 notes_fixed_mamo += 1
 
-    print(f"   WC Sub Renewal → '1': {notes_fixed_wc}")
+    print(f"   WC product sub_interval: {notes_fixed_wc}")
     print(f"   Mamo billing_cycle/sfi/product: {notes_fixed_mamo}")
 
     # ------------------------------------------------------------------
@@ -883,9 +877,18 @@ def main():
         else:
             uid = ""
 
-        # Notes: WC subscription renewals are monthly billing cycles
         order_type = derive_type(f)
-        notes = "1" if order_type == "Sub Renewal" else ""
+        # Notes: look up product sub_interval from catalogue
+        notes = ""
+        wc_fields_notes = wc_by_id.get(oid, {})
+        prod_ids_notes = wc_fields_notes.get("ID (from Product) (from Last Update Items)") or []
+        if isinstance(prod_ids_notes, list):
+            for pid in prod_ids_notes:
+                entry = product_catalogue.get(str(pid))
+                if entry and entry[2]:  # entry = (category, name, sub_interval)
+                    notes = format_notes_months(entry[2])
+                    if notes:
+                        break
 
         new_rows.append({
             "Order_id": oid,
@@ -1043,9 +1046,48 @@ def main():
             print(f"   {s}")
 
     # ------------------------------------------------------------------
-    # 9c. Fix missing Category/SKUs/Customer across ALL rows
+    # 9b2. Propagate Notes (billing cadence) from same-customer orders
     # ------------------------------------------------------------------
     all_rows_combined = existing_rows + new_rows
+    print("\n9b2. Propagating Notes from same-customer subscription orders ...")
+
+    # Build per-customer cadence from subscription orders that already have Notes
+    customer_cadence = {}  # name_uid → notes value (most recent order wins)
+    for row in all_rows_combined:
+        notes_val = (row.get("Notes") or "").strip()
+        if not notes_val:
+            continue
+        uid = (row.get("name_uid") or "").strip()
+        if not uid:
+            continue
+        row_type = (row.get("Type") or "").strip()
+        if row_type not in ("Sub Renewal", "New Sub"):
+            continue
+        dt = parse_date_dd_mm_yyyy(row.get("Order Date", ""))
+        if uid not in customer_cadence or (dt and dt > customer_cadence[uid][1]):
+            customer_cadence[uid] = (notes_val, dt or datetime.min)
+
+    # Propagate to subscription orders still missing Notes
+    cadence_propagated = 0
+    for row in all_rows_combined:
+        if (row.get("Notes") or "").strip():
+            continue
+        uid = (row.get("name_uid") or "").strip()
+        if not uid:
+            continue
+        row_type = (row.get("Type") or "").strip()
+        if row_type not in ("Sub Renewal", "New Sub"):
+            continue
+        if uid in customer_cadence:
+            row["Notes"] = customer_cadence[uid][0]
+            cadence_propagated += 1
+
+    print(f"   Customers with known cadence: {len(customer_cadence)}")
+    print(f"   Propagated to empty-Notes subscription orders: {cadence_propagated}")
+
+    # ------------------------------------------------------------------
+    # 9c. Fix missing Category/SKUs/Customer across ALL rows
+    # ------------------------------------------------------------------
     print("\n9c. Fixing missing products across all rows ...")
 
     # Collect ALL rows needing product fix
