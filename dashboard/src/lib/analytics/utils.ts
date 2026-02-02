@@ -66,6 +66,9 @@ export function normalizeMeasure(raw: unknown): Measure {
   return "revenue";
 }
 
-export function formatUsd(value: number) {
-  return `Dollars ${value.toFixed(2)}`;
+const AED_TO_USD = 1 / 3.6725;
+
+export function formatUsd(aedValue: number) {
+  const usd = aedValue * AED_TO_USD;
+  return `$${usd.toFixed(2)}`;
 }
