@@ -276,10 +276,10 @@ def format_notes_months(billing_cycle):
 
 
 def fetch_product_catalogue():
-    """Fetch Product table and build product_id → (category, product_name) map."""
+    """Fetch Product table and build product_id → (category, product_name, sub_interval) map."""
     recs = fetch_all_records(
         TABLES["product"],
-        fields=["ID", "Category", "product_name"],
+        fields=["ID", "Category", "product_name", "sub_interval"],
     )
     catalogue = {}
     for rec in recs:
@@ -289,6 +289,7 @@ def fetch_product_catalogue():
             catalogue[str(pid)] = (
                 f.get("Category", ""),
                 f.get("product_name", ""),
+                f.get("sub_interval"),
             )
     return catalogue
 
@@ -324,28 +325,31 @@ def wc_api_get_customer(customer_id):
 
 
 def resolve_wc_product_from_api(order_id, product_catalogue):
-    """Call WC API for an order, return (category, sku_name, customer, city)."""
+    """Call WC API for an order, return (category, sku_name, customer, city, sub_interval)."""
     o = wc_api_get_order(order_id)
     if not o:
-        return None, None, None, None
+        return None, None, None, None, None
 
     categories = []
     sku_names = []
+    sub_intervals = []
     for li in o.get("line_items", []):
         pid = str(li.get("product_id", ""))
         vid = str(li.get("variation_id", "0"))
-        cat, pname = None, None
+        cat, pname, si = None, None, None
 
-        # Try product_id first, then variation_id
-        if pid in product_catalogue:
-            cat, pname = product_catalogue[pid]
-        elif vid != "0" and vid in product_catalogue:
-            cat, pname = product_catalogue[vid]
+        # Try variation_id first (more specific), then product_id
+        if vid != "0" and vid in product_catalogue:
+            cat, pname, si = product_catalogue[vid]
+        elif pid in product_catalogue:
+            cat, pname, si = product_catalogue[pid]
 
         if cat:
             categories.append(cat)
         if pname:
             sku_names.append(pname)
+        if si:
+            sub_intervals.append(si)
 
         if not cat:
             # Fallback: infer category from line item name
@@ -374,11 +378,15 @@ def resolve_wc_product_from_api(order_id, product_catalogue):
             if c:
                 customer = f"{c.get('first_name', '')} {c.get('last_name', '')}".strip()
 
+    # Pick the max sub_interval from line items (most products in an order share the same cadence)
+    best_si = max(sub_intervals) if sub_intervals else None
+
     return (
         ", ".join(dict.fromkeys(categories)) if categories else None,
         ", ".join(dict.fromkeys(sku_names)) if sku_names else None,
         customer or None,
         city or None,
+        best_si,
     )
 
 
@@ -518,6 +526,7 @@ def main():
             "id", "customer_id", "status", "date_created",
             "total", "Category (from Product) (from Last Update Items)",
             "Product Name",
+            "ID (from Product) (from Last Update Items)",
             "First Name (Billing)", "Last Name (Billing)",
             "City (Billing)", "created_via",
         ],
@@ -533,6 +542,7 @@ def main():
             "customer_details_name", "customer_details_email",
             "Product Category", "Product Display Name",
             "Type", "billing_cycle", "subscription_frequency_interval",
+            "Sub_interval from product",
             "payment_name", "external_id",
         ],
     )
@@ -738,32 +748,47 @@ def main():
             continue  # Already has Notes
         oid = clean_order_id(row["Order_id"])
 
-        # WC subscription renewals: default 1 month
+        # WC orders
         if oid.isdigit():
             row_type = (row.get("Type") or "").strip()
             if row_type == "Sub Renewal":
                 row["Notes"] = "1"
                 notes_fixed_wc += 1
                 continue
+            # New Sub: look up product sub_interval from Airtable
+            wc_fields = wc_by_id.get(oid, {})
+            prod_ids = wc_fields.get("ID (from Product) (from Last Update Items)") or []
+            if isinstance(prod_ids, list):
+                for pid in prod_ids:
+                    entry = product_catalogue.get(str(pid))
+                    if entry and entry[2]:  # entry = (category, name, sub_interval)
+                        notes_val = format_notes_months(entry[2])
+                        if notes_val:
+                            row["Notes"] = notes_val
+                            notes_fixed_wc += 1
+                            break
+            continue
 
-        # Mamo orders: look up billing_cycle, then subscription_frequency_interval
+        # Mamo orders: billing_cycle → subscription_frequency_interval → Sub_interval from product
         mf = mamo_by_id.get(oid)
         if not mf and oid.startswith("PAY-"):
             mf = mamo_by_id.get(oid[4:])
         if mf:
-            # Try billing_cycle first
-            bc = mf.get("billing_cycle")
-            notes_val = format_notes_months(bc)
-            # Fallback: subscription_frequency_interval (integer months)
+            notes_val = format_notes_months(mf.get("billing_cycle"))
             if not notes_val:
-                sfi = mf.get("subscription_frequency_interval")
-                notes_val = format_notes_months(sfi)
+                notes_val = format_notes_months(mf.get("subscription_frequency_interval"))
+            if not notes_val:
+                sifp = mf.get("Sub_interval from product")
+                if isinstance(sifp, list) and sifp:
+                    notes_val = format_notes_months(sifp[0])
+                else:
+                    notes_val = format_notes_months(sifp)
             if notes_val:
                 row["Notes"] = notes_val
                 notes_fixed_mamo += 1
 
     print(f"   WC Sub Renewal → '1': {notes_fixed_wc}")
-    print(f"   Mamo billing_cycle:   {notes_fixed_mamo}")
+    print(f"   Mamo billing_cycle/sfi/product: {notes_fixed_mamo}")
 
     # ------------------------------------------------------------------
     # 9. Fetch new orders (Nov 2025+)
@@ -805,6 +830,7 @@ def main():
             "customer_details_name", "customer_details_email",
             "Product Category", "Product Display Name",
             "Type", "billing_cycle", "subscription_frequency_interval",
+            "Sub_interval from product",
             "payment_name",
         ],
         filter_formula=new_mamo_filter,
@@ -933,10 +959,16 @@ def main():
         # Type
         type_val = (f.get("Type") or "").strip()
 
-        # Notes from billing_cycle → subscription_frequency_interval fallback
+        # Notes: billing_cycle → subscription_frequency_interval → Sub_interval from product
         notes = format_notes_months(f.get("billing_cycle"))
         if not notes:
             notes = format_notes_months(f.get("subscription_frequency_interval"))
+        if not notes:
+            sifp = f.get("Sub_interval from product")
+            if isinstance(sifp, list) and sifp:
+                notes = format_notes_months(sifp[0])
+            else:
+                notes = format_notes_months(sifp)
 
         # name_uid via User link
         uid = ""
@@ -1060,7 +1092,7 @@ def main():
     if wc_to_fix_map:
         print(f"   Calling WC API for {len(wc_to_fix_map)} unique orders ...")
         for i, (oid, rows_for_oid) in enumerate(wc_to_fix_map.items()):
-            cat, sku, customer, city = resolve_wc_product_from_api(oid, product_catalogue)
+            cat, sku, customer, city, si = resolve_wc_product_from_api(oid, product_catalogue)
             for row in rows_for_oid:
                 if cat and not row["Category"].strip():
                     row["Category"] = cat
@@ -1073,6 +1105,8 @@ def main():
                     wc_fixed_name += 1
                 if city and not row["Location"].strip():
                     row["Location"] = city
+                if si and not row.get("Notes", "").strip():
+                    row["Notes"] = format_notes_months(si)
             # Rate limit: WC API allows ~10 req/sec
             if (i + 1) % 10 == 0:
                 time.sleep(1)
@@ -1090,7 +1124,7 @@ def main():
         # Try 1: external_id → WC API
         ext_id = mamo_fields.get("external_id", "")
         if ext_id and ext_id.strip().isdigit():
-            cat, sku, _, _ = resolve_wc_product_from_api(ext_id.strip(), product_catalogue)
+            cat, sku, _, _, _ = resolve_wc_product_from_api(ext_id.strip(), product_catalogue)
             if cat:
                 row["Category"] = cat
                 mamo_fixed += 1
