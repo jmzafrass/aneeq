@@ -43,6 +43,56 @@ CATEGORY_PRIORITY = ["pom hl", "pom bg", "pom sh", "otc hl", "otc sh", "otc sk"]
 SUBSCRIPTION_CATEGORIES = {"pom hl", "pom bg"}
 MAX_OFFSET = 12  # compute.ts uses offsets 0..12
 
+# Magenta pricing started July 2025
+MAGENTA_START_KEY = "2025-07"
+
+# COGS per SKU (matches dashboard/src/lib/orders/catalogue.ts)
+LEGACY_COGS: Dict[str, float] = {
+    "ultimate revival": 465.12,
+    "power regrowth": 444.21,
+    "essential boost": 235.75,
+    "oral mix": 233.74,
+    "oral minoxidil": 214.99,
+    "vital recharge": 235.75,
+    "max power": 332.95,
+    "delay spray": 69.04,
+    "essential routine": 62.32,
+    "advanced routine": 80.48,
+    "cleanser": 23.73,
+    "moisturizer spf": 23.73,
+    "moisturizer": 26.0,
+    "eye cream": 28.27,
+    "serum": 23.73,
+    "shampoo": 23.73,
+    "conditioner": 23.73,
+    "regrowth hair pack": 37.35,
+    "regrowth pack": 37.35,
+    "beard growth serum": 159.0,
+}
+
+MAGENTA_COGS: Dict[str, float] = {
+    "ultimate revival": 284.7,
+    "power regrowth": 271.7,
+    "essential boost": 142.35,
+    "oral mix": 142.35,
+    "oral minoxidil": 129.35,
+    "vital recharge": 142.35,
+    "max power": 207.35,
+    "delay spray": 69.04,
+    "essential routine": 62.32,
+    "advanced routine": 80.48,
+    "cleanser": 23.73,
+    "moisturizer spf": 23.73,
+    "moisturizer": 26.0,
+    "eye cream": 28.27,
+    "serum": 23.73,
+    "shampoo": 23.73,
+    "conditioner": 23.73,
+    "regrowth hair pack": 37.35,
+    "regrowth pack": 37.35,
+    "beard growth serum": 159.0,
+}
+
 
 # =============================================================================
 # Helper Functions
@@ -151,12 +201,23 @@ def is_subscription_order(order) -> bool:
     return any(cat in SUBSCRIPTION_CATEGORIES for cat in order.categories)
 
 
+def calculate_order_cogs(skus: List[str], month_key: str) -> float:
+    """Calculate total COGS for an order based on SKUs and order month.
+    Uses Magenta pricing from July 2025 onward."""
+    cogs_table = MAGENTA_COGS if month_key >= MAGENTA_START_KEY else LEGACY_COGS
+    total_cogs = 0.0
+    for sku in skus:
+        sku_norm = sku.lower().strip()
+        total_cogs += cogs_table.get(sku_norm, 0.0)
+    return total_cogs
+
+
 # =============================================================================
 # Order Data Structure
 # =============================================================================
 
 class Order:
-    __slots__ = ('id', 'uid', 'date', 'month_key', 'price', 'categories', 'skus', 'notes')
+    __slots__ = ('id', 'uid', 'date', 'month_key', 'price', 'cogs', 'gross_margin', 'categories', 'skus', 'notes')
 
     def __init__(self, oid: str, uid: str, d: date, price: float,
                  categories: List[str], skus: List[str], notes: str):
@@ -165,6 +226,8 @@ class Order:
         self.date = d
         self.month_key = ym(d)
         self.price = price
+        self.cogs = calculate_order_cogs(skus, self.month_key)
+        self.gross_margin = max(0.0, price - self.cogs)  # Never negative
         self.categories = categories
         self.skus = skus
         self.notes = notes
@@ -338,20 +401,20 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
 
     print(f"  Cadence distribution: {dict(sorted(cadence_stats.items()))}")
 
-    # --- Revenue maps ---
-    revenue_by_uid: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
-    revenue_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]] = \
+    # --- Gross margin maps (Revenue - COGS) ---
+    margin_by_uid: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    margin_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]] = \
         defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
 
     for o in orders:
         month = ym(o.date)
         if month > as_of_month:
             continue
-        revenue_by_uid[o.uid][month] += o.price
+        margin_by_uid[o.uid][month] += o.gross_margin
         if o.categories:
-            share = o.price / len(o.categories)
+            share = o.gross_margin / len(o.categories)
             for cat in o.categories:
-                revenue_by_uid_by_cat[o.uid][cat][month] += share
+                margin_by_uid_by_cat[o.uid][cat][month] += share
 
     # --- Build cohorts ---
     # Overall: cohort_month -> set of uids
@@ -554,15 +617,15 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                     total_any = 0.0
                     total_same = 0.0
                     for uid in users:
-                        month_rev = revenue_by_uid.get(uid, {})
+                        month_margin = margin_by_uid.get(uid, {})
                         for step in range(offset + 1):
                             key = ym(add_months(cohort_date, step))
-                            total_any += month_rev.get(key, 0)
+                            total_any += month_margin.get(key, 0)
 
-                        cat_rev = revenue_by_uid_by_cat.get(uid, {}).get(category, {})
+                        cat_margin = margin_by_uid_by_cat.get(uid, {}).get(category, {})
                         for step in range(offset + 1):
                             key = ym(add_months(cohort_date, step))
-                            total_same += cat_rev.get(key, 0)
+                            total_same += cat_margin.get(key, 0)
 
                     ltv_any = round(total_any / cohort_size, 2) if cohort_size else 0
                     ltv_same = round(total_same / cohort_size, 2) if cohort_size else 0
@@ -593,9 +656,9 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                     })
 
     # Overall LTV by segment
-    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', revenue_by_uid)
-    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', revenue_by_uid)
-    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', revenue_by_uid)
+    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', margin_by_uid)
+    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', margin_by_uid)
+    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', margin_by_uid)
 
     # Category LTV by segment
     compute_category_segment_ltv(category_cohorts, 'all')
