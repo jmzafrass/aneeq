@@ -572,7 +572,7 @@ export function Dashboard() {
                       <strong>Cohort:</strong> Same as Retention — customers grouped by the month of their first delivered order.
                     </li>
                     <li>
-                      <strong>LTV (Lifetime Value):</strong> Cumulative revenue per customer from M0 through each subsequent month. At M0 it shows the average first-month spend; at M3 it shows the total average spend across months 0–3. Values are in USD (converted from AED at the pegged rate 1 AED = $0.2723).
+                      <strong>LTV (Lifetime Value):</strong> Cumulative gross margin per customer from M0 through each subsequent month. Gross margin = Revenue − COGS (product costs). At M0 it shows the average first-month profit; at M3 it shows the total average profit across months 0–3. Values are in USD (converted from AED). COGS uses Magenta pricing from July 2025 onward.
                     </li>
                     <li>
                       <strong>CAC (Customer Acquisition Cost):</strong> Total marketing spend for the cohort month divided by the number of new customers acquired. Shown in amber. Lower CAC = more efficient acquisition.
@@ -581,7 +581,7 @@ export function Dashboard() {
                       <strong>Break-even:</strong> The first month (M0, M1, M2…) where cumulative LTV exceeds CAC. Shown in green. Cells at or after break-even are highlighted with a green ring. Earlier break-even = faster payback on acquisition spend.
                     </li>
                     <li>
-                      <strong>Revenue source:</strong> Actual transaction amounts from delivered orders only (not projected). If a subscriber does not renew, no revenue is added for that month — the LTV curve flattens.
+                      <strong>Margin source:</strong> Actual gross margin from delivered orders only (Revenue − COGS per SKU). If a subscriber does not renew, no margin is added — the LTV curve flattens.
                     </li>
                     <li>
                       <strong>Segment filter:</strong> &quot;Subscribers&quot; shows LTV for subscription-first customers only (higher LTV due to renewals and no dilution from one-time buyers). &quot;One-time&quot; shows non-subscription customers. &quot;All&quot; blends both.
@@ -594,7 +594,7 @@ export function Dashboard() {
                     </li>
                   </ul>
                   <p className="text-[11px] text-gray-400">
-                    Source: allorders.csv (delivered orders only). Marketing spend from aggregated channel data (Meta, Google, etc.).
+                    Source: allorders.csv (delivered orders only). COGS from Product table (Legacy pricing pre-July 2025, Magenta pricing from July 2025). Marketing spend from Meta + Google.
                   </p>
                   {(ltvLoading || !ltvRows.length) && <p className="mt-1">Loading LTV data…</p>}
                   {ltvError && <p className="mt-1 text-red-600">{String(ltvError)}</p>}
