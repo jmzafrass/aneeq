@@ -401,6 +401,11 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
 
     print(f"  Cadence distribution: {dict(sorted(cadence_stats.items()))}")
 
+    # --- Revenue maps (what customer paid) ---
+    revenue_by_uid: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
+    revenue_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]] = \
+        defaultdict(lambda: defaultdict(lambda: defaultdict(float)))
+
     # --- Gross margin maps (Revenue - COGS) ---
     margin_by_uid: Dict[str, Dict[str, float]] = defaultdict(lambda: defaultdict(float))
     margin_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]] = \
@@ -410,11 +415,18 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
         month = ym(o.date)
         if month > as_of_month:
             continue
+        # Revenue
+        revenue_by_uid[o.uid][month] += o.price
+        if o.categories:
+            rev_share = o.price / len(o.categories)
+            for cat in o.categories:
+                revenue_by_uid_by_cat[o.uid][cat][month] += rev_share
+        # Gross margin
         margin_by_uid[o.uid][month] += o.gross_margin
         if o.categories:
-            share = o.gross_margin / len(o.categories)
+            margin_share = o.gross_margin / len(o.categories)
             for cat in o.categories:
-                margin_by_uid_by_cat[o.uid][cat][month] += share
+                margin_by_uid_by_cat[o.uid][cat][month] += margin_share
 
     # --- Build cohorts ---
     # Overall: cohort_month -> set of uids
@@ -561,7 +573,8 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
         dimension: str,
         first_value: str,
         metric: str,
-        rev_map: Dict[str, Dict[str, float]],
+        value_map: Dict[str, Dict[str, float]],
+        measure: str,
     ):
         for cohort_month in sorted(cohort_map.keys()):
             users = cohort_map[cohort_month]
@@ -577,10 +590,10 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
 
                 total = 0.0
                 for uid in users:
-                    month_rev = rev_map.get(uid, {})
+                    month_values = value_map.get(uid, {})
                     for step in range(offset + 1):
                         key = ym(add_months(cohort_date, step))
-                        total += month_rev.get(key, 0)
+                        total += month_values.get(key, 0)
 
                 ltv = round(total / cohort_size, 2) if cohort_size else 0
 
@@ -591,7 +604,7 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                     'first_value': first_value,
                     'm': offset,
                     'metric': metric,
-                    'measure': 'gross_margin',
+                    'measure': measure,
                     'segment': segment,
                     'cohort_size': cohort_size,
                     'ltv_per_user': ltv,
@@ -600,6 +613,9 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
     def compute_category_segment_ltv(
         cat_cohort_map: Dict[str, Dict[str, Set[str]]],
         segment: str,
+        value_by_uid: Dict[str, Dict[str, float]],
+        value_by_uid_by_cat: Dict[str, Dict[str, Dict[str, float]]],
+        measure: str,
     ):
         for cohort_month in sorted(cat_cohort_map.keys()):
             for category in sorted(cat_cohort_map[cohort_month].keys()):
@@ -617,15 +633,15 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                     total_any = 0.0
                     total_same = 0.0
                     for uid in users:
-                        month_margin = margin_by_uid.get(uid, {})
+                        month_values = value_by_uid.get(uid, {})
                         for step in range(offset + 1):
                             key = ym(add_months(cohort_date, step))
-                            total_any += month_margin.get(key, 0)
+                            total_any += month_values.get(key, 0)
 
-                        cat_margin = margin_by_uid_by_cat.get(uid, {}).get(category, {})
+                        cat_values = value_by_uid_by_cat.get(uid, {}).get(category, {})
                         for step in range(offset + 1):
                             key = ym(add_months(cohort_date, step))
-                            total_same += cat_margin.get(key, 0)
+                            total_same += cat_values.get(key, 0)
 
                     ltv_any = round(total_any / cohort_size, 2) if cohort_size else 0
                     ltv_same = round(total_same / cohort_size, 2) if cohort_size else 0
@@ -637,7 +653,7 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                         'first_value': category,
                         'm': offset,
                         'metric': 'any',
-                        'measure': 'gross_margin',
+                        'measure': measure,
                         'segment': segment,
                         'cohort_size': cohort_size,
                         'ltv_per_user': ltv_any,
@@ -649,21 +665,31 @@ def compute_retention_and_ltv(orders: List[Order]) -> Tuple[List[dict], List[dic
                         'first_value': category,
                         'm': offset,
                         'metric': 'same',
-                        'measure': 'gross_margin',
+                        'measure': measure,
                         'segment': segment,
                         'cohort_size': cohort_size,
                         'ltv_per_user': ltv_same,
                     })
 
-    # Overall LTV by segment
-    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', margin_by_uid)
-    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', margin_by_uid)
-    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', margin_by_uid)
+    # Overall LTV by segment - REVENUE
+    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', revenue_by_uid, 'revenue')
+    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', revenue_by_uid, 'revenue')
+    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', revenue_by_uid, 'revenue')
 
-    # Category LTV by segment
-    compute_category_segment_ltv(category_cohorts, 'all')
-    compute_category_segment_ltv(category_sub_cohorts, 'subscribers')
-    compute_category_segment_ltv(category_ot_cohorts, 'onetime')
+    # Overall LTV by segment - GROSS MARGIN
+    compute_segment_ltv(overall_cohorts, 'all', 'overall', 'ALL', 'any', margin_by_uid, 'gm')
+    compute_segment_ltv(sub_cohorts, 'subscribers', 'overall', 'ALL', 'any', margin_by_uid, 'gm')
+    compute_segment_ltv(ot_cohorts, 'onetime', 'overall', 'ALL', 'any', margin_by_uid, 'gm')
+
+    # Category LTV by segment - REVENUE
+    compute_category_segment_ltv(category_cohorts, 'all', revenue_by_uid, revenue_by_uid_by_cat, 'revenue')
+    compute_category_segment_ltv(category_sub_cohorts, 'subscribers', revenue_by_uid, revenue_by_uid_by_cat, 'revenue')
+    compute_category_segment_ltv(category_ot_cohorts, 'onetime', revenue_by_uid, revenue_by_uid_by_cat, 'revenue')
+
+    # Category LTV by segment - GROSS MARGIN
+    compute_category_segment_ltv(category_cohorts, 'all', margin_by_uid, margin_by_uid_by_cat, 'gm')
+    compute_category_segment_ltv(category_sub_cohorts, 'subscribers', margin_by_uid, margin_by_uid_by_cat, 'gm')
+    compute_category_segment_ltv(category_ot_cohorts, 'onetime', margin_by_uid, margin_by_uid_by_cat, 'gm')
 
     return retention_rows, ltv_rows
 

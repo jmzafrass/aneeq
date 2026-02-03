@@ -84,6 +84,7 @@ function buildLtvPivot(
     firstValue: string;
     startMonth: string;
     endMonth: string;
+    measure: "revenue" | "gm";
   },
   lastObservedMonth: string,
 ): PivotResult {
@@ -92,7 +93,7 @@ function buildLtvPivot(
     if (row.dimension !== filters.dimension) return false;
     if (filters.dimension !== "overall" && row.first_value !== filters.firstValue) return false;
     if (row.metric !== filters.metric) return false;
-    if (row.measure !== "gm") return false;
+    if (row.measure !== filters.measure) return false;
     if (filters.startMonth && row.cohortMonthKey < filters.startMonth) return false;
     if (filters.endMonth && row.cohortMonthKey > filters.endMonth) return false;
     if (lastObservedMonth && row.cohortMonthKey >= lastObservedMonth) return false;
@@ -341,6 +342,7 @@ export function Dashboard() {
         firstValue: effectiveLtvFirstValue,
         startMonth: ltvStartMonth,
         endMonth: ltvEndMonth,
+        measure: showCac ? "gm" : "revenue",
       },
         lastObservedLtvMonth,
       ),
@@ -353,6 +355,7 @@ export function Dashboard() {
       ltvStartMonth,
       ltvEndMonth,
       lastObservedLtvMonth,
+      showCac,
     ],
   );
 
@@ -544,7 +547,10 @@ export function Dashboard() {
                   onEndMonthChange={setLtvEndMonth}
                 />
 
-                <div className="flex items-center justify-end mb-2">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs text-gray-500">
+                    {showCac ? "Showing: Gross Margin LTV with CAC analysis" : "Showing: Revenue LTV"}
+                  </span>
                   <button
                     onClick={() => setShowCac(!showCac)}
                     className={classNames(
@@ -554,7 +560,7 @@ export function Dashboard() {
                         : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                     )}
                   >
-                    {showCac ? "Hide CAC & Break-even" : "Show CAC & Break-even"}
+                    {showCac ? "Switch to Revenue LTV" : "Show CAC & Margin LTV"}
                   </button>
                 </div>
                 <LtvHeatmap
@@ -569,32 +575,36 @@ export function Dashboard() {
                   <p className="font-semibold text-gray-700">How is this calculated?</p>
                   <ul className="list-disc pl-4 space-y-1">
                     <li>
-                      <strong>Cohort:</strong> Same as Retention — customers grouped by the month of their first delivered order.
+                      <strong>Cohort:</strong> Customers grouped by the month of their first delivered order.
+                    </li>
+                    {showCac ? (
+                      <>
+                        <li>
+                          <strong>LTV (Gross Margin):</strong> Cumulative profit per customer (Revenue − COGS). At M0 it shows first-month profit; at M3 the total profit across months 0–3. COGS uses Magenta pricing from July 2025.
+                        </li>
+                        <li>
+                          <strong>CAC:</strong> Marketing spend ÷ new customers. Lower = more efficient acquisition.
+                        </li>
+                        <li>
+                          <strong>Break-even:</strong> First month where cumulative margin exceeds CAC. Green ring = profitable customer.
+                        </li>
+                      </>
+                    ) : (
+                      <li>
+                        <strong>LTV (Revenue):</strong> Cumulative revenue per customer from M0 through each month. At M0 it shows average first-month spend; at M3 the total spend across months 0–3.
+                      </li>
+                    )}
+                    <li>
+                      <strong>Segment:</strong> &quot;Subscribers&quot; = subscription-first customers. &quot;One-time&quot; = non-subscription. &quot;All&quot; = combined.
                     </li>
                     <li>
-                      <strong>LTV (Lifetime Value):</strong> Cumulative gross margin per customer from M0 through each subsequent month. Gross margin = Revenue − COGS (product costs). At M0 it shows the average first-month profit; at M3 it shows the total average profit across months 0–3. Values are in USD (converted from AED). COGS uses Magenta pricing from July 2025 onward.
-                    </li>
-                    <li>
-                      <strong>CAC (Customer Acquisition Cost):</strong> Total marketing spend for the cohort month divided by the number of new customers acquired. Shown in amber. Lower CAC = more efficient acquisition.
-                    </li>
-                    <li>
-                      <strong>Break-even:</strong> The first month (M0, M1, M2…) where cumulative LTV exceeds CAC. Shown in green. Cells at or after break-even are highlighted with a green ring. Earlier break-even = faster payback on acquisition spend.
-                    </li>
-                    <li>
-                      <strong>Margin source:</strong> Actual gross margin from delivered orders only (Revenue − COGS per SKU). If a subscriber does not renew, no margin is added — the LTV curve flattens.
-                    </li>
-                    <li>
-                      <strong>Segment filter:</strong> &quot;Subscribers&quot; shows LTV for subscription-first customers only (higher LTV due to renewals and no dilution from one-time buyers). &quot;One-time&quot; shows non-subscription customers. &quot;All&quot; blends both.
-                    </li>
-                    <li>
-                      <strong>Metric:</strong> &quot;Any&quot; = all revenue from the customer regardless of product. &quot;Same&quot; = only revenue from the same category as their first purchase.
-                    </li>
-                    <li>
-                      <strong>Reading the heatmap:</strong> Darker blue = higher LTV. Each cell shows cumulative $ per user up to that month. A steadily increasing row means customers keep spending over time. Green rings indicate break-even achieved.
+                      <strong>Reading:</strong> Darker blue = higher LTV. Steadily increasing row = customers keep spending.
+                      {showCac && " Green rings = break-even achieved."}
                     </li>
                   </ul>
                   <p className="text-[11px] text-gray-400">
-                    Source: allorders.csv (delivered orders only). COGS from Product table (Legacy pricing pre-July 2025, Magenta pricing from July 2025). Marketing spend from Meta + Google.
+                    Source: allorders.csv (delivered orders).
+                    {showCac && " COGS from Product table. Marketing spend from Meta + Google."}
                   </p>
                   {(ltvLoading || !ltvRows.length) && <p className="mt-1">Loading LTV data…</p>}
                   {ltvError && <p className="mt-1 text-red-600">{String(ltvError)}</p>}
