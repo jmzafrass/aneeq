@@ -13,7 +13,7 @@ import { UsersDashboard } from "@/components/users/UsersDashboard";
 import { useActiveUsersData } from "@/hooks/useActiveUsersData";
 import { useLtvData } from "@/hooks/useLtvData";
 import { useRetentionData } from "@/hooks/useRetentionData";
-import { RETENTION_URL, LTV_URL } from "@/lib/analytics/constants";
+import { RETENTION_URL, LTV_URL, MARKETING_SPEND_AED } from "@/lib/analytics/constants";
 import { addMonths, classNames, monthKeyFromDate, monthsDiff } from "@/lib/analytics/utils";
 import type { Dimension, Metric, LtvRow, RetentionRow, Segment } from "@/lib/analytics/types";
 import { ChurnV2Dashboard } from "@/components/churn-v2/ChurnV2Dashboard";
@@ -204,6 +204,7 @@ export function Dashboard() {
   const [ltvFirstValue, setLtvFirstValue] = useState("ALL");
   const [ltvStartMonth, setLtvStartMonth] = useState("");
   const [ltvEndMonth, setLtvEndMonth] = useState("");
+  const [showCac, setShowCac] = useState(false);
 
   const uniqueRetention = useMemo(() => {
     const segmentRows = retentionRows.filter((row) => row.segment === segment);
@@ -543,11 +544,25 @@ export function Dashboard() {
                   onEndMonthChange={setLtvEndMonth}
                 />
 
+                <div className="flex items-center justify-end mb-2">
+                  <button
+                    onClick={() => setShowCac(!showCac)}
+                    className={classNames(
+                      "px-3 py-1.5 rounded-lg text-xs font-medium transition-colors",
+                      showCac
+                        ? "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    )}
+                  >
+                    {showCac ? "Hide CAC & Break-even" : "Show CAC & Break-even"}
+                  </button>
+                </div>
                 <LtvHeatmap
                   rows={ltvPivot.rows}
                   maxMonth={ltvPivot.maxMonth}
                   maxValue={ltvPivot.maxValue ?? 0}
                   cellColor={ltvCellColor}
+                  marketingSpend={showCac ? MARKETING_SPEND_AED : undefined}
                 />
 
                 <div className="text-xs text-gray-600 bg-gray-50 p-4 rounded space-y-2">
@@ -560,6 +575,12 @@ export function Dashboard() {
                       <strong>LTV (Lifetime Value):</strong> Cumulative revenue per customer from M0 through each subsequent month. At M0 it shows the average first-month spend; at M3 it shows the total average spend across months 0–3. Values are in USD (converted from AED at the pegged rate 1 AED = $0.2723).
                     </li>
                     <li>
+                      <strong>CAC (Customer Acquisition Cost):</strong> Total marketing spend for the cohort month divided by the number of new customers acquired. Shown in amber. Lower CAC = more efficient acquisition.
+                    </li>
+                    <li>
+                      <strong>Break-even:</strong> The first month (M0, M1, M2…) where cumulative LTV exceeds CAC. Shown in green. Cells at or after break-even are highlighted with a green ring. Earlier break-even = faster payback on acquisition spend.
+                    </li>
+                    <li>
                       <strong>Revenue source:</strong> Actual transaction amounts from delivered orders only (not projected). If a subscriber does not renew, no revenue is added for that month — the LTV curve flattens.
                     </li>
                     <li>
@@ -569,11 +590,11 @@ export function Dashboard() {
                       <strong>Metric:</strong> &quot;Any&quot; = all revenue from the customer regardless of product. &quot;Same&quot; = only revenue from the same category as their first purchase.
                     </li>
                     <li>
-                      <strong>Reading the heatmap:</strong> Darker blue = higher LTV. Each cell shows cumulative $ per user up to that month. A steadily increasing row means customers keep spending over time.
+                      <strong>Reading the heatmap:</strong> Darker blue = higher LTV. Each cell shows cumulative $ per user up to that month. A steadily increasing row means customers keep spending over time. Green rings indicate break-even achieved.
                     </li>
                   </ul>
                   <p className="text-[11px] text-gray-400">
-                    Source: allorders.csv (delivered orders only). Revenue split equally across categories when an order contains multiple categories.
+                    Source: allorders.csv (delivered orders only). Marketing spend from aggregated channel data (Meta, Google, etc.).
                   </p>
                   {(ltvLoading || !ltvRows.length) && <p className="mt-1">Loading LTV data…</p>}
                   {ltvError && <p className="mt-1 text-red-600">{String(ltvError)}</p>}

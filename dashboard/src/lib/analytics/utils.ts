@@ -72,3 +72,40 @@ export function formatUsd(aedValue: number) {
   const usd = aedValue * AED_TO_USD;
   return `$${usd.toFixed(2)}`;
 }
+
+export function aedToUsd(aedValue: number): number {
+  return aedValue * AED_TO_USD;
+}
+
+/**
+ * Calculate CAC in USD for a given cohort.
+ * @param spendAed Marketing spend in AED for the cohort month
+ * @param cohortSize Number of new customers acquired in that month
+ * @returns CAC in USD, or undefined if no spend data
+ */
+export function calculateCacUsd(spendAed: number | undefined, cohortSize: number): number | undefined {
+  if (spendAed === undefined || cohortSize <= 0) return undefined;
+  return aedToUsd(spendAed) / cohortSize;
+}
+
+/**
+ * Find the first month (M value) where cumulative LTV exceeds CAC.
+ * @param values Record of month index to LTV value
+ * @param cacUsd CAC in USD
+ * @param maxMonth Maximum month to check
+ * @returns Month index where break-even occurs, or undefined if not reached
+ */
+export function findBreakEvenMonth(
+  values: Record<number, number | undefined>,
+  cacUsd: number | undefined,
+  maxMonth: number
+): number | undefined {
+  if (cacUsd === undefined) return undefined;
+  for (let m = 0; m <= maxMonth; m++) {
+    const ltv = values[m];
+    if (ltv !== undefined && aedToUsd(ltv) >= cacUsd) {
+      return m;
+    }
+  }
+  return undefined;
+}

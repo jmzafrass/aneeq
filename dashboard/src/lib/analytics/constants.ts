@@ -33,3 +33,26 @@ export function buildLtvFallback(): LtvRow[] {
 export function buildActiveFallback(): ActiveUsersRow[] {
   return [...FALLBACK_ACTIVE_ROWS];
 }
+
+/**
+ * Monthly marketing spend in AED (all channels combined).
+ * Used to calculate CAC (Customer Acquisition Cost) per cohort.
+ */
+export const MARKETING_SPEND_AED: Record<string, number> = {
+  "2024-10": 3034,
+  "2024-11": 14765,
+  "2024-12": 17466,
+  "2025-01": 27372,
+  "2025-02": 16761,
+  "2025-03": 39748,
+  "2025-04": 38939,
+  "2025-05": 49600,
+  "2025-06": 50600,
+  "2025-07": 51880,
+  "2025-08": 58139,
+  "2025-09": 94500,
+  "2025-10": 80142,
+  "2025-11": 68266,
+  "2025-12": 74215,
+  "2026-01": 84900,
+};
